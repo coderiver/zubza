@@ -6,76 +6,258 @@ title: Index page
 {% block content %}
 
 <style>
-	.tasks {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 20px; 
-		display: flex;
-		flex-direction: column;
-	}
-	.tasks__item {
-		display: flex;
-		border: 1px solid #444;
-		margin-bottom: 10px;
-	}
-	.tasks__row {
-		width: 25%;
-		padding: 10px;
-	}
-	.tasks__row:not(:last-child) {
-		border-right: 1px solid #444;
-	}
-	.tasks__title {
-		font-size: 20px;
-	}
+  * {
+    font-size: 20px;
+  }
+
+  .tasks {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tasks__item {
+    display: flex;
+    border: 1px solid #444;
+    margin-bottom: 10px;
+  }
+
+  .tasks__row {
+    width: 25%;
+    padding: 10px;
+  }
+
+  .tasks__row--75 {
+    width: 75%;
+  }
+
+  .tasks__row--33 {
+    width: 33%;
+  }
+
+  .tasks__row:not(:last-child) {
+    border-right: 1px solid #444;
+  }
+
+  .tasks__title {
+    font-size: 20px;
+  }
 </style>
 
 {% set tasks = [{
-	title: 'article.psd'
+title: 'article.psd',
+task: [
+{
+desc: 'Breadcrumbs + text + list',
+img: 'http://take.ms/4E7hRo',
+dev: 'Max'
 }, {
-	title: 'articles category.psd'
+desc: 'Header + модификатор для Mainpage',
+img: 'http://take.ms/iEM1i',
+dev: 'Bogdan'
 }, {
-	title: 'articles.psd'
+desc: 'Services',
+img: 'http://take.ms/IQas1',
+dev: 'Yana'
 }, {
-	title: 'clinic page.psd'
+desc: 'Faq',
+img: 'http://take.ms/0Ek3Ol',
+dev: 'Sergey'
 }, {
-	title: 'clinics.psd'
+desc: 'Posts',
+img: 'http://take.ms/qRI8h',
+dev: 'Olya'
 }, {
-	title: 'doctor page.psd'
+desc: 'Services pricing +  mod  for http://take.ms/YSkPw on clinic page + http://take.ms/aJD7o on doctor page',
+img: 'http://take.ms/Wx3Pk',
+dev: 'Bogdan'
 }, {
-	title: 'doctors.psd'
+desc: 'Table',
+img: 'http://take.ms/G5Wbu',
+dev: 'Max'
 }, {
-	title: 'links page.psd'
+desc: 'Contents',
+img: 'http://take.ms/Qtsjt',
+dev: 'Yana'
 }, {
-	title: 'main.psd'
+desc: 'Comments',
+img: 'http://take.ms/HWGwJ',
+dev: 'Sergey'
 }, {
-	title: 'usluga.psd'
+desc: 'Recommendations of hospitals',
+img: 'http://take.ms/C3iVY',
+dev: 'Olya'
+}, {
+desc: 'Useful articles',
+img: 'http://take.ms/AQYqb',
+dev: 'Bogdan'
+},{
+desc: 'Footer',
+img: 'http://take.ms/Cooyzq',
+dev: 'Max'
+}
+]
+}, {
+title: 'articles category.psd',
+task: [{
+desc: 'Pagination',
+img: 'http://take.ms/9VkqY',
+dev: 'Yana'
+}, {
+desc: 'Tabs',
+img: 'http://take.ms/uBI6e',
+dev: 'Sergey'
+}, {
+desc: 'Articles filter',
+img: 'http://take.ms/ethgo',
+dev: 'Bogdan'
+}
+]
+}, {
+title: 'articles.psd',
+task:[{
+desc: 'Popular articles',
+img: 'http://take.ms/w49aZ',
+dev: 'Max'
+}, {
+desc: 'Article theme',
+img: 'http://take.ms/BUWxu',
+dev: 'Yana'
+}]
+}, {
+title: 'clinic page.psd',
+task: [{
+desc: 'Anchors',
+img: 'http://take.ms/UsofI',
+dev: 'Sergey'
+},{
+desc: 'Hospital info + mod http://take.ms/hDx2r on doctor page',
+img: 'http://take.ms/i4P9D',
+dev: 'Olya'
+}, {
+desc: 'Hospital comments',
+img: 'http://take.ms/wMcZC',
+dev: 'Bogdan'
+}, {
+desc: 'Doctors + mod http://take.ms/jGhr3 on doctor page',
+img: 'http://take.ms/ao0lM',
+dev: 'Max'
+}, {
+desc: 'Hospital photos',
+img: 'http://take.ms/EsfmX',
+dev: 'Yana'
+}, {
+desc: 'Hospital Sales',
+img: 'http://take.ms/ph1INj',
+dev: 'Sergey'
+}, {
+desc: 'Hospital nearby slider',
+img: 'http://take.ms/e02uX',
+dev: 'Olya'
+}, {
+desc: 'Reserve',
+img: 'http://take.ms/xAkkQ',
+dev: 'Bogdan'
+}
+]
+}, {
+title: 'clinics-metro.psd',
+task: [{
+desc: 'Short hospital info',
+img: 'http://take.ms/UiTGG',
+dev: 'Max'
+}, {
+desc: 'Hospital filters',
+img: 'http://take.ms/JElHp',
+dev: 'Yana'
+}, {
+desc: 'Maps + popup',
+img: 'http://take.ms/yEhIL',
+dev: 'Sergey'
+}, {
+desc: 'Dantists nearby',
+img: 'http://take.ms/fcUaH',
+dev: 'Olya'
+}
+]
+}, {
+title: 'clinics.psd',
+task: [{
+desc: 'Doctors category',
+img: 'http://take.ms/AU5jR',
+dev: 'Bogdan'
+}
+]
+}, {
+title: 'doctor page.psd'
+}, {
+title: 'doctors.psd'
+}, {
+title: 'links page.psd'
+}, {
+title: 'main.psd',
+task: [{
+desc: 'Video',
+img: 'http://take.ms/suOb9',
+dev: 'Max'
+}, {
+desc: 'Banner',
+img: 'http://take.ms/kankO',
+dev: 'Yana'
+}, {
+desc: 'App',
+img: 'http://take.ms/MaYSJ',
+dev: 'Sergey'
+}, {
+desc: 'Sales slider',
+img: 'http://take.ms/NJpCFk',
+dev: 'Olya'
+}, {
+desc: 'Sales slider',
+img: 'http://take.ms/NJpCFk',
+dev: 'Olya'
+}, {
+desc: 'Info categories',
+img: 'http://take.ms/Qp82V',
+dev: 'Bogdan'
+}
+]
+}, {
+title: 'usluga.psd'
 }] %}
 <div class="tasks">
-	{% for item in tasks %}
-	<div class="tasks__item">
-		<div class="tasks__row">
-			<div class="tasks__title">
-				{{item.title}}
-			</div>
-		</div>
-		<div class="tasks__row">
-			<div class="tasks__description">
-				
-			</div>
-		</div>
-		<div class="tasks__row">
-			<div class="tasks__image">
-				
-			</div>
-		</div>
-		<div class="tasks__row">
-			<div class="tasks__developer">
-				
-			</div>
-		</div>
-	</div>
-	{% endfor %}
+  {% for item in tasks %}
+  <div class="tasks__item">
+    <div class="tasks__row">
+      <div class="tasks__title">
+        {{item.title}}
+      </div>
+    </div>
+    <div class="tasks__row tasks__row--75">
+      {% for task in item.task %}
+        <div class="tasks__item">
+          <div class="tasks__row tasks__row--33">
+            <div class="tasks__description">
+              {{task.desc}}
+            </div>
+          </div>
+          <div class="tasks__row tasks__row--33">
+            <div class="tasks__image">
+              <a href="{{task.img}}">{{task.img}}</a>
+            </div>
+          </div>
+          <div class="tasks__row tasks__row--33">
+            <div class="tasks__developer">
+              {{task.dev}}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
 </div>
 
 {% endblock %}
