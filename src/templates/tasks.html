@@ -1,0 +1,81 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<style>
+	.tasks {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 20px; 
+		display: flex;
+		flex-direction: column;
+	}
+	.tasks__item {
+		display: flex;
+		border: 1px solid #444;
+		margin-bottom: 10px;
+	}
+	.tasks__row {
+		width: 25%;
+		padding: 10px;
+	}
+	.tasks__row:not(:last-child) {
+		border-right: 1px solid #444;
+	}
+	.tasks__title {
+		font-size: 20px;
+	}
+</style>
+
+{% set tasks = [{
+	title: 'article.psd'
+}, {
+	title: 'articles category.psd'
+}, {
+	title: 'articles.psd'
+}, {
+	title: 'clinic page.psd'
+}, {
+	title: 'clinics.psd'
+}, {
+	title: 'doctor page.psd'
+}, {
+	title: 'doctors.psd'
+}, {
+	title: 'links page.psd'
+}, {
+	title: 'main.psd'
+}, {
+	title: 'usluga.psd'
+}] %}
+<div class="tasks">
+	{% for item in tasks %}
+	<div class="tasks__item">
+		<div class="tasks__row">
+			<div class="tasks__title">
+				{{item.title}}
+			</div>
+		</div>
+		<div class="tasks__row">
+			<div class="tasks__description">
+				
+			</div>
+		</div>
+		<div class="tasks__row">
+			<div class="tasks__image">
+				
+			</div>
+		</div>
+		<div class="tasks__row">
+			<div class="tasks__developer">
+				
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+{% endblock %}
