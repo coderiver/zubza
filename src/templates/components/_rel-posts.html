@@ -23,7 +23,10 @@
 
         <!-- begin post-block__meta -->
         <div class="post-block__meta">
-          <div class="meta-tag" data-color="{{ post.tagcolor }}">{{ post.tagname }}</div>
+          <div class="meta-tag">
+            <div class="meta-tag__circle" style="background-color: {{ post.tagcolor }};"></div>
+            {{ post.tagname }}
+          </div>
         </div>
         <!-- end post-block__meta -->
       </a>
@@ -33,7 +36,7 @@
 
     <!-- begin rel-posts__button -->
     <div class="rel-posts__button">
-      <a href="{{ relativePosts.buttonUrl }}">Смотреть все статьи</a>
+      <a class="btn" href="{{ relativePosts.buttonUrl }}">Смотреть все статьи</a>
     </div>
     <!-- end rel-posts__button -->
   </div>
