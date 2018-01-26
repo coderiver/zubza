@@ -39,6 +39,26 @@ table: {
 }
 
 breadcrumbs: ['Zubza', 'Справочник']
+
+popularArticles: [
+  {
+    title: 'МРТ диагностика заболеваний печени',
+    tagcolor: '#ff016e',
+    tagname: 'заболевания'
+  },{
+    title: 'Исследование эффективности ополаскивателей полости рта на основе растительных экстрактов',
+    tagcolor: '#ff016e',
+    tagname: 'ПОЛЕЗНОЕ'
+  },{
+    title: 'Комплексная эстетическая и функциональная реабилитация пациента',
+    tagcolor: '#ff016e',
+    tagname: 'СИМПТОМЫ'
+  },{
+    title: 'МРТ диагностика заболеваний печени',
+    tagcolor: '#ff016e',
+    tagname: 'заболевания'
+  }
+]
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -74,7 +94,9 @@ breadcrumbs: ['Zubza', 'Справочник']
     </p>
   </div>
 </div>
-
+<br>
+<br>
+{% include "components/_popular-articles.html" %}
 
 
 {% endblock %}

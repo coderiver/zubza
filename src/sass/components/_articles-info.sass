@@ -1,0 +1,36 @@
+.articles-info
+	&__title
+		margin-bottom: 13px
+	&__list
+		margin-bottom: 8px
+	&__more
+		margin-left: 2px
+.short-article
+	&__row
+		padding-left: 2px
+		display: block
+		&:not(:last-child)
+			border-bottom: 1px solid $grey
+			margin-bottom: 15px
+			padding-bottom: 15px
+		+clr
+	&__image
+		height: 60px
+		width: 60px
+		border-radius: 5px
+		background-size: cover
+		background-position: center center
+		float: left
+	&__in
+		overflow: hidden
+		padding-left: 11px
+	&__title
+		font-size: 14px
+		line-height: 1.1
+		+PSemi
+		color: $cyan
+		letter-spacing: -.3px
+		margin-bottom: 4px
+	&__descr
+		line-height: 1
+		font-size: 12px

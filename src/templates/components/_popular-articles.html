@@ -1,0 +1,18 @@
+<div class="popular-articles">
+  <div class="popular-articles__item">
+    {% for item in popularArticles %}
+    <div class="item">
+      <div class="blue-figure"></div>
+      <div class="item__info">
+        <div class="item__title">
+          {{item.title}}
+        </div>
+        <div class="meta-tag">
+          <div class="meta-tag__circle" style="background-color: {{ item.tagcolor }};"></div>
+          {{ item.tagname }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
