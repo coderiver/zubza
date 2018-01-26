@@ -1,0 +1,25 @@
+<div class="articles-info">
+	<div class="articles-info__title">Статьи по теме "Полезное"</div>
+	<div class="articles-info__list short-article">
+		{% set articles = [{
+			title: 'МРТ диагностика заболеваний печени'
+		}, {
+			title: 'Исследование эффективности ополаскивателей полости рта'
+		},{
+			title: 'Комплексная эстетическая и функциональная реабилитация'
+		}, {
+			title: 'Комплексная эстетическая и функциональная реабилитация'
+		}, {
+			title: 'МРТ диагностика заболеваний печени'
+		}] %}
+		{% for item in articles %}
+		<a href="#" class="short-article__row">
+			<div class="short-article__image" style="background-image: url(img/post-img-1.jpg);"></div>
+			<div class="short-article__in">
+				<div class="short-article__title">{{item.title}}</div>
+				<div class="short-article__descr">Среди других паренхиматоз- ных органов человеческого</div>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+</div>
