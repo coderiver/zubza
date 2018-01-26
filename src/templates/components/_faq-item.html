@@ -1,0 +1,23 @@
+<!--begin faq-item-->
+<div class="faq-item  {% if testGlob.jsFaq  == false %} faq-item--opened{% endif %} {% if testGlob.jsFaq %}js-faq-drop{% endif %}">
+	<div class="faq-item__head {% if testGlob.jsFaq %}js-faq-drop-head{% endif %}">
+		<i class="faq-item__icon">
+			<img src="img/faq-icon.png" alt="alt">
+		</i>
+		<p class="faq-item__head-text">
+			{{test.title}}
+		</p>
+		{% if testGlob.jsFaq %}
+		<i class="faq-item__arrow">
+			{{mixins.icon('arrow')}}
+		</i>
+		{% endif %}
+	</div>
+	<div class="faq-item__content {% if testGlob.jsFaq %}js-faq-drop-content{% endif %}">
+		<p>{{test.text}}</p>
+		{% if testGlob.jsFaq %}
+		<button class="faq-item__close js-faq-drop-btn-close">Скрыть</button>
+		{% endif %}
+	</div>
+</div>
+<!--end faq-item-->

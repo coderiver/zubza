@@ -1,3 +1,123 @@
 .footer
-  padding: 71px 0 72px 0
-  background-color: $dirty-grey
+	background-color: $almost-white
+	&__logo
+		width: 144px
+		height: 118px
+		+sm
+			display: none
+	&__main
+		padding: 71px 0 24px 0
+		display: flex
+		justify-content: space-between
+		+sm
+			padding: 50px 0 49px
+	&__copyrights
+		background-color: $dirty-grey
+		padding: 23px 0 24px
+		padding: 23px 0 14px
+	&__nav
+		width: 910px
+		margin-left: 20px
+		+r(425)
+			margin-left: 0
+		.nav
+			display: flex
+			justify-content: space-between
+			width: 100%
+			+md
+				flex-wrap: wrap
+			+sm
+				flex-direction: column
+			&__col
+				padding: 0 10px
+				+md
+					width: 50%
+				+sm
+					width: 100%
+					padding: 0
+			&__title
+				margin-bottom: 5px
+				+PBold
+				+sm
+					font-size: 16px
+					display: none
+				&--mob
+					white-space: nowrap
+					display: none
+					position: relative
+					padding-right: 20px
+					&:after
+						position: absolute
+						top: 0
+						right: 0
+						display: block
+						content: ''
+						background-image: url("../img/arrow-sm.png")
+						background-repeat: no-repeat
+						background-size: cover
+						background-position: center
+						height: 16px
+						width: 16px
+					+sm
+						display: inline-block
+			&__items
+				margin-bottom: 40px
+				+sm
+					display: none
+			&__item
+				line-height: 29px
+				margin-bottom: 1px
+			&__link
+				font-size: 14px
+				+OSLight
+			&__more-link
+				font-size: 14px
+				color: $cyan
+				+OSLight
+				position: relative
+				&:before
+					position: absolute
+					top: 0
+					left: 0
+					display: block
+					content: ''
+					background-image: url("../img/arrow-sm.png")
+					background-repeat: no-repeat
+					background-size: cover
+					background-position: center
+					height: 16px
+					width: 16px
+				span
+					margin-left: 20px
+.copyrights
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__text
+		color: $another-grey
+		font-size: 15px
+		margin-bottom: 10px
+		margin-right: 20px
+		+sm
+			display: none
+	&__links
+		display: flex
+		margin-bottom: 10px
+		+r(619)
+			justify-content: center
+			flex-wrap: wrap
+		li
+			padding-left: 20px
+			white-space: nowrap
+			+r(619)
+				margin-top: 10px
+			a
+				font-size: 15px
+				color: $cyan
+		li:not(:first-child)
+			padding-left: 20px
+			+r(619)
+				border-right: 0
+		li:not(:last-child)
+			border-right: 1px solid $grey
+			padding-right: 20px

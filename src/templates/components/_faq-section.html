@@ -1,0 +1,17 @@
+<section class="faq-section {{faqSectionMode}}">
+	<!--begin container-->
+	<div class="container">
+		{% for testGlob in faqSection %}
+		<h3 class="faq-section__title">{{testGlob.sectionTitle}}</h3>
+		{% endfor %}
+		<div class="faq-section__inner">
+			{% for testGlob in faqSection %}
+			
+			{% for test in testGlob.arr %}
+			{% include "components/_faq-item.html" %}
+			{% endfor %}
+			{% endfor %}
+		</div>
+	</div>
+	<!--end container-->
+</section>
