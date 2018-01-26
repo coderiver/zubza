@@ -1,16 +1,14 @@
 <div class="articles-info">
-	<div class="articles-info__title">Статьи по теме "Полезное"</div>
+	<div class="articles-info__title h4">Статьи по теме «Полезное»</div>
 	<div class="articles-info__list short-article">
 		{% set articles = [{
 			title: 'МРТ диагностика заболеваний печени'
 		}, {
-			title: 'Исследование эффективности ополаскивателей полости рта'
+			title: 'Как жить с хронической болезнью легких?'
 		},{
-			title: 'Комплексная эстетическая и функциональная реабилитация'
-		}, {
-			title: 'Комплексная эстетическая и функциональная реабилитация'
-		}, {
 			title: 'МРТ диагностика заболеваний печени'
+		}, {
+			title: 'Как жить с хронической болезнью легких?'
 		}] %}
 		{% for item in articles %}
 		<a href="#" class="short-article__row">
@@ -22,4 +20,5 @@
 		</a>
 		{% endfor %}
 	</div>
+	<a href="#" class="articles-info__more more-link more-link--sm"><span>Смотреть все</span></a>
 </div>

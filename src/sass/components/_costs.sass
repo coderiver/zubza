@@ -1,0 +1,20 @@
+.costs
+
+.costs-table
+	&__row
+		display: flex
+		background-color: #fff
+		&:nth-child(even)
+			background-color: $little-grey
+	&__col
+		display: flex
+		align-items: center
+		padding: 20px
+	&__title
+		font-size: 16px
+		+PReg
+		&_head
+			+PBold
+	&__price
+		font-size: 16px
+		color: $green
