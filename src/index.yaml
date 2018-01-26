@@ -3,7 +3,7 @@ ProjectTitle: zubza-final
 PageList:
 - file: tasks.html
   ready: 50
-- file: ui.html
+- file: max.html
   ready: 50
 - file: Serhii.html
   ready: 50
