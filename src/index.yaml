@@ -1,7 +1,7 @@
 ProjectTitle: zubza-final
 
 PageList:
-- file: page.html
-  ready: 50
 - file: tasks.html
+  ready: 50
+- file: ui.html
   ready: 50
