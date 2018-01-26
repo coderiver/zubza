@@ -14,7 +14,7 @@
 		border-radius: 10px
 		// padding-right: 40px
 		// padding-left: 35px
-		cursor: pointer
+		
 		padding: 9px 40px 9px 35px
 	&__icon
 		position: absolute
@@ -28,6 +28,7 @@
 		background-color: $cyan
 		border-radius: 50%
 		box-shadow: 0 4px 27px rgba(20, 193, 229, 0.47)
+		z-index: 1
 		img
 			+vcenter
 	&__head-text
@@ -41,10 +42,12 @@
 		font-size: 0
 		display: block
 		+trans
+		z-index: 1
 		svg
 			width: 13px
 			height: 7px
 			fill: $cyan
+			font-size: 7px
 	&__content
 		padding-left: 36px
 		padding-right: 15px
@@ -63,6 +66,16 @@
 		font-size: 14px
 		+PBold
 		color: #d7d7d7
+	&:not(.faq-item--opened)
+		.faq-item__content
+			display: none
+		.faq-item__head
+			cursor: pointer
+			+nosel
+	&--opened
+		margin-bottom: 35px
+
 	&.is-open
 		.faq-item__arrow
 			transform: rotateX(180deg)
+
