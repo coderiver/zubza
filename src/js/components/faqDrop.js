@@ -10,7 +10,6 @@ function faqDrop() {
   	let $content = $('.js-faq-drop-content');
   	let $thisparent = $(this).parents('.js-faq-drop');
   	let $thisContent = $thisparent.find('.js-faq-drop-content');
-  	
 
   	$drops.not($thisparent).removeClass('is-open');
   	$drops.not($thisparent).find($content).slideUp(300);

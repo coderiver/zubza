@@ -1,0 +1,46 @@
+<div class="table">
+  <div class="table__row table__row--first">
+    <div class="table__col">
+      <div class="table__option">
+        {{table.firstTitle}}
+      </div>
+    </div>
+    <div class="table__col">
+      <div class="table__option">
+        {{table.secondTitle}}
+      </div>
+    </div>
+    <div class="table__col">
+      <div class="table__option">
+        {{table.thirdTitle}}
+      </div>
+    </div>
+    <div class="table__col">
+      <div class="table__option">
+        {{table.fourthTitle}}
+      </div>
+    </div>
+  </div>
+  {% for item in table.items%}
+    <div class="table__row">
+      <div class="table__col">
+        <div class="table__category">
+          {{item.category}}
+        </div>
+      </div>
+      <div class="table__col">
+        <div class="table__price">
+          {{item.price}}
+        </div>
+      </div>
+      <div class="table__col">
+        <div class="table__desc">
+          {{item.desc}}
+        </div>
+      </div>
+      <div class="table__col">
+        {{item.more}}
+      </div>
+    </div>
+  {%endfor%}
+</div>
