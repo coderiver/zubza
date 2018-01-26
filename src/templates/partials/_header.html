@@ -14,32 +14,34 @@
 			}, {
 				item: 'Услуги и цены '
 			}, {
-				item: 'Акции'
-			}, {
-				item: 'О проекте',
+				item: 'Акции',
 				label: true
+			}, {
+				item: 'О проекте'
 			}] %}
 			<div class="menu">
 				<ul>
 					{% for item in menu %}
-					<li><a href="#">{{item.item}}</a></li>
+					<li><a href="#">{{item.item}}</a>{% if item.label %}<i>1</i>{% endif %}</li>
 					{% endfor %}
 				</ul>
 			</div>
 		</div>
 		<div class="header__auth">
 			<div class="auth">
-				<div class="auth__login login">
-					<div class="login__icon"></div>
-					<div class="login__text"></div>
+				<div class="auth__item auth__login login">
+					<div class="login__icon">{{mixins.icon('man')}}</div>
+					<div class="login__text">Вход</div>
 				</div>
-				<div class="auth__reg reg">
-					<a href="#" class="reg__btn">Регистрация</a>
+				<div class="auth__item auth__reg reg">
+					<a href="#" class="reg__btn button">Регистрация</a>
 				</div>
 			</div>
-		</div>
-		<div class="header__burger">
-			
+			<div class="header__burger">
+				<button class="burger">
+					<i></i>
+				</button>
+			</div>
 		</div>
 	</div>
 </div>
