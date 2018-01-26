@@ -1,0 +1,37 @@
+.meta-filters
+	font-size: 0
+	margin-bottom: 20px
+	border-radius: 5px
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	overflow: hidden
+	&--mb-31
+		margin-bottom: 31px
+	.meta-filter
+		border-right: 1px solid rgba($really-grey, 0.5)
+		&:last-of-type
+			border-right: none
+.meta-filter
+	display: inline-block
+	vertical-align: top
+	width: 25%
+	min-height: 45px
+	background-color: $white
+	text-align: center
+	padding: 17px 15px 14px
+	line-height: 1
+	+trans
+	&:hover
+		background-color: $cyan
+		.meta-tag, span
+			color: $white
+	.meta-tag
+		text-transform: none
+		display: inline-block
+		vertical-align: top
+		&__circle
+			top: 1px
+	.meta-tag, span
+		color: $black
+		+PReg
+		font-size: 14px
+		+trans

@@ -1,0 +1,9 @@
+{% for testGlob in metaFilters %}
+<!--begin meta-filters-->
+<div class="meta-filters {{testGlob.metaMode}}">
+	{% for test in testGlob.metaFilters %}
+	{% include "components/_meta-filter-item.html" %}
+	{% endfor %}
+</div>
+<!--end meta-filters-->
+{% endfor %}
