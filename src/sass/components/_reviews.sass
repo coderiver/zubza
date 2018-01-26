@@ -1,0 +1,157 @@
+.reviews-slider
+	width: 280px
+	margin: 0 auto 5px
+	&__content
+		margin-bottom: 22px
+	&__count
+		padding: 0 40px
+		color: #d9dbdc
+		font-size: 12px
+		text-align: center
+		line-height: 1
+	&__count-main
+		color: $cyan
+		+OSSemi
+		font-size: 14px
+		margin-bottom: 3px
+
+	.btnNext, .btnPrev
+		bottom: -19px
+		transform: translateY(100%)
+	.btnNext
+		right: 0
+	.btnPrev
+		left: 0
+
+.review
+	width: 280px
+	// display: inline-block
+	// vertical-align: top
+	margin: 0 auto
+	background-color: $cyan
+	border-radius: 5px
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	padding: 16px 20px 20px
+	color: $white
+	&__head
+		position: relative
+		padding-bottom: 11px
+		border-bottom: 1px solid #5bd4ed
+		margin-bottom: 13px
+	&__head-text
+		color: $white
+		+PSemi
+		font-size: 20px
+		margin-bottom: 5px
+	&__head-inner
+		+clr
+	&__stars
+		float: left
+		font-size: 0
+		padding-top: 5px
+		.review__star
+			margin-right: 4px
+			&:last-of-type
+				margin-right: 0
+	&__star
+		svg
+			font-size: 20px
+			fill: rgba($white, 0.3)
+		&.is-color
+			svg
+				fill: $white
+	&__rate
+		float: right
+		color: $white
+		text-transform: uppercase
+		font-size: 11px
+		+PBold
+
+		span
+			font-size: 24px
+			+PBlack
+	&__count-block
+		font-size: 0
+		margin-bottom: 16px
+	&__bought, 	&__glad
+		display: inline-block
+		vertical-align: top
+		div
+			+PExtra
+			font-size: 20px
+
+			line-height: 1
+			span
+				display: inline-block
+				vertical-align: top
+
+		i
+			display: inline-block
+			vertical-align: top
+			font-size: 0
+		p
+			+PExtra
+			font-size: 12px
+			line-height: 1
+		svg
+			
+			height: 16px
+	&__bought
+		i
+	&__separator
+		display: inline-block
+		vertical-align: top
+		font-size: 35px
+		margin: 0 16px
+		line-height: 1
+	&__glad
+	&__info
+		+OSSemi
+		font-size: 13px
+	&__text
+		margin-bottom: 7px
+		font-size: 13px
+		line-height: 1.55
+	&__person
+		margin-bottom: 17px
+		span
+			+OSSemi
+			font-size: 13px
+		p
+			color: #defbfe
+			font-size: 17px
+			+PBold
+	&__link
+		display: block
+		width: 100%
+.btn-pink
+	padding: 10px 15px 11px
+	background-color: $pink
+	border-radius: 20px
+	color: $white
+	font-size: 16px
+	border: none
+	display: inline-block
+	vertical-align: top
+	appearance: none
+	+PBold
+	text-align: center
+	&--240
+		min-width: 240px
+.btnNext, .btnPrev
+	width: 28px
+	height: 28px
+	background-color: $little-grey
+	cursor: pointer
+	text-align: center
+	border-radius: 50%
+	position: absolute
+	i
+		+vcenter
+	svg
+		width: 7px
+		height: 12px
+		fill: #14c1e5
+.btnNext
+.btnPrev
+	
