@@ -33,11 +33,77 @@ faqSection: [
 	]
 }
 ]
+
+reviews: [
+{
+	sliderMode: 'count-slider--w280',
+	testSlides: [
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	},
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	}
+	],
+	slideMode: 'cslide--blue',
+	headBlock: true,
+	headMode: '',
+	headText: 'Отзывы',
+	rateBlock: true,
+	rateStarsMode: '',
+	stars: [
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: ''
+	},
+	{
+		starMode: ''
+	}
+	],
+	rateNumberMode: '',
+	rateNumber: '3.7',
+	countUsers: true,
+	countUsersMode: 'count-users--mb-16',
+	countUsersBought: '70',
+	countUsersGlad: '55',
+	userIconMode: '',
+	heartIconMode: '',
+	info: 'Анна, 22.12.17',
+	person: 'Яковлева Ирина Сергеевна',
+	btn: 'Все врачи специальности',
+	btnMode: 'btn-pink',
+	sliderCountBlock: true,
+	location: false,
+	recomend: false,
+	readMore: false
+}
+]
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 {% include "components/_faq-section.html" %}
-{% include "components/_reviews-slider.html" %}
+
+{% for test in reviews %}
+{% include "components/_count-slider.html" %}
+{% endfor %}
+
+{% include "components/_meta-filter.html" %}
 
 {% endblock %}

@@ -1,0 +1,20 @@
+.rate-stars 
+	font-size: 0
+	&__item
+		margin-right: 4px
+		svg
+			font-size: 20px
+			fill: rgba($white, 0.3)
+		&.is-color
+			svg
+				fill: $white
+		&:last-of-type
+			margin-right: 0
+.rate-number
+	color: $white
+	text-transform: uppercase
+	font-size: 11px
+	+PBold
+	span
+		font-size: 24px
+		+PBlack

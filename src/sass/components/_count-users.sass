@@ -1,0 +1,39 @@
+.count-users
+	font-size: 0
+	&__bought, 	&__glad
+		display: inline-block
+		vertical-align: top
+		div
+			+PExtra
+			font-size: 20px
+
+			line-height: 1
+			span
+				display: inline-block
+				vertical-align: top
+		p
+			+PExtra
+			font-size: 12px
+			line-height: 1
+		svg
+			height: 16px
+	&__icon-user, &__icon-heart
+		display: inline-block
+		vertical-align: top
+		font-size: 0
+		height: 16px
+		background-repeat: no-repeat
+	&__icon-user
+		width: 16px
+		+s(user-white)
+	&__icon-heart
+		width: 18px
+		+s(heart-white)
+	&__separator
+		display: inline-block
+		vertical-align: top
+		font-size: 35px
+		margin: 0 16px
+		line-height: 1
+	&--mb-16
+		margin-bottom: 16px

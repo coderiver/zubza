@@ -10,15 +10,32 @@ function sliders() {
   viewBox="0 0 192 320" enable-background="new 0 0 192 320" xml:space="preserve">
   <polygon points="0,19.4 20.7,0 192,160 20.7,320 0,300.7 150.5,160 "/>
   </svg></i></div>`;
-  console.log('slider');
 
+  let sliderWithCount = $('.js-slider-count');
+  sliderWithCount.each(function(index, elem) {
 
-  $('.js-one-slide-slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1, 
-    prevArrow: btnPrev,
-    nextArrow: btnNext
+    let $this = $(elem),
+      $parent = $this.parents('.js-slider-count-parent'),
+      $countElem = $parent.find('.js-slider-count-all'),
+      $currentElem = $parent.find('.js-slider-count-current-slide'),
+      slideCount = $parent.find('.js-slider-count-slide').length;
+    let showOtherText = $parent.find('js-slider-count-other-btn');
+    let otherText = $parent.find('js-slider-count-other-text');
+
+    $countElem.html(slideCount);
+
+    $this.slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1, 
+      prevArrow: btnPrev,
+      nextArrow: btnNext
+    });
+    $this.on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      $currentElem.html(currentSlide + 1);
+    });
   });
+
+
 };
 module.exports = sliders;
