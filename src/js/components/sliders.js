@@ -19,8 +19,8 @@ function sliders() {
       $countElem = $parent.find('.js-slider-count-all'),
       $currentElem = $parent.find('.js-slider-count-current-slide'),
       slideCount = $parent.find('.js-slider-count-slide').length;
-    let showOtherText = $parent.find('js-slider-count-other-btn');
-    let otherText = $parent.find('js-slider-count-other-text');
+    // let showOtherText = $parent.find('js-slider-count-other-btn');
+    // let otherText = $parent.find('js-slider-count-other-text');
 
     $countElem.html(slideCount);
 

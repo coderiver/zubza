@@ -4,16 +4,20 @@
 	border-radius: 5px
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
 	overflow: hidden
-	&--mb-31
-		margin-bottom: 31px
+	display: flex
 	.meta-filter
 		border-right: 1px solid rgba($really-grey, 0.5)
 		&:last-of-type
 			border-right: none
+	&--mb-31
+		margin-bottom: 31px
+	&--w-830
+		max-width: 830px
 .meta-filter
-	display: inline-block
-	vertical-align: top
-	width: 25%
+	// display: inline-block
+	// vertical-align: top
+	// width: 25%
+	flex-basis: 25%
 	min-height: 45px
 	background-color: $white
 	text-align: center

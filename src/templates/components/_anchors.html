@@ -1,0 +1,17 @@
+{% for testGlobal in anchors %}
+<!--begin anchors-->
+<div class="anchors {{testGlobal.mode}}">
+	<!--begin container-->
+	<div class="container">
+		<div class="anchors__list">
+			{% for test in testGlobal.anchorslist %}
+			<div class="anchors__item {{test.active}}">
+				<a href="#">{{test.text}}</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<!--end container-->
+</div>
+<!--end anchors-->
+{% endfor %}

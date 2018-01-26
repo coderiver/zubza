@@ -96,25 +96,58 @@ reviews: [
 ]
 metaFilters: [
 {
-	metaMode: ''
-},
-metaFilters: [
-{
-	tagname: 'Популярное'
-},
-{
-	color: '#74d15e',
-	tagname: 'Полезное'
-},
-{
-	color: '#ff016e',
-	tagname: 'Заболевания'
-},
-{
-	color: '#14c1e5',
-	tagname: 'Симптомы'
+	metaMode: 'meta-filters--w-830',
+	metalist: [
+	{
+		tagname: 'Популярное'
+	},
+	{
+		color: '#74d15e',
+		tagname: 'Полезное'
+	},
+	{
+		color: '#ff016e',
+		tagname: 'Заболевания'
+	},
+	{
+		color: '#14c1e5',
+		tagname: 'Симптомы'
+	}
+	]
 }
 ]
+anchors: [
+{
+	mode: 'anchors--mb-75',
+	anchorslist: [
+	{
+		text: 'Описание и контактная информация'
+	},
+	{
+		text: 'Цены'
+	},
+	{
+		text: 'Отзывы '
+	},
+	{
+		text: 'Врачи'
+	},
+	{
+		text: 'Лицензии и сертификаты'
+	},
+	{
+		text: 'Фото клиники',
+		active: 'is-active'
+	},
+	{
+		text: 'Акции'
+	},
+	{
+		text: 'Филиалы'
+	}
+	]
+}
+
 ]
 ---
 {% extends "layouts/_layout.html" %}
@@ -127,5 +160,6 @@ metaFilters: [
 {% endfor %}
 
 {% include "components/_meta-filters.html" %}
+{% include "components/_anchors.html" %}
 
 {% endblock %}

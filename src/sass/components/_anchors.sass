@@ -1,0 +1,27 @@
+.anchors
+	background-color: #fafafa
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	margin-bottom: 30px
+	&__list
+		// display: flex
+		// flex-wrap: wrap
+		// justify-content: space-between
+		+justify
+	&__item
+		min-height: 40px
+		line-height: 1
+		padding: 12px 10px 11px
+		display: inline-block
+		vertical-align: top
+		a
+			+PBold
+			font-size: 15px
+			color: $cyan
+			+trans
+			&:hover
+				color: $green
+		&.is-active
+			a
+				color: $green
+	&--mb-75
+		margin-bottom: 75px

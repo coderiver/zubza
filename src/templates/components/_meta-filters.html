@@ -1,7 +1,7 @@
 {% for testGlob in metaFilters %}
 <!--begin meta-filters-->
 <div class="meta-filters {{testGlob.metaMode}}">
-	{% for test in testGlob.metaFilters %}
+	{% for test in testGlob.metalist %}
 	{% include "components/_meta-filter-item.html" %}
 	{% endfor %}
 </div>
