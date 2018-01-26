@@ -1,1 +1,45 @@
-<p>Hello from partials/_header.html</p>
+<div class="header">
+	<div class="container header__in">
+		<div class="header__logo">
+			<a href="#"><img src="img/logo-{{logo}}.svg" alt=""></a>
+		</div>
+		<div class="header__select">
+			
+		</div>
+		<div class="header__menu">
+			{% set menu = [{
+				item: 'Клиника'
+			}, {
+				item: 'Врачи'
+			}, {
+				item: 'Услуги и цены '
+			}, {
+				item: 'Акции'
+			}, {
+				item: 'О проекте',
+				label: true
+			}] %}
+			<div class="menu">
+				<ul>
+					{% for item in menu %}
+					<li><a href="#">{{item.item}}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="header__auth">
+			<div class="auth">
+				<div class="auth__login login">
+					<div class="login__icon"></div>
+					<div class="login__text"></div>
+				</div>
+				<div class="auth__reg reg">
+					<a href="#" class="reg__btn">Регистрация</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__burger">
+			
+		</div>
+	</div>
+</div>
