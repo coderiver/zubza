@@ -1,0 +1,73 @@
+.menu
+	ul
+		li
+			display: inline-block
+			vertical-align: bottom
+			position: relative
+			&:not(:last-child)
+				margin-right: 17px
+			a
+				font-size: 15px
+				+PBold
+			i
+				position: absolute
+				top: -1px
+				right: -10px
+				font-size: 9px
+				+PBold
+				color: #f3e7ec
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 50%
+				min-height: 15px
+				min-width: 15px
+				background-color: $pink
+				line-height: 1
+				z-index: -1
+				font-style: normal
+.burger
+	position: relative
+	height: 17px
+	width: 22px
+	background-color: transparent
+	&:before, &:after, i
+		width: 100%
+		position: absolute
+		left: 0
+		height: 3px
+		background-color: #1a1a1a
+	&:before, &:after
+		content: ''
+	&:before
+		top: 0
+	i
+		top: 7px
+	&:after
+		bottom: 0
+
+
+.auth
+	display: inline-block
+	&__item
+		display: inline-block
+		vertical-align: top
+	&__login
+		margin-right: 16px
+		padding-top: 9px
+
+.login
+	&__icon
+		display: inline-block
+		vertical-align: top
+		.icon
+			fill: #29c1e2
+			font-size: 18px
+	&__text
+		display: inline-block
+		vertical-align: top
+		padding-top: 5px
+	&__text
+		font-size: 15px
+		+PBold
+

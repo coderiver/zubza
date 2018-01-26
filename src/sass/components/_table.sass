@@ -1,0 +1,36 @@
+.table
+	font-size: 14px
+	box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.05);
+	&__row
+		display: flex
+		&:nth-child(odd)
+			background-color: $little-grey
+		&:nth-child(even)
+			border-left: 1px solid #edf0f1
+	.table__row--first
+		border-radius: 5px 5px 0 0
+		background-color: $cyan
+	&__option
+		+PBold
+		font-size: 16px
+		color: $white
+	&__col
+		display: flex
+		align-items: center
+		padding: 20px
+		border-right: 1px solid #edf0f1
+		&:nth-child(1)
+			width: 20%
+		&:nth-child(2)
+			width: 15%
+		&:nth-child(3)
+			width: 45%
+		&:nth-child(4)
+			width: 20%
+	&__price
+		font-size: 16px
+		color: $green
+		+PBold
+	&__desc
+		+OSLight
+
