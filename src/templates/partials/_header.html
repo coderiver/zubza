@@ -14,15 +14,15 @@
 			}, {
 				item: 'Услуги и цены '
 			}, {
-				item: 'Акции'
-			}, {
-				item: 'О проекте',
+				item: 'Акции',
 				label: true
+			}, {
+				item: 'О проекте'
 			}] %}
 			<div class="menu">
 				<ul>
 					{% for item in menu %}
-					<li><a href="#">{{item.item}}</a></li>
+					<li><a href="#">{{item.item}}</a>{% if item.label %}<i>1</i>{% endif %}</li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -34,7 +34,7 @@
 					<div class="login__text">Вход</div>
 				</div>
 				<div class="auth__item auth__reg reg">
-					<a href="#" class="reg__btn">Регистрация</a>
+					<a href="#" class="reg__btn button">Регистрация</a>
 				</div>
 			</div>
 			<div class="header__burger">
