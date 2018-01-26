@@ -1,5 +1,6 @@
 body
   +OSReg
+  +smooth-font
   font-size: 16px
   color: $black
 
@@ -27,4 +28,22 @@ h4
   max-width: 1260px
   margin: 0 auto
   padding: 0 40px
+
+.text
+	line-height: 24px
+
+.list
+	line-height: 24px
+	margin: 20px 0
+	&__item
+		position: relative
+		padding-left: 15px
+		&:before
+			font-size: 23px
+			display: block
+			position: absolute
+			content: '•'
+			color: $cyan
+			top: 0
+			left: 0
 
