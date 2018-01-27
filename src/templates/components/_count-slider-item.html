@@ -9,14 +9,16 @@
 		{% if test.rateBlock %}
 		<!--begin cslide__head-inner-->
 		<div class="cslide__head-inner">
-			<!--begin cslide__stars-->
-			<div class="cslide__stars">
+			<!--begin rate-wrapper-->
+			<div class="rate-wrapper">
+				
 				{% include "components/_rate-stars.html" %}
-			</div>
-			<!--end cslide__stars-->
-			<div class="cslide__rate">
+
 				{% include "components/_rate-number.html" %}
 			</div>
+			<!--end rate-wrapper-->
+
+
 		</div>
 		<!--end cslide__head-inner-->
 		{% endif %}
