@@ -1,0 +1,32 @@
+<div class="js-popup popup popup_cities" data-popup="cities">
+  <div class="js-popup-overlay popup__overlay"></div>
+  <div class="popup__content js-popup-content">
+    <div class="popup__close js-close-popup ">X</div>
+    <div class="pcities">
+      <h4 class="pcities__title">
+        Выберите ваш город
+      </h4>
+      <div class="pcities__input">
+        <input type="text" class="textfield" placeholder="Введите название города">
+      </div>
+      <div class="pcities__items">
+        {% for item in cities %}
+        <div class="pcities__item">
+          <div class="item">
+            <div class="item__letter">
+              {{item.letter}}
+            </div>
+            <ul class="item__list">
+              {% for city in item.cities %}
+              <li>
+                <a href="">{{city}}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

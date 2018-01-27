@@ -84,6 +84,10 @@
 		margin-bottom: 7px
 		font-size: 13px
 		line-height: 1.55
+		&--mb-14
+			margin-bottom: 14px
+		&--mb-none
+			margin-bottom: 0
 	&__person
 		margin-bottom: 17px
 		span
@@ -100,7 +104,22 @@
 		padding: 0 9px
 		.metro-info , .location-info, .worktime-info
 			margin-bottom: 8px
-
+	&__recomend
+		padding-left: 22px
+		color: #77d262
+		+PExtra
+		font-size: 16px
+		position: relative
+		i
+			position: absolute
+			top: 0
+			left: 0
+			+s(heart-green)
+	&__read-more
+		a
+			color: $cyan
+			+OSSemi
+			font-size: 13px
 	.more-link
 		margin-bottom: 18px
 		display: block

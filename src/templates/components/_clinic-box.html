@@ -1,5 +1,5 @@
 <!-- begin clinic-box -->
-<div class="clinic-box">
+<div class="clinic-box {{clinicBox.mod }}">
   <!-- begin clinic-box__left -->
   <div class="clinic-box__left">
     <!-- begin clinic-box__rate -->
@@ -48,8 +48,15 @@
     <!-- end clinic-box__rate -->
 
     <div class="clinic-box__content">
+      {% if clinicBox.title %}
       <h4 class="clinic-box__title">{{ clinicBox.title | safe }}</h4>
+      {% endif %}
 
+      {% if clinicBox.titlelink %}
+      <a href="{{ clinicBox.titlelink.url }}" class="clinic-box__titlelink">{{ clinicBox.titlelink.name | safe }}</a>
+      {% endif %}
+
+      {% if clinicBox.taglist %}
       <!-- begin clinic-box__tagi -->
       <div class="clinic-box__tagi">
         <div class="tagi">
@@ -61,19 +68,53 @@
         </div>
       </div>
       <!-- end clinic-box__tagi -->
+      {% endif %}
 
-
+      {% if clinicBox.textlist %}
       <!-- begin clinic-box__text-list -->
-      <div class="clinic-box__text-list">
-        <ul class="text-list">
+      <div class="clinic-box__list">
+        <ul class="list">
           {% for i in clinicBox.textlist %}
-          <li>{{ i | safe }}</li>
+          <li class="list__item">{{ i | safe }}</li>
           {% endfor %}
         </ul>
       </div>
       <!-- end clinic-box__text-list -->
+      {% endif %}
 
+      {% if clinicBox.tablelist %}
+      <!-- begin clinic-box__tablelist -->
+      <div class="clinic-box__tablelist">
+        <div class="tablelist">
+          {% for row in clinicBox.tablelist %}
+          <div class="tablelist__row">
+            {% for i in row %}
+            <div class="tablelist__col">{{ i | safe }}</div>
+            {% endfor %}
+          </div>
+          {% endfor%}
+        </div>
+      </div>
+      <!-- end clinic-box__tablelist -->
+      {% endif %}
+
+
+      {% if clinicBox.leftButton %}
       <a href="#" class="button button_cyan">Записаться</a>
+      {% endif %}
+
+      {% if clinicBox.rightButton %}
+      <!-- begin clinic-box__more -->
+      <div class="clinic-box__more">
+        <a href="" class="more-link more-link--sm">
+          <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+          <span>Подробнее о клинике</span>
+        </a>
+        <a href="#" class="btn btn--green">Записаться</a>
+      </div>
+      <!-- end clinic-box__more -->
+      {% endif %}
+
     </div>
 
   </div>
@@ -84,25 +125,21 @@
     <!-- begin clinic-box__map -->
     <div class="clinic-box__map">
       <a class="map-link js-popup-link" href="#" data-popup="">
-        <img src="img/map-link-img-default.jpg" alt="alt">
+        <img src="img/clinic-map.jpg" alt="alt">
       </a>
     </div>
     <!-- end clinic-box__map -->
 
-    <!-- begin clinic-box__meta -->
-    <div class="clinic-box__meta">
-      <div class="location-info">
-        <i class="location-info__icon">{{ mixins.icon('location') }}</i>
-        <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>
-      </div>
-      <div class="metro-info">
-        {{ clinicBox.metro | safe }}
-      </div>
-      <div class="worktime-info">
-        <p>{{ clinicBox.worktime | safe }}</p>
-      </div>
+    <div class="location-info">
+      <i class="location-info__icon">{{ mixins.icon('location') }}</i>
+      <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>
     </div>
-    <!-- end clinic-box__meta -->
+    <div class="metro-info">
+      {{ clinicBox.metro | safe }}
+    </div>
+    <div class="worktime-info">
+      <p>{{ clinicBox.worktime | safe }}</p>
+    </div>
   </div>
   <!-- end clinic-box__right -->
 </div>

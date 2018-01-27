@@ -1,0 +1,40 @@
+<!-- begin clinic-gallery -->
+	<div class="clinic-gallery js-gallery">
+		<h2 class="clinic-gallery__title">Фото клиники</h2>
+		<div class="clinic-gallery__side clinic-gallery__side_sm">
+			<div class="clinic-gallery__slider js-gallery-slider">
+				{% for item in gallery %}
+				<div class="clinic-gallery__slide">
+					<div class="clinic-gallery__image" style="background-image: url({{ item.image }})"></div>
+					<div class="clinic-gallery__text">{{ item.text }}</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="clinic-gallery__footer">
+				<div class="btnPrev">
+					<i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192 320" enable-background="new 0 0 192 320" xml:space="preserve">
+							<polygon points="192,300.6 171.3,320 0,160 171.3,0 192,19.3 41.5,160 "/>
+						</svg>
+					</i>
+				</div>
+				<div class="btnNext">
+					<i>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192 320" enable-background="new 0 0 192 320" xml:space="preserve">
+						<polygon points="0,19.4 20.7,0 192,160 20.7,320 0,300.7 150.5,160 "/>
+						</svg>
+					</i>
+				</div>
+			</div>
+		</div>
+		<div class="clinic-gallery__side clinic-gallery__side_lg">
+			<div class="clinic-gallery__grid">
+				{% for item in gallery %}
+				<div class="clinic-gallery__item js-gallery-pagination {% if loop.index === 1%}is-active{% endif %}" data-slide-index="{{ loop.index - 1 }}">
+					<div class="clinic-gallery__item-in" style="background-image: url({{ item.image }})"></div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+<!-- end clinic-gallery -->

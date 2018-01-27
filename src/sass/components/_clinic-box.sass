@@ -15,9 +15,56 @@
 		border-top: 1px solid $gray-border
 		padding-top: 20px
 	&__rate
-		margin-bottom: 20px
+		margin-bottom: 18px
 		display: flex
 		justify-content: space-between
+	&__title
+		margin-bottom: 10px
+		+PSemi
+	&__titlelink
+		color: $cyan
+		font-size: 20px
+		+PSemi
+		margin-bottom: 10px
+		+trans
+		display: block
+		&:hover
+			opacity: .7
+	&__list
+		font-size: 14px
+		.list
+			margin: 15px 0
+			&__item
+				&:before
+					top: -1px
+	&__tablelist
+		margin-bottom: 20px
+	&__more
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__map
+		border-radius: 6px
+		overflow: hidden
+		margin-bottom: 20px
+		img
+			width: 100%
+			height: 254px
+			object-fit: cover
+			display: block
+	.location-info
+		font-size: 16px
+		padding-left: 25px
+	.metro-info
+		font-size: 16px
+		padding-left: 25px
+		&:before
+			top: 4px
+	.worktime-info
+		font-size: 16px
+		padding-left: 25px
+		&:before
+			top: 2px
 	.count-users
 		color: $gray-simple
 	.rate-stars
@@ -26,4 +73,23 @@
 		margin-left: 20px
 	.rate-number
 		margin-left: 20px
+	&_mini
+		.location-info
+			font-size: 14px
+			padding-left: 22px
+		.metro-info
+			font-size: 14px
+			padding-left: 22px
+			&:before
+				top: 2px
+		.worktime-info
+			font-size: 14px
+			padding-left: 22px
+			&:before
+				top: 0px
+		.clinic-box__map
+			img
+				height: 140px
+				object-position: 50% 0
+
 

@@ -1,0 +1,16 @@
+.tablelist
+	border-radius: 3px
+	overflow: hidden
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		min-height: 30px
+		padding: 0 19px
+		&:nth-child(odd)
+			background-color: $little-grey
+		&:nth-child(even)
+			background-color: $gray-hard
+	&__col
+		+OSSemi
+		font-size: 14px

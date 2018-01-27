@@ -179,7 +179,7 @@ sliderData2: [
 	countUsersMode: 'count-users--mb-12 count-users--gray',
 	countUsersBoughtMode: 'count-users__bought--cyan',
 	countUsersGladMode: 'count-users__glad--green',
-	slideTextMode: 'cslide__text--mb-16',
+	slideTextMode: 'cslide__text--mb-14',
 	countUsersBought: '70',
 	countUsersGlad: '65',
 	userIconMode: '',
@@ -188,6 +188,67 @@ sliderData2: [
 	infoMode: 'cslide__info--gray',
 	sliderCountBlock: true,
 	recomend: true,
+}
+]
+sliderData3: [
+
+{
+	sliderParentMode: ' js-slider-count-parent',
+	sliderMode: 'js-slider-count',
+	headBlock: true,
+	headMode: '',
+	rateBlock: true,
+	rateStarsMode: 'rate-stars--green',
+	stars: [
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: ''
+	},
+	{
+		starMode: ''
+	}
+	],
+	rateNumberMode: 'rate-number--orange',
+	rateNumber: '3.7',
+	testSlides: [
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	},
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	}
+	],
+	slideMode: '',
+	countUsers: true,
+	countUsersMode: 'count-users--mb-16 count-users--gray',
+	countUsersBoughtMode: 'count-users__bought--cyan',
+	countUsersGladMode: 'count-users__glad--green',
+	slideTextMode: 'cslide__text--mb-none',
+	countUsersBought: '70',
+	countUsersGlad: '65',
+	userIconMode: '',
+	heartIconMode: '',
+	info: 'Анна, 22.12.17',
+	infoMode: 'cslide__info--gray',
+	readMore: true,
+	sliderCountBlock: true
+
 }
 ]
 metaFilters: [
@@ -309,6 +370,11 @@ sales: [
 {% endfor %}
 <div style="max-width: 400px; margin: 0 auto">
 	{% for test in sliderData2 %}
+	{% include "components/_count-slider.html" %}
+	{% endfor %}
+</div>
+<div style="max-width: 280px; margin: 0 auto">
+	{% for test in sliderData3 %}
 	{% include "components/_count-slider.html" %}
 	{% endfor %}
 </div>
