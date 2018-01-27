@@ -1,9 +1,9 @@
 {% for testGlobal in sales %}
 <!--begin section section-sales-->
-<section class="section section-sales">
+<section class="section section-sales {{testGlobal.sectionMode}}">
 	<!--begin container-->
 	<div class="container">
-		<h2 class="section-sales__title">{{testGlobal.title}}</h2>
+		<h3 class="h3 section-sales__title">{{testGlobal.title}}</h3>
 		{% if testGlobal.aftHeadText %}
 		<p class="section-sales__after-head-text">{{testGlobal.aftHeadText}}</p>
 		{% endif %}
@@ -14,6 +14,9 @@
 			{% endfor %}
 		</div>
 		<!--end section-sales__list-->
+		<div class="section-sales__center">
+			<a class="button button_border section-sales__btn-more" href="#">Показать все акции</a>
+		</div>
 	</div>
 	<!--end container-->
 </section>

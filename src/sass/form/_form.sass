@@ -5,6 +5,10 @@
 		display: inline-block
 		&--lg
 			width: 340px
+			+md
+				width: 300px
+			+sm
+				width: 100%
 			.custom-select
 				border-radius: 30px
 		&--icon
@@ -52,6 +56,7 @@
 		width: 100%
 	&.is-open
 		.custom-select__dropdown
+			z-index: 1
 			visibility: visible
 			opacity: 1
 		.custom-select__field

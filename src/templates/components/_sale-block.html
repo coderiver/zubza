@@ -1,6 +1,49 @@
 <!--begin sale-block-->
-<div class="sale-block">
-	
+<div class="sale-block {{test.mode}}">
+	<!--begin sale-block__descr-->
+	<div class="sale-block__descr">
+		<div class="sale-block__head">
+			<!--begin sale-block__head-inner-->
+			<div class="sale-block__head-inner">
+				<h5 class="sale-block__title">{{test.title}}</h5>
+				<span class="sale-block__old-price">{{test.oldPrice}}</span>
+				<span class="sale-block__price">{{test.price}}</span>
+			</div>
+			<!--end sale-block__head-inner-->
+			<p class="sale-block__head-date">{{test.date}}</p>
+			<!--begin sale-block__text-->
+			<div class="sale-block__text">
+				<p>{{test.text}}</p>
+			</div>
+			<!--end sale-block__text-->
+			<a class="sale-block__places-name" href="#">{{test.name}}</a>
+		</div>
+	</div>
+	<!--end sale-block__descr-->
+	<!--begin sale-block__map-->
+	<div class="sale-block__map">
+		{% include "components/_map-link.html" %}
+	</div>
+	<!--end sale-block__map-->
+	<!--begin sale-block__info-->
+	<div class="sale-block__info">
+		<div class="location-info">
+			<i class="location-info__icon">{{ mixins.icon('location') }}</i>
+			<a href="{{ test.locationUrl }}">{{ test.location | safe }}</a>
+		</div>
+		<div class="metro-info">
+			{{test.locationMetro | safe}}
+		</div>
+		<div class="worktime-info">
+			<p>{{ test.workingTime | safe }}</p>
+		</div>
+		<div class="sale-block__btn-wrapper">
+			<a class="button button_cyan sale-block__btn" href="#">{{ test.btn | safe }}</a>
+		</div>
+	</div>
+	<!--end sale-block__info-->
+	<div class="perc-icon sale-block__icon">
+		<i></i>
+	</div>
 </div>
 <!--end sale-block-->
-		
