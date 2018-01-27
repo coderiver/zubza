@@ -6,31 +6,7 @@
 
     <div class="rel-posts__inner">
       {% for post in relativePosts.posts %}
-      <!-- begin post-block -->
-      <a href="{{ post.url }}" class="post-block">
-        <!-- begin post-block__img -->
-        <div class="post-block__img">
-          <img src="{{ post.img }}" alt="">
-        </div>
-        <!-- end post-block__img -->
-
-        <!-- begin post-block__data -->
-        <div class="post-block__data">
-          <h5 class="post-block__title">{{ post.title }}</h5>
-          <div class="post-block__text">{{ post.text }}</div>
-        </div>
-        <!-- end post-block__data -->
-
-        <!-- begin post-block__meta -->
-        <div class="post-block__meta">
-          <div class="meta-tag">
-            <div class="meta-tag__circle" style="background-color: {{ post.tagcolor }};"></div>
-            {{ post.tagname }}
-          </div>
-        </div>
-        <!-- end post-block__meta -->
-      </a>
-      <!-- end post-block -->
+        {% include "components/_post-block.html" %}
       {% endfor %}
     </div>
 

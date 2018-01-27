@@ -16,11 +16,33 @@
 				fill: $white
 		&:last-of-type
 			margin-right: 0
+	&--green
+		.rate-stars__item
+			svg
+				fill: #e7e9e9
+				
+			&.is-color
+				svg
+					fill: $green
+	&--sm
+		padding-left: 9px
+		.rate-stars__item
+			svg
+				font-size: 16px
 .rate-number
-	color: $white
+	// color: $white
 	text-transform: uppercase
 	font-size: 11px
 	+PBold
 	span
 		font-size: 24px
 		+PBlack
+	&--orange
+		color: $gray-middle
+		span
+			
+			color: $yellow
+	&--sm
+		padding-right: 9px
+		span
+			font-size: 19px

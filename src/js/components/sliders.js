@@ -37,5 +37,14 @@ function sliders() {
   });
 
 
+  $('.js-dots-slider-oneslide').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1, 
+    prevArrow: btnPrev,
+    nextArrow: btnNext,
+    dots: true
+  });
+
 };
 module.exports = sliders;

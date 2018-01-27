@@ -36,7 +36,8 @@ faqSection: [
 
 reviews: [
 {
-	sliderMode: 'count-slider--w280 js-slider-count-parent',
+	sliderParentMode: 'count-slider--w280 js-slider-count-parent',
+	sliderMode: 'js-slider-count',
 	testSlides: [
 	{
 		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
@@ -92,6 +93,64 @@ reviews: [
 	location: false,
 	recomend: false,
 	readMore: false
+}
+]
+hospitalDotsSlider: [
+{
+	sliderParentMode: 'count-slider--w280 count-slider--dots',
+	sliderMode: 'js-dots-slider-oneslide',
+	testSlides: [
+	{
+		text: ''
+	},
+	{
+		text: ''
+	}
+	,
+	{
+		text: ''
+	}
+	,
+	{
+		text: ''
+	}
+	],
+	slideMode: '',
+	headBlock: true,
+	headMode: 'cslide__head--cyan-border',
+	headText: '<a href="#">Центр стоматологии «Интан»</a>',
+	rateBlock: true,
+	rateStarsMode: 'rate-stars--green rate-stars--sm',
+	stars: [
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: ''
+	},
+	{
+		starMode: ''
+	}
+	],
+	rateNumberMode: 'rate-number--orange rate-number--sm',
+	rateNumber: '3.7',
+	countUsers: false,
+
+	btn: 'Все стоматологии протезирования',
+	btnMode: 'btn btn--green',
+	sliderCountBlock: false,
+	location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+	locationMode: 'location-info--dashed',
+	locationMetro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>',
+	moreLink: 'Подробнее о клинике',
+	workingTime: false
+
 }
 ]
 metaFilters: [
@@ -159,11 +218,45 @@ sales: [
 		oldPrice: '16000 руб.',
 		price: '12000 руб.',
 		date: 'Срок действия: с 20 декабря по 25 декабря 2017 г.',
-		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых',
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых',
 		name: 'Стоматология «Все Свои»',
 		maplinkMode: '',
 		popupData: '',
-		mapImg: 'map-link-img-default'
+		mapImg: 'map-link-img-default',
+		location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+		locationMetro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+		workingTime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+		btn: 'Записаться'
+	},
+	{
+		title: 'Имплантаты Израиль марки Alfa Bio - ',
+		oldPrice: '16000 руб.',
+		price: '12000 руб.',
+		date: 'Срок действия: с 20 декабря по 25 декабря 2017 г.',
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых',
+		name: 'Стоматология «Все Свои»',
+		maplinkMode: '',
+		popupData: '',
+		mapImg: 'map-link-img-default',
+		location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+		locationMetro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+		workingTime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+		btn: 'Записаться'
+	},
+	{
+		title: 'Имплантаты Израиль марки Alfa Bio - ',
+		oldPrice: '16000 руб.',
+		price: '12000 руб.',
+		date: 'Срок действия: с 20 декабря по 25 декабря 2017 г.',
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых',
+		name: 'Стоматология «Все Свои»',
+		maplinkMode: '',
+		popupData: '',
+		mapImg: 'map-link-img-default',
+		location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+		locationMetro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+		workingTime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+		btn: 'Записаться'
 	}
 	]
 }
@@ -177,6 +270,19 @@ sales: [
 {% for test in reviews %}
 {% include "components/_count-slider.html" %}
 {% endfor %}
+
+<!-- begin rec-hospitals -->
+<div class="rec-hospitals">
+	<h4 class="rec-hospitals__title">Рекомендованные клиники</h4>
+	<!-- begin rec-hospitals__inner -->
+	<div class="rec-hospitals__inner">
+		{% for test in hospitalDotsSlider %}
+		{% include "components/_count-slider.html" %}
+		{% endfor %}
+	</div>
+	<!-- end rec-hospitals__inner -->
+</div>
+<!-- end rec-hospitals -->
 
 {% include "components/_meta-filters.html" %}
 {% include "components/_anchors.html" %}
