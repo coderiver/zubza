@@ -4,44 +4,105 @@
   <div class="clinic-box__left">
     <!-- begin clinic-box__rate -->
     <div class="clinic-box__rate">
-      {% include "components/_rate-wrapper.html" %}
-      {% include "components/_count-users.html" %}
+
+      <!--begin count-users-->
+      <div class="count-users {{ clinicBox.users.mode }}">
+        <div class="count-users__bought {{ clinicBox.users.boughtMode }}">
+          <div>
+            <span>{{ clinicBox.users.bought }}</span>
+            <i class="count-users__icon-user"></i>
+          </div>
+          <p>ЗАПИСАЛОСЬ</p>
+        </div>
+        <span class="count-users__separator">/</span>
+        <div class="count-users__glad {{ clinicBox.users.gladMode }}">
+          <div>
+            <span>{{ clinicBox.users.glad }}</span>
+            <i class="count-users__icon-heart"></i>
+          </div>
+          <p>ДОВОЛЬНЫ</p>
+        </div>
+      </div>
+      <!--end count-users-->
+
+      <!--begin rate-wrapper-->
+      <div class="rate-wrapper">
+        <div class="rate-stars">
+          {% for star in clinicBox.rate.stars %}
+          <i class="rate-stars__item {{ star.starMode }}">
+            {{ mixins.icon('star') }}
+          </i>
+          {% endfor %}
+        </div>
+
+        <!--begin rate-number-->
+        <div class="rate-number">
+          рейтинг <span>{{ clinicBox.rate.number }}</span>
+        </div>
+        <!--end rate-number-->
+
+      </div>
+      <!--end rate-wrapper-->
+
     </div>
     <!-- end clinic-box__rate -->
 
-    <h4 class="clinic-box__title">Стоматология «Все Свои» ведет прием  по следующим специализациям</h4>
+    <div class="clinic-box__content">
+      <h4 class="clinic-box__title">{{ clinicBox.title | safe }}</h4>
 
-    <!-- begin clinic-box__tagi -->
-    <div class="clinic-box__tagi">
-      <div class="tagi">
-        <ul>
-          {% for i in list %}
-          <li><a href="#">{{ i }}</a></li>
+      <!-- begin clinic-box__tagi -->
+      <div class="clinic-box__tagi">
+        <div class="tagi">
+          <ul>
+            {% for i in clinicBox.taglist %}
+            <li><a href="#">{{ i | safe }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <!-- end clinic-box__tagi -->
+
+
+      <!-- begin clinic-box__text-list -->
+      <div class="clinic-box__text-list">
+        <ul class="text-list">
+          {% for i in clinicBox.textlist %}
+          <li>{{ i | safe }}</li>
           {% endfor %}
         </ul>
       </div>
+      <!-- end clinic-box__text-list -->
+
+      <a href="#" class="button button_cyan">Записаться</a>
     </div>
-    <!-- end clinic-box__tagi -->
-
-
-    <!-- begin clinic-box__text-list -->
-    <div class="clinic-box__text-list">
-      <ul class="text-list">
-        {% for i in list %}
-        <li>{{ i }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    <!-- end clinic-box__text-list -->
-
-    <a href="#" class="button button_cyan">Записаться</a>
 
   </div>
   <!-- end clinic-box__left -->
 
   <!-- begin clinic-box__right -->
   <div class="clinic-box__right">
+    <!-- begin clinic-box__map -->
+    <div class="clinic-box__map">
+      <a class="map-link js-popup-link" href="#" data-popup="">
+        <img src="img/map-link-img-default.jpg" alt="alt">
+      </a>
+    </div>
+    <!-- end clinic-box__map -->
 
+    <!-- begin clinic-box__meta -->
+    <div class="clinic-box__meta">
+      <div class="location-info">
+        <i class="location-info__icon">{{ mixins.icon('location') }}</i>
+        <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>
+      </div>
+      <div class="metro-info">
+        {{ clinicBox.metro | safe }}
+      </div>
+      <div class="worktime-info">
+        <p>{{ clinicBox.worktime | safe }}</p>
+      </div>
+    </div>
+    <!-- end clinic-box__meta -->
   </div>
   <!-- end clinic-box__right -->
 </div>
