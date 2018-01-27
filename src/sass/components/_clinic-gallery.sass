@@ -1,0 +1,72 @@
+.clinic-gallery
+	font-size: 0 
+	max-width: 1180px
+	margin: 0 auto
+	&__title
+		font-size: 30px
+		margin-bottom: 28px  
+		+PSemi
+	&__side
+		display: inline-block
+		font-size: 16px
+		vertical-align: top
+		width: 62% 
+		&_sm
+			width: 38%
+		&_lg
+			padding-left: 30px
+	&__footer
+		position: relative
+		margin: 0 auto 
+		width: 275px
+	&__image
+		border-radius: 10px
+		height: 300px 
+		width: 100%
+	&__text
+		font-size: 14px 
+		margin: 20px auto 0
+		max-width: 200px 
+		text-align: center
+		opacity: 0
+	&__grid
+		font-size: 0 
+	&__item
+		cursor: pointer;
+		border-radius: 5px
+		display: inline-block 
+		height: 134px
+		position: relative 
+		margin-right: 5%
+		margin-bottom: 30px 
+		width: 30%
+		overflow: hidden;
+		&:before
+			+pseudo
+			content: none
+			height: 100%
+			width: 100%
+			background-color: $cyan
+			opacity: 0.6   
+		&:nth-of-type(3n)
+			margin-right: 0
+		&-in
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center
+			height: 100% 
+			width: 100%
+		&.is-active
+			&:before
+				content: ''
+	.btnPrev
+		left: 0
+	.btnNext
+		right: 0
+	.btnPrev,
+	.btnNext
+		top: -24px
+	.slick-current
+		.clinic-gallery__text
+			opacity: 1
+			transition: opacity 0.4s ease-out 0.4s
