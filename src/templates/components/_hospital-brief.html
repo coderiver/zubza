@@ -1,0 +1,42 @@
+<!-- begin hospital-brief -->
+<div class="hospital-brief">
+  <a href="{{ test.url }}" class="hospital-brief__name">{{ test.name | safe }}</a>
+
+  <div class="hospital-brief__rate">
+
+    {% include "components/_rate-stars.html" %}
+    {% include "components/_rate-number.html" %}
+
+  </div>
+
+  <div class="hospital-brief__location">
+    <div class="location-info">
+      <i class="location-info__icon">{{ mixins.icon('location') }}</i>
+      <a href="{{ test.locationUrl }}">{{ test.location | safe }}</a>
+    </div>
+  </div>
+
+  <div class="hospital-brief__metro">
+    <div class="metro-info">
+      {% set comma = joiner() %}
+      {% for i in test.metro -%}
+      <a href="{{ i.url }}">
+        {{ comma() }} {{ i.name | safe }}
+        {% if i.distance %}
+        <span class="gray-color">({{ i.distance | safe }})</span>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="hospital-brief__more">
+    <a class="more-link more-link--sm" href=""><span>Подробнее о клинике</span></a>
+  </div>
+
+  <div class="hospital-brief__all">
+    <button class="button">{{ test.allButton }}</button>
+  </div>
+
+</div>
+<!-- end hospital-brief -->
