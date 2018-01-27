@@ -34,7 +34,7 @@ faqSection: [
 }
 ]
 
-reviews: [
+sliderData: [
 {
 	sliderParentMode: 'count-slider--w280 js-slider-count-parent',
 	sliderMode: 'js-slider-count',
@@ -153,6 +153,43 @@ hospitalDotsSlider: [
 
 }
 ]
+sliderData2: [
+
+{
+	sliderParentMode: ' js-slider-count-parent',
+	sliderMode: 'js-slider-count',
+	testSlides: [
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	},
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+	}
+	],
+	slideMode: '',
+	countUsers: true,
+	countUsersMode: 'count-users--mb-12 count-users--gray',
+	countUsersBoughtMode: 'count-users__bought--cyan',
+	countUsersGladMode: 'count-users__glad--green',
+	slideTextMode: 'cslide__text--mb-16',
+	countUsersBought: '70',
+	countUsersGlad: '65',
+	userIconMode: '',
+	heartIconMode: '',
+	info: 'Анна, 22.12.17',
+	infoMode: 'cslide__info--gray',
+	sliderCountBlock: true,
+	recomend: true,
+}
+]
 metaFilters: [
 {
 	metaMode: 'meta-filters--w-830 meta-filters--mb-31',
@@ -267,10 +304,14 @@ sales: [
 {% block content %}
 {% include "components/_faq-section.html" %}
 
-{% for test in reviews %}
+{% for test in sliderData %}
 {% include "components/_count-slider.html" %}
 {% endfor %}
-
+<div style="max-width: 400px; margin: 0 auto">
+	{% for test in sliderData2 %}
+	{% include "components/_count-slider.html" %}
+	{% endfor %}
+</div>
 <!-- begin rec-hospitals -->
 <div class="rec-hospitals">
 	<h4 class="rec-hospitals__title">Рекомендованные клиники</h4>
