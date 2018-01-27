@@ -1,0 +1,55 @@
+.clinics-nearby
+	background-color: $cyan
+	padding: 51px 0 46px
+	position: relative
+	&__bg
+		display: block
+		background-repeat: no-repeat
+		background-position: 0 50%
+		background-size: cover
+		+coverdiv
+		z-index: 0
+	&__title
+		text-shadow: 0 3px 0 rgba(72, 61, 224, 0.24)
+		color: #ffffff
+		position: relative
+		+PSemi
+		margin-bottom: 33px
+		padding-left: 20px
+		+md
+			text-align: center
+			text-shadow: none
+	&__inner
+		max-width: 480px
+		margin-left: auto
+		position: relative
+		+md
+			margin-right: auto
+	&__cols
+		display: flex
+		justify-content: space-between
+	&__col
+		padding-right: 60px
+		+md
+			padding-right: 30px
+		&:last-child
+			+md
+				padding-right: 0
+	&__subtitle
+		font-size: 17px
+		color: $dark-blue
+		margin-bottom: 20px
+		+md
+			font-size: 14px
+	&__list
+		font-size: 17px
+		+md
+			font-size: 14px
+		li
+			margin-bottom: 20px
+			a
+				color: #fff
+				margin-bottom: 16px
+				+trans
+				&:hover
+					opacity: .7
