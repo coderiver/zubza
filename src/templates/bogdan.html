@@ -12,7 +12,7 @@ logo: 'blue'
 	}
 </style>
 <div class="container">
-	<div style="width: calc(1180px - 280px); float: left; height: 2000px">
+	<div style="width: calc(1180px - 280px); float: left;">
 		{% include './components/_costs.html' %}
 	</div>
 	<div style="width: 280px; float: right">
@@ -712,6 +712,38 @@ logo: 'blue'
 	</div>
 </div>
 
+
+<div class="container" style="width: 1280px;">
+	{% set list = [{
+		item: 'Детские стоматологии'
+	}, {
+		item: 'Клиники ортодонтии'
+	}, {
+		item: 'Протезирование'
+	}, {
+		item: 'Хирургия'
+	}, {
+		item: 'Ортопедия'
+	}, {
+		item: 'Протезирование'
+	}, {
+		item: 'Хирургия'
+	}, {
+		item: 'Ортопедия'
+	}, {
+		item: 'Протезирование'
+	}, {
+		item: 'Хирургия'
+	}, {
+		item: 'Ортопедия'
+	}, {
+		item: 'Протезирование'
+	}] %}
+	{{mixins.filters({
+		title: 'Поиск по статьям',
+		list: list
+	})}}
+</div>
 
 {% include "components/_footer.html" %}
 

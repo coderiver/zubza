@@ -1,3 +1,26 @@
 {% macro icon(i) %}
 <svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
+
+
+{% macro filters(config) %}
+
+<div class="filters">
+	<div class="filters__field">
+		<div class="filters__title">{{config.title}}</div>
+		<div class="filters__textfield">
+			<input type="text" class="textfield" placeholder="Поиск">
+		</div>
+	</div>
+	<div class="filters__list">
+		<div class="tagi">
+			<ul>
+				{% for item in config.list %}
+				<li><a href="#">{{item.item}}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endmacro %}
