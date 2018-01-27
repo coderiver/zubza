@@ -1,0 +1,29 @@
+.pcities
+	&__title
+		margin-bottom: 15px
+	&__input
+		width: 300px
+		margin-bottom: 20px
+	&__items
+		column-count: 5
+		column-gap: 40px
+	&__item
+		margin-bottom: 25px
+		display: inline-block
+		width: 100%
+		overflow: hidden
+		break-inside: avoid-column
+		-webkit-column-break-inside: avoid
+		.item
+			display: flex
+			align-items: flex-start
+			&__letter
+				+PBold
+				font-size: 20px
+				margin-right: 10px
+			&__list
+				text-align: left
+				li
+					font-size: 14px
+					a
+						color: $cyan
