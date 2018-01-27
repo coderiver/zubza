@@ -137,6 +137,13 @@ services:
         name: 'Виниры'
         value: 'от 7000 р.'
 
+contents:
+  - 'Протезирование зубов'
+  - 'Виды протезирования зубов'
+  - 'Самые низкие цены на протезирование'
+  - 'Врачи-хирурги'
+  - 'Цены в Москве на протезирование'
+  - 'Стоматологии Москвы на карте'
 
 ---
 {% extends "layouts/_layout.html" %}
@@ -144,5 +151,6 @@ services:
 {% block content %}
 
 {% include "components/_services.html" %}
+{% include "components/_articles-contents.html" %}
 
 {% endblock %}
