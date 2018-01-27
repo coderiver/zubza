@@ -6,19 +6,26 @@
 	width: 100vw
 	height: 100vh
 	z-index: 15
+	overflow-y: auto
+	background: rgba(#000, 0.5)
 	+m
 		overflow-y: scroll
 	&__overlay
-		min-height: 100%
-		background: rgba(#000, 0.5)
+		height: 100%
+		position: absolute
+		width: 100%
 		+m
 			display: none
 	&__content
 		padding: 30px 20px 45px
-		+vcenter
+		left: 50%
+		top: 15%
+		position: absolute
+		transform: translateX(-50%)
 		width: 400px
 		background-color: white
 		text-align: center
+		margin-bottom: 2vh
 		+m
 			overflow-y: scroll
 			width: 100%
@@ -29,6 +36,7 @@
 			left: 0
 			transform: translate(0, 0)
 			padding: 60px 20px 25px
+			margin-bottom: 0
 	&__close
 		position: absolute
 		width: 40px
@@ -52,3 +60,8 @@
 			// +s(close)
 		&:hover
 			// background: $orange3
+	&_cities
+		.popup__content
+			text-align: left
+			width: 1000px
+
