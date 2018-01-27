@@ -16,7 +16,11 @@
       <div class="header">
         <div class="container header__in">
           <div class="header__logo"> <a href="#"><img src="img/logo-blue.svg" alt=""></a> </div>
-          <div class="header__select"> </div>
+          <div class="header__select cities-select js-popup-link" data-popup="cities">
+            <div class="cities-select__field">Москва</div>
+            <div class="cities-select__label"> <svg class="icon icon-marker"><use xlink:href="img/sprite.svg#icon-marker"></use></svg> </div>
+            <div class="cities-select__arrow"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> </div>
+          </div>
           <div class="header__menu">
             <div class="menu">
               <ul>
@@ -1111,6 +1115,17 @@
           </div>
         </div>
       </footer>
+      <div class="js-popup popup popup_cities" data-popup="cities">
+        <div class="js-popup-overlay popup__overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="pcities">
+            <h4 class="pcities__title"> Выберите ваш город </h4>
+            <div class="pcities__input"> <input type="text" class="textfield" placeholder="Введите название города"> </div>
+            <div class="pcities__items"> </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
