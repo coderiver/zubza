@@ -1,0 +1,38 @@
+.pagination
+	&__text
+		color: $cyan
+		display: inline-block
+		vertical-align: middle
+		+PBold
+	&__link-list
+		display: inline-block
+		font-size: 0 
+		margin-left: 10px
+		vertical-align: middle
+	&__item
+		color: $cyan
+		font-size: 16px
+		display: inline-block
+		height: 30px
+		margin-right: 20px
+		vertical-align: middle
+		width: 30px
+		&:last-of-type
+			margin-right: 0
+	&__link
+		background-color: $almost-white 
+		border-radius: 4px
+		color: $cyan
+		display: block
+		height: 100%
+		text-align: center
+		padding: 5px 0
+		width: 100% 
+		&:hover,
+		&.is-active
+			background-color: $cyan
+			color: $white
+	span.pagination__link
+		background-color: transparent
+		&:hover
+			color: $cyan

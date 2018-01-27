@@ -137,6 +137,11 @@ services:
         name: 'Виниры'
         value: 'от 7000 р.'
 
+pagination:
+  max: 22
+  min: 5
+  text: 'Больше статей:'
+
 contents:
   - 'Протезирование зубов'
   - 'Виды протезирования зубов'
@@ -151,6 +156,10 @@ contents:
 {% block content %}
 
 {% include "components/_services.html" %}
+<br/>
 {% include "components/_articles-contents.html" %}
+<br />
+{% include "components/_pagination.html" %}
+<br />
 
 {% endblock %}

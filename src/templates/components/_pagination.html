@@ -1,0 +1,20 @@
+<!-- begin pagination -->
+	<div class="pagination">
+		<div class="pagination__in">
+			<span class="pagination__text">{{ pagination.text }}</span>
+			<ul class="pagination__link-list">
+				{% for i in range(0, pagination.min) %}
+				<li class="pagination__item {% if loop.index == 1 %}is-active{% endif %}">
+					<a href="#" class="pagination__link">{{ i + 1 }}</a>
+				</li>
+				{% endfor %}
+				<li class="pagination__item">
+					<span class="pagination__link">...</span>
+				</li>
+				<li class="pagination__item">
+					<a href="#" class="pagination__link">{{ pagination.max }}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!-- end pagination -->
