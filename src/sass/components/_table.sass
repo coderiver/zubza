@@ -19,18 +19,60 @@
 		align-items: center
 		padding: 20px
 		border-right: 1px solid #edf0f1
+		+sm
+			padding: 35px 10px
 		&:nth-child(1)
 			width: 20%
+			+md
+				width: 25%
+			+sm
+				width: 60%
 		&:nth-child(2)
 			width: 15%
+			+md
+				width: 20%
+			+sm
+				width: 40%
 		&:nth-child(3)
 			width: 45%
+			+md
+				width: 55%
+			+sm
+				display: none
 		&:nth-child(4)
 			width: 20%
+			+md
+				display: none
 	&__price
 		font-size: 16px
 		color: $green
 		+PBold
 	&__desc
 		+OSLight
+	&__more-link
+		display: none
+		color: $cyan
+		font-size: 12px
+		position: relative
+		padding-right: 15px
+		span
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+			border-radius: 50%
+			width: 11px
+			height: 11px
+			background-color: #9ce3f1
+		.icon
+			position: absolute
+			font-size: 5px
+			transform: translate(-50%, -50%)
+			top: 50%
+			left: 55%
+			fill: #f6f9f9
+		+sm
+			display: inline-block
+	&__more-mobile
+		display: none
 
