@@ -1,0 +1,21 @@
+<!-- begin banner -->
+	<div class="banner">
+		<div class="banner__in">
+			<h2 class="banner__title">
+				{% for item in banner.title %}
+				{% if loop.index != 1 %}<br />{% endif %}
+				{{ item }}
+				{% endfor %}
+			</h2>
+			<div class="banner__grid">
+			{% for item in banner.items %}
+				<div class="banner__item">
+					<div class="banner__item-image" style="background-image: url({{ item.img }});"></div>
+					<div class="banner__item-title">{{ item.title }}</div>
+					<div class="banner__item-txt">{{ item.text }}</div>
+				</div>
+			{% endfor %}
+			</div>
+		</div>
+	</div>
+<!-- end banner -->

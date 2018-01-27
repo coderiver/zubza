@@ -193,6 +193,22 @@ gallery:
     image: './img/clinic-gallery-item.png'
     text: 'Оборудование в клинике'
 
+banner:
+  title: ['200 000 пациентов в год', 'доверяют нам свое здоровье и улыбку']
+  items:
+    -
+      title: '200 000'
+      text: 'клиник работают с Zubza'
+      img: './img/clinic.png'
+    -
+      title: '4 534 235'
+      text: 'врачей принимают по записи через Zubza '
+      img: './img/doctor.png'
+    -
+      title: '8 734 234'
+      text: 'проверенных отзыва о стоматологиях и врачах'
+      img: './img/feedback.png'
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -207,6 +223,8 @@ gallery:
 {% include "components/_articles-container.html" %}
 <br />
 {% include "components/_clinic-gallery.html" %}
+<br />
+{% include "components/_banner.html" %}
 <br />
 
 {% endblock %}
