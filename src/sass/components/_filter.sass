@@ -43,3 +43,43 @@
 				a
 					background-color: $cyan
 					color: #fff
+
+.checkbox
+	display: block 
+	margin-bottom: 5px
+	&:last-of-type
+		margin-bottom: 0 
+	input[type="checkbox"]
+		display: none
+		&:checked
+			& + .checkbox__item
+				&:after
+					content: ''
+	&__item
+		cursor: pointer
+		font-size: 14px 
+		padding-left: 25px
+		position: relative
+		+OSReg
+		&:before,
+		&:after
+			+pseudo
+			height: 15px
+			top: 3px
+			width: 15px 
+		&:before
+			+pseudo
+			background-color: $white
+			border: 1px solid $really-grey
+			border-radius: 5px
+			height: 15px
+			width: 15px
+		&:after
+			background-image: url('./../img/check.png')
+			background-size: 75% auto
+			background-position: top right
+			background-repeat: no-repeat
+			content: none
+		&:hover
+			color: $cyan
+		  

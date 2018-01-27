@@ -11,6 +11,11 @@
     <path d="M0 0l16 9.4L0 19c.6-3.2 1-6.4 1-9.6C1 6.3.6 3.1 0 0z" fill-rule="nonzero"/>
 </symbol><symbol id="icon-arrow" viewBox="0 0 325 198.5">
     <path d="M302.6 2.5L322 23.2 162 194.5 2 23.2 21.3 2.5 162 153z"/>
+</symbol><symbol id="icon-close" viewBox="0 0 14.9 14.9">
+    <title>
+        Delete 14.3
+    </title>
+    <path d="M9.5 7.4l4.9 4.9c.6.6.6 1.5 0 2.1s-1.5.6-2.1 0L7.4 9.5l-4.9 4.9c-.6.6-1.5.6-2.1 0s-.6-1.5 0-2.1l4.9-4.9L.4 2.5C-.2 1.9-.2 1 .4.4s1.5-.6 2.1 0l4.9 4.9L12.3.4c.6-.6 1.5-.6 2.1 0s.6 1.5 0 2.1L9.5 7.4z"/>
 </symbol><symbol id="icon-comp" viewBox="0 0 28.6 25.6">
     <style>
         .st0{fill:#fff}
