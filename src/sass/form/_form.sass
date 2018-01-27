@@ -1,0 +1,65 @@
+.form
+	&__select
+		display: none
+	&__field
+		display: inline-block
+		&--lg
+			width: 340px
+			.custom-select
+				border-radius: 30px
+		&--icon
+			.custom-select__field
+				margin-right: 30px
+				margin-left: 29px
+				padding-left: 24px
+				position: relative
+				.icon
+					transition: all 0.3s
+					height: 12px
+					width: 18px
+					stroke: $grey
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+				.icon-label
+					height: 14px
+					width: 17px
+					fill: $grey
+					left: 0
+
+.custom-select
+	display: inline-block
+	position: relative
+	cursor: pointer
+	color: $grey
+	background-color: $white
+	+PReg
+	width: 100%
+	&__field
+		padding: 22px 10px 19px
+	&__dropdown
+		padding: 20px
+		background-color: $white
+		line-height: 30px
+		border-radius: 30px
+		transition: all 0.2s
+		position: absolute
+		bottom: 0
+		transform: translateY(100%)
+		visibility: hidden
+		opacity: 0
+		width: 100%
+	&.is-open
+		.custom-select__dropdown
+			visibility: visible
+			opacity: 1
+		.custom-select__field
+			.icon
+				transform: translateY(-50%) rotate(180deg)
+			.icon-label
+				transform: translateY(-50%) rotate(0)
+	&__list
+		li
+			&:hover
+				color: $cyan
