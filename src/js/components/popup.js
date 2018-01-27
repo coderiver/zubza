@@ -4,6 +4,11 @@ function popup() {
     let $this = $(this),
       attr = $this.attr('data-popup'); 
     let target = $(`.js-popup[data-popup="${attr}"]`);
+
+    if(target.hasClass('js-popup-map')) {
+
+    };
+    
     target.fadeIn(300);
     $('body').addClass('is-hidden');
   });

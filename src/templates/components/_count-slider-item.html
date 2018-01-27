@@ -58,7 +58,10 @@
 		</div>
 		{% endif %}
 		{% if test.moreLink %}
-		<a class="more-link more-link--sm" href=""><span>{{test.moreLink}}</span></a>
+		<a class="more-link more-link--sm" href="">
+      <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+      <span>{{test.moreLink}}</span>
+    </a>
 		{% endif %}
 	</div>
 	<!--end cslide__location-->
