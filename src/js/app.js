@@ -3,6 +3,7 @@ import faqDrop from './components/faqDrop.js';
 import sliders from './components/sliders.js';
 import './components/select.js';
 import './components/tableDrop.js';
+import './components/data-picker.js';
 
 sayHello();
 $(document).ready(function() {
