@@ -1,5 +1,5 @@
 <!-- begin clinic-box -->
-<div class="clinic-box">
+<div class="clinic-box {{clinicBox.mod }}">
   <!-- begin clinic-box__left -->
   <div class="clinic-box__left">
     <!-- begin clinic-box__rate -->
@@ -82,9 +82,39 @@
       <!-- end clinic-box__text-list -->
       {% endif %}
 
+      {% if clinicBox.tablelist %}
+      <!-- begin clinic-box__tablelist -->
+      <div class="clinic-box__tablelist">
+        <div class="tablelist">
+          {% for row in clinicBox.tablelist %}
+          <div class="tablelist__row">
+            {% for i in row %}
+            <div class="tablelist__col">{{ i | safe }}</div>
+            {% endfor %}
+          </div>
+          {% endfor%}
+        </div>
+      </div>
+      <!-- end clinic-box__tablelist -->
+      {% endif %}
+
+
       {% if clinicBox.leftButton %}
       <a href="#" class="button button_cyan">Записаться</a>
       {% endif %}
+
+      {% if clinicBox.rightButton %}
+      <!-- begin clinic-box__more -->
+      <div class="clinic-box__more">
+        <a href="" class="more-link more-link--sm">
+          <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+          <span>Подробнее о клинике</span>
+        </a>
+        <a href="#" class="btn btn--green">Записаться</a>
+      </div>
+      <!-- end clinic-box__more -->
+      {% endif %}
+
     </div>
 
   </div>

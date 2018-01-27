@@ -5,6 +5,7 @@ import popup from './components/popup.js';
 import './components/select.js';
 import './components/gallery.js';
 import './components/tableDrop.js';
+import './components/data-picker.js';
 
 sayHello();
 $(document).ready(function() {

@@ -60,24 +60,59 @@ appBlock: {
   buttons: ['img/app-ios.png', 'img/app-android.png']
 }
 
+clinicBoxes: {
+  title: 'Принимает в центрах',
+  boxes: [
+    {
+      mod: 'clinic-box_mini',
+      rate: {
+        stars: [
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: ''
+          }
+        ],
+        number: '4.6'
+      },
+      users: {
+        bought: '70',
+        glad: '65',
+      },
+      titlelink: {
+        name: 'Стоматология «Все Свои» на Кронштадской',
+        url: ''
+      },
+      tablelist: [
+        ['Консультация стоматолога', '<span class="text-cyan text-bold">Бесплатно</span>'],
+        ['Лечение кариеса', '<span class="text-cyan text-bold">от 500 руб.</span>']
+      ],
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      rightButton: true
+    }
+  ]
+}
+
 clinicBox: {
   rate: {
     stars: [
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: ''
-      }
+      {starMode: 'is-color'},
+      {starMode: 'is-color'},
+      {starMode: 'is-color'},
+      {starMode: 'is-color'},
+      {starMode: ''}
     ],
     number: '4.6'
   },
@@ -93,7 +128,7 @@ clinicBox: {
     '<strong>100 филиалов</strong> по Москве и МО',
     '<strong>95 положительных отзывов</strong> от пользоваетлей Zubza',
     '<strong>2 активные акции</strong>'
-  ],
+    ],
   location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
   metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
   worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
@@ -105,9 +140,15 @@ clinicBox: {
 
 {% block content %}
 
+{% include "components/_clinic-boxes.html" %}
+<br>
+<br>
+<br>
+
 <div class="container">
 
 {% include "components/_clinic-box.html" %}
+
 <br>
 <br>
 <br>
