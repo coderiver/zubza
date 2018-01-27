@@ -319,7 +319,7 @@ sales: [
 		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых',
 		name: 'Стоматология «Все Свои»',
 		maplinkMode: '',
-		popupData: '',
+		popupData: 'popup-map',
 		mapImg: 'map-link-img-default',
 		location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
 		locationMetro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
@@ -334,7 +334,7 @@ sales: [
 		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых',
 		name: 'Стоматология «Все Свои»',
 		maplinkMode: '',
-		popupData: '',
+		popupData: 'popup-map',
 		mapImg: 'map-link-img-default',
 		location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
 		locationMetro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
@@ -349,7 +349,7 @@ sales: [
 		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых',
 		name: 'Стоматология «Все Свои»',
 		maplinkMode: '',
-		popupData: '',
+		popupData: 'popup-map',
 		mapImg: 'map-link-img-default',
 		location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
 		locationMetro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
@@ -357,6 +357,14 @@ sales: [
 		btn: 'Записаться'
 	}
 	]
+}
+]
+mapInPopup: [
+{
+	maplinkMode: 'map-link--search',
+	popupData: 'popup-map',
+	mapImg: 'map-search-img',
+	maplinkText: 'Поиск стоматологий на карте'
 }
 ]
 ---
@@ -378,6 +386,11 @@ sales: [
 	{% include "components/_count-slider.html" %}
 	{% endfor %}
 </div>
+<div style="max-width: 280px; margin: 0 auto 50px">
+{% for test in mapInPopup %}
+{% include "components/_map-link.html" %}
+{% endfor %}
+</div>
 <!-- begin rec-hospitals -->
 <div class="rec-hospitals">
 	<h4 class="rec-hospitals__title">Рекомендованные клиники</h4>
@@ -394,4 +407,5 @@ sales: [
 {% include "components/_meta-filters.html" %}
 {% include "components/_anchors.html" %}
 {% include "components/_sales-section.html" %}
+{% include "components/_popup-map.html" %}
 {% endblock %}

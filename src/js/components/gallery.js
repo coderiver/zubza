@@ -12,6 +12,23 @@ class Gallery {
 	
   }
 
+  clearActiveForPaginationItem() {
+    $(this.sliderPagination).each((index, item) => {
+      $(item).removeClass(ACTIVE);
+    });
+  }
+
+  beforeChangeSlider() {
+
+    this.slider.on('beforeChange', (event, slick, currentSlide, nextSlide) => {
+        
+      this.clearActiveForPaginationItem();
+      $(`.js-gallery-pagination[data-slide-index=${nextSlide}]`).addClass(ACTIVE);
+
+    });
+
+  }
+
   goTo() {
 
   	this.sliderPagination.on('click', (e) => {
@@ -21,9 +38,7 @@ class Gallery {
 
   		if(hasSlideIndexItem.length === 0) return;
 
-  		$(this.sliderPagination).each((index, item) => {
-  			$(item).removeClass(ACTIVE);
-  		});
+  		this.clearActiveForPaginationItem();
 
   		let index = hasSlideIndexItem.data().slideIndex;
   		hasSlideIndexItem.addClass(ACTIVE);
@@ -40,7 +55,10 @@ class Gallery {
     	slidesToScroll: 1, 
     	prevArrow: '.btnPrev',
     	nextArrow: '.btnNext'
+
   	});
+
+    this.beforeChangeSlider();
 
   }
 

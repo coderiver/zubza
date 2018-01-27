@@ -1,0 +1,40 @@
+<!-- begin hospital-filters -->
+	<form class="hospital-filters">
+		<div class="hospital-filters__in">
+			{% for item in filters %}
+			<div class="hospital-filters__block">
+				<h2 class="hospital-filters__title">{{ item.title }}</h2>
+				{% if item.type == 'select' %}
+				{% for item in item.selects %}
+				<select class="form__select js-select" data-field="{{ item.selectTitle }}" data-icon="arrow-down" data-label="{{ item.icon }}">
+					{% for value in item.values %}
+					<option value="{{ value }}">{{ value }}</option>
+					{% endfor %}
+				</select>
+				{% endfor %}
+				{% elif item.type == 'checkbox' %}
+				{% for value in item.values %}
+				<!-- begin checkbox -->
+					<label class="checkbox">
+						<input type="checkbox" />
+						<div class="checkbox__item">{{ value }}</div>
+					</label>
+				<!-- end checkbox -->
+				{% endfor %}
+				{% elif item.type == 'range' %}
+				<!-- begin range -->
+				<div class="range">
+					<div class="range-inputs">
+						<input type="text" class="range-inputs__field range-inputs__field_min" value="{{ item.startMin }}" disabled />
+						<span class="range-inputs__delimiter"></span>
+						<input type="text" class="range-inputs__field range-inputs__field_max" value="{{ item.startMax }}" disabled />
+					</div>
+					<div class="range__in js-range" data-min="{{ item.min }}" data-max="{{ item.max }}" data-start="{{ item.start }}" data-step="1000"></div>
+				</div>	
+				<!-- end range -->
+				{% endif %}
+			</div>
+			{% endfor %}
+		</div>
+	</form>
+<!-- end hospital-filters -->
