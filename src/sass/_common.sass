@@ -3,11 +3,12 @@
 		@content
 
 body
-  +OSReg
-  +smooth-font
-  font-size: 16px
-  color: $black
-
+	+OSReg
+	+smooth-font
+	font-size: 16px
+	color: $black
+	&.is-hidden
+		overflow: hidden
 a
   text-decoration: none
   color: $black
@@ -61,3 +62,5 @@ h4, .h4
 
 .map-link
 	display: block
+	border-radius: 5px
+	overflow: hidden
