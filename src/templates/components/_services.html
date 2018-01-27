@@ -1,0 +1,31 @@
+<!-- begin services -->
+	<div class="services">
+		<div class="services__in">
+			<h2 class="services__title">Услуги, по которым ведется запись через Zubza</h2>
+			<div class="services__row">
+				{% for item in services %}
+				<div class="services__item">
+					<div class="services__item-title">{{ item.title }}</div>
+					<ul class="services__list">
+						{% for item in item.items %}
+						<li class="services__list-item">
+							<span class="services__name">{{ item.name }}</span>
+							<span class="services__value">{{ item.value }}</span>
+						</li>
+						{% endfor %}
+						<li>
+							<a class="more-link more-link--sm services__link" href="#">
+								<span>Ещё услуги</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				{% if loop.index % 3 == 0 %}
+				</div>
+				<div class="services__row">
+				{% endif %}
+				{% endfor %}
+			</div>	
+		</div>
+	</div>
+<!-- end services -->
