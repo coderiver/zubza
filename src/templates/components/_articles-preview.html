@@ -1,0 +1,20 @@
+<!-- begin articles-preview -->
+	<div class="articles-preview">
+		<div class="articles-preview__image" style="background-image: url({{ preview.image }});"></div>
+		<div class="articles-preview__info">
+			<h2 class="articles-preview__title">{{ preview.title }}</h2>
+			<div class="meta-tag">
+	            <div class="meta-tag__circle" style="background-color: {{ preview.tagcolor  }};"></div>
+	        	{{ preview.tagname }}
+	        </div>
+	        <div class="articles-preview__textual">
+	        	<p>
+	        		{{ preview.text }}
+	        	</p>
+	        </div>
+	        <a class="more-link more-link--sm" href="#">
+				<span>Читать дальше</span>
+			</a>	
+		</div>
+	</div>
+<!-- end articles-preview -->
