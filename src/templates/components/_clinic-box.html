@@ -1,0 +1,48 @@
+<!-- begin clinic-box -->
+<div class="clinic-box">
+  <!-- begin clinic-box__left -->
+  <div class="clinic-box__left">
+    <!-- begin clinic-box__rate -->
+    <div class="clinic-box__rate">
+      {% include "components/_rate-wrapper.html" %}
+      {% include "components/_count-users.html" %}
+    </div>
+    <!-- end clinic-box__rate -->
+
+    <h4 class="clinic-box__title">Стоматология «Все Свои» ведет прием  по следующим специализациям</h4>
+
+    <!-- begin clinic-box__tagi -->
+    <div class="clinic-box__tagi">
+      <div class="tagi">
+        <ul>
+          {% for i in list %}
+          <li><a href="#">{{ i }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <!-- end clinic-box__tagi -->
+
+
+    <!-- begin clinic-box__text-list -->
+    <div class="clinic-box__text-list">
+      <ul class="text-list">
+        {% for i in list %}
+        <li>{{ i }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- end clinic-box__text-list -->
+
+    <a href="#" class="button button_cyan">Записаться</a>
+
+  </div>
+  <!-- end clinic-box__left -->
+
+  <!-- begin clinic-box__right -->
+  <div class="clinic-box__right">
+
+  </div>
+  <!-- end clinic-box__right -->
+</div>
+<!-- end clinic-box -->
