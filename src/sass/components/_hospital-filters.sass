@@ -1,0 +1,41 @@
+.hospital-filters
+	background-color: $white
+	border-radius: 5px
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	padding: 30px 
+	width: 280px
+	&__block
+		margin-bottom: 15px
+		&:last-of-type
+			margin-bottom: 0 
+	&__title
+		font-size: 20px
+		margin-bottom: 5px 
+		+PBold
+	.custom-select
+		&__field
+			border: 1px solid $really-grey
+			border-radius: 20px
+			font-size: 14px 
+			padding: 14px 28px 10px
+		&__text
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		&__dropdown
+			border: 1px solid $really-grey
+			bottom: -2px
+		.icon
+			fill: $grey
+			transition: all .3s
+			height: 12px
+			width: 18px
+			stroke: #b8b8b8
+			position: absolute
+			top: 50%
+			left: 10px
+			-ms-transform: translateY(-50%)
+			transform: translateY(-50%)
+			&-arrow-down
+				left: auto
+				right: 10px  

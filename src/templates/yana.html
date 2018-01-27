@@ -209,6 +209,76 @@ banner:
       text: 'проверенных отзыва о стоматологиях и врачах'
       img: './img/feedback.png'
 
+filters:
+  -
+    title: 'Подобрать клинику'
+    type: 'select'
+    icon: 'location'
+    selectTitle: 'Услуга, врач или клиника'
+    values: 
+      - 'Алтуфьево'
+      - 'Алтуфьево 1'
+      - 'Алтуфьево 2'
+  -
+    title: 'Пользуется спросом'
+    type: 'select'
+    icon: 'list'
+    selectTitle: 'Услуга, врач или клиника'
+    values: 
+      - 'Алтуфьево'
+      - 'Алтуфьево 1'
+      - 'Алтуфьево 2'
+  -
+    title: 'Цена, руб.'
+    type: 'checkbox'
+    values:
+      - 'Круглосуточные'
+      - 'Недорогие'
+      - 'Бесплатная консультация'
+  -
+    title: 'Цена, руб.'
+    type: 'range'
+  -
+    title: 'Тип клиники'
+    type: 'checkbox'
+    values:
+      - 'Частная'
+      - 'Государственная'
+  -
+    title: 'Время работы'
+    type: 'checkbox'
+    values:
+      - 'Работает сейчас'
+      - 'Круглосуточно'
+      - 'По выходным'
+  -
+    title: 'Льготы'
+    type: 'checkbox'
+    values:
+      - 'ОМС'
+      - 'ДМС'
+      - 'Пенсионерам'
+      - 'Студентам'
+  -
+    title: 'Оплата и кредит'
+    type: 'checkbox'
+    values:
+      - 'Кредит'
+      - 'Рассрочка'
+      - 'По карте'
+      - 'Наличными'
+  -
+    title: 'Наличие парковки'
+    type: 'checkbox'
+    values:
+      - 'Бесплатная, частная'
+      - 'Платная, общественная'
+  -
+    title: 'Наличие акций'
+    type: 'checkbox'
+    values:
+      - 'Все скидки и спецпредложения'
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -225,6 +295,8 @@ banner:
 {% include "components/_clinic-gallery.html" %}
 <br />
 {% include "components/_banner.html" %}
+<br />
+{% include "components/_hospital-filters.html" %}
 <br />
 
 {% endblock %}
