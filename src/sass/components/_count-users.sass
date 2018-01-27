@@ -17,6 +17,18 @@
 			line-height: 1
 		svg
 			height: 16px
+	&__bought
+		&--cyan
+			span
+				color: $cyan
+			.count-users__icon-user 
+				+s(user-cyan)
+	&__glad
+		&--green
+			span
+				color: $green
+			.count-users__icon-heart
+				+s(heart-green)
 	&__icon-user, &__icon-heart
 		display: inline-block
 		vertical-align: top
@@ -37,3 +49,7 @@
 		line-height: 1
 	&--mb-16
 		margin-bottom: 16px
+	&--mb-12
+		margin-bottom: 12px
+	&--gray
+		color: #cacdce

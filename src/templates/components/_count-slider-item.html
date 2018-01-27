@@ -24,11 +24,11 @@
 	<!--end cslide__count-block-->
 	{% endif %}
 	{% if test.info %}
-	<p class="cslide__info">{{test.info}}</p>
+	<p class="cslide__info {{test.infoMode}}">{{test.info}}</p>
 	{% endif %}
 	{% if testSlide.text %}
 	<!--begin cslide__text-->
-	<div class="cslide__text">
+	<div class="cslide__text {{test.slideTextMode}}">
 		<p>
 			{{testSlide.text}}
 		</p>
