@@ -1,0 +1,65 @@
+<div class="reviews">
+	<div class="reviews__title h3">
+		Отзывы о стоматологической клинике «Все Свои» на Арбатской
+	</div>
+	<div class="reviews__list review">
+		{% set review = [{
+			like: true
+		},{
+			dislike: true
+		},{
+			like: true
+		},{
+			dislike: true
+		},{
+			like: true
+		}] %}
+		{% for item in review %}
+		<div class="review__row">
+			<div class="review__state">
+				{% if item.like %}
+				<div class="review__status review-status review-status_like">
+					<div class="review-status__icon">
+						{{mixins.heartSvg()}}
+					</div>
+					<div class="review-status__title">
+						Рекомендую
+					</div>
+				</div>
+				{% endif %}
+				{% if item.dislike %}
+				<div class="review__status review-status review-status_dis">
+					<div class="review-status__icon">
+						{{mixins.sadSVG()}}
+					</div>
+					<div class="review-status__title">
+						Не Рекомендую
+					</div>
+				</div>
+				{% endif %}
+				<div class="review__author">Анна Андреевна</div>
+				<div class="review__date">22.12.17</div>
+			</div>
+			<div class="review__body">
+				<div class="review__top">
+					<div class="review__title">Клиника: <a href="#">Стоматология «Все Свои» на Арбатской</a></div>
+				</div>
+				<div class="review__text">
+					<p>У меня участились головные боли и врач в поликлинник посоветовал сделать МРТ головного мозга. Пройти эту процедуру я решила в платном медицинском центре. Позвонила, мне ответил очень вежливый консультант, мы выбрали подходящее для меня время и записались на приём. В назначенный день я пришла в центр. Ждать не пришлось. Меня проводили в комнату, там нужно было снять все металлические предметы, так </p>
+				</div>
+				<div class="review__inline review__bottom">
+					<div class="review__item">
+						<div class="review__title">Услуга: <a href="#">Лечение кариеса</a></div>
+					</div>
+					<div class="review__item">
+						<div class="review__title">Врач: <a href="#">Иванов Петр Сергеевич</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="reviews__btn">
+		<a href="#" class="button button_hero button_hero_sm">Показать все отзывы</a>
+	</div>
+</div>
