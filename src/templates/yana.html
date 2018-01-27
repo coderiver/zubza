@@ -173,6 +173,42 @@ articleContent:
       tagcolor: '#ff016e'
       text: 'Все это удалось соединить в нашей стоматологической сети «Мой Зубной». Благодаря этому мы можем честно сказать - цены на протезирование зубов в наших клиниках одни из самых низких в Спб. Отдельно хочется заметить, все это достигается без экономии на материалах - в производстве протезов используются современные импортные материалы. На все виды протезирования дается гарантия (на съемные виды протезов - 6 месяцев, на несъемные - 12 месяцев). В текущий момент цены на протезирование в рамках акции "Цены-пополам!" снижены в 2 раза (все цены на сайте, указаны уже со скидкой):'
 
+gallery:
+  - 
+    image: './img/clinic-gallery-item.png'
+    text: 'Оборудование в клинике'
+  - 
+    image: './img/clinic-gallery-item.png'
+    text: 'Оборудование в клинике'
+  - 
+    image: './img/clinic-gallery-item.png'
+    text: 'Оборудование в клинике'
+  - 
+    image: './img/clinic-gallery-item.png'
+    text: 'Оборудование в клинике'
+  - 
+    image: './img/clinic-gallery-item.png'
+    text: 'Оборудование в клинике'
+  - 
+    image: './img/clinic-gallery-item.png'
+    text: 'Оборудование в клинике'
+
+banner:
+  title: ['200 000 пациентов в год', 'доверяют нам свое здоровье и улыбку']
+  items:
+    -
+      title: '200 000'
+      text: 'клиник работают с Zubza'
+      img: './img/clinic.png'
+    -
+      title: '4 534 235'
+      text: 'врачей принимают по записи через Zubza '
+      img: './img/doctor.png'
+    -
+      title: '8 734 234'
+      text: 'проверенных отзыва о стоматологиях и врачах'
+      img: './img/feedback.png'
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -185,6 +221,10 @@ articleContent:
 {% include "components/_pagination.html" %}
 <br />
 {% include "components/_articles-container.html" %}
+<br />
+{% include "components/_clinic-gallery.html" %}
+<br />
+{% include "components/_banner.html" %}
 <br />
 
 {% endblock %}
