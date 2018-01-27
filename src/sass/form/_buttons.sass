@@ -17,6 +17,7 @@
 		&:hover
 			background-color: $cyan
 			color: #fff
+
 	&_border-white
 		background-color: transparent
 		border: 1px solid #fff
@@ -32,6 +33,14 @@
 		font-size: 20px
 		+sm
 			width: 100%
+	&_border
+		background-color: transparent
+		border: 1px solid $cyan
+		color: $cyan
+		&:hover
+			background-color: $cyan
+			color: #fff
+
 
 .btn
 	padding: 10px 15px 11px
@@ -48,6 +57,10 @@
 		min-width: 240px
 	&--pink
 		background-color: $pink
+	&--green
+		background-color: $green
+		font-size: 14px
+		padding: 11px 15px 12px
 .btnNext, .btnPrev
 	width: 28px
 	height: 28px
@@ -56,6 +69,7 @@
 	text-align: center
 	border-radius: 50%
 	position: absolute
+	z-index: 1
 	i
 		+vcenter
 	svg
@@ -89,4 +103,30 @@
 			top: 2px
 			height: 16px
 			width: 16px
-
+.slick-dots
+	text-align: center
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		margin: 5px 10px
+		button
+			appearance: none
+			border: none
+			width: 7px
+			height: 7px
+			background-color: #dcdddd		
+			border-radius: 50%
+			position: relative
+			font-size: 0
+			+trans
+			&:before
+				content: ''
+				position: absolute
+				top: -3px
+				bottom: -3px
+				left: -3px
+				right: -3px
+		&.slick-active
+			button
+				background-color: $cyan

@@ -1,7 +1,7 @@
 <!--begin count-slider-->
-<div class="count-slider {{test.sliderMode}} ">
+<div class="count-slider {{test.sliderParentMode}} ">
 	<!--begin count-slider__content-->
-	<div class="count-slider__content js-slider-count">
+	<div class="count-slider__content {{test.sliderMode}} ">
 		{% for testSlide in test.testSlides %}
 		{% include "components/_count-slider-item.html" %}
 		{% endfor %}

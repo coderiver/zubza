@@ -3,8 +3,8 @@
 	{% if test.headBlock %}
 	<!--begin cslide__head-->
 	<div class="cslide__head {{test.headMode}}">
-		{% if test.headText %}
-		<p class="cslide__head-text">{{test.headText}}</p>
+		{% if test.headText%}
+		<p class="cslide__head-text">{{test.headText  | safe }}</p>
 		{% endif %}
 		{% if test.rateBlock %}
 		<!--begin cslide__head-inner-->
@@ -26,6 +26,7 @@
 	{% if test.info %}
 	<p class="cslide__info">{{test.info}}</p>
 	{% endif %}
+	{% if testSlide.text %}
 	<!--begin cslide__text-->
 	<div class="cslide__text">
 		<p>
@@ -33,6 +34,7 @@
 		</p>
 	</div>
 	<!--end cslide__text-->
+	{% endif %}
 	{% if test.person %}
 	<div class="cslide__person">
 		<span>ВРАЧ</span>
@@ -41,10 +43,23 @@
 	{% endif %}
 
 	{% if test.location %}
-	<!-- http://joxi.ru/gmvzz0oCxPZG6m разметку и стили сделает тот кто должен-->
 	<!--begin cslide__location-->
 	<div class="cslide__location">
-
+		<div class="location-info {{ test.locationMode}}">
+			<i class="location-info__icon">{{ mixins.icon('location') }}</i>
+			<a href="{{ test.locationUrl }}">{{ test.location | safe }}</a>
+		</div>
+		<div class="metro-info">
+			{{test.locationMetro | safe}}
+		</div>
+		{% if test.workingTime %}
+		<div class="worktime-info">
+			<p >{{ test.workingTime | safe }}</p>
+		</div>
+		{% endif %}
+		{% if test.moreLink %}
+		<a class="more-link more-link--sm" href=""><span>{{test.moreLink}}</span></a>
+		{% endif %}
 	</div>
 	<!--end cslide__location-->
 	{% endif %}
@@ -67,6 +82,9 @@
 	{% endif %}
 	{% if test.btn %}
 	<a class="cslide__link  {{test.btnMode}}" href="#">{{test.btn}}</a>
+	{% endif %}
+	{% if test.map %}
+	{% include "components/_map-link.html" %}
 	{% endif %}
 
 </div>
