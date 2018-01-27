@@ -11,26 +11,6 @@
 				width: 100%
 			.custom-select
 				border-radius: 30px
-		&--icon
-			.custom-select__field
-				margin-right: 30px
-				margin-left: 29px
-				padding-left: 24px
-				position: relative
-				.icon
-					transition: all 0.3s
-					height: 12px
-					width: 18px
-					stroke: $grey
-					position: absolute
-					right: 0
-					top: 50%
-					transform: translateY(-50%)
-				.icon-label
-					height: 14px
-					width: 17px
-					fill: $grey
-					left: 0
 
 .custom-select
 	display: inline-block
@@ -68,3 +48,38 @@
 		li
 			&:hover
 				color: $cyan
+
+	&__field
+		margin-right: 30px
+		margin-left: 29px
+		padding-left: 24px
+		position: relative
+		.icon
+			transition: all 0.3s
+			height: 12px
+			width: 18px
+			stroke: $grey
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+		.icon-label
+			height: 14px
+			width: 17px
+			fill: $grey
+			left: 0
+
+.date
+	.custom-select
+		border-radius: 25px
+		select
+			display: none
+	.custom-select__field
+		border-radius: 25px
+		padding: 20px 22px 11px
+		margin: 0
+		.icon
+			right: 14px
+	.custom-select__text
+		text-align: left
+		font-size: 16px
