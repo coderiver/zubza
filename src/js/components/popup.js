@@ -1,3 +1,4 @@
+import PubSub from 'pubsub-js';
 function popup() {
   $('.js-popup-link').on('click', function(e) {
     e.preventDefault();
@@ -5,8 +6,8 @@ function popup() {
       attr = $this.attr('data-popup'); 
     let target = $(`.js-popup[data-popup="${attr}"]`);
 
-    if(target.hasClass('js-popup-map')) {
-
+    if(target.hasClass('js-is-map-popup')) {
+      PubSub.publish('open-map-popup');
     };
     
     target.fadeIn(300);

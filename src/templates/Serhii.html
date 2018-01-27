@@ -387,9 +387,9 @@ mapInPopup: [
 	{% endfor %}
 </div>
 <div style="max-width: 280px; margin: 0 auto 50px">
-{% for test in mapInPopup %}
-{% include "components/_map-link.html" %}
-{% endfor %}
+	{% for test in mapInPopup %}
+	{% include "components/_map-link.html" %}
+	{% endfor %}
 </div>
 <!-- begin rec-hospitals -->
 <div class="rec-hospitals">
@@ -408,4 +408,5 @@ mapInPopup: [
 {% include "components/_anchors.html" %}
 {% include "components/_sales-section.html" %}
 {% include "components/_popup-map.html" %}
+
 {% endblock %}

@@ -67,4 +67,34 @@
 			padding: 0
 		.gmap
 			height: 647px
-			background: #000
+.baloon
+	width: 220px
+	border-radius: 5px
+	background: $white
+	text-align: center
+	padding-top: 16px
+	padding-bottom: 20px
+	position: relative
+
+	&:after
+		position: absolute
+		content: ''
+		width: 18px
+		height: 9px
+		bottom: -9px
+		left: 50%
+		transform: translateX(-50%)
+		+arr(18, 9, $white, b)
+	&__content
+	&__title, &__price
+		font-size: 14px
+		color: $cyan
+		+PExtra
+	&__title
+		margin-bottom: 10px
+	&__text
+		+PSemi
+		font-size: 14px
+		margin-bottom: 2px
+	.rate-stars
+		margin-bottom: 18px
