@@ -1,20 +1,100 @@
 .costs
-
+	&__title
+		margin-bottom: 4px
+	&__btn
+		text-align: center
+	&__list
+		margin-bottom: 20px
+		&_mb
+			margin-bottom: 27px
 .costs-table
 	&__row
 		display: flex
 		background-color: #fff
+		padding-left: 29px
+		min-height: 40px
 		&:nth-child(even)
 			background-color: $little-grey
 	&__col
 		display: flex
-		align-items: center
-		padding: 20px
+		&_wide
+			width: 37%
+		&_sm
+			padding-left: 3px
+			width: 15%
+		&_mid
+			width: 26%
+		&_last
+			flex: 1
+			padding-left: 4px
+			justify-content: flex-end
+			padding-right: 32px
+		&_long
+			width: 53%
+		&_space-md
+			width: 15%
+			padding-left: 7px
+		&_indent_md
+			width: 25%
+		&_indent_sm
+			width: 21%
+			&_last
+				flex: 1
 	&__title
 		font-size: 16px
-		+PReg
+		+OSReg
+		line-height: 1
+		padding-top: 9px
+		color: $black
 		&_head
+			padding-top: 10px
 			+PBold
+		&_secondary
+			+PBold
+			padding-top: 0
+			padding-left: 6px
+			span
+				+PReg
+				padding-top: 2px
+				font-size: 14px
+				display: block
 	&__price
 		font-size: 16px
 		color: $green
+		padding-top: 6px
+		letter-spacing: .3px
+		+OSBold
+		&_mod
+			color: $black
+	&__s-link
+		color: #46cae8
+		font-size: 14px
+		+OSReg
+		padding-top: 8px
+	&__enroll
+		color: $cyan
+		font-size: 16px
+		+PBold
+		position: relative
+		padding-right: 31px
+		padding-top: 8px
+		span
+			position: absolute
+			right: 0
+			top: 7px
+			border-radius: 50%
+			width: 22px
+			height: 22px
+			background-color: #9ce3f1
+		.icon
+			position: absolute
+			font-size: 8px
+			margin-top: -4px
+			margin-left: -2px
+			top: 50%
+			left: 50%
+			fill: #f6f9f9
+	&__item
+		padding: 0 14px
+		&:not(:last-child)
+			margin-right: 3px
