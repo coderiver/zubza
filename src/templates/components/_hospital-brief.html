@@ -3,10 +3,7 @@
   <a href="{{ test.url }}" class="hospital-brief__name">{{ test.name | safe }}</a>
 
   <div class="hospital-brief__rate">
-
-    {% include "components/_rate-stars.html" %}
-    {% include "components/_rate-number.html" %}
-
+    {% include "components/_rate-wrapper.html" %}
   </div>
 
   <div class="hospital-brief__location">
