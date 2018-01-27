@@ -1,0 +1,90 @@
+.app
+	background-repeat: no-repeat
+	background-position: 100% 50%
+	background-size: cover
+	padding: 61px 0 67px
+	+image('app-phones.jpg')
+	+md
+		background: $almost-white
+		position: relative
+		overflow: hidden
+		padding: 50px 0 35px
+		&:before
+			content: ""
+			display: block
+			width: percentage(207/800)
+			height: 100%
+			position: absolute
+			bottom: -30%
+			left: 40px
+			+image('app-phone-mob.png')
+			background-repeat: no-repeat
+			background-position: 50% 0
+			background-size: contain
+			z-index: 0
+	+sm
+		&:before
+			bottom: -55%
+			left: 15%
+			width: 192px
+			height: 360px
+			background-position: 50% 50%
+	+r(525)
+		&:before
+			left: 0
+			bottom: -180px
+	+r(390)
+		&:before
+			width: percentage(120/320)
+			bottom: -160px
+
+	&__in
+		max-width: 630px
+		position: relative
+		z-index: 1
+		+md
+			text-align: center
+			margin: 0 auto
+			padding-left: 180px
+		+sm
+			max-width: 480px
+			padding-left: 0
+	&__title
+		margin-bottom: 38px
+		+md
+			margin-bottom: 20px
+	&__buttons
+		+r(390)
+			position: relative
+			top: 30px
+		.app-btn
+			margin-right: 20px
+			+sm
+				display: block
+				margin: 0 40px 20px auto
+			+r(525)
+				margin-right: 0
+
+
+.app-btn
+	box-shadow: 0 4px 27px rgba(20, 193, 229, 0.47)
+	border-radius: 28px
+	background-color: $cyan
+	width: 200px
+	height: 55px
+	display: inline-block
+	vertical-align: top
+	position: relative
+	+trans
+	+md
+		width: 160px
+		height: 45px
+	+r(390)
+		width: 120px
+		height: 36px
+	&:hover
+		box-shadow: 0 8px 27px rgba(20, 193, 229, 0.5)
+		opacity: .95
+	img
+		width: 70%
+		+vcenter
