@@ -64,10 +64,10 @@
 
 
       <!-- begin clinic-box__text-list -->
-      <div class="clinic-box__text-list">
-        <ul class="text-list">
+      <div class="clinic-box__list">
+        <ul class="list">
           {% for i in clinicBox.textlist %}
-          <li>{{ i | safe }}</li>
+          <li class="list__item">{{ i | safe }}</li>
           {% endfor %}
         </ul>
       </div>
@@ -84,25 +84,21 @@
     <!-- begin clinic-box__map -->
     <div class="clinic-box__map">
       <a class="map-link js-popup-link" href="#" data-popup="">
-        <img src="img/map-link-img-default.jpg" alt="alt">
+        <img src="img/clinic-map.jpg" alt="alt">
       </a>
     </div>
     <!-- end clinic-box__map -->
 
-    <!-- begin clinic-box__meta -->
-    <div class="clinic-box__meta">
-      <div class="location-info">
-        <i class="location-info__icon">{{ mixins.icon('location') }}</i>
-        <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>
-      </div>
-      <div class="metro-info">
-        {{ clinicBox.metro | safe }}
-      </div>
-      <div class="worktime-info">
-        <p>{{ clinicBox.worktime | safe }}</p>
-      </div>
+    <div class="location-info">
+      <i class="location-info__icon">{{ mixins.icon('location') }}</i>
+      <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>
     </div>
-    <!-- end clinic-box__meta -->
+    <div class="metro-info">
+      {{ clinicBox.metro | safe }}
+    </div>
+    <div class="worktime-info">
+      <p>{{ clinicBox.worktime | safe }}</p>
+    </div>
   </div>
   <!-- end clinic-box__right -->
 </div>
