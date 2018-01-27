@@ -1,0 +1,36 @@
+.range
+	&__in
+		background-color: $really-grey
+		border-radius: 3px
+		border: none
+		box-shadow: none 
+		height: 5px
+		.noUi-connect
+			background-color: $cyan 
+			background-image: -webkit-linear-gradient(bottom, #14c1e5 0%, #3bd7f7 100%)
+			background-image: -o-linear-gradient(bottom, #14c1e5 0%, #3bd7f7 100%)
+			background-image: linear-gradient(to top, #14c1e5 0%, #3bd7f7 100%)
+		.noUi-handle
+			border-color: $cyan
+			border-radius: 50%
+			height: 17px 
+			width: 17px 
+			&:before,
+			&:after
+				content: none
+
+.range-inputs
+	margin-bottom: 17px 
+	input
+		background-color: $white 
+		border: 1px solid $really-grey
+		border-radius: 15px
+		display: inline-block
+		font-size: 14px
+		padding: 8px 10px 4px
+		text-align: center  
+		width: 100px
+		+PSemi
+		&:placeholder
+			font-size: 14px 
+			+PSemi

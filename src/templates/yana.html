@@ -213,23 +213,23 @@ filters:
   -
     title: 'Подобрать клинику'
     type: 'select'
-    icon: 'location'
-    selectTitle: 'Услуга, врач или клиника'
-    values: 
-      - 'Алтуфьево'
-      - 'Алтуфьево 1'
-      - 'Алтуфьево 2'
+    selects:
+      -
+        icon: 'location'
+        selectTitle: 'Услуга, врач или клиника'
+        values: 
+          - 'Алтуфьево'
+          - 'Алтуфьево 1'
+          - 'Алтуфьево 2'
+      -
+        icon: 'list'
+        selectTitle: 'Услуга, врач или клиника'
+        values: 
+          - 'Алтуфьево'
+          - 'Алтуфьево 1'
+          - 'Алтуфьево 2'
   -
     title: 'Пользуется спросом'
-    type: 'select'
-    icon: 'list'
-    selectTitle: 'Услуга, врач или клиника'
-    values: 
-      - 'Алтуфьево'
-      - 'Алтуфьево 1'
-      - 'Алтуфьево 2'
-  -
-    title: 'Цена, руб.'
     type: 'checkbox'
     values:
       - 'Круглосуточные'
@@ -238,6 +238,12 @@ filters:
   -
     title: 'Цена, руб.'
     type: 'range'
+    min: 0
+    max: 100000
+    start: '12000 50000'
+    startMin: '12 000'
+    startMax: '50 000'
+    step: 1000
   -
     title: 'Тип клиники'
     type: 'checkbox'
