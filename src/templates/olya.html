@@ -83,13 +83,47 @@ dotsSliderOneslide: {
     }
   ]
 }
+
+clinicsNearby: {
+  title: 'Стоматологии рядом',
+  cols: [
+    {
+      title: 'Районы:',
+      list: ['Бирюлёво Восточное', 'Бирюлёво Западное', 'Богородское', 'Братеево', 'Бутырский']
+    },
+    {
+      title: 'Метро:',
+      list: ['Алексеевский', 'Алтуфьевскийе', 'Арбат', 'Аэропорт', 'Бабушкинский']
+    }
+  ]
+}
+
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
+<div class="container">
+
 {% include "components/_rel-posts.html" %}
+<br>
+<br>
+<br>
 
 {% include "components/_rec-hospitals.html" %}
+
+<br>
+<br>
+<br>
+
+
+
+</div>
+
+{% include "components/_clinics-nearby.html" %}
+
+<br>
+<br>
+<br>
 
 {% endblock %}

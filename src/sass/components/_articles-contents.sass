@@ -1,0 +1,29 @@
+.articles-contents
+	background-color: $almost-white
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	padding: 30px  
+	max-width: 280px
+	&__title
+		font-size: 20px
+		margin-bottom: 14px 
+		+PSemi
+	&__link
+		color: $cyan 
+		display: block 
+		font-size: 14px
+		padding-left: 23px
+		position: relative
+		margin-bottom: 13px
+		+PSemi 
+		&:before
+			+pseudo
+			background-image: url(./../img/arrow-sm.png)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			border-radius: 50%
+			height: 15px
+			top: 0 
+			width: 15px
+		&:last-of-type
+			margin-bottom: 0
