@@ -1,0 +1,12 @@
+<!-- begin articles-contents -->
+	<div class="articles-contents">
+		<div class="articles-contents__in">
+			<h2 class="articles-contents__title">Содержание статьи</h2>
+			<ul class="articles-contents__link-list">
+				{% for item in contents %}
+				<a href="#" class="articles-contents__link">{{ item }}</a>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+<!-- end articles-contents -->
