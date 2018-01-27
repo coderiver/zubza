@@ -1,0 +1,21 @@
+{% for testGlobal in sales %}
+<!--begin section section-sales-->
+<section class="section section-sales">
+	<!--begin container-->
+	<div class="container">
+		<h2 class="section-sales__title">{{testGlobal.title}}</h2>
+		{% if testGlobal.aftHeadText %}
+		<p class="section-sales__after-head-text">{{testGlobal.aftHeadText}}</p>
+		{% endif %}
+		<!--begin section-sales__list-->
+		<div class="section-sales__list">
+			{% for test in testGlobal.list %}
+			{% include "components/_sale-block.html" %}
+			{% endfor %}
+		</div>
+		<!--end section-sales__list-->
+	</div>
+	<!--end container-->
+</section>
+<!--end section section-sales-->
+{% endfor %}
