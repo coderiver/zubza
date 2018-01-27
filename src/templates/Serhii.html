@@ -33,11 +33,133 @@ faqSection: [
 	]
 }
 ]
+
+reviews: [
+{
+	sliderMode: 'count-slider--w280 js-slider-count-parent',
+	testSlides: [
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	},
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	}
+	,
+	{
+		text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала'
+	}
+	],
+	slideMode: 'cslide--blue',
+	headBlock: true,
+	headMode: '',
+	headText: 'Отзывы',
+	rateBlock: true,
+	rateStarsMode: '',
+	stars: [
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: ''
+	},
+	{
+		starMode: ''
+	}
+	],
+	rateNumberMode: '',
+	rateNumber: '3.7',
+	countUsers: true,
+	countUsersMode: 'count-users--mb-16',
+	countUsersBought: '70',
+	countUsersGlad: '55',
+	userIconMode: '',
+	heartIconMode: '',
+	info: 'Анна, 22.12.17',
+	person: 'Яковлева Ирина Сергеевна',
+	btn: 'Все врачи специальности',
+	btnMode: 'btn btn--pink',
+	sliderCountBlock: true,
+	location: false,
+	recomend: false,
+	readMore: false
+}
+]
+metaFilters: [
+{
+	metaMode: 'meta-filters--w-830 meta-filters--mb-31',
+	metalist: [
+	{
+		tagname: 'Популярное'
+	},
+	{
+		color: '#74d15e',
+		tagname: 'Полезное'
+	},
+	{
+		color: '#ff016e',
+		tagname: 'Заболевания'
+	},
+	{
+		color: '#14c1e5',
+		tagname: 'Симптомы'
+	}
+	]
+}
+]
+anchors: [
+{
+	mode: 'anchors--mb-75',
+	anchorslist: [
+	{
+		text: 'Описание и контактная информация'
+	},
+	{
+		text: 'Цены'
+	},
+	{
+		text: 'Отзывы '
+	},
+	{
+		text: 'Врачи'
+	},
+	{
+		text: 'Лицензии и сертификаты'
+	},
+	{
+		text: 'Фото клиники',
+		active: 'is-active'
+	},
+	{
+		text: 'Акции'
+	},
+	{
+		text: 'Филиалы'
+	}
+	]
+}
+
+]
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 {% include "components/_faq-section.html" %}
-{% include "components/_reviews-slider.html" %}
 
+{% for test in reviews %}
+{% include "components/_count-slider.html" %}
+{% endfor %}
+
+{% include "components/_meta-filters.html" %}
+{% include "components/_anchors.html" %}
+{% include "components/_sales-section.html" %}
 {% endblock %}

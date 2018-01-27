@@ -1,0 +1,22 @@
+<!--begin count-slider-->
+<div class="count-slider {{test.sliderMode}} ">
+	<!--begin count-slider__content-->
+	<div class="count-slider__content js-slider-count">
+		{% for testSlide in test.testSlides %}
+		{% include "components/_count-slider-item.html" %}
+		{% endfor %}
+	</div>
+	<!--end count-slider__content-->
+	{% if test.sliderCountBlock %}
+	<div class="count-slider__count">
+		<p class="count-slider__count-main">
+			<span class="js-slider-count-all">2</span> отзыва(ов)
+		</p>
+		<p >
+			<span class="js-slider-count-current-slide">1</span> из 
+			<span class="js-slider-count-all">2</span>
+		</p>
+	</div>
+	{% endif %}
+</div>
+<!--end count-slider-->

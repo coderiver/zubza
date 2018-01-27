@@ -39,11 +39,57 @@ relativePosts: {
     }
   ]
 }
+
+dotsSliderOneslide: {
+  title: 'Рекомендованные клиники',
+  list: [
+    {
+      url: '#',
+      name: 'Центр стоматологии «Интан»',
+      rateBlock: true,
+      rateStarsMode: '',
+      stars: [
+      {
+        starMode: 'is-color'
+      },
+      {
+        starMode: 'is-color'
+      },
+      {
+        starMode: 'is-color'
+      },
+      {
+        starMode: ''
+      },
+      {
+        starMode: ''
+      }
+      ],
+      rateNumberMode: '',
+      rateNumber: '3.7',
+      locationUrl: '#',
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      metro: [
+        {
+          url: '#',
+          name: 'ЦАО'
+        },
+        {
+          url: '#',
+          name: 'Марксистская',
+          distance: '1 км'
+        }
+      ]
+    }
+  ]
+}
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
 {% include "components/_rel-posts.html" %}
+
+{% include "components/_rec-hospitals.html" %}
 
 {% endblock %}

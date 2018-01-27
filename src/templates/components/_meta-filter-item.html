@@ -1,0 +1,10 @@
+<a class="meta-filter" href="#">
+	{% if test.color %}
+	<div class="meta-tag ">
+		<div class="meta-tag__circle" style="background-color: {{ test.color }};"></div>
+		{{ test.tagname }}
+	</div>
+	{% else %}
+	<span>{{ test.tagname }}</span>
+	{% endif %}
+</a>

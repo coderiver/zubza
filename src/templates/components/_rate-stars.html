@@ -1,0 +1,7 @@
+<div class="rate-stars {{test.rateStarsMode}}">
+	{% for testStars in test.stars %}
+	<i class="rate-stars__item {{testStars.starMode}}">
+		{{mixins.icon('star')}}
+	</i>
+	{% endfor %}
+</div>
