@@ -6,8 +6,8 @@
     <div class="clinic-box__rate">
 
       <!--begin count-users-->
-      <div class="count-users {{ clinicBox.users.mode }}">
-        <div class="count-users__bought {{ clinicBox.users.boughtMode }}">
+      <div class="count-users">
+        <div class="count-users__bought count-users__bought--cyan">
           <div>
             <span>{{ clinicBox.users.bought }}</span>
             <i class="count-users__icon-user"></i>
@@ -15,7 +15,7 @@
           <p>ЗАПИСАЛОСЬ</p>
         </div>
         <span class="count-users__separator">/</span>
-        <div class="count-users__glad {{ clinicBox.users.gladMode }}">
+        <div class="count-users__glad count-users__glad--green">
           <div>
             <span>{{ clinicBox.users.glad }}</span>
             <i class="count-users__icon-heart"></i>
@@ -27,7 +27,7 @@
 
       <!--begin rate-wrapper-->
       <div class="rate-wrapper">
-        <div class="rate-stars">
+        <div class="rate-stars rate-stars--green">
           {% for star in clinicBox.rate.stars %}
           <i class="rate-stars__item {{ star.starMode }}">
             {{ mixins.icon('star') }}
@@ -36,7 +36,7 @@
         </div>
 
         <!--begin rate-number-->
-        <div class="rate-number">
+        <div class="rate-number rate-number--green">
           рейтинг <span>{{ clinicBox.rate.number }}</span>
         </div>
         <!--end rate-number-->
