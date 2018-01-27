@@ -48,8 +48,15 @@
     <!-- end clinic-box__rate -->
 
     <div class="clinic-box__content">
+      {% if clinicBox.title %}
       <h4 class="clinic-box__title">{{ clinicBox.title | safe }}</h4>
+      {% endif %}
 
+      {% if clinicBox.titlelink %}
+      <a href="{{ clinicBox.titlelink.url }}" class="clinic-box__titlelink">{{ clinicBox.titlelink.name | safe }}</a>
+      {% endif %}
+
+      {% if clinicBox.taglist %}
       <!-- begin clinic-box__tagi -->
       <div class="clinic-box__tagi">
         <div class="tagi">
@@ -61,8 +68,9 @@
         </div>
       </div>
       <!-- end clinic-box__tagi -->
+      {% endif %}
 
-
+      {% if clinicBox.textlist %}
       <!-- begin clinic-box__text-list -->
       <div class="clinic-box__list">
         <ul class="list">
@@ -72,8 +80,11 @@
         </ul>
       </div>
       <!-- end clinic-box__text-list -->
+      {% endif %}
 
+      {% if clinicBox.leftButton %}
       <a href="#" class="button button_cyan">Записаться</a>
+      {% endif %}
     </div>
 
   </div>
