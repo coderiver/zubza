@@ -83,6 +83,27 @@ dotsSliderOneslide: {
     }
   ]
 }
+
+clinicsNearby: {
+  title: 'Стоматологии рядом',
+  cols: [
+    {
+      title: 'Районы:',
+      list: ['Бирюлёво Восточное', 'Бирюлёво Западное', 'Богородское', 'Братеево', 'Бутырский']
+    },
+    {
+      title: 'Метро:',
+      list: ['Алексеевский', 'Алтуфьевскийе', 'Арбат', 'Аэропорт', 'Бабушкинский']
+    }
+  ]
+}
+
+appBlock: {
+  title: 'Скачайте приложение, <br> чтобы пользоваться Zubza было еще удобнее',
+  subtitle: '<p>Легко найти стоматологию неподалеку от вас</p><p>Запись к врачу в одно касание</p>',
+  buttons: ['img/app-ios.png', 'img/app-android.png']
+}
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -102,5 +123,17 @@ dotsSliderOneslide: {
 <br>
 
 </div>
+
+{% include "components/_clinics-nearby.html" %}
+
+<br>
+<br>
+<br>
+
+{% include "components/_app.html" %}
+
+<br>
+<br>
+<br>
 
 {% endblock %}

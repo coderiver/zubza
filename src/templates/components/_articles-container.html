@@ -1,0 +1,20 @@
+{% for item in articleContent %}
+<!-- begin article-container -->
+	<div class="articles-container">
+		<div class="articles-container__header">
+			<h2 class="articles-container__title">{{ item.title }}</h2>
+			<a class="more-link more-link--sm" href="#">
+				<span>Все статьи по теме</span>
+			</a>
+		</div>
+		<div class="articles-container__body">
+			{% set popularArticles = item.popularArticles %}
+			{% include "components/_popular-articles.html" %}
+			<div class="articles-container__block">
+				{% set preview = item.preview %}
+				{% include "components/_articles-preview.html" %}
+			</div>
+		</div>
+	</div>
+<!-- end article-container -->
+{% endfor %}

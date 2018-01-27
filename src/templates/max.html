@@ -44,25 +44,30 @@ popularArticles: [
   {
     title: 'МРТ диагностика заболеваний печени',
     tagcolor: '#ff016e',
-    tagname: 'заболевания'
+    tagname: 'заболевания',
+    image: true
   },{
     title: 'Исследование эффективности ополаскивателей полости рта на основе растительных экстрактов',
     tagcolor: '#ff016e',
-    tagname: 'ПОЛЕЗНОЕ'
+    tagname: 'ПОЛЕЗНОЕ',
+    image: true
   },{
     title: 'Комплексная эстетическая и функциональная реабилитация пациента',
     tagcolor: '#ff016e',
-    tagname: 'СИМПТОМЫ'
+    tagname: 'СИМПТОМЫ',
+    image: true
   },{
     title: 'МРТ диагностика заболеваний печени',
     tagcolor: '#ff016e',
-    tagname: 'заболевания'
+    tagname: 'заболевания',
+    image: true
   }
 ]
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
+{% include "components/_hero.html" %}
 
 {% include "components/_footer.html" %}
 <br>

@@ -1,0 +1,30 @@
+<!-- begin clinics-nearby -->
+<div class="clinics-nearby">
+  <div class="clinics-nearby__bg" style="background-image: url('img/clinics-nearby-bg.png')"></div>
+  <div class="container">
+    <!-- begin clinics-nearby__inner -->
+    <div class="clinics-nearby__inner">
+      <h2 class="clinics-nearby__title">{{ clinicsNearby.title | safe }}</h2>
+      <div class="clinics-nearby__cols">
+        {% for col in clinicsNearby.cols %}
+        <div class="clinics-nearby__col">
+          <h5 class="clinics-nearby__subtitle">{{ col.title | safe }}</h5>
+          <ul class="clinics-nearby__list">
+            {% for i in col.list %}
+            <li>
+              <a href="#">{{ i | safe }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="clinics-nearby__button">
+        <a href="" class="button button_border-white">Показать все</a>
+      </div>
+    </div>
+    <!-- end clinics-nearby__inner -->
+  </div>
+</div>
+<!-- end clinics-nearby -->
