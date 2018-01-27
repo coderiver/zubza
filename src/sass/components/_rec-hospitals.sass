@@ -1,55 +1,59 @@
 .rec-hospitals
 	max-width: 280px
+	margin-left: auto
+	margin-right: auto
 	&__title
 		margin-bottom: 18px
 		+PSemi
-.hospital-brief
-	padding: 20px 10px
-	background-color: #fff
-	box-shadow: 0 4px 16px rgba(0,0,0,.05)
-	border-radius: 3px
-	&__name
-		display: block
-		color: $cyan
-		text-decoration: none
-		+trans
-		padding: 0 9px 7px
-		border-bottom: 1px solid $gray-border
-		&:hover
-			color: transparentize($cyan, .3)
-	&__inner
-		padding: 10px 9px 0
-	&__rate
-		margin-bottom: 10px
-		.rate-stars
-			&__item
-				svg
-					fill: $gray-middle
-				&.is-color
-					svg
-						fill: $green
-		.rate-number
-			color: $gray-middle
-			span
-				color: $yellow
-	&__location
-		margin-bottom: 12px
-		.location-info
-			a
-				text-decoration: underline
-				text-decoration-style: dashed
-	&__metro
-		margin-bottom: 12px
-
-.location-info
+// .hospital-brief
+// 	padding: 20px 10px
+// 	background-color: #fff
+// 	box-shadow: 0 4px 16px rgba(0,0,0,.05)
+// 	border-radius: 3px
+// 	&__name
+// 		display: block
+// 		color: $cyan
+// 		text-decoration: none
+// 		+trans
+// 		padding: 0 9px 7px
+// 		border-bottom: 1px solid $gray-border
+// 		&:hover
+// 			color: transparentize($cyan, .3)
+// 	&__inner
+// 		padding: 10px 9px 0
+// 	&__rate
+// 		margin-bottom: 10px
+// 		.rate-stars
+// 			&__item
+// 				svg
+// 					fill: $gray-middle
+// 				&.is-color
+// 					svg
+// 						fill: $green
+// 		.rate-number
+// 			color: $gray-middle
+// 			span
+// 				color: $yellow
+// 	&__location
+// 		margin-bottom: 12px
+// 		.location-info
+// 			a
+// 				text-decoration: underline
+// 				text-decoration-style: dashed
+// 	&__metro
+// 		margin-bottom: 12px
+.location-info, .metro-info, .worktime-info
 	padding-left: 20px
 	position: relative
 	line-height: 1.2
 	font-size: 13px
+	margin-bottom: 8px
+	display: block
+.location-info
 	&__icon
 		position: absolute
 		top: 2px
-		left: 0
+		left: 3px
 		.icon
 			fill: $cyan
 			display: block
@@ -59,12 +63,11 @@
 		+trans
 		&:hover
 			opacity: .7
-
+	&--dashed
+		text-decoration: underline
+		text-decoration-style: dashed
 .metro-info
-	padding-left: 20px
-	position: relative
-	line-height: 1.2
-	font-size: 13px
+	color: $black
 	&:before
 		content: ""
 		+s('metro')
@@ -76,7 +79,21 @@
 		left: 0
 	a
 		color: $cyan
+		// span
+		// 	&:not(.gray-color)
+		// 		color: $black
 	.gray-color
 		color: #cacdce
+.worktime-info
+	&:before
+		content: ""
+		+s('worktime-icon')
+		display: block
+		width: 14px
+		height: 14px
+		position: absolute
+		top: 0px
+		left: 0
+
 
 

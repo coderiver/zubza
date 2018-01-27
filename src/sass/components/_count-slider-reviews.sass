@@ -1,6 +1,5 @@
 .count-slider
-	
-	margin: 0 auto 5px
+	margin: 0 auto 50px
 	&__content
 		margin-bottom: 22px
 	&__count
@@ -24,24 +23,53 @@
 		left: 0
 	&--w280
 		width: 280px
+	&--dots
+		padding-bottom: 50px
+		.slick-dots
+			position: absolute
+			bottom: -42px
+			left: 0
+			width: 100%
+		.count-slider__content
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05)
+			border-radius: 5px
 .cslide
 	width: 280px
 	// display: inline-block
 	// vertical-align: top
-	margin: 0 auto
+	margin: 0 auto 0px
 	border-radius: 5px
-	padding: 16px 20px 20px
-	color: $white
+	padding: 12px 10px 20px
+	color: $black
+	
+	background: $white
+
 	&__head
 		position: relative
 		padding-bottom: 11px
 		border-bottom: 1px solid #5bd4ed
 		margin-bottom: 13px
+		&--cyan-border
+			border-bottom: none
+			margin-bottom: 11px
+			a
+				display: block
+				color: $cyan
+				text-decoration: none
+				+trans
+				font-size: 14px
+				padding: 0 9px 5px
+				border-bottom: 1px solid $gray-border
+				&:hover
+					color: transparentize($cyan, .3)
+			.cslide__head-text
+				border-bottom: 1px solid rgba(#dce2e3, 0.5)
 	&__head-text
-		color: $white
+		// color: $white
 		+PSemi
 		font-size: 20px
 		margin-bottom: 5px
+
 	&__head-inner
 		+clr
 		
@@ -50,10 +78,14 @@
 	&__info
 		+OSSemi
 		font-size: 13px
+		&--gray
+			color: #cacdce
 	&__text
 		margin-bottom: 7px
 		font-size: 13px
 		line-height: 1.55
+		&--mb-14
+			margin-bottom: 14px
 	&__person
 		margin-bottom: 17px
 		span
@@ -66,11 +98,33 @@
 	&__link
 		display: block
 		width: 100%
+	&__location
+		padding: 0 9px
+		.metro-info , .location-info, .worktime-info
+			margin-bottom: 8px
+	&__recomend
+		padding-left: 22px
+		color: #77d262
+		+PExtra
+		font-size: 16px
+		position: relative
+		i
+			position: absolute
+			top: 0
+			left: 0
+			+s(heart-green)
+
+	.more-link
+		margin-bottom: 18px
+		display: block
 	.rate-stars
 		padding-top: 5px
+
 	&--blue
+		color: $white
 		background-color: $cyan
-		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+		padding: 16px 20px 20px
+		
 
 
 	

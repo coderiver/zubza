@@ -1,0 +1,22 @@
+<!-- begin app -->
+<div class="app">
+  <div class="container">
+    <!-- begin app__in -->
+    <div class="app__in">
+      <h3 class="app__title">{{ appBlock.title | safe }}</h3>
+      <h4 class="app__title">{{ appBlock.subtitle | safe }}</h4>
+
+      <!-- begin app__buttons -->
+      <div class="app__buttons">
+        {% for i in appBlock.buttons %}
+        <a href="#" class="app-btn">
+          <img src="{{ i }}" alt="">
+        </a>
+        {% endfor %}
+      </div>
+      <!-- end app__buttons -->
+    </div>
+    <!-- end app__in -->
+  </div>
+</div>
+<!-- end app -->

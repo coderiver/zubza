@@ -1,0 +1,73 @@
+.reviews
+	&__title
+		margin-bottom: 10px
+	&__list
+		margin-bottom: 27px
+	&__btn
+		text-align: center
+
+.review
+	&__row
+		&:not(:last-child)
+			padding-bottom: 24px
+			border-bottom: 1px solid #edf0f1
+			margin-bottom: 10px
+		+clr
+	&__state
+		float: left
+		width: 173px
+		padding-top: 19px
+	&__body
+		overflow: hidden
+		padding-top: 15px
+	&__top
+		margin-bottom: 3px
+	&__title
+		color: #cacdce
+		letter-spacing: -.5px
+		+OSReg
+		a
+			color: $cyan
+	&__text
+		margin-bottom: 5px
+		p
+			font-size: 14px
+			line-height: 1.72
+			color: $black
+	&__inline
+		margin: 0 -9px
+	&__item
+		display: inline-block
+		vertical-align: top
+		padding: 0 9px
+	&__author, &__date
+		font-size: 15px
+		color: #cacdce
+		line-height: 1.2
+		+OSSemi
+
+.review-status
+	$this: &
+	&_like
+		#{$this}__title
+			color: #77d262
+	&_dis
+		#{$this}__title
+			color: $pink
+	&__title
+		+PBlack
+		font-size: 16px
+		line-height: 1
+		text-transform: uppercase
+		margin-bottom: 48px
+	&__icon
+		width: 17px
+		height: 17px
+		margin-bottom: 5px
+		.icon
+			font-size: 15px
+
+
+
+
+

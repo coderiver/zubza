@@ -1,6 +1,98 @@
 .section-sales
+	margin-bottom: 45px
 	&__title
-		margin-top: 15px
+		margin-bottom: 15px
 	&__after-head-text
 	&__list
-		margin-top: 25px
+		margin-top: 22px
+		padding-right: 25px
+	&__center
+		text-align: center
+	&__btn-more
+		&.button
+			font-size: 16px
+			padding: 10px 22px 9px
+.sale-block 
+	background-color: $white
+	border-radius: 5px
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	border-top: 6px solid $green
+	padding: 19px 20px
+	position: relative
+	margin-bottom: 30px
+	font-size: 0
+	&__descr
+		display: inline-block
+		vertical-align: top
+		width: percentage(550/1155)
+		padding-right: 45px
+	&__head
+
+	&__head-inner
+		color: $black
+		font-size: 0
+		line-height: 1
+		margin-bottom: 4px
+	&__title, &__old-price, &__price
+		display: inline-block
+		vertical-align: top
+	&__title
+		font-size: 18px
+		+PSemi
+	&__old-price
+		+PReg
+		font-size: 13px
+		text-decoration: line-through
+		margin: 5px 3px 0
+	&__price
+		color: #f5026d
+		font-size: 18px
+		+PBold
+	&__head-date
+		color: #d5d7d8
+		+OSSemi
+		font-size: 12px
+		text-transform: uppercase
+		line-height: 1
+		margin-bottom: 15px
+	&__text
+		+OSSemi
+		font-size: 13px
+		line-height: 1.5
+		margin-bottom: 31px
+		letter-spacing: -0.2px
+	&__places-name
+		color: $another-blue
+		font-size: 18px
+		+PSemi
+	&__map
+		display: inline-block
+		vertical-align: top
+		width: percentage(275/1155)
+		height: 156px
+		.map-link 
+			width: 100%
+			height: 100%
+			display: block
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+	&__info
+		display: inline-block
+		vertical-align: top
+		width: percentage(330/1155)
+		padding-left: 40px
+		padding-top: 15px
+	&__btn-wrapper
+		text-align: center
+		margin-top: 29px
+	&__btn
+		&.button
+			font-size: 16px
+			padding: 11px 24px 11px
+	&__icon
+		top: 0
+		right: 0
+		transform: translate(50%, -50%)

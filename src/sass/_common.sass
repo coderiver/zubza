@@ -1,3 +1,7 @@
+=m
+	@media only screen and (max-width: "991px")
+		@content
+
 body
   +OSReg
   +smooth-font
@@ -9,8 +13,10 @@ a
   color: $black
 
 h1
-  font-size: 50px
-  +PSemi
+	font-size: 50px
+	+PSemi
+	+md
+		font-size: 25px
 
 h2
 	font-size: 35px
@@ -21,10 +27,14 @@ h2
 h3, .h3
   font-size: 30px
   +PSemi
+  +md
+  	font-size: 20px
 
 h4, .h4
-  font-size: 20px
-  +PSemi
+	font-size: 20px
+	+PSemi
+	+md
+  	font-size: 14px
 
 .container
   max-width: 1260px
@@ -33,7 +43,7 @@ h4, .h4
 
 .text
 	line-height: 24px
-  
+
 .list
 	line-height: 24px
 	margin: 20px 0
@@ -49,3 +59,5 @@ h4, .h4
 			top: 0
 			left: 0
 
+.map-link
+	display: block
