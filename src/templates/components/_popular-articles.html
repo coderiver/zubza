@@ -2,7 +2,9 @@
   <div class="popular-articles__item">
     {% for item in popularArticles %}
     <div class="item">
+      {% if item.image %}
       <div class="blue-figure"></div>
+      {% endif %}
       <div class="item__info">
         <div class="item__title">
           {{item.title}}
