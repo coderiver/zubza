@@ -3,8 +3,10 @@
 		<div class="header__logo">
 			<a href="#"><img src="img/logo-{{logo}}.svg" alt=""></a>
 		</div>
-		<div class="header__select">
-			
+		<div class="header__select cities-select js-popup-link" data-popup="cities"> 
+			<div class="cities-select__field">Москва</div>
+			<div class="cities-select__label">{{mixins.icon('marker')}}</div>
+			<div class="cities-select__arrow">{{mixins.icon('arrow-down')}}</div>
 		</div>
 		<div class="header__menu">
 			{% set menu = [{

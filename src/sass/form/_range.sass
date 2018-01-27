@@ -20,7 +20,8 @@
 				content: none
 
 .range-inputs
-	margin-bottom: 17px 
+	margin-bottom: 17px
+	white-space: nowrap 
 	input
 		background-color: $white 
 		border: 1px solid $really-grey
@@ -34,3 +35,10 @@
 		&:placeholder
 			font-size: 14px 
 			+PSemi
+	&__delimiter
+		background-color: $black 
+		display: inline-block 
+		height: 2px
+		margin: 0 3px 
+		width: 7px
+		vertical-align: middle 

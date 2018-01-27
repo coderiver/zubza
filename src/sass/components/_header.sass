@@ -14,7 +14,7 @@
 		float: left
 		margin-left: 50px
 		width: 205px
-		height: 50px
+		margin-top: 8px
 	&__menu
 		float: left
 		margin-left: 50px
@@ -28,3 +28,33 @@
 		float: right
 		padding-top: 14px
 		margin-left: 20px
+
+.cities-select
+	border-radius: 20px
+	border: 1px solid $cyan
+	position: relative
+	&__field
+		font-size: 15px
+		+PSemi
+		color: $black
+		letter-spacing: 0.07px
+		padding: 12px 30px 8px 43px
+	&__label
+		position: absolute
+		top: 50%
+		left: 18px
+		transform: translateY(-50%)
+		margin-top: 2px
+		.icon
+			fill: $cyan
+			font-size: 18px
+	&__arrow
+		position: absolute
+		top: 14px
+		right: 22px
+		transform: rotate(-45deg)
+		width: 8px
+		height: 8px
+		border-left: 2px solid $cyan
+		border-bottom: 2px solid $cyan
+
