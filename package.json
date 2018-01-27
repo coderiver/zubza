@@ -69,5 +69,8 @@
     "vinyl-buffer": "^1.0.0",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^1.5.3"
+  },
+  "dependencies": {
+    "flatpickr": "^4.2.4"
   }
 }

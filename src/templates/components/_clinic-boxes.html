@@ -1,0 +1,21 @@
+<!-- begin clinic-boxes -->
+<div class="clinic-boxes">
+  <div class="container">
+
+    <!-- begin clinic-boxes__in -->
+    <div class="clinic-boxes__in">
+      <h2 class="clinic-boxes__title">{{ clinicBoxes.title }}</h2>
+
+      <!-- begin clinic-boxes__list -->
+      <div class="clinic-boxes__list">
+        {% for clinicBox in clinicBoxes.boxes %}
+          {% include "components/_clinic-box.html" %}
+        {% endfor %}
+      </div>
+      <!-- end clinic-boxes__list -->
+    </div>
+    <!-- end clinic-boxes__in -->
+
+  </div>
+</div>
+<!-- end clinic-boxes -->

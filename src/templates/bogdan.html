@@ -7,9 +7,6 @@ logo: 'blue'
 {% block content %}
 {% include "partials/_header.html" %}
 <style>
-	.container {
-		display: table;
-	}
 </style>
 <div class="container">
 	<div style="width: calc(1180px - 280px); float: left;">
@@ -758,7 +755,18 @@ logo: 'blue'
 <div class="container" style="width: 1280px;">
 	{% include './components/_reviews.html' %}
 </div>
-
-{% include "components/_footer.html" %}
+<br>
+<br>
+<br>
+<br>
+<br>
+{% include './components/_callback.html' %}
+<br>
+<br>
+<br>
+<br>
+<br>
+{% include './components/_doctors-list.html' %}
+{% include "components/_footer.html" %} 
 
 {% endblock %}

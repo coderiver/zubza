@@ -6,6 +6,7 @@ import './components/select.js';
 import './components/gallery.js';
 import './components/tableDrop.js';
 import './components/range.js';
+import './components/data-picker.js';
 
 sayHello();
 $(document).ready(function() {
