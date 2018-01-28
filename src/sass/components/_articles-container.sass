@@ -1,21 +1,19 @@
 .articles-container
-	max-width: 1180px
-	margin: 0 auto  
 	&__header
 		position: relative
 		&:before
 			+pseudo
-			bottom: 0  
+			bottom: 0
 			border-bottom: 1px solid $really-grey
 			top: auto
 			opacity: 0.5
 			width: 100%
 		.more-link
 			position: absolute
-			bottom: 15px 
+			bottom: 15px
 			right: 0
 	&__title
-		display: inline-block 
+		display: inline-block
 		font-size: 30px
 		padding-bottom: 10px
 		position: relative
@@ -24,15 +22,20 @@
 			+pseudo
 			top: auto
 			bottom: -0.5px
-			background-color: $cyan 
-			height: 3px 
+			background-color: $cyan
+			height: 3px
 			width: 100%
 	&__body
 		display: flex
 		flex-direction: row
 	.item
 		&__title
-			font-size: 14px 
+			font-size: 14px
 	.popular-articles
-		padding: 5px 0 
-		min-width: 280px 
+		padding: 5px 0
+		min-width: 280px
+	.articles-preview__textual
+		max-height: 135px
+		overflow: hidden
+	& + .articles-container
+		margin-top: 100px

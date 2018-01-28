@@ -21,7 +21,7 @@ banner:
 faqSection: [
 {
 	sectionTitle: 'Часто задаваемые вопросы',
-	jsFaq: true,
+	jsFaq: false,
 	arr: [
 	{
 		title: 'Почему стоит выбрать именно нас?',
@@ -298,7 +298,11 @@ services:
 		{% include "components/_hero.html" %}
 		{% include "components/_video.html" %}
 		{% include "components/_banner.html" %}
-		{% include "components/_faq-section.html" %}
+    <!-- begin container -->
+      <div class="container">
+        {% include "components/_faq-section.html" %}
+      </div>
+    <!-- end container -->
 		{% include "components/_app.html" %}
 		{% include "components/_badge-slider.html" %}
 		{% include "components/_services.html" %}

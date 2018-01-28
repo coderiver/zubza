@@ -1,0 +1,20 @@
+<div class="top-info">
+  <!--begin container-->
+    <div class="container">
+
+      <div class="col col_lg-left">
+        <h2 class="top-info__title">{{ title | safe }}</h2>
+        <div class="top-info__text">{{ toptext | safe }}</div>
+      </div>
+
+      <div class="col col_sm">
+        <div class="top-info__map">
+          {% for test in mapInPopup %}
+          {% include "components/_map-link.html" %}
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  <!--end container-->
+</div>
