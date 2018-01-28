@@ -1,6 +1,7 @@
 .services
 	background-color: $white
 	padding: 100px 20px
+	$this: &
 	&__top
 		margin-bottom: 58px
 	&__title
@@ -61,4 +62,8 @@
 		margin-top: 12px
 	.more-link__icon
 		transition: transform linear 0.3s
-
+	&_mod
+		padding: 0
+		#{$this}__name
+			font-size: 14px
+			+OSLight
