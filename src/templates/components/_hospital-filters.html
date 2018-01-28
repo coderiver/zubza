@@ -25,11 +25,11 @@
 				<!-- begin range -->
 				<div class="range">
 					<div class="range-inputs">
-						<input type="text" class="range-inputs__field range-inputs__field_min" value="{{ item.startMin }}" disabled />
+						<input type="text" class="range-inputs__field range-inputs__field_min" value="{{ item.startMin }}" />
 						<span class="range-inputs__delimiter"></span>
-						<input type="text" class="range-inputs__field range-inputs__field_max" value="{{ item.startMax }}" disabled />
+						<input type="text" class="range-inputs__field range-inputs__field_max" value="{{ item.startMax }}" />
 					</div>
-					<div class="range__in js-range" data-min="{{ item.min }}" data-max="{{ item.max }}" data-start="{{ item.start }}" data-step="1000"></div>
+					<div class="range__in js-range" data-min="{{ item.min }}" data-max="{{ item.max }}" data-start="{{ item.start }}" data-step="1"></div>
 				</div>	
 				<!-- end range -->
 				{% endif %}
