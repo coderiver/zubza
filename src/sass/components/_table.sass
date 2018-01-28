@@ -1,6 +1,7 @@
 .table
 	font-size: 14px
 	box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.05);
+	$this: &
 	&__row
 		display: flex
 		&:nth-child(odd)
@@ -10,6 +11,8 @@
 	.table__row--first
 		border-radius: 5px 5px 0 0
 		background-color: $cyan
+		#{$this}__col
+			padding: 11px 18px 9px
 	&__option
 		+PBold
 		font-size: 16px
@@ -17,30 +20,30 @@
 	&__col
 		display: flex
 		align-items: center
-		padding: 20px
+		padding: 19px 19px 8px
 		border-right: 1px solid #edf0f1
 		+sm
 			padding: 35px 10px
 		&:nth-child(1)
-			width: 20%
+			width: 24%
 			+md
 				width: 25%
 			+sm
 				width: 60%
 		&:nth-child(2)
-			width: 15%
+			width: 19%
 			+md
 				width: 20%
 			+sm
 				width: 40%
 		&:nth-child(3)
-			width: 45%
+			width: 48%
 			+md
 				width: 55%
 			+sm
 				display: none
 		&:nth-child(4)
-			width: 20%
+			width: 17%
 			+md
 				display: none
 	&__price
