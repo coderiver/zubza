@@ -1,21 +1,21 @@
 <!-- begin services -->
 	<div class="services">
 		<div class="services__in">
-			<h2 class="services__title">Услуги, по которым ведется запись через Zubza</h2>
+			<h2 class="services__title">{{ servicesTitle }}</h2>
 			<div class="services__row">
 				{% for item in services %}
 				<div class="services__item">
 					<div class="services__item-title">{{ item.title }}</div>
-					<ul class="services__list">
+					<ul class="services__list js-show-more" data-items="4">
 						{% for item in item.items %}
-						<li class="services__list-item">
+						<li class="services__list-item js-show-more-item">
 							<span class="services__name">{{ item.name }}</span>
 							<span class="services__value">{{ item.value }}</span>
 						</li>
 						{% endfor %}
 						<li>
-							<a class="more-link more-link--sm services__link" href="#">
-                <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+							<a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
 								<span>Ещё услуги</span>
 							</a>
 						</li>
