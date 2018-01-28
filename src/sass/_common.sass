@@ -10,8 +10,8 @@ body
 	&.is-hidden
 		overflow: hidden
 a
-  text-decoration: none
-  color: $black
+	text-decoration: none
+	color: $black
 
 h1
 	font-size: 50px
@@ -26,21 +26,32 @@ h2
 		font-size: 25px
 
 h3, .h3
-  font-size: 30px
-  +PSemi
-  +md
-  	font-size: 20px
+	font-size: 30px
+	+PSemi
+	+md
+		font-size: 20px
 
 h4, .h4
 	font-size: 20px
 	+PSemi
 	+md
-  	font-size: 14px
+		font-size: 14px
 
 .container
-  max-width: 1260px
-  margin: 0 auto
-  padding: 0 40px
+	max-width: 1260px
+	margin: 0 auto
+	padding: 0 40px
+	+clr
+.col
+	float: left
+	&_lg-left
+		width: percentage(900/1180)
+		padding-right: 20px
+	&_lg-right
+		width: percentage(900/1180)
+		padding-left: 20px
+	&_sm
+		width: percentage(280/1180)
 
 .text
 	line-height: 24px
