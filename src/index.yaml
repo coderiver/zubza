@@ -17,3 +17,9 @@ PageList:
   ready: 50
 - file: main.html
   ready: 50
+- file: clinics-metro.html
+  ready: 50
+- file: articles-category.html
+  ready: 50
+- file: article.html
+  ready: 50
