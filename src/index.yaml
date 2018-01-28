@@ -17,3 +17,5 @@ PageList:
   ready: 50
 - file: main.html
   ready: 50
+- file: articles-category.html
+  ready: 50
