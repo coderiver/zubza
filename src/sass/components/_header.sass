@@ -6,6 +6,7 @@
 	z-index: 1001
 	background-color: #fff
 	&__in
+		position: relative
 		+clr
 	&__logo
 		float: left
@@ -31,6 +32,10 @@
 		float: right
 		padding-top: 14px
 		margin-left: 20px
+	&__submenu
+		position: absolute
+		right: 0
+		top: 100%
 	&_main
 		box-shadow: none
 		background-color: transparent
@@ -64,6 +69,10 @@
 			&__label
 				.icon
 					fill: #fff
+
+.submenu
+	background-color: #fff
+	border-radius: 30px
 
 .cities-select
 	border-radius: 20px
