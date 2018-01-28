@@ -36,7 +36,7 @@
             <div class="auth">
               <div class="auth__item auth__login login">
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
-                <div class="login__text">Вход</div>
+                <div class="login__text js-popup-link" data-popup="popup-login">Вход</div>
               </div>
               <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
@@ -136,9 +136,8 @@
                     <h2 class="hospital-filters__title">Цена, руб.</h2>
                     <!-- begin range -->
                     <div class="range">
-                      <div class="range-inputs"> <input type="text" class="range-inputs__field range-inputs__field_min" value="12 000" disabled /> <span class="range-inputs__delimiter"></span> <input type="text" class="range-inputs__field range-inputs__field_max" value="50 000"
-                          disabled /> </div>
-                      <div class="range__in js-range" data-min="0" data-max="100000" data-start="12000 50000" data-step="1000"></div>
+                      <div class="range-inputs"> <input type="text" class="range-inputs__field range-inputs__field_min" value="12 000" /> <span class="range-inputs__delimiter"></span> <input type="text" class="range-inputs__field range-inputs__field_max" value="50 000" /> </div>
+                      <div class="range__in js-range" data-min="0" data-max="100000" data-start="12000 50000" data-step="1"></div>
                     </div>
                     <!-- end range -->
                   </div>
@@ -328,19 +327,19 @@
               <!-- begin filter-section__meta-filters -->
               <div class="filter-section__meta-filters">
                 <!--begin meta-filters-->
-                <div class="meta-filters "> <a class="meta-filter" href="#">
+                <div class="meta-filters "> <a class="meta-filter " href="#">
 	
 	<span>Zubza рекомендует </span>
 	
-</a> <a class="meta-filter" href="#">
+</a> <a class="meta-filter " href="#">
 	
 	<span>Самая низкая цена в начале </span>
 	
-</a> <a class="meta-filter" href="#">
+</a> <a class="meta-filter " href="#">
 	
 	<span>Лучший рейтинг и цена</span>
 	
-</a> <a class="meta-filter" href="#">
+</a> <a class="meta-filter " href="#">
 	
 	<span>Оценка по отзывам</span>
 	
@@ -380,7 +379,7 @@
                     <div class="clinic-box__more">
                       <div class="worktime-info">
                         <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-                      </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                      </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                   <div class="clinic-box__right">
                     <!--begin count-slider-->
@@ -712,7 +711,7 @@
                     <div class="clinic-box__more">
                       <div class="worktime-info">
                         <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-                      </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                      </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                   <div class="clinic-box__right">
                     <!--begin count-slider-->
@@ -1044,7 +1043,7 @@
                     <div class="clinic-box__more">
                       <div class="worktime-info">
                         <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-                      </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                      </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                   <div class="clinic-box__right">
                     <!--begin count-slider-->
@@ -1376,7 +1375,7 @@
                     <div class="clinic-box__more">
                       <div class="worktime-info">
                         <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-                      </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                      </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                   <div class="clinic-box__right">
                     <!--begin count-slider-->
@@ -1724,7 +1723,7 @@
                       <div class="worktime-info">
                         <p>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
                       </div>
-                      <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn" href="#">Записаться</a> </div>
+                      <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn js-popup-link" href="#" data-popup="popup-appoint">Записаться</a> </div>
                     </div>
                     <!--end sale-block__info-->
                     <div class="perc-icon sale-block__icon"> <i></i> </div>
@@ -1762,7 +1761,7 @@
                       <div class="worktime-info">
                         <p>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
                       </div>
-                      <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn" href="#">Записаться</a> </div>
+                      <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn js-popup-link" href="#" data-popup="popup-appoint">Записаться</a> </div>
                     </div>
                     <!--end sale-block__info-->
                     <div class="perc-icon sale-block__icon"> <i></i> </div>
@@ -1800,7 +1799,7 @@
                       <div class="worktime-info">
                         <p>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
                       </div>
-                      <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn" href="#">Записаться</a> </div>
+                      <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn js-popup-link" href="#" data-popup="popup-appoint">Записаться</a> </div>
                     </div>
                     <!--end sale-block__info-->
                     <div class="perc-icon sale-block__icon"> <i></i> </div>
@@ -2134,6 +2133,78 @@
         <!-- end clinics__search-banner -->
       </div>
       <!-- end clinics -->
+      <div class="popup js-popup popup_appoint" data-popup="popup-appoint">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <!-- begin popup-cols -->
+          <div class="popup-cols">
+            <!-- begin popup-cols__left -->
+            <div class="popup-cols__left">
+              <div class="popup-cols__logo"> <img src="img/logo-text.svg" alt=""> </div>
+              <div class="popup-cols__name">Все стоматологии вашего города</div>
+              <div class="popup-cols__image"> <img src="img/house-black-white.png" alt=""> </div>
+            </div>
+            <!-- end popup-cols__left -->
+            <!-- begin popup-cols__right -->
+            <div class="popup-cols__right">
+              <div class="popup-form">
+                <h4 class="popup-form__title">Стоматология «Все Свои» на Кронштадской</h4>
+                <!-- begin popup-form__text -->
+                <div class="popup-form__text">
+                  <p>г. Москва, ул. Волочаевская, д. 15, стр.1</p>
+                  <p>ЦАО, Марксистская (1 км), Римская (1 км), Таганская (1 км)</p>
+                </div>
+                <!-- end popup-form__text -->
+                <form action="">
+                  <div class="form-field"> <label for="">Врач</label>
+                    <div class="form-field__in"> <select class="js-select" data-field="Неважно" data-icon="arrow-down">
+                  
+                  <option value="qweqe">Неважно</option>
+                  
+                  <option value="qweqe">Неважно</option>
+                  
+                  <option value="qweqe">Неважно</option>
+                  
+                </select> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Услуга</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Название услуги"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Дата и время</label>
+                    <div class="form-field__in form-field__in_flex">
+                      <div class="form-field__col"> <input type="text" class="textfield js-datepicker" placeholder="дд.мм.гг">
+                        <div class="input-icon"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> </div>
+                      </div>
+                      <div class="form-field__col"> <select class="js-select" data-field="Время" data-icon="arrow-down">
+                    
+                    <option value="qweqe">9:30</option>
+                    
+                    <option value="qweqe">10:00</option>
+                    
+                    <option value="qweqe">11:00</option>
+                    
+                    <option value="qweqe">12:00</option>
+                    
+                    <option value="qweqe">12:30</option>
+                    
+                  </select> </div>
+                    </div>
+                  </div>
+                  <div class="form-field"> <label for="">Ваше имя</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Введите свое имя"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Ваш телефон</label>
+                    <div class="form-field__in is-invalid"> <input type="text" class="textfield" placeholder="+7 ( ___ ) ___ - __ - __"> <span class="form-field__error">Введите телефон</span> </div>
+                  </div> <button type="submit" class="btn btn--green">Записаться</button> </form>
+                <div class="popup-form__policy">Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a></div>
+              </div>
+            </div>
+            <!-- end popup-cols__right -->
+          </div>
+          <!-- end popup-cols -->
+        </div>
+      </div>
       <div class="js-popup popup popup_cities" data-popup="cities">
         <div class="js-popup-overlay popup__overlay"></div>
         <div class="popup__content js-popup-content">
@@ -2532,6 +2603,19 @@
               </div>
             </div>
           </script>
+        </div>
+      </div>
+      <div class="popup js-popup popup--login" data-popup="popup-login">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="logo"> <a href="#"><img src="img/logo-white-letters.svg" alt=""></a> </div>
+          <form action="" class="form">
+            <div class="form__field form__field--100 form__field--icon"> <input type="email" class="input input--transparent input--icon" placeholder="Email"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
+            <div class="form__field form__field--100 form__field--icon"> <input type="password" class="input input--transparent input--icon"> <svg class="icon icon-lock"><use xlink:href="img/sprite.svg#icon-lock"></use></svg> </div>
+            <div class="form__field form__field--100"> <button type="submit" class="btn btn--white btn--100">Войти</button> </div>
+          </form> <a href="" class="forget-link">Забыли пароль?</a>
+          <div class="have-account"> Нет аккаунта? <a href="" class="js-popup-link" data-popup="popup-register">Зарегистрироваться</a> </div>
         </div>
       </div>
       <div class="popup js-popup popup_register" data-popup="popup-register">

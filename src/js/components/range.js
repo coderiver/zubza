@@ -15,6 +15,27 @@ class Range {
     this.init();
   }
 
+  updateValue(value) {
+
+    console.log(value);
+    this.range.noUiSlider.set(value);
+
+  }
+
+  listenInputs() {
+
+    this.inputMin.on('change', (e) => {
+      let value = parseInt(this.inputMin.val());
+      this.updateValue([value, parseInt(this.inputMax.val())]);
+    });
+
+    this.inputMax.on('change', (e) => {
+      let value = parseInt(this.inputMax.val());
+      this.updateValue([parseInt(this.inputMin.val()), value]);
+    });
+
+  }
+
   update() {
 
   	this.range.noUiSlider.on('update', (values, handle) => {
@@ -38,9 +59,14 @@ class Range {
 
   }
 
+  events() {
+    this.update();
+    this.listenInputs();
+  }
+
   init() {
   	this.initLib();
-  	this.update();
+  	this.events();
   }
 }
 

@@ -18,7 +18,7 @@
       </div>
       <ul class="clinic-box__price-list">
         {% for test in clinicBox.priceList %}
-        <li><span>{{test.category}}</span><span>{{test.price}}</span></li>
+        <li><span>{{test.category | safe }}</span><span>{{test.price}}</span></li>
         {% endfor %}
       </ul>
       <div class="clinic-box__price-more">
@@ -37,7 +37,7 @@
       <div class="worktime-info">
         <p>{{ clinicBox.worktime | safe }}</p>
       </div>
-      <a href="#" class="btn btn--green">Записаться</a>
+      <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a>
     </div>
 
   </div>
