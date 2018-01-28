@@ -12,7 +12,54 @@
 
   <body>
     <!-- BEGIN content -->
-    <div class="out">
+    <div class="out ">
+      <div class="header">
+        <div class="container header__in">
+          <div class="header__logo"> <a href="#"><img src="img/logo-.svg" alt=""></a> </div>
+          <div class="header__select cities-select js-popup-link" data-popup="cities">
+            <div class="cities-select__field">Москва</div>
+            <div class="cities-select__label"> <svg class="icon icon-marker"><use xlink:href="img/sprite.svg#icon-marker"></use></svg> </div>
+            <div class="cities-select__arrow"></div>
+          </div>
+          <div class="header__menu">
+            <div class="menu">
+              <ul>
+                <li><a href="#">Клиника</a></li>
+                <li><a href="#">Врачи</a></li>
+                <li><a href="#">Услуги и цены </a></li>
+                <li><a href="#">Акции</a><i>1</i></li>
+                <li><a href="#">О проекте</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__auth">
+            <div class="auth">
+              <div class="auth__item auth__login login">
+                <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
+                <div class="login__text">Вход</div>
+              </div>
+              <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn">Регистрация</a> </div>
+            </div>
+            <div class="header__burger"> <button class="burger js-burger">
+					<i></i>
+				</button> </div>
+          </div>
+          <div class="header__submenu js-submenu">
+            <div class="submenu">
+              <ul>
+                <li class="is-active"> <a href="#">Услуги и цены</a> </li>
+                <li> <a href="#">Акции</a> </li>
+                <li> <a href="#">Памятка пациенту</a> </li>
+                <li> <a href="#">Справочник здоровья</a> </li>
+                <li> <a href="#">Как это работает</a> </li>
+                <li> <a href="#">Медицинским центрам</a> </li>
+                <li> <a href="#">Врачам</a> </li>
+                <li> <a href="#">О проекте</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="hero">
         <div class="container">
           <h1 class="hero__title"> Найдите хорошую стоматологию </h1>
@@ -332,7 +379,7 @@
           </div>
         </div>
       </div>
-      <div style="width: 80%; margin: 0 auto">
+      <div style="width: 80%; margin: 20px auto">
         <div class="clinic-box clinic-box_mini clinic-box_hosp-info">
           <div class="clinic-box__left">
             <div class="clinic-box__content"> <a href="" class="clinic-box__titlelink">Стоматология «Имплантмастер»</a>
@@ -624,6 +671,433 @@
                       <!--end cslide__head-inner-->
                     </div>
                     <!--end cslide__head-->
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+              </div>
+              <!--end count-slider__content-->
+              <div class="count-slider__count">
+                <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
+                <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+              </div>
+            </div>
+            <!--end count-slider-->
+          </div>
+        </div>
+      </div>
+      <div style="width: 80%; margin: 20px auto">
+        <h2>Врачи стоматологической клиники «Все Свои» на Арбатской</h2>
+        <div class="clinic-box clinic-box_mini clinic-box_doctor">
+          <div class="clinic-box__left">
+            <div class="clinic-box__content">
+              <div class="doctor">
+                <div class="doctor__left">
+                  <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева &lt;br&gt;Ирина Михайловна"> </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                <div class="doctor__right">
+                  <div class="clinic-box__rate">
+                    <h4 class="clinic-box__title">Ярцева <br>Ирина Михайловна</h4>
+                    <div class="rate-wrapper">
+                      <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item ">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> </div>
+                      <!--begin rate-number-->
+                      <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                      <!--end rate-number-->
+                    </div>
+                  </div>
+                  <div class="clinic-box__tagi">
+                    <div class="tagi">
+                      <ul>
+                        <li><a href="#">Хирург</a></li>
+                        <li><a href="#">Парадонтолог</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="doctor__list list list--doctor">
+                    <li class="list__item"><span>Стаж</span> 10 лет</li>
+                    <li class="list__item"><span>Образование:</span> Диплом по специальности «Лечебное дело», Российский национальный исследовательский медицинский университет имени Н. И. Пирогова (2006 г.) Интернатура по специальности &quot;Терапия&quot;, Российский национальный
+                      исследовательский медицинский университет ... имени Н. И. Пирогова (2007 г.) </li>
+                  </ul> <a href="" class="more-link more-link--sm">
+            <i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+            <span>Подробнее о враче</span>
+          </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="clinic-box__right">
+            <!--begin count-slider-->
+            <div class="count-slider  js-slider-count-parent ">
+              <!--begin count-slider__content-->
+              <div class="count-slider__content js-slider-count ">
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+              </div>
+              <!--end count-slider__content-->
+              <div class="count-slider__count">
+                <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
+                <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+              </div>
+            </div>
+            <!--end count-slider-->
+          </div>
+        </div>
+        <div class="clinic-box clinic-box_mini clinic-box_doctor">
+          <div class="clinic-box__left">
+            <div class="clinic-box__content">
+              <div class="doctor">
+                <div class="doctor__left">
+                  <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Новослободская&lt;br&gt; Ирина Михайловна"> </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                <div class="doctor__right">
+                  <div class="clinic-box__rate">
+                    <h4 class="clinic-box__title">Новослободская<br> Ирина Михайловна</h4>
+                    <div class="rate-wrapper">
+                      <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item ">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> </div>
+                      <!--begin rate-number-->
+                      <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                      <!--end rate-number-->
+                    </div>
+                  </div>
+                  <div class="clinic-box__tagi">
+                    <div class="tagi">
+                      <ul>
+                        <li><a href="#">Хирург</a></li>
+                        <li><a href="#">Парадонтолог</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="doctor__list list list--doctor">
+                    <li class="list__item"><span>Стаж</span> 10 лет</li>
+                    <li class="list__item"><span>Образование:</span> Диплом по специальности «Лечебное дело», Российский национальный исследовательский медицинский университет имени Н. И. Пирогова (2006 г.) Интернатура по специальности &quot;Терапия&quot;, Российский национальный
+                      исследовательский медицинский университет ... имени Н. И. Пирогова (2007 г.) </li>
+                  </ul> <a href="" class="more-link more-link--sm">
+            <i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+            <span>Подробнее о враче</span>
+          </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="clinic-box__right">
+            <!--begin count-slider-->
+            <div class="count-slider  js-slider-count-parent ">
+              <!--begin count-slider__content-->
+              <div class="count-slider__content js-slider-count ">
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
+                    <!--begin cslide__count-block-->
+                    <div class="cslide__count-block">
+                      <!--begin count-users-->
+                      <div class="count-users count-users--mb-16 count-users--gray">
+                        <div class="count-users__bought count-users__bought--cyan">
+                          <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                          <p>ЗАПИСАЛОСЬ</p>
+                        </div> <span class="count-users__separator">/</span>
+                        <div class="count-users__glad count-users__glad--green">
+                          <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                          <p>ДОВОЛЬНЫ</p>
+                        </div>
+                      </div>
+                      <!--end count-users-->
+                    </div>
+                    <!--end cslide__count-block-->
+                    <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                    <!--begin cslide__text-->
+                    <div class="cslide__text cslide__text--mb-none">
+                      <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                        из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                    </div>
+                    <!--end cslide__text-->
+                    <!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+                    <!--begin cslide__read-more-->
+                    <div class="cslide__read-more"> <a href="#">Читать дальше</a> </div>
+                    <!--end cslide__read-more-->
+                  </div>
+                  <!--end cslide__inner-->
+                </div>
+                <!--end count-slide-->
+                <!--begin count-slide-->
+                <div class="cslide  js-slider-count-slide">
+                  <!--begin cslide__inner-->
+                  <div class="cslide__inner">
                     <!--begin cslide__count-block-->
                     <div class="cslide__count-block">
                       <!--begin count-users-->
@@ -1036,6 +1510,83 @@
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__main">
+            <div class="footer__logo"> <a href="/" class="logo">
+          <img src="img/logo-lg.svg" alt="Logo"/>
+        </a> </div>
+            <div class="footer__nav">
+              <div class="nav">
+                <div class="nav__col">
+                  <h4 class="nav__title">О проекте</h4> <a href="" class="nav__title nav__title--mob">О проекте</a><br/>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">О проекте</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Как это работает</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Медицинским центрам</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Врачам</a></li>
+                  </ul>
+                  <h4 class="nav__title">Сервисы</h4> <a href="" class="nav__title nav__title--mob">Сервисы</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Справочник здоровья</a></li>
+                  </ul>
+                </div>
+                <div class="nav__col">
+                  <h4 class="nav__title">Меню</h4> <a href="" class="nav__title nav__title--mob">Меню</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Клиники</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Врачи</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Услуги и цены</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Акции</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Памятка пациенту</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Как записаться</a></li>
+                  </ul>
+                </div>
+                <div class="nav__col">
+                  <h4 class="nav__title">Специализации врачей</h4> <a href="" class="nav__title nav__title--mob">Специализации врачей</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Стоматолог терапевт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Ортодонт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Хирург</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="more-link more-link--sm" href=""><i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i><span>Все доктора</span></a></li>
+                  </ul>
+                </div>
+                <div class="nav__col">
+                  <h4 class="nav__title">Специализации клиник</h4> <a href="" class="nav__title nav__title--mob">Специализации клиник</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Стоматолог терапевт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Ортодонт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Хирург</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="more-link more-link--sm" href=""><i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i><span>Все клиники</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyrights">
+          <div class="container">
+            <div class="copyrights">
+              <div class="copyrights__text">
+                <p>&copy; Все права защищены. Zubza. 2017</p>
+              </div>
+              <ul class="copyrights__links">
+                <li><a href="">Карта сайта</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Публичная оферта</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

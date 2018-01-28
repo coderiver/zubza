@@ -13,3 +13,7 @@ PageList:
   ready: 50
 - file: yana.html
   ready: 50
+- file: clinic-page.html
+  ready: 50
+- file: main.html
+  ready: 50
