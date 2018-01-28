@@ -21,7 +21,11 @@
 	&__item
 		width: 333px
 	&__list
-		margin-top: 10px 
+		margin-top: 10px
+		&.is-active
+			.more-link__icon
+				transform: translateY(-50%) rotate(-90deg)
+
 	&__list-item
 		display: block
 		position: relative
@@ -52,4 +56,6 @@
 		+OSSemi
 	&__link
 		margin-top: 12px
+	.more-link__icon
+		transition: transform linear 0.3s
 		 
