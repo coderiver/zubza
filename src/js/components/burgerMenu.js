@@ -1,8 +1,17 @@
-import {DOC, ACTIVE} from '../_const';
+import {DOC, ACTIVE, BODY} from '../_const';
 
 const burger = '.js-burger';
+const submenu = $('.js-submenu');
 
 DOC.on('click', burger, (e) => {
   let that = $(e.currentTarget);
   that.toggleClass(ACTIVE);
+  submenu.toggleClass(ACTIVE);
+});
+
+BODY.click((e) => {
+  if (!$(e.target).closest('.js-submenu').length && !$(e.target).closest('.js-burger').length ) {
+    submenu.removeClass(ACTIVE);
+    $(burger).removeClass(ACTIVE);
+  }
 });

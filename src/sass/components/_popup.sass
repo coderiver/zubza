@@ -5,7 +5,7 @@
 	left: 0
 	width: 100vw
 	height: 100vh
-	z-index: 15
+	z-index: 1002
 	overflow-y: auto
 	background: rgba(#000, 0.5)
 	+m
@@ -61,6 +61,11 @@
 			padding: 50px
 			text-align: left
 			width: 1000px
+	&_appoint
+		.popup__content
+			width: 840px
+			padding: 0
+			border-radius: 3px
 	&--map
 		.popup__content
 			width: 1000px
@@ -103,3 +108,32 @@
 		margin-bottom: 2px
 	.rate-stars
 		margin-bottom: 18px
+
+.popup-cols
+	display: flex
+	&__left
+		background: linear-gradient(to bottom, #3bd7f7, $cyan)
+		width: percentage(310/840)
+		padding: 50px
+		position: relative
+	&__right
+		width: percentage(530/840)
+		background: $white
+		padding: 50px
+	&__logo
+		width: 170px
+		margin: 0 auto 16px
+		img
+			max-width: 100%
+			height: auto
+	&__name
+		font-size: 17px
+		+PBold
+		color: #13c1e5
+		text-transform: uppercase
+	&__image
+		opacity: .5
+		position: absolute
+		bottom: 50px
+		left: 50%
+		transform: translateX(-50%)

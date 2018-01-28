@@ -38,13 +38,13 @@
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
                 <div class="login__text">Вход</div>
               </div>
-              <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn button button_cyan">Регистрация</a> </div>
+              <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn">Регистрация</a> </div>
             </div>
             <div class="header__burger"> <button class="burger js-burger">
 					<i></i>
 				</button> </div>
           </div>
-          <div class="header__submenu">
+          <div class="header__submenu js-submenu">
             <div class="submenu">
               <ul>
                 <li class="is-active"> <a href="#">Услуги и цены</a> </li>
@@ -189,7 +189,7 @@
 <svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
 </i>
           <span>Подробнее о клинике</span>
-        </a> <a href="#" class="btn btn--green">Записаться</a> </div>
+        </a> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint-clinic">Записаться</a> </div>
                     <!-- end clinic-box__more -->
                   </div>
                 </div>
@@ -490,6 +490,80 @@
               </div>
             </div>
           </script>
+        </div>
+      </div>
+      <div class="popup js-popup popup_appoint" data-popup="popup-appoint-clinic">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <!-- begin popup-cols -->
+          <div class="popup-cols">
+            <!-- begin popup-cols__left -->
+            <div class="popup-cols__left">
+              <div class="popup-cols__logo"> <img src="img/logo-text.svg" alt=""> </div>
+              <div class="popup-cols__name">Все стоматологии вашего города</div>
+              <div class="popup-cols__image"> <img src="img/house-black-white.png" alt=""> </div>
+            </div>
+            <!-- end popup-cols__left -->
+            <!-- begin popup-cols__right -->
+            <div class="popup-cols__right">
+              <div class="popup-form">
+                <h4 class="popup-form__title">Стоматология «Все Свои» на Кронштадской</h4>
+                <!-- begin popup-form__text -->
+                <div class="popup-form__text">
+                  <p>г. Москва, ул. Волочаевская, д. 15, стр.1</p>
+                  <p>ЦАО, Марксистская (1 км), Римская (1 км), Таганская (1 км)</p>
+                </div>
+                <!-- end popup-form__text -->
+                <form action="">
+                  <div class="form-field"> <label for="">Врач</label>
+                    <div class="form-field__in"> <select class="js-select" data-field="Неважно" data-icon="arrow-down">
+                  
+                  <option value="qweqe">Неважно</option>
+                  
+                  <option value="qweqe">Неважно</option>
+                  
+                  <option value="qweqe">Неважно</option>
+                  
+                </select> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Услуга</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Название услуги"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Дата и время</label>
+                    <div class="form-field__in form-field__in_flex">
+                      <div class="form-field__col"> <input type="text" class="textfield js-datepicker" placeholder="дд.мм.гг">
+                        <div class="input-icon"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> </div>
+                      </div>
+                      <div class="form-field__col">
+                        <div class="form-field__in"> <select class="js-select" data-field="Время" data-icon="arrow-down">
+                      
+                      <option value="qweqe">9:30</option>
+                      
+                      <option value="qweqe">10:00</option>
+                      
+                      <option value="qweqe">11:00</option>
+                      
+                      <option value="qweqe">12:00</option>
+                      
+                      <option value="qweqe">12:30</option>
+                      
+                    </select> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-field"> <label for="">Ваше имя</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Введите свое имя"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Ваш телефон</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="+7 ( ___ ) ___ - __ - __"> </div>
+                  </div> <button type="submit" class="btn btn--green">Записаться</button> </form>
+                <div class="popup-form__policy">Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a></div>
+              </div>
+            </div>
+            <!-- end popup-cols__right -->
+          </div>
+          <!-- end popup-cols -->
         </div>
       </div>
       <div class="js-popup popup popup_cities" data-popup="cities">
@@ -860,6 +934,36 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="popup popup--map js-popup js-is-map-popup" data-popup="popup-map">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="popup__map-wrapper">
+            <div class="gmap js-popup-map" id="popup-map"></div>
+          </div>
+          <script type="text/template" id="infobox">
+            <div class="baloon">
+              <!-- 				<button class="baloon__close js-infobox-close"></button> -->
+              <div className="baloon__content">
+                <p class="baloon__title">{{=baloon.title}}</p>
+                <div class="rate-stars  rate-stars--green rate-stars--sm"> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item ">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> </div>
+                <p class="baloon__text">{{=baloon.text}}</p>
+                <p class="baloon__price">{{=baloon.price}}</p>
+              </div>
+            </div>
+          </script>
         </div>
       </div>
       <footer class="footer">
