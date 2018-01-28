@@ -31,39 +31,57 @@
               <label for="">{{ field.label }}</label>
 
               {% if field.select %}
-              <div class="form-field__in">
+              <div class="form-field__in{% if field.invalid %} is-invalid{% endif %}">
                 <select class="js-select" data-field="{{ field.select.field }}" data-icon="arrow-down">
                   {% for i in field.select.options %}
                   <option value="qweqe">{{ i }}</option>
                   {% endfor %}
                 </select>
+
+                {% if field.validationMessage %}
+                <span class="form-field__error">{{ field.validationMessage }}</span>
+                {% endif %}
+
               </div>
               {% endif %}
 
               {% if field.input %}
-              <div class="form-field__in">
+              <div class="form-field__in{% if field.invalid %} is-invalid{% endif %}">
                 <input type="text" class="textfield" placeholder="{{ field.input }}">
+
+                {% if field.validationMessage %}
+                <span class="form-field__error">{{ field.validationMessage }}</span>
+                {% endif %}
+
               </div>
               {% endif %}
 
               {% if field.cols %}
               <div class="form-field__in form-field__in_flex">
                 {% for col in field.cols %}
-                <div class="form-field__col">
+                <div class="form-field__col{% if col.invalid %} is-invalid{% endif %}">
 
                   {% if col.datepicker %}
                   <input type="text" class="textfield js-datepicker" placeholder="{{ col.datepicker }}">
                   <div class="input-icon">{{mixins.icon('arrow-down')}}</div>
+
+                  {% if col.validationMessage %}
+                  <span class="form-field__error">{{ col.validationMessage }}</span>
+                  {% endif %}
+
                   {% endif %}
 
                   {% if col.select %}
-                  <div class="form-field__in">
-                    <select class="js-select" data-field="{{ col.select.field }}" data-icon="arrow-down">
-                      {% for i in col.select.options %}
-                      <option value="qweqe">{{ i }}</option>
-                      {% endfor %}
-                    </select>
-                  </div>
+                  <select class="js-select" data-field="{{ col.select.field }}" data-icon="arrow-down">
+                    {% for i in col.select.options %}
+                    <option value="qweqe">{{ i }}</option>
+                    {% endfor %}
+                  </select>
+
+                  {% if col.validationMessage %}
+                  <span class="form-field__error">{{ col.validationMessage }}</span>
+                  {% endif %}
+
                   {% endif %}
 
                 </div>

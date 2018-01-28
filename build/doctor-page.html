@@ -38,7 +38,7 @@
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
                 <div class="login__text">Вход</div>
               </div>
-              <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn">Регистрация</a> </div>
+              <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
             <div class="header__burger"> <button class="burger js-burger">
 					<i></i>
@@ -255,7 +255,7 @@
                   <!-- begin clinic-box__right -->
                   <div class="clinic-box__right">
                     <!-- begin clinic-box__map -->
-                    <div class="clinic-box__map"> <a class="map-link js-popup-link" href="#" data-popup="popup-map">
+                    <div class="clinic-box__map "> <a class="map-link js-popup-link" href="#" data-popup="popup-map">
         <img src="img/clinic-map.jpg" alt="alt">
       </a> </div>
                     <!-- end clinic-box__map -->
@@ -347,7 +347,7 @@
                   <!-- begin clinic-box__right -->
                   <div class="clinic-box__right">
                     <!-- begin clinic-box__map -->
-                    <div class="clinic-box__map"> <a class="map-link js-popup-link" href="#" data-popup="popup-map">
+                    <div class="clinic-box__map "> <a class="map-link js-popup-link" href="#" data-popup="popup-map">
         <img src="img/clinic-map.jpg" alt="alt">
       </a> </div>
                     <!-- end clinic-box__map -->
@@ -1055,6 +1055,30 @@
             <!--end container-->
           </section>
           <!--end section section-sales-->
+          <!--begin license-->
+          <div class="license">
+            <!--begin container-->
+            <div class="container">
+              <h3 class="h3 license__title">Лицензии и сертификаты</h3>
+              <!--begin license__list-->
+              <div class="license__list"> <a class="license__item" href="#">
+					<img src="img/license1.png" alt="alt">
+				</a> <a class="license__item" href="#">
+					<img src="img/license2.png" alt="alt">
+				</a> <a class="license__item" href="#">
+					<img src="img/license3.png" alt="alt">
+				</a> <a class="license__item" href="#">
+					<img src="img/license4.png" alt="alt">
+				</a> <a class="license__item" href="#">
+					<img src="img/license5.png" alt="alt">
+				</a> <a class="license__item" href="#">
+					<img src="img/license6.png" alt="alt">
+				</a> </div>
+              <!--end license__list-->
+            </div>
+            <!--end container-->
+          </div>
+          <!--end license-->
           <!-- begin container -->
           <div class="doctor-page__clinic-boxes container">
             <h2 class="doctor-page__title">Врачи той же специальности поблизости</h2>
@@ -2115,7 +2139,9 @@
           <!-- begin services -->
           <div class="services">
             <div class="services__in">
-              <h2 class="services__title">Специализации и услуги, по которым ведется запись через Zubza</h2>
+              <div class="services__top">
+                <h2 class="services__title">Специализации и услуги, по которым ведется запись через Zubza</h2>
+              </div>
               <div class="services__row">
                 <div class="services__item">
                   <div class="services__item-title">Лечение зубов</div>
@@ -2680,6 +2706,46 @@
               </div>
             </div>
           </script>
+        </div>
+      </div>
+      <div class="popup js-popup popup_register" data-popup="popup-register">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <!-- begin popup-cols -->
+          <div class="popup-cols">
+            <!-- begin popup-cols__left -->
+            <div class="popup-cols__left">
+              <div class="popup-cols__logo"> <img src="img/logo-text.svg" alt=""> </div>
+              <div class="popup-cols__name">РЕГИСТРАЦИЯ НОВОГО ПОЛЬЗОВАТЕЛЯ</div>
+              <div class="popup-cols__image"> <img src="img/message-black-white.png" alt=""> </div>
+            </div>
+            <!-- end popup-cols__left -->
+            <!-- begin popup-cols__right -->
+            <div class="popup-cols__right">
+              <div class="popup-form">
+                <h4 class="popup-form__title popup-form__title_mb">Зарегистрироваться</h4>
+                <!-- begin popup-form__text -->
+                <form action="">
+                  <div class="form-field"> <label for="">Ваше имя</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Анна"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Email</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="example@gmail.com"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Ваш телефон</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="+7 ( ___ ) ___ - __ - __"> </div>
+                  </div>
+                  <!-- begin popup-form__controls -->
+                  <div class="popup-form__controls"> <button type="submit" class="btn btn--green">Регистрация</button> <a href="" class="popup-form__link">У меня уже есть аккаунт</a> </div>
+                  <!-- end popup-form__controls -->
+                </form>
+                <div class="popup-form__policy">Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a></div>
+              </div>
+            </div>
+            <!-- end popup-cols__right -->
+          </div>
+          <!-- end popup-cols -->
         </div>
       </div>
       <footer class="footer">

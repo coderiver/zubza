@@ -1,0 +1,37 @@
+{% set title = 'Услуги по специализации' %}
+{% set prices = [{
+	name: 'Отбеливание Zoom',
+	value: 'от 11000 р.'
+},{
+	name: 'Лазерное отбеливание',
+	value: 'от 17000 р.'
+},{
+	name: 'Airflow',
+	value: 'от 20000 р.'
+},{
+	name: 'Комплексная чистка',
+	value: 'от 5000 р.'
+},{
+	name: 'Отбеливание Zoom',
+	value: 'от 11000 р.'
+},{
+	name: 'Лазерное отбеливание',
+	value: 'от 17000 р.'
+},{
+	name: 'Airflow',
+	value: 'от 20000 р.'
+},{
+	name: 'Комплексная чистка',
+	value: 'от 5000 р.'
+}] %}
+<div class="services services_mod">
+	<div class="services__item-title">{{ title }}</div>
+	<ul class="services__list">
+		{% for item in prices %}
+		<li class="services__list-item">
+			<span class="services__name">{{ item.name }}</span>
+			<span class="services__value">{{ item.value }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

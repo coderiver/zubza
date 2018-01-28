@@ -44,7 +44,6 @@
 	display: flex
 	align-items: center
 	padding-bottom: 20px
-	position: relative
 	label
 		+PReg
 		font-size: 16px
@@ -55,11 +54,28 @@
 		display: none
 	&__in
 		flex-grow: 1
+		position: relative
 		&_flex
 			display: flex
 			justify-content: space-between
+		&.is-invalid
+			.textfield, .custom-select
+				border-color: $pink
 	&__col
 		width: percentage(130/280)
+		position: relative
+		&.is-invalid
+			.textfield, .custom-select
+				border-color: $pink
+	&__error
+		color: $pink
+		font-size: 12px
+		position: absolute
+		width: 100%
+		top: 100%
+		left: 0
+		display: block
+		text-align: center
 	.textfield
 		padding-left: 20px
 		padding-right: 20px
