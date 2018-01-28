@@ -1,0 +1,12 @@
+<!-- begin rec-hospitals -->
+<div class="rec-hospitals">
+	<h4 class="rec-hospitals__title">Рекомендованные клиники</h4>
+	<!-- begin rec-hospitals__inner -->
+	<div class="rec-hospitals__inner">
+		{% for test in hospitalDotsSlider %}
+		{% include "components/_count-slider.html" %}
+		{% endfor %}
+	</div>
+	<!-- end rec-hospitals__inner -->
+</div>
+<!-- end rec-hospitals -->
