@@ -27,7 +27,7 @@ function sliders() {
     $this.slick({
       infinite: false,
       slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToScroll: 1, 
       prevArrow: btnPrev,
       nextArrow: btnNext
     });
@@ -40,12 +40,22 @@ function sliders() {
   $('.js-dots-slider-oneslide').slick({
     infinite: false,
     slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToScroll: 1, 
     prevArrow: btnPrev,
     nextArrow: btnNext,
     dots: true
   });
-
+  $('.js-double-slider').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1, 
+    prevArrow: btnPrev,
+    nextArrow: btnNext,
+    dots: false
+    // ,
+    // centerMode: true,
+    // variableWidth: true
+  });
   $('.js-badge-slider').slick({
     infinite: false,
     slidesToShow: 3,

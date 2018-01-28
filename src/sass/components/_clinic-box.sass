@@ -91,5 +91,81 @@
 			img
 				height: 140px
 				object-position: 50% 0
+	&__price-list
+		margin-top: 15px
+		margin-bottom: 9px
+		li
+			font-size: 13px
+			+OSSemi
+			width: 100%
+			display: flex
+			justify-content: space-between
+			padding: 8px 20px 9px
+			&:nth-child(odd)
+				background-color: $little-grey
+			span
+				&:nth-child(2)
+					color: $cyan
+					font-size: 14px
+					+OSBold
+	&__gallery
+		margin-bottom: 14px
+		li
+			margin-right: 5px
+			display: inline-block
+			a
+				display: block
+				height: 40px
+				width: 60px
+				border-radius: 5px
+				overflow: hidden
+				position: relative
+				img
+					height: 100%
+					width: 100%
+					object-fit: cover
+				&:after
+					transition: 0.2s
+					bottom: 0
+					left: 0
+					position: absolute
+					content: ''
+					height: 100%
+					width: 100%
+					background-color: rgba(20, 193, 229, 0.5)
+				&:hover
+					&:after
+						height: 0
+	&__price-more
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-bottom: 16px
+		border-bottom: 1px solid $gray-border
+		margin-bottom: 10px
+		.sales-link
+			font-size: 14px
+			color: $green
+			+PBold
+			line-height: 25px
+			span
+				text-align: center
+				display: inline-block
+				+PExtra
+				font-size: 13px
+				background-color: $green
+				color: $white
+				height: 22px
+				width: 22px
+				border-radius: 50%
+				margin-right: 4px
+	&_hosp-info
+		padding: 20px
+		.clinic-box
+			&__content
+				border-top: none
+				padding-top: 0
+
+
 
 

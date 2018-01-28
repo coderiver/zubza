@@ -1,0 +1,50 @@
+<div class="clinic-box clinic-box_mini clinic-box_hosp-info">
+  <div class="clinic-box__left">
+    <div class="clinic-box__content">
+
+      <a href="{{ clinicBox.titlelink.url }}" class="clinic-box__titlelink">{{ clinicBox.titlelink.name | safe }}</a>
+      <ul class="clinic-box__gallery">
+        {% for test in clinicBox.gallery %}
+        <li><a href=""><img src="img/{{test}}" alt=""></a></li>
+        {% endfor %}
+      </ul>
+
+      <div class="location-info">
+        <i class="location-info__icon">{{ mixins.icon('location') }}</i>
+        <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>
+      </div>
+      <div class="metro-info">
+        {{ clinicBox.metro | safe }}
+      </div>
+      <ul class="clinic-box__price-list">
+        {% for test in clinicBox.priceList %}
+        <li><span>{{test.category}}</span><span>{{test.price}}</span></li>
+        {% endfor %}
+      </ul>
+      <div class="clinic-box__price-more">
+        <a href="" class="more-link">
+          <i class="more-link__icon">
+            {{mixins.icon('arrow-sm')}}
+          </i>
+          <span>Весь прайс-лист клиники</span>
+        </a>
+        <a href="" class="sales-link">
+          <span>%</span> Акции
+        </a>
+      </div>
+    </div>
+    <div class="clinic-box__more">
+      <div class="worktime-info">
+        <p>{{ clinicBox.worktime | safe }}</p>
+      </div>
+      <a href="#" class="btn btn--green">Записаться</a>
+    </div>
+
+  </div>
+
+  <div class="clinic-box__right">
+    {% for test in sliderDataClinic %}
+    {% include "components/_count-slider.html" %}
+    {% endfor %}
+  </div>
+</div>
