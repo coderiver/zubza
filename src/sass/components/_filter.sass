@@ -48,16 +48,21 @@
 				&:hover
 					color: #fff
 					background-color: $cyan
+				&.more-tags
+					background-color: transparent
+					&:hover
+						color: $cyan
+						opacity: .7
 			&.is-active
 				a
 					background-color: $cyan
 					color: #fff
 
 .checkbox
-	display: block 
+	display: block
 	margin-bottom: 5px
 	&:last-of-type
-		margin-bottom: 0 
+		margin-bottom: 0
 	input[type="checkbox"]
 		display: none
 		&:checked
@@ -66,7 +71,7 @@
 					content: ''
 	&__item
 		cursor: pointer
-		font-size: 14px 
+		font-size: 14px
 		padding-left: 25px
 		position: relative
 		+OSReg
@@ -75,7 +80,7 @@
 			+pseudo
 			height: 15px
 			top: 3px
-			width: 15px 
+			width: 15px
 		&:before
 			+pseudo
 			background-color: $white
@@ -91,4 +96,4 @@
 			content: none
 		&:hover
 			color: $cyan
-		  
+

@@ -5,7 +5,7 @@ breadcrumbs: ['Zubza', 'Справочник']
 
 metaFilters: [
   {
-    metaMode: 'meta-filters--w-830 meta-filters--mb-31',
+    metaMode: 'meta-filters--w-830',
     metalist: [
       {
         tagname: 'Популярное'
@@ -25,6 +25,107 @@ metaFilters: [
     ]
   }
 ]
+
+taglist: ['Детские стоматологии','Клиники ортодонтии','Протезирование','Хирургия','Ортопедия','Протезирование','Хирургия','Ортопедия','Протезирование','Хирургия','Ортопедия','Протезирование']
+
+relativePosts: {
+  posts: [
+    {
+      url: '#',
+      img: 'img/post-img-1.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-2.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'симптомы',
+      tagcolor: '#14c1e5'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-3.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'полезное',
+      tagcolor: '#74d15e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-4.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    },{
+      url: '#',
+      img: 'img/post-img-1.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-2.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'симптомы',
+      tagcolor: '#14c1e5'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-3.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'полезное',
+      tagcolor: '#74d15e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-4.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    },{
+      url: '#',
+      img: 'img/post-img-1.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-2.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'симптомы',
+      tagcolor: '#14c1e5'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-3.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'полезное',
+      tagcolor: '#74d15e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-4.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    }
+  ]
+}
 
 pagination: {
   max: 22,
@@ -231,15 +332,37 @@ services:
 {% block content %}
 <div class="articles-category">
   <div class="container">
-    {% include "components/_breadcrumbs.html" %}
-    <h2 class="articles-category__title">Полезное</h2>
-    {% include "components/_meta-filters.html" %}
-
-
-
-
-    {% include "components/_pagination.html" %}
-
+    <div class="main">
+      {% include "components/_breadcrumbs.html" %}
+      <h2 class="articles-category__title">Полезное</h2>
+      {% include "components/_meta-filters.html" %}
+      <div class="articles-category__line">
+        <div class="articles-category__search">
+          <div class="search-label">Поиск по статьям</div>
+          <input type="text" class="textfield" placeholder="Поиск...">
+        </div>
+        <div class="tagi">
+          <ul>
+            {% for item in taglist %}
+            <li><a href="#">{{ item | safe }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% include "components/_rel-posts.html" %}
+      {% include "components/_pagination.html" %}
+    </div>
+  </div>
+  <div class="search-banner">
+    <div class="container">
+      <div class="search-banner__image image-group">
+        <img class="image-group__head image-group__head_clinic" src="img/clinic.svg" alt="">
+        <img src="img/cloud.svg" alt="" class="image-group__cloud">
+      </div>
+      <div class="search-banner__title section-title">Перейти к поиску клиники</div>
+    </div>
+  </div>
+  <div class="container">
     {% include "components/_services.html" %}
   </div>
 
