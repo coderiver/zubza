@@ -54,7 +54,9 @@ h4, .h4
 		width: percentage(280/1180)
 
 .text
-	line-height: 24px
+	line-height: 1.5
+	&_gutter
+		margin-bottom: 34px
 .text-cyan
 	color: $cyan
 .text-bold
@@ -62,18 +64,18 @@ h4, .h4
 
 .list
 	line-height: 24px
-	margin: 20px 0
+	margin: 26px 0 25px
 	&__item
 		position: relative
-		padding-left: 15px
+		padding-left: 21px
 		&:before
-			font-size: 23px
+			font-size: 30px
 			display: block
 			position: absolute
 			content: '•'
 			color: $cyan
 			top: 0
-			left: 0
+			left: 3px
 .map-link
 	display: block
 	border-radius: 5px
@@ -114,3 +116,6 @@ h4, .h4
 
 .centered
 	text-align: center
+
+.short-text
+	padding-bottom: 36px
