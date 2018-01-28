@@ -1,0 +1,663 @@
+---
+outMode: 'out--bg-gray'
+title: 'Ярцева Ирина Михайловна'
+logo: 'blue'
+breadcrumbs: ['Zubza', 'Стоматологии']
+anchors: [
+{
+	anchorslist: [
+	{
+		text: 'О враче'
+	},
+	{
+		text: 'Где принимает'
+	},
+	{
+		text: 'Цены на услуги '
+	},
+	{
+		text: 'Отзывы'
+	},
+	{
+		text: 'Акции'
+	},
+	{
+		text: 'Врачи',
+		active: 'is-active'
+	},
+	{
+		text: 'Лицензии и сертификаты'
+	},
+	{
+		text: 'Другие врачи поблизости'
+	}
+	]
+}
+]
+
+clinicBoxes: {
+  title: 'Принимает в центрах',
+  boxes: [
+    {
+      mod: 'clinic-box_mini',
+      rate: {
+        stars: [
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: ''
+          }
+        ],
+        number: '4.6'
+      },
+      users: {
+        bought: '70',
+        glad: '65',
+      },
+      titlelink: {
+        name: 'Стоматология «Все Свои» на Кронштадской',
+        url: ''
+      },
+      tablelist: [
+        ['Консультация стоматолога', '<span class="text-cyan text-bold">Бесплатно</span>'],
+        ['Лечение кариеса', '<span class="text-cyan text-bold">от 500 руб.</span>']
+      ],
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      rightButton: true
+    },
+    {
+      mod: 'clinic-box_mini',
+      rate: {
+        stars: [
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: 'is-color'
+          },
+          {
+            starMode: ''
+          }
+        ],
+        number: '4.6'
+      },
+      users: {
+        bought: '70',
+        glad: '65',
+      },
+      titlelink: {
+        name: 'Стоматология «Все Свои» на Кронштадской',
+        url: ''
+      },
+      tablelist: [
+        ['Консультация стоматолога', '<span class="text-cyan text-bold">Бесплатно</span>'],
+        ['Лечение кариеса', '<span class="text-cyan text-bold">от 500 руб.</span>']
+      ],
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      rightButton: true
+    }
+  ]
+}
+---
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- begin doctor-page -->
+	<div class="doctor-page">
+		<!-- begin container -->
+			<div class="container">
+				{% include "components/_breadcrumbs.html" %}
+			</div>
+		<!-- end container -->
+		{% include "components/_anchors.html" %}
+		{% include "components/_clinic-boxes.html" %}
+		<div class="doctor-page__block">	
+			<!-- begin container -->
+			<div class="container">
+				<h2 class="doctor-page__title">Цены на услуги</h2>
+				<div class="doctor-page__textual">
+					<p>
+						Воспользуйтесь поиском или выберите специализацию
+					</p>
+				</div>
+				{% set list = [{
+					item: 'Детские стоматологии'
+				}, {
+					item: 'Клиники ортодонтии'
+				}, {
+					item: 'Протезирование'
+				}, {
+					item: 'Хирургия'
+				}, {
+					item: 'Ортопедия'
+				}, {
+					item: 'Протезирование'
+				}, {
+					item: 'Хирургия'
+				}, {
+					item: 'Ортопедия'
+				}, {
+					item: 'Протезирование'
+				}, {
+					item: 'Хирургия'
+				}, {
+					item: 'Ортопедия'
+				}, {
+					item: 'Протезирование'
+				}] %}
+				{{mixins.filters({
+					title: 'Начните вводить название услуги',
+					list: list,
+					placeholder: 'Название услуги',
+					inputIcon: 'list'
+				})}}
+				<div class="costs">
+				    <div class="costs__list costs__list_mb cost-table">
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title costs-table__title_head">
+				                    Название услуги
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				                <div class="costs-table__title costs-table__title_secondary">Все свои на Арбатской <span>(цена/цена со скидкой)</span></div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				                <div class="costs-table__title costs-table__title_secondary">Все свои на Кронштадской<span>(цена/цена со скидкой)</span></div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm_last">
+				                <div class="costs-table__title costs-table__title_secondary">Все свои на Ленинском проспекте<span>(цена/цена со скидкой)</span></div>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Виниры
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 080 р
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 080 р
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 080 р
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 080 р
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 080 р
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 080 р
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Восстановление зубов
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		7 000 р
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		-
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		7 000 р
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		-
+					            	</div>
+					            </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		7 000 р
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		-
+					            	</div>
+					            </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Керамические коронки
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		11 010 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		11 010 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		11 010 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		11 010 р.
+					            	</div>
+					            </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		11 010 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		11 010 р.
+					            	</div>
+					            </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Металлокерамика
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		15 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		15 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		15 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		15 000 р.
+					            	</div>
+					            </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		15 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		15 000 р.
+					            	</div>
+					            </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Коронка на имплантат 
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		70 080 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price  costs-table__price_mod">
+					            		-
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		70 080 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price  costs-table__price_mod">
+					            		-
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		70 080 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price  costs-table__price_mod">
+					            		-
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Культевая вкладка
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Культевая вкладка
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		35 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		35 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		35 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		35 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		35 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		35 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Протезы нейлоновые
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		50 100 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		50 100 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		50 100 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		50 100 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		50 100 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		50 100 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Циркониевые коронки
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		20 080 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		20 080 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		20 080 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		20 080 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		20 080 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		20 080 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				        <div class="costs-table__row">
+				            <div class="costs-table__col costs-table__col_indent_md">
+				                <div class="costs-table__title">
+				                    Протезы бюгельные
+				                </div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_indent_sm">
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price costs-table__price_mod">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            	<div class="costs-table__item">
+					            	<div class="costs-table__price">
+					            		18 000 р.
+					            	</div>
+				            	</div>
+				            </div>
+				            <div class="costs-table__col costs-table__col_last">
+				                <a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="costs__btn">
+				    	<a href="#" class="button button_hero">Показать все цены</a>
+				    </div>
+				</div>
+			</div>
+			<!-- end container -->
+		</div>
+	</div>
+<!-- end doctor-page -->
+{% endblock %}
