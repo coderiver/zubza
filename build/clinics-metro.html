@@ -36,7 +36,7 @@
             <div class="auth">
               <div class="auth__item auth__login login">
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
-                <div class="login__text">Вход</div>
+                <div class="login__text js-popup-link" data-popup="popup-login">Вход</div>
               </div>
               <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
@@ -136,9 +136,8 @@
                     <h2 class="hospital-filters__title">Цена, руб.</h2>
                     <!-- begin range -->
                     <div class="range">
-                      <div class="range-inputs"> <input type="text" class="range-inputs__field range-inputs__field_min" value="12 000" disabled /> <span class="range-inputs__delimiter"></span> <input type="text" class="range-inputs__field range-inputs__field_max" value="50 000"
-                          disabled /> </div>
-                      <div class="range__in js-range" data-min="0" data-max="100000" data-start="12000 50000" data-step="1000"></div>
+                      <div class="range-inputs"> <input type="text" class="range-inputs__field range-inputs__field_min" value="12 000" /> <span class="range-inputs__delimiter"></span> <input type="text" class="range-inputs__field range-inputs__field_max" value="50 000" /> </div>
+                      <div class="range__in js-range" data-min="0" data-max="100000" data-start="12000 50000" data-step="1"></div>
                     </div>
                     <!-- end range -->
                   </div>
@@ -328,19 +327,19 @@
               <!-- begin filter-section__meta-filters -->
               <div class="filter-section__meta-filters">
                 <!--begin meta-filters-->
-                <div class="meta-filters "> <a class="meta-filter" href="#">
+                <div class="meta-filters "> <a class="meta-filter " href="#">
 	
 	<span>Zubza рекомендует </span>
 	
-</a> <a class="meta-filter" href="#">
+</a> <a class="meta-filter " href="#">
 	
 	<span>Самая низкая цена в начале </span>
 	
-</a> <a class="meta-filter" href="#">
+</a> <a class="meta-filter " href="#">
 	
 	<span>Лучший рейтинг и цена</span>
 	
-</a> <a class="meta-filter" href="#">
+</a> <a class="meta-filter " href="#">
 	
 	<span>Оценка по отзывам</span>
 	
@@ -2600,6 +2599,19 @@
               </div>
             </div>
           </script>
+        </div>
+      </div>
+      <div class="popup js-popup popup--login" data-popup="popup-login">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="logo"> <a href="#"><img src="img/logo-white-letters.svg" alt=""></a> </div>
+          <form action="" class="form">
+            <div class="form__field form__field--100 form__field--icon"> <input type="email" class="input input--transparent input--icon" placeholder="Email"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
+            <div class="form__field form__field--100 form__field--icon"> <input type="password" class="input input--transparent input--icon"> <svg class="icon icon-lock"><use xlink:href="img/sprite.svg#icon-lock"></use></svg> </div>
+            <div class="form__field form__field--100"> <button type="submit" class="btn btn--white btn--100">Войти</button> </div>
+          </form> <a href="" class="forget-link">Забыли пароль?</a>
+          <div class="have-account"> Нет аккаунта? <a href="" class="js-popup-link" data-popup="popup-register">Зарегистрироваться</a> </div>
         </div>
       </div>
       <div class="popup js-popup popup_register" data-popup="popup-register">

@@ -18,7 +18,7 @@
       </div>
       <ul class="clinic-box__price-list">
         {% for test in clinicBox.priceList %}
-        <li><span>{{test.category}}</span><span>{{test.price}}</span></li>
+        <li><span>{{test.category | safe }}</span><span>{{test.price}}</span></li>
         {% endfor %}
       </ul>
       <div class="clinic-box__price-more">

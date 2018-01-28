@@ -1,4 +1,4 @@
-<a class="meta-filter" href="#">
+<a class="meta-filter {% if test.active %}is-active{% endif %}" href="#">
 	{% if test.color %}
 	<div class="meta-tag ">
 		<div class="meta-tag__circle" style="background-color: {{ test.color }};"></div>
