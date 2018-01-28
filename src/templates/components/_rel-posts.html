@@ -1,9 +1,8 @@
 <section class="rel-posts">
   <!--begin container-->
-  <div class="container">
-
+    {% if elativePosts.title %}
     <h3 class="rel-posts__title">{{ relativePosts.title }}</h3>
-
+    {% endif %}
     <div class="rel-posts__inner">
       {% for post in relativePosts.posts %}
         {% include "components/_post-block.html" %}
@@ -11,10 +10,11 @@
     </div>
 
     <!-- begin rel-posts__button -->
+    {% if relativePosts.buttonUrl %}
     <div class="rel-posts__button">
       <a class="button button_border" href="{{ relativePosts.buttonUrl }}">Смотреть все статьи</a>
     </div>
+    {% endif %}
     <!-- end rel-posts__button -->
-  </div>
   <!--end container-->
 </section>
