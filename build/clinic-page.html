@@ -574,7 +574,7 @@
                   <div class="clinic-box__content">
                     <div class="doctor">
                       <div class="doctor__left">
-                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева &lt;br&gt;Ирина Михайловна"> </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева &lt;br&gt;Ирина Михайловна"> </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                       <div class="doctor__right">
                         <div class="clinic-box__rate">
                           <h4 class="clinic-box__title">Ярцева <br>Ирина Михайловна</h4>
@@ -782,7 +782,7 @@
                   <div class="clinic-box__content">
                     <div class="doctor">
                       <div class="doctor__left">
-                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Новослободская&lt;br&gt; Ирина Михайловна"> </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Новослободская&lt;br&gt; Ирина Михайловна"> </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                       <div class="doctor__right">
                         <div class="clinic-box__rate">
                           <h4 class="clinic-box__title">Новослободская<br> Ирина Михайловна</h4>
@@ -990,7 +990,7 @@
                   <div class="clinic-box__content">
                     <div class="doctor">
                       <div class="doctor__left">
-                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Новослободская&lt;br&gt; Ирина Михайловна"> </div> <a href="#" class="btn btn--green">Записаться</a> </div>
+                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Новослободская&lt;br&gt; Ирина Михайловна"> </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                       <div class="doctor__right">
                         <div class="clinic-box__rate">
                           <h4 class="clinic-box__title">Новослободская<br> Ирина Михайловна</h4>
@@ -1335,7 +1335,7 @@
                     <div class="worktime-info">
                       <p>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
                     </div>
-                    <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn" href="#">Записаться</a> </div>
+                    <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn js-popup-link" href="#" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                   <!--end sale-block__info-->
                   <div class="perc-icon sale-block__icon"> <i></i> </div>
@@ -1373,7 +1373,7 @@
                     <div class="worktime-info">
                       <p>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
                     </div>
-                    <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn" href="#">Записаться</a> </div>
+                    <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn js-popup-link" href="#" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                   <!--end sale-block__info-->
                   <div class="perc-icon sale-block__icon"> <i></i> </div>
@@ -1411,7 +1411,7 @@
                     <div class="worktime-info">
                       <p>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
                     </div>
-                    <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn" href="#">Записаться</a> </div>
+                    <div class="sale-block__btn-wrapper"> <a class="button button_cyan sale-block__btn js-popup-link" href="#" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                   <!--end sale-block__info-->
                   <div class="perc-icon sale-block__icon"> <i></i> </div>
@@ -2620,6 +2620,19 @@
             <!-- end popup-cols__right -->
           </div>
           <!-- end popup-cols -->
+        </div>
+      </div>
+      <div class="popup popup_reminder js-popup is-active" data-popup="city-reminder">
+        <div class="popup__cover js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="reminder">
+            <div class="reminder__title">Ваш город – Санкт-Петербург</div>
+            <div class="reminder__btns">
+              <div class="reminder__btn"> <a href="#" class="btn btn--green btn--sm">Да</a> </div>
+              <div class="reminder__btn"> <a href="#" class="button button_hero button_sm">Нет, изменить</a> </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer class="footer">

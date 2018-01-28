@@ -1,44 +1,12 @@
-<div class="doctors-list" style="background-image: url(img/texture.png);: ">
+<div class="doctors-list {% if linksList.light %}doctors-list--light{% endif %}" style="background-image: url({{ linksList.background }});: ">
 	<div class="container">
-		<div class="doctors-list__title section-title">Или поищите врача по специализации</div>
+		<div class="doctors-list__title section-title">{{ linksList.title }}</div>
 		<div class="doctors-list__body specialists">
+			{% for item in linksList.items %}
 			<div class="specialists__item">
-				<a href="#">Стоматологи-терапевты Москвы <span>{{mixins.icon('arrow-sm')}}</span></a>
+				<a href="#">{{ item }} <span>{{mixins.icon('arrow-sm')}}</span></a>
 			</div>
-			<div class="specialists__item">
-				<a href="#">Стоматологи-терапевты Москвы <span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Стоматологи-ортодонты Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Стоматологи-ортодонты Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Детские стоматологи Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Детские стоматологи Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Стоматологи-терапевты Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Стоматологи-терапевты Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Стоматологи-ортодонты Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Стоматологи-ортодонты Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Детские стоматологи Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
-			<div class="specialists__item">
-				<a href="#">Детские стоматологи Москвы<span>{{mixins.icon('arrow-sm')}}</span></a>
-			</div>
+			{% endfor %}
 		</div>
 	</div>
-
 </div>

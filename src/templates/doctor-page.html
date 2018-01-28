@@ -575,6 +575,48 @@ doctors: [
   }
 ]
 
+popupForm: {
+  dataPopup: 'popup-appoint',
+  name: 'Все стоматологи вашего городa',
+  pic: 'img/doctor-black-white.png',
+  form: {
+    title: 'Протезист Ярцева Ангелина Алексеевна',
+    text: '<p>г. Москва, ул. Волочаевская, д. 15, стр.1</p><p>ЦАО, Марксистская (1 км), Римская (1 км), Таганская (1 км)</p>',
+    fields: [
+      {
+        label: 'Услуга',
+        input: 'Название услуги'
+      },
+      {
+        label: 'Дата и время',
+        cols: [
+          {
+            datepicker: 'дд.мм.гг'
+          },
+          {
+            select: {
+              field: 'Время',
+              options: ['9:30','10:00','11:00', '12:00', '12:30'],
+            }
+          }
+        ]
+      },
+      {
+        label: 'Ваше имя',
+        input: 'Введите свое имя'
+      },
+      {
+        label: 'Ваш телефон',
+        input: '+7 ( ___ ) ___ - __ - __',
+        invalid: true,
+        validationMessage: 'Введите телефон'
+      }
+    ],
+    submitButton: 'Записаться',
+    policy: 'Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a>'
+  }
+}
+
 
 ---
 
@@ -595,7 +637,7 @@ doctors: [
 			</div>
 		<!-- end container -->
 		{% include "components/_clinic-boxes.html" %}
-		<div class="doctor-page__block">	
+		<div class="doctor-page__block">
 			<!-- begin container -->
 			<div class="container">
 				<h2 class="doctor-page__title">Цены на услуги</h2>
@@ -840,7 +882,7 @@ doctors: [
 				        <div class="costs-table__row">
 				            <div class="costs-table__col costs-table__col_indent_md">
 				                <div class="costs-table__title">
-				                    Коронка на имплантат 
+				                    Коронка на имплантат
 				                </div>
 				            </div>
 				            <div class="costs-table__col costs-table__col_indent_sm">
@@ -1142,4 +1184,6 @@ doctors: [
 		</div>
 	</div>
 <!-- end doctor-page -->
+{% include "components/_popup-appoint.html" %}
+
 {% endblock %}

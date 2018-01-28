@@ -443,9 +443,9 @@
             <h2 class="hospital-filters__title">Цена, руб.</h2>
             <!-- begin range -->
             <div class="range">
-              <div class="range-inputs"> <input type="text" class="range-inputs__field range-inputs__field_min" value="12 000" disabled /> <span class="range-inputs__delimiter"></span> <input type="text" class="range-inputs__field range-inputs__field_max" value="50 000" disabled
-                /> </div>
-              <div class="range__in js-range" data-min="0" data-max="100000" data-start="12000 50000" data-step="1000"></div>
+              <div class="range-inputs"> <input type="text" class="range-inputs__field range-inputs__field_min" value="12 000" /> <span class="range-inputs__delimiter"></span> <input type="text" class="range-inputs__field range-inputs__field_max" value="50 000" /> </div>
+              <div class="range__in js-range"
+                data-min="0" data-max="100000" data-start="12000 50000" data-step="1"></div>
             </div>
             <!-- end range -->
           </div>
@@ -1001,6 +1001,19 @@
             <!-- end popup-cols__right -->
           </div>
           <!-- end popup-cols -->
+        </div>
+      </div>
+      <div class="popup popup_reminder js-popup is-active" data-popup="city-reminder">
+        <div class="popup__cover js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="reminder">
+            <div class="reminder__title">Ваш город – Санкт-Петербург</div>
+            <div class="reminder__btns">
+              <div class="reminder__btn"> <a href="#" class="btn btn--green btn--sm">Да</a> </div>
+              <div class="reminder__btn"> <a href="#" class="button button_hero button_sm">Нет, изменить</a> </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer class="footer">
