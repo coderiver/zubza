@@ -37,14 +37,29 @@
 		left: 0
 		height: 3px
 		background-color: #1a1a1a
+		transition: .25s ease
+		border-radius: 50px
 	&:before, &:after
 		content: ''
+		transform: rotate(0) scaleX(1)
 	&:before
 		top: 0
+		transform-origin: top right
 	i
 		top: 7px
+		transform: scale(1)
+		opacity: 1
 	&:after
 		bottom: 0
+		transform-origin: bottom right
+	&.is-active
+		&:before
+			transform: rotate(-39deg) scaleX(1.05)
+		&:after
+			transform: rotate(39deg) scaleX(1.05)
+		i
+			transform: scale(.2)
+			opacity: 0
 
 
 .auth

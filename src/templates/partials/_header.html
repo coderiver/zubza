@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header{% if headerMain %} header_main{% endif %}">
 	<div class="container header__in">
 		<div class="header__logo">
 			<a href="#"><img src="img/logo-{{logo}}.svg" alt=""></a>
@@ -6,7 +6,7 @@
 		<div class="header__select cities-select js-popup-link" data-popup="cities"> 
 			<div class="cities-select__field">Москва</div>
 			<div class="cities-select__label">{{mixins.icon('marker')}}</div>
-			<div class="cities-select__arrow">{{mixins.icon('arrow-down')}}</div>
+			<div class="cities-select__arrow"></div>
 		</div>
 		<div class="header__menu">
 			{% set menu = [{
@@ -36,13 +36,42 @@
 					<div class="login__text">Вход</div>
 				</div>
 				<div class="auth__item auth__reg reg">
-					<a href="#" class="reg__btn button button_cyan">Регистрация</a>
+					<a href="#" class="reg__btn">Регистрация</a>
 				</div>
 			</div>
 			<div class="header__burger">
-				<button class="burger">
+				<button class="burger js-burger">
 					<i></i>
 				</button>
+			</div>
+		</div>
+		<div class="header__submenu js-submenu">
+			{% set submenu = [{
+				item: 'Услуги и цены',
+				active: true
+			}, {
+				item: 'Акции'
+			}, {
+				item: 'Памятка пациенту'
+			}, {
+				item: 'Справочник здоровья'
+			}, {
+				item: 'Как это работает'
+			}, {
+				item: 'Медицинским центрам'
+			}, {
+				item: 'Врачам'
+			}, {
+				item: 'О проекте'
+			}] %}
+			<div class="submenu">
+				<ul>
+					{% for item in submenu %}
+					<li {% if item.active %}class="is-active"{% endif %}>
+						<a href="#">{{item.item}}</a>
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
 	</div>

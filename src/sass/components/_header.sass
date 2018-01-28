@@ -2,7 +2,16 @@
 	padding-top: 17px
 	padding-bottom: 11px
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	position: relative
+	z-index: 1001
+	background-color: #fff
+	margin-bottom: 28px
+	&_main
+		position: absolute
+		width: 100%
+		box-shadow: none
 	&__in
+		position: relative
 		+clr
 	&__logo
 		float: left
@@ -28,6 +37,90 @@
 		float: right
 		padding-top: 14px
 		margin-left: 20px
+	&__submenu
+		position: absolute
+		right: 25px
+		top: calc(100% + 6px)
+		visibility: hidden
+		opacity: 0
+		transition: .3s ease
+		z-index: 777
+		&.is-active
+			visibility: visible
+			opacity: 1
+	&_main
+		box-shadow: none
+		background-color: transparent
+		.menu
+			ul li
+				a
+					color: #fff
+				i
+					background-color: $pink
+					color: #fff
+
+		.login
+			&__text
+				color: #fff
+			&__icon
+				.icon
+					fill: #fff
+		.burger
+			&:before, i, &:after
+				background-color: #fff
+		.reg
+			&__btn
+				color: $black
+				background-color: #FFF
+		.cities-select
+			border-color: #fff
+			&__field
+				color: #fff
+			&__arrow
+				border-color: #fff
+			&__label
+				.icon
+					fill: #fff
+
+.submenu
+	background-color: #fff
+	border-radius: 10px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: -7px
+		right: 16px
+		width: 0
+		height: 0
+		border-left: 7px solid transparent
+		border-right: 7px solid transparent
+		border-bottom: 7px solid #fff
+	ul
+		padding: 16px 20px 20px
+		li
+			line-height: 1
+			&:not(:last-child)
+				margin-bottom: 13px
+			&.is-active
+				a
+					color: $cyan
+			a
+				font-size: 14px
+				color: $black
+				line-height: 1
+				+PBold
+
+.reg
+	&__btn
+		color: #fff
+		font-size: 15px
+		border-radius: 30px
+		padding: 15px 21px 12px
+		+PSemi
+		display: inline-block
+		+trans
+		background-color: $cyan
 
 .cities-select
 	border-radius: 20px
@@ -39,6 +132,7 @@
 		color: $black
 		letter-spacing: 0.07px
 		padding: 12px 30px 8px 43px
+		text-align: left
 	&__label
 		position: absolute
 		top: 50%
