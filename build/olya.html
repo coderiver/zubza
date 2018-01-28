@@ -150,7 +150,7 @@
                 <!-- begin clinic-box__right -->
                 <div class="clinic-box__right">
                   <!-- begin clinic-box__map -->
-                  <div class="clinic-box__map"> <a class="map-link js-popup-link" href="#" data-popup="">
+                  <div class="clinic-box__map"> <a class="map-link js-popup-link" href="#" data-popup="popup-map">
         <img src="img/clinic-map.jpg" alt="alt">
       </a> </div>
                   <!-- end clinic-box__map -->
@@ -255,7 +255,7 @@
           <!-- begin clinic-box__right -->
           <div class="clinic-box__right">
             <!-- begin clinic-box__map -->
-            <div class="clinic-box__map"> <a class="map-link js-popup-link" href="#" data-popup="">
+            <div class="clinic-box__map"> <a class="map-link js-popup-link" href="#" data-popup="popup-map">
         <img src="img/clinic-map.jpg" alt="alt">
       </a> </div>
             <!-- end clinic-box__map -->
@@ -415,6 +415,36 @@
         </div>
       </div>
       <!-- end app --><br> <br> <br>
+      <div class="popup popup--map js-popup js-is-map-popup" data-popup="popup-map">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="popup__map-wrapper">
+            <div class="gmap js-popup-map" id="popup-map"></div>
+          </div>
+          <script type="text/template" id="infobox">
+            <div class="baloon">
+              <!-- 				<button class="baloon__close js-infobox-close"></button> -->
+              <div className="baloon__content">
+                <p class="baloon__title">{{=baloon.title}}</p>
+                <div class="rate-stars  rate-stars--green rate-stars--sm"> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item ">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> </div>
+                <p class="baloon__text">{{=baloon.text}}</p>
+                <p class="baloon__price">{{=baloon.price}}</p>
+              </div>
+            </div>
+          </script>
+        </div>
+      </div>
       <div class="js-popup popup popup_cities" data-popup="cities">
         <div class="js-popup-overlay popup__overlay"></div>
         <div class="popup__content js-popup-content">
