@@ -1,93 +1,99 @@
 <!--begin count-slide-->
 <div class="cslide {{test.slideMode}} js-slider-count-slide">
-	{% if test.headBlock %}
-	<!--begin cslide__head-->
-	<div class="cslide__head {{test.headMode}}">
-		{% if test.headText%}
-		<p class="cslide__head-text">{{test.headText  | safe }}</p>
-		{% endif %}
-		{% if test.rateBlock %}
-		<!--begin cslide__head-inner-->
-		<div class="cslide__head-inner">
-			{% include "components/_rate-wrapper.html" %}
+	<!--begin cslide__inner-->
+	<div class="cslide__inner">
+		
+		{% if test.headBlock %}
+		<!--begin cslide__head-->
+		<div class="cslide__head {{test.headMode}}">
+			{% if test.headText%}
+			<p class="cslide__head-text">{{test.headText  | safe }}</p>
+			{% endif %}
+			{% if test.rateBlock %}
+			<!--begin cslide__head-inner-->
+			<div class="cslide__head-inner">
+				{% include "components/_rate-wrapper.html" %}
+			</div>
+			<!--end cslide__head-inner-->
+			{% endif %}
 		</div>
-		<!--end cslide__head-inner-->
+		<!--end cslide__head-->
 		{% endif %}
-	</div>
-	<!--end cslide__head-->
-	{% endif %}
-	{% if test.countUsers %}
-	<!--begin cslide__count-block-->
-	<div class="cslide__count-block">
-		{% include "components/_count-users.html" %}
-	</div>
-	<!--end cslide__count-block-->
-	{% endif %}
-	{% if test.info %}
-	<p class="cslide__info {{test.infoMode}}">{{test.info}}</p>
-	{% endif %}
-	{% if testSlide.text %}
-	<!--begin cslide__text-->
-	<div class="cslide__text {{test.slideTextMode}}">
-		<p>
-			{{testSlide.text}}
-		</p>
-	</div>
-	<!--end cslide__text-->
-	{% endif %}
-	{% if test.person %}
-	<div class="cslide__person">
-		<span>ВРАЧ</span>
-		<p >{{test.person}}</p>
-	</div>
-	{% endif %}
+		{% if test.countUsers %}
+		<!--begin cslide__count-block-->
+		<div class="cslide__count-block">
+			{% include "components/_count-users.html" %}
+		</div>
+		<!--end cslide__count-block-->
+		{% endif %}
+		{% if test.info %}
+		<p class="cslide__info {{test.infoMode}}">{{test.info}}</p>
+		{% endif %}
+		{% if testSlide.text %}
+		<!--begin cslide__text-->
+		<div class="cslide__text {{test.slideTextMode}}">
+			<p>
+				{{testSlide.text}}
+			</p>
+		</div>
+		<!--end cslide__text-->
+		{% endif %}
+		{% if test.person %}
+		<div class="cslide__person">
+			<span>ВРАЧ</span>
+			<p >{{test.person}}</p>
+		</div>
+		{% endif %}
 
-	{% if test.location %}
-	<!--begin cslide__location-->
-	<div class="cslide__location">
-		<div class="location-info {{ test.locationMode}}">
-			<i class="location-info__icon">{{ mixins.icon('location') }}</i>
-			<a href="{{ test.locationUrl }}">{{ test.location | safe }}</a>
+		{% if test.location %}
+		<!--begin cslide__location-->
+		<div class="cslide__location">
+			<div class="location-info {{ test.locationMode}}">
+				<i class="location-info__icon">{{ mixins.icon('location') }}</i>
+				<a href="{{ test.locationUrl }}">{{ test.location | safe }}</a>
+			</div>
+			<div class="metro-info">
+				{{test.locationMetro | safe}}
+			</div>
+			{% if test.workingTime %}
+			<div class="worktime-info">
+				<p >{{ test.workingTime | safe }}</p>
+			</div>
+			{% endif %}
+			{% if test.moreLink %}
+			<a class="more-link more-link--sm" href="">
+				<i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+				<span>{{test.moreLink}}</span>
+			</a>
+			{% endif %}
 		</div>
-		<div class="metro-info">
-			{{test.locationMetro | safe}}
-		</div>
-		{% if test.workingTime %}
-		<div class="worktime-info">
-			<p >{{ test.workingTime | safe }}</p>
-		</div>
+		<!--end cslide__location-->
 		{% endif %}
-		{% if test.moreLink %}
-		<a class="more-link more-link--sm" href="">
-      <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
-      <span>{{test.moreLink}}</span>
-    </a>
-		{% endif %}
-	</div>
-	<!--end cslide__location-->
-	{% endif %}
 
-	{% if test.recomend %}
-	<!--begin cslide__recomend-->
-	<div class="cslide__recomend">
-		<i></i> РЕКОМЕНДУЮ
+		{% if test.recomend %}
+		<!--begin cslide__recomend-->
+		<div class="cslide__recomend">
+			<i></i> РЕКОМЕНДУЮ
+		</div>
+		<!--end cslide__recomend-->
+		{% endif %}
+		{% if test.readMore %}
+		<!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
+		<!--begin cslide__read-more-->
+		<div class="cslide__read-more">
+			<a href="#">Читать дальше</a>
+		</div>
+		<!--end cslide__read-more-->
+		{% endif %}
+		{% if test.btn %}
+		<a class="cslide__link  {{test.btnMode}}" href="#">{{test.btn}}</a>
+		{% endif %}
+		{% if test.map %}
+		{% include "components/_map-link.html" %}
+		{% endif %}
+
 	</div>
-	<!--end cslide__recomend-->
-	{% endif %}
-	{% if test.readMore %}
-	<!-- http://joxi.ru/5md55O8fvy6dp2  стили сделает тот кто должен-->
-	<!--begin cslide__read-more-->
-	<div class="cslide__read-more">
-		<a href="#">Читать дальше</a>
-	</div>
-	<!--end cslide__read-more-->
-	{% endif %}
-	{% if test.btn %}
-	<a class="cslide__link  {{test.btnMode}}" href="#">{{test.btn}}</a>
-	{% endif %}
-	{% if test.map %}
-	{% include "components/_map-link.html" %}
-	{% endif %}
+	<!--end cslide__inner-->
 
 </div>
 <!--end count-slide-->
