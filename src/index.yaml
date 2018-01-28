@@ -29,3 +29,5 @@ PageList:
   ready: 50
 - file: articles.html
   ready: 50
+- file: clinics.html
+  ready: 50
