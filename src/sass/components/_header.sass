@@ -77,7 +77,30 @@
 
 .submenu
 	background-color: #fff
-	border-radius: 30px
+	border-radius: 10px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		top: -7px
+		right: 10px
+		width: 0
+		height: 0
+		border-left: 6px solid transparent
+		border-right: 6px solid transparent
+		border-bottom: 7px solid #fff
+	ul
+		padding: 10px
+		li
+			&:not(:last-child)
+				margin-bottom: 10px
+			&.is-active
+				a
+					color: $cyan
+			a
+				font-size: 14px
+				color: $black
+				+PBold
 
 .cities-select
 	border-radius: 20px
