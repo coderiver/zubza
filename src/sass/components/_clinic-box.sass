@@ -4,7 +4,7 @@
 	border-radius: 3px
 	box-shadow: 0 4px 16px rgba(0,0,0,.05)
 	display: flex
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	&__left
 		width: percentage(720/1120)
 		padding-right: 30px
@@ -46,7 +46,7 @@
 		align-items: flex-start
 		&_has-border
 			border-top: 1px solid $gray-border
-			padding-top: 15px 
+			padding-top: 15px
 	&__more-left-btn
 		margin-left: 28px
 	&__map
@@ -155,22 +155,11 @@
 		padding-bottom: 16px
 		border-bottom: 1px solid $gray-border
 		margin-bottom: 10px
+	&__spec-wrapper
+		+clr
+		margin-bottom: 18px
 		.sales-link
-			font-size: 14px
-			color: $green
-			+PBold
-			line-height: 25px
-			span
-				text-align: center
-				display: inline-block
-				+PExtra
-				font-size: 13px
-				background-color: $green
-				color: $white
-				height: 22px
-				width: 22px
-				border-radius: 50%
-				margin-right: 4px
+			float: right
 	&_hosp-info
 		padding: 20px
 		.clinic-box
@@ -204,6 +193,24 @@
 				width: 100%
 				border-top: none
 				padding-top: 0
+	&_small-content
+		padding: 20px
+		.doctor__left
+			margin-right: 15px
+		.doctor__avatar
+			width: 137px
+			height: 187px
+		.doctor__title
+			strong
+				font-size: 20px
+		.clinic-box__left
+			width: 67%
+		.clinic-box__right
+			width: 33%
+		.clinic-box__tablelist
+			margin-bottom: 10px
+		.rate-stars
+			margin-left: 0
 
 
 
