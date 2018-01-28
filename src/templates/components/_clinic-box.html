@@ -58,8 +58,8 @@
 
       {% if clinicBox.taglist %}
       <!-- begin clinic-box__tagi -->
-      <div class="clinic-box__tagi">
-        <div class="tagi">
+      <div class="clinic-box__tagi {{clinicBox.taglistMode}}">
+        <div class="tagi ">
           <ul>
             {% for i in clinicBox.taglist %}
             <li><a href="#">{{ i | safe }}</a></li>
@@ -103,6 +103,13 @@
       <a href="#" class="button button_cyan">Записаться</a>
       {% endif %}
 
+      {% if clinicBox.leftButtonMoreClinic %}
+      <a class="more-link more-link--sm clinic-box__more-left-btn" href="#">
+        <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+        <span>{{clinicBox.leftButtonMoreClinic}}</span>
+      </a>
+      {% endif %}
+
       {% if clinicBox.rightButton %}
       <!-- begin clinic-box__more -->
       <div class="clinic-box__more">
@@ -123,7 +130,7 @@
   <!-- begin clinic-box__right -->
   <div class="clinic-box__right">
     <!-- begin clinic-box__map -->
-    <div class="clinic-box__map">
+    <div class="clinic-box__map {{clinicBox.MapMode}}">
       <a class="map-link js-popup-link" href="#" data-popup="popup-map">
         <img src="img/clinic-map.jpg" alt="alt">
       </a>
