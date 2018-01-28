@@ -9,7 +9,10 @@
 	<div class="filters__field">
 		<div class="filters__title">{{config.title}}</div>
 		<div class="filters__textfield">
-			<input type="text" class="textfield" placeholder="Поиск">
+			<input type="text" class="textfield{% if config.icon %} textfield_mod{% endif %}" placeholder="{{config.placeholder}}">
+			{% if config.icon %} 
+			{{icon('list')}}
+			{% endif %}
 		</div>
 	</div>
 	<div class="filters__list">
