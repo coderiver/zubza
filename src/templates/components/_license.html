@@ -1,0 +1,41 @@
+<!--begin license-->
+<div class="license">
+	<!--begin container-->
+	<div class="container">
+		<h3 class="h3 license__title">Лицензии и сертификаты</h3>
+		{% set license = [
+			{
+				img: 'license1'
+			},
+			{
+				img: 'license2'
+			},
+			{
+				img: 'license3'
+			},
+			{
+				img: 'license4'
+			},
+			{
+				img: 'license5'
+			},
+			{
+				img: 'license6'
+			}
+			] %}
+			<!--begin license__list-->
+			<div class="license__list">
+				{% for test in license %}
+				<a class="license__item" href="#">
+					<img src="img/{{test.img}}.png" alt="alt">
+				</a>
+				{%  endfor %}
+			</div>
+			<!--end license__list-->
+
+
+		</div>
+		<!--end container-->
+
+	</div>
+	<!--end license-->

@@ -1,39 +1,9 @@
 ---
-title: 'Полезное'
+title: article page
+outMode: 'out--bg-gray'
 logo: 'blue'
-breadcrumbs: ['Zubza', 'Справочник']
-
-metaFilters: [
-  {
-    metaMode: 'meta-filters--w-830 meta-filters--mb-31',
-    metalist: [
-      {
-        tagname: 'Популярное'
-      },
-      {
-        color: '#74d15e',
-        tagname: 'Полезное'
-      },
-      {
-        color: '#ff016e',
-        tagname: 'Заболевания'
-      },
-      {
-        color: '#14c1e5',
-        tagname: 'Симптомы'
-      }
-    ]
-  }
-]
-
-pagination: {
-  max: 22,
-  min: 5,
-  text: 'Больше статей:'
-}
-
+breadcrumbs: ['Zubza', 'Стоматологии', 'Все Свои на Арбатской'] 
 servicesTitle: 'Услуги, по которым ведется запись через Zubza'
-
 services:
   -
     title: 'Лечение зубов'
@@ -226,25 +196,21 @@ services:
         value: 'от 1500р.'
 
 ---
+
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-<div class="articles-category">
-  <div class="container">
-    {% include "components/_breadcrumbs.html" %}
-    <h2 class="articles-category__title">Полезное</h2>
-    {% include "components/_meta-filters.html" %}
 
-
-
-
-    {% include "components/_pagination.html" %}
-
-    {% include "components/_services.html" %}
-  </div>
-
+<div class="search-banner">
+	<div class="container">
+		<div class="search-banner__image image-group">
+			<img class="image-group__head image-group__head_clinic" src="img/clinic.svg" alt="">
+			<img src="img/cloud.svg" alt="" class="image-group__cloud">
+		</div>
+		<div class="search-banner__title section-title">Перейти к поиску клиники</div>
+	</div>
 </div>
 
-
+{% include './components/_services.html' %}
 
 {% endblock %}
