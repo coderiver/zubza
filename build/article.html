@@ -1,0 +1,720 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>article page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out out--bg-gray">
+      <div class="header">
+        <div class="container header__in">
+          <div class="header__logo"> <a href="#"><img src="img/logo-blue.svg" alt=""></a> </div>
+          <div class="header__select cities-select js-popup-link" data-popup="cities">
+            <div class="cities-select__field">Москва</div>
+            <div class="cities-select__label"> <svg class="icon icon-marker"><use xlink:href="img/sprite.svg#icon-marker"></use></svg> </div>
+            <div class="cities-select__arrow"></div>
+          </div>
+          <div class="header__menu">
+            <div class="menu">
+              <ul>
+                <li><a href="#">Клиника</a></li>
+                <li><a href="#">Врачи</a></li>
+                <li><a href="#">Услуги и цены </a></li>
+                <li><a href="#">Акции</a><i>1</i></li>
+                <li><a href="#">О проекте</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__auth">
+            <div class="auth">
+              <div class="auth__item auth__login login">
+                <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
+                <div class="login__text">Вход</div>
+              </div>
+              <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn">Регистрация</a> </div>
+            </div>
+            <div class="header__burger"> <button class="burger js-burger">
+					<i></i>
+				</button> </div>
+          </div>
+          <div class="header__submenu js-submenu">
+            <div class="submenu">
+              <ul>
+                <li class="is-active"> <a href="#">Услуги и цены</a> </li>
+                <li> <a href="#">Акции</a> </li>
+                <li> <a href="#">Памятка пациенту</a> </li>
+                <li> <a href="#">Справочник здоровья</a> </li>
+                <li> <a href="#">Как это работает</a> </li>
+                <li> <a href="#">Медицинским центрам</a> </li>
+                <li> <a href="#">Врачам</a> </li>
+                <li> <a href="#">О проекте</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-banner">
+        <div class="container">
+          <div class="search-banner__image image-group"> <img class="image-group__head image-group__head_clinic" src="img/clinic.svg" alt=""> <img src="img/cloud.svg" alt="" class="image-group__cloud"> </div>
+          <div class="search-banner__title section-title">Перейти к поиску клиники</div>
+        </div>
+      </div>
+      <!-- begin services -->
+      <div class="services">
+        <div class="services__in">
+          <h2 class="services__title">Услуги, по которым ведется запись через Zubza</h2>
+          <div class="services__row">
+            <div class="services__item">
+              <div class="services__item-title">Лечение зубов</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Консультация</span> <span class="services__value">от 500р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Кариес</span> <span class="services__value">от 500р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+            <div class="services__item">
+              <div class="services__item-title">Протезирование зубов</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Гибкие зубные протезы</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Металлокерамика</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Цирконий</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Виниры</span> <span class="services__value">от 7000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+            <div class="services__item">
+              <div class="services__item-title">Чистка и отбеливание</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Отбеливание Zoom</span> <span class="services__value">от 11000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Лазерное отбеливание</span> <span class="services__value">от 17000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Airflow</span> <span class="services__value">от 20000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Комплексная чистка</span> <span class="services__value">от 5000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="services__row">
+            <div class="services__item">
+              <div class="services__item-title">Сопутствующие услуги</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Консультация</span> <span class="services__value">от 500 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Кариес</span> <span class="services__value">от 300 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 1000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 10000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+            <div class="services__item">
+              <div class="services__item-title">Хирургия</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Гибкие зубные протезы</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Металлокерамика</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Цирконий</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Виниры</span> <span class="services__value">от 7000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+            <div class="services__item">
+              <div class="services__item-title">Имплантация</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Отбеливание Zoom</span> <span class="services__value">от 11000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Лазерное отбеливание</span> <span class="services__value">от 17000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Airflow</span> <span class="services__value">от 20000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Комплексная чистка</span> <span class="services__value">от 5000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="services__row">
+            <div class="services__item">
+              <div class="services__item-title">Пародонтология</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Консультация ортодонта</span> <span class="services__value">от 500 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Керамические брекеты</span> <span class="services__value">от 10500 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Металлические брекеты</span> <span class="services__value">от 7500 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Сапфировые брекеты</span> <span class="services__value">от 50000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+            <div class="services__item">
+              <div class="services__item-title">Ортодонтия</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Консультация ортодонта</span> <span class="services__value">от 500 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Керамические брекеты</span> <span class="services__value">от 10500 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Металлические брекеты</span> <span class="services__value">от 7500 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Сапфировые брекеты</span> <span class="services__value">от 50000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+            <div class="services__item">
+              <div class="services__item-title">Хирургия</div>
+              <ul class="services__list js-show-more" data-items="4">
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Гибкие зубные протезы</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Металлокерамика</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Цирконий</span> <span class="services__value">от 15000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Виниры</span> <span class="services__value">от 7000 р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Пульпит</span> <span class="services__value">от 7000р.</span> </li>
+                <li class="services__list-item js-show-more-item"> <span class="services__name">Восстановление зубов</span> <span class="services__value">от 1500р.</span> </li>
+                <li> <a class="more-link more-link--sm services__link js-show-more-link" href="#">
+                				<i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i>
+								<span>Ещё услуги</span>
+							</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="services__row"> </div>
+        </div>
+      </div>
+      <!-- end services -->
+      <div class="js-popup popup popup_cities" data-popup="cities">
+        <div class="js-popup-overlay popup__overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="pcities">
+            <h4 class="pcities__title"> Выберите ваш город </h4>
+            <div class="pcities__input"> <input type="text" class="textfield" placeholder="Введите название города"> </div>
+            <div class="pcities__items">
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> A </div>
+                  <ul class="item__list">
+                    <li> <a href="">Абакан</a> </li>
+                    <li> <a href="">Актау</a> </li>
+                    <li> <a href="">Алапаевск</a> </li>
+                    <li> <a href="">Алматы</a> </li>
+                    <li> <a href="">Альметьевск</a> </li>
+                    <li> <a href="">Анапа</a> </li>
+                    <li> <a href="">Ангарск</a> </li>
+                    <li> <a href="">Апрелевка</a> </li>
+                    <li> <a href="">Арзамас</a> </li>
+                    <li> <a href="">Армавир</a> </li>
+                    <li> <a href="">Артём</a> </li>
+                    <li> <a href="">Архангельск</a> </li>
+                    <li> <a href="">Астана</a> </li>
+                    <li> <a href="">Астрахань</a> </li>
+                    <li> <a href="">Ачинск</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Б </div>
+                  <ul class="item__list">
+                    <li> <a href="">Балаково</a> </li>
+                    <li> <a href="">Балашиха</a> </li>
+                    <li> <a href="">Барановичи</a> </li>
+                    <li> <a href="">Барнаул</a> </li>
+                    <li> <a href="">Батайск</a> </li>
+                    <li> <a href="">Белая Калитва</a> </li>
+                    <li> <a href="">Белая Церковь</a> </li>
+                    <li> <a href="">Белгород</a> </li>
+                    <li> <a href="">Благовещенск</a> </li>
+                    <li> <a href="">Бобруйск</a> </li>
+                    <li> <a href="">Богучар</a> </li>
+                    <li> <a href="">Борисоглебск</a> </li>
+                    <li> <a href="">Боровичи</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> В </div>
+                  <ul class="item__list">
+                    <li> <a href="">Валдай</a> </li>
+                    <li> <a href="">Великий Новгород</a> </li>
+                    <li> <a href="">Видное</a> </li>
+                    <li> <a href="">Вильнюс</a> </li>
+                    <li> <a href="">Винница</a> </li>
+                    <li> <a href="">Витебск</a> </li>
+                    <li> <a href="">Владивосток</a> </li>
+                    <li> <a href="">Владикавказ</a> </li>
+                    <li> <a href="">Владимир</a> </li>
+                    <li> <a href="">Волгоград</a> </li>
+                    <li> <a href="">Волгодонск</a> </li>
+                    <li> <a href="">Волжский</a> </li>
+                    <li> <a href="">Вологда</a> </li>
+                    <li> <a href="">Волхов</a> </li>
+                    <li> <a href="">Воронеж</a> </li>
+                    <li> <a href="">Воскресенск</a> </li>
+                    <li> <a href="">Всеволожск</a> </li>
+                    <li> <a href="">Выборг</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Г </div>
+                  <ul class="item__list">
+                    <li> <a href="">Гатчина</a> </li>
+                    <li> <a href="">Геленджик</a> </li>
+                    <li> <a href="">Гомель</a> </li>
+                    <li> <a href="">Горно-Алтайск</a> </li>
+                    <li> <a href="">Гродно</a> </li>
+                    <li> <a href="">Грозный</a> </li>
+                    <li> <a href="">Губкин</a> </li>
+                    <li> <a href="">Гулькевичи</a> </li>
+                    <li> <a href="">Гурьевск</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Д </div>
+                  <ul class="item__list">
+                    <li> <a href="">Дзержинск</a> </li>
+                    <li> <a href="">Дзержинский</a> </li>
+                    <li> <a href="">Димитровград</a> </li>
+                    <li> <a href="">Днепродзержинск</a> </li>
+                    <li> <a href="">Днепропетровск</a> </li>
+                    <li> <a href="">Долгопрудный</a> </li>
+                    <li> <a href="">Домодедово</a> </li>
+                    <li> <a href="">Донецк</a> </li>
+                    <li> <a href="">Дубна</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> E </div>
+                  <ul class="item__list">
+                    <li> <a href="">Ейск</a> </li>
+                    <li> <a href="">Екатеринбург</a> </li>
+                    <li> <a href="">Елец</a> </li>
+                    <li> <a href="">Ессентуки</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Ж </div>
+                  <ul class="item__list">
+                    <li> <a href="">Железногорск</a> </li>
+                    <li> <a href="">Железнодорожный</a> </li>
+                    <li> <a href="">Житомир</a> </li>
+                    <li> <a href="">Жуковский</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> З </div>
+                  <ul class="item__list">
+                    <li> <a href="">Дзержинск</a> </li>
+                    <li> <a href="">Дзержинский</a> </li>
+                    <li> <a href="">Димитровград</a> </li>
+                    <li> <a href="">Днепродзержинск</a> </li>
+                    <li> <a href="">Днепропетровск</a> </li>
+                    <li> <a href="">Долгопрудный</a> </li>
+                    <li> <a href="">Домодедово</a> </li>
+                    <li> <a href="">Донецк</a> </li>
+                    <li> <a href="">Дубна</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> И </div>
+                  <ul class="item__list">
+                    <li> <a href="">Ивано-Франковск</a> </li>
+                    <li> <a href="">Иваново</a> </li>
+                    <li> <a href="">Ивантеевка</a> </li>
+                    <li> <a href="">Ижевск</a> </li>
+                    <li> <a href="">Ирбит</a> </li>
+                    <li> <a href="">Иркутск</a> </li>
+                    <li> <a href="">Искитим</a> </li>
+                    <li> <a href="">Истра</a> </li>
+                    <li> <a href="">Ишим</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> К </div>
+                  <ul class="item__list">
+                    <li> <a href="">Казань</a> </li>
+                    <li> <a href="">Калининград</a> </li>
+                    <li> <a href="">Калуга</a> </li>
+                    <li> <a href="">Каменск</a> </li>
+                    <li> <a href="">Каменск 2</a> </li>
+                    <li> <a href="">Камышин</a> </li>
+                    <li> <a href="">Кандалакша</a> </li>
+                    <li> <a href="">Касли</a> </li>
+                    <li> <a href="">Кемерово</a> </li>
+                    <li> <a href="">Керчь</a> </li>
+                    <li> <a href="">Киев</a> </li>
+                    <li> <a href="">Кингисепп</a> </li>
+                    <li> <a href="">Кириши</a> </li>
+                    <li> <a href="">Киров</a> </li>
+                    <li> <a href="">Кировоград</a> </li>
+                    <li> <a href="">Кисловодск</a> </li>
+                    <li> <a href="">Кишинёв</a> </li>
+                    <li> <a href="">Климовск</a> </li>
+                    <li> <a href="">Клинцы</a> </li>
+                    <li> <a href="">Ковров</a> </li>
+                    <li> <a href="">Коломна</a> </li>
+                    <li> <a href="">Колпино</a> </li>
+                    <li> <a href="">Кольчугино</a> </li>
+                    <li> <a href="">Комсомольск</a> </li>
+                    <li> <a href="">Копейск</a> </li>
+                    <li> <a href="">Королёв</a> </li>
+                    <li> <a href="">Кострома</a> </li>
+                    <li> <a href="">Кохма</a> </li>
+                    <li> <a href="">Красногорск</a> </li>
+                    <li> <a href="">Краснодар</a> </li>
+                    <li> <a href="">Краснотурьинск</a> </li>
+                    <li> <a href="">Красноярск</a> </li>
+                    <li> <a href="">Кременчуг</a> </li>
+                    <li> <a href="">Кривой Рог</a> </li>
+                    <li> <a href="">Кропоткин</a> </li>
+                    <li> <a href="">Крымск</a> </li>
+                    <li> <a href="">Курган</a> </li>
+                    <li> <a href="">Курск</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Л </div>
+                  <ul class="item__list">
+                    <li> <a href="">Лабинск</a> </li>
+                    <li> <a href="">Лисаковск</a> </li>
+                    <li> <a href="">Лобня</a> </li>
+                    <li> <a href="">Луганск</a> </li>
+                    <li> <a href="">Львов</a> </li>
+                    <li> <a href="">Люберцы</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> М </div>
+                  <ul class="item__list">
+                    <li> <a href="">Магадан</a> </li>
+                    <li> <a href="">Магнитогорск</a> </li>
+                    <li> <a href="">Майкоп</a> </li>
+                    <li> <a href="">Макеевка</a> </li>
+                    <li> <a href="">Мариуполь</a> </li>
+                    <li> <a href="">Махачкала</a> </li>
+                    <li> <a href="">Междуреченск</a> </li>
+                    <li> <a href="">Мелитополь</a> </li>
+                    <li> <a href="">Минск</a> </li>
+                    <li> <a href="">Москва</a> </li>
+                    <li> <a href="">Мурманск</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Н </div>
+                  <ul class="item__list">
+                    <li> <a href="">Нальчик</a> </li>
+                    <li> <a href="">Наро-Фоминск</a> </li>
+                    <li> <a href="">Находка</a> </li>
+                    <li> <a href="">Невинномысск</a> </li>
+                    <li> <a href="">Нефтекамск</a> </li>
+                    <li> <a href="">Нефтеюганск</a> </li>
+                    <li> <a href="">Нижневартовск</a> </li>
+                    <li> <a href="">Нижнекамск</a> </li>
+                    <li> <a href="">Нижний Новгород</a> </li>
+                    <li> <a href="">Нижний Тагил</a> </li>
+                    <li> <a href="">Николаев</a> </li>
+                    <li> <a href="">Новокубанск</a> </li>
+                    <li> <a href="">Новокузнецк</a> </li>
+                    <li> <a href="">Новомосковск</a> </li>
+                    <li> <a href="">Новополоцк</a> </li>
+                    <li> <a href="">Новороссийск</a> </li>
+                    <li> <a href="">Новосибирск</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> O </div>
+                  <ul class="item__list">
+                    <li> <a href="">Обнинск</a> </li>
+                    <li> <a href="">Одесса</a> </li>
+                    <li> <a href="">Одинцово</a> </li>
+                    <li> <a href="">Октябрьский</a> </li>
+                    <li> <a href="">Омск</a> </li>
+                    <li> <a href="">Орел</a> </li>
+                    <li> <a href="">Оренбург</a> </li>
+                    <li> <a href="">Орехово-Зуево</a> </li>
+                    <li> <a href="">Орск</a> </li>
+                    <li> <a href="">Ош</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> П </div>
+                  <ul class="item__list">
+                    <li> <a href="">Павлово</a> </li>
+                    <li> <a href="">Павлодар</a> </li>
+                    <li> <a href="">Пенза</a> </li>
+                    <li> <a href="">Первоуральск</a> </li>
+                    <li> <a href="">Пермь</a> </li>
+                    <li> <a href="">Петрозаводск</a> </li>
+                    <li> <a href="">Подольск</a> </li>
+                    <li> <a href="">Полтава</a> </li>
+                    <li> <a href="">Псков</a> </li>
+                    <li> <a href="">Пушкин</a> </li>
+                    <li> <a href="">Пятигорск</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Р </div>
+                  <ul class="item__list">
+                    <li> <a href="">Раменское</a> </li>
+                    <li> <a href="">Реутов</a> </li>
+                    <li> <a href="">Рига</a> </li>
+                    <li> <a href="">Ровно</a> </li>
+                    <li> <a href="">Россошь</a> </li>
+                    <li> <a href="">Ростов-на-Дону</a> </li>
+                    <li> <a href="">Рубцовск</a> </li>
+                    <li> <a href="">Руза</a> </li>
+                    <li> <a href="">Рыбинск</a> </li>
+                    <li> <a href="">Рязань</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> C </div>
+                  <ul class="item__list">
+                    <li> <a href="">Сальск</a> </li>
+                    <li> <a href="">Самара</a> </li>
+                    <li> <a href="">Санкт-Петербург</a> </li>
+                    <li> <a href="">Саранск</a> </li>
+                    <li> <a href="">Саратов</a> </li>
+                    <li> <a href="">Саров</a> </li>
+                    <li> <a href="">Светловодск</a> </li>
+                    <li> <a href="">Севастополь</a> </li>
+                    <li> <a href="">Северодвинск</a> </li>
+                    <li> <a href="">Северодонецк</a> </li>
+                    <li> <a href="">Сергиев Посад</a> </li>
+                    <li> <a href="">Серпухов</a> </li>
+                    <li> <a href="">Симферополь</a> </li>
+                    <li> <a href="">Смоленск</a> </li>
+                    <li> <a href="">Солнечногорск</a> </li>
+                    <li> <a href="">Сочи</a> </li>
+                    <li> <a href="">Ставрополь</a> </li>
+                    <li> <a href="">Старый Оскол</a> </li>
+                    <li> <a href="">Стерлитамак</a> </li>
+                    <li> <a href="">Стрельна</a> </li>
+                    <li> <a href="">Ступино</a> </li>
+                    <li> <a href="">Сумы</a> </li>
+                    <li> <a href="">Сургут</a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="pcities__item">
+                <div class="item">
+                  <div class="item__letter"> Т </div>
+                  <ul class="item__list">
+                    <li> <a href="">Таганрог</a> </li>
+                    <li> <a href="">Таллинн</a> </li>
+                    <li> <a href="">Тамбов</a> </li>
+                    <li> <a href="">Тверь</a> </li>
+                    <li> <a href="">Темрюк</a> </li>
+                    <li> <a href="">Тернополь</a> </li>
+                    <li> <a href="">Тимашевск</a> </li>
+                    <li> <a href="">Тирасполь</a> </li>
+                    <li> <a href="">Тихвин</a> </li>
+                    <li> <a href="">Тихорецк</a> </li>
+                    <li> <a href="">Тольятти</a> </li>
+                    <li> <a href="">Томск</a> </li>
+                    <li> <a href="">Тосно</a> </li>
+                    <li> <a href="">Туапсе</a> </li>
+                    <li> <a href="">Тула</a> </li>
+                    <li> <a href="">Тюмень</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup--map js-popup js-is-map-popup" data-popup="popup-map">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="popup__map-wrapper">
+            <div class="gmap js-popup-map" id="popup-map"></div>
+          </div>
+          <script type="text/template" id="infobox">
+            <div class="baloon">
+              <!-- 				<button class="baloon__close js-infobox-close"></button> -->
+              <div className="baloon__content">
+                <p class="baloon__title">{{=baloon.title}}</p>
+                <div class="rate-stars  rate-stars--green rate-stars--sm"> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item ">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> </div>
+                <p class="baloon__text">{{=baloon.text}}</p>
+                <p class="baloon__price">{{=baloon.price}}</p>
+              </div>
+            </div>
+          </script>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__main">
+            <div class="footer__logo"> <a href="/" class="logo">
+          <img src="img/logo-lg.svg" alt="Logo"/>
+        </a> </div>
+            <div class="footer__nav">
+              <div class="nav">
+                <div class="nav__col">
+                  <h4 class="nav__title">О проекте</h4> <a href="" class="nav__title nav__title--mob">О проекте</a><br/>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">О проекте</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Как это работает</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Медицинским центрам</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Врачам</a></li>
+                  </ul>
+                  <h4 class="nav__title">Сервисы</h4> <a href="" class="nav__title nav__title--mob">Сервисы</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Справочник здоровья</a></li>
+                  </ul>
+                </div>
+                <div class="nav__col">
+                  <h4 class="nav__title">Меню</h4> <a href="" class="nav__title nav__title--mob">Меню</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Клиники</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Врачи</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Услуги и цены</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Акции</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Памятка пациенту</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Как записаться</a></li>
+                  </ul>
+                </div>
+                <div class="nav__col">
+                  <h4 class="nav__title">Специализации врачей</h4> <a href="" class="nav__title nav__title--mob">Специализации врачей</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Стоматолог терапевт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Ортодонт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Хирург</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="more-link more-link--sm" href=""><i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i><span>Все доктора</span></a></li>
+                  </ul>
+                </div>
+                <div class="nav__col">
+                  <h4 class="nav__title">Специализации клиник</h4> <a href="" class="nav__title nav__title--mob">Специализации клиник</a>
+                  <ul class="nav__items">
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Стоматолог терапевт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Ортодонт</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Хирург</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Детский стоматолог</a></li>
+                    <li class="nav__item"><a class="more-link more-link--sm" href=""><i class="more-link__icon">
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+</i><span>Все клиники</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyrights">
+          <div class="container">
+            <div class="copyrights">
+              <div class="copyrights__text">
+                <p>&copy; Все права защищены. Zubza. 2017</p>
+              </div>
+              <ul class="copyrights__links">
+                <li><a href="">Карта сайта</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Публичная оферта</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
