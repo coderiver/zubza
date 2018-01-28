@@ -1,1 +1,81 @@
+<!doctype html>
+<html>
 
+  <head>
+    <meta charset="utf-8">
+    <title>clinic page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!--begin clinic-page-->
+      <div class="clinic-page">
+        <div class="header">
+          <div class="container header__in">
+            <div class="header__logo"> <a href="#"><img src="img/logo-blue.svg" alt=""></a> </div>
+            <div class="header__select cities-select js-popup-link" data-popup="cities">
+              <div class="cities-select__field">Москва</div>
+              <div class="cities-select__label"> <svg class="icon icon-marker"><use xlink:href="img/sprite.svg#icon-marker"></use></svg> </div>
+              <div class="cities-select__arrow"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> </div>
+            </div>
+            <div class="header__menu">
+              <div class="menu">
+                <ul>
+                  <li><a href="#">Клиника</a></li>
+                  <li><a href="#">Врачи</a></li>
+                  <li><a href="#">Услуги и цены </a></li>
+                  <li><a href="#">Акции</a><i>1</i></li>
+                  <li><a href="#">О проекте</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__auth">
+              <div class="auth">
+                <div class="auth__item auth__login login">
+                  <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
+                  <div class="login__text">Вход</div>
+                </div>
+                <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn button button_cyan">Регистрация</a> </div>
+              </div>
+              <div class="header__burger"> <button class="burger">
+					<i></i>
+				</button> </div>
+            </div>
+          </div>
+        </div>
+        <!--begin container-->
+        <div class="container">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__item"> <a href="" class="breadcrumbs__link">Zubza</a> </div>
+            <div class="breadcrumbs__item"> <a href="" class="breadcrumbs__link">Стоматологии</a> </div>
+            <div class="breadcrumbs__item"> <a href="" class="breadcrumbs__link">Все Свои на Арбатской</a> </div>
+            <div class="breadcrumbs__item"> clinic page </div>
+          </div>
+        </div>
+        <!--end container-->
+      </div>
+      <!--end clinic-page-->
+      <div class="js-popup popup popup_cities" data-popup="cities">
+        <div class="js-popup-overlay popup__overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="pcities">
+            <h4 class="pcities__title"> Выберите ваш город </h4>
+            <div class="pcities__input"> <input type="text" class="textfield" placeholder="Введите название города"> </div>
+            <div class="pcities__items"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
