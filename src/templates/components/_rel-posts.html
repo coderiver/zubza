@@ -1,9 +1,9 @@
-<section class="rel-posts">
+<section class="rel-posts {{ relativePosts.mod }}">
   <!--begin container-->
     {% if relativePosts.title %}
     <h3 class="rel-posts__title">{{ relativePosts.title }}</h3>
     {% endif %}
-    <div class="rel-posts__inner">
+    <div class="rel-posts__inner js-mob-posts-slider">
       {% for post in relativePosts.posts %}
         {% include "components/_post-block.html" %}
       {% endfor %}

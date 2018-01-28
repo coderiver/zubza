@@ -1,4 +1,9 @@
 .rel-posts
+	padding: 100px 0 95px
+	+md
+		padding: 50px 0
+	&_sm-padding
+		padding: 40px 0 25px
 	&__inner
 		+clr
 		margin-bottom: 25px
@@ -8,10 +13,37 @@
 			margin-right: 20px
 			&:last-child
 				margin-right: 0
+		.slick-slide
+			padding: 10px 10px 20px 10px
+		.btn-prev, .btn-next
+			background-color: #b8ecf7
+			position: absolute
+			bottom: 0
+		.btn-prev
+			left: 50px
+		.btn-next
+			right: 50px
+		.slick-dots li
+			margin: 5px
+			button
+				width: 10px
+				height: 10px
+		+md
+			max-width: 850px
+			margin: 0 auto 25px
+		+sm
+			max-width: 625px
+			margin: 0 auto 25px
+		+xs
+			max-width: 300px
+			margin: 0 auto 25px
 	&__button
 		text-align: center
 	&__title
 		font-size: 35px
+		+md
+			font-size: 25px
+			text-align: center
 
 .post-block
 	background-color: $almost-white
@@ -20,6 +52,7 @@
 	box-shadow: 0 4px 16px rgba(0,0,0,.05)
 	+trans
 	margin-top: 19px
+	max-width: 300px
 	&:hover
 		box-shadow: 0 4px 16px rgba(20,193,229,.24)
 		.post-block__title
