@@ -1,5 +1,8 @@
 ---
 title: 'Стоматологии Москвы у метро Алтуфьево'
+
+toptext: 'На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.'
+
 outMode: 'out--bg-gray'
 logo: 'blue'
 breadcrumbs: ['Zubza']
@@ -394,6 +397,64 @@ services:
         value: 'от 1500р.'
 
 
+clinicsNearby: {
+  title: 'Стоматологии рядом',
+  cols: [
+    {
+      title: 'Районы:',
+      list: ['Бирюлёво Восточное', 'Бирюлёво Западное', 'Богородское', 'Братеево', 'Бутырский']
+    },
+    {
+      title: 'Метро:',
+      list: ['Алексеевский', 'Алтуфьевскийе', 'Арбат', 'Аэропорт', 'Бабушкинский']
+    }
+  ]
+}
+
+relativePosts: {
+  title: 'Cтатьи',
+  buttonUrl: '#',
+  posts: [
+    {
+      url: '#',
+      img: 'img/post-img-1.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-2.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'симптомы',
+      tagcolor: '#14c1e5'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-3.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'полезное',
+      tagcolor: '#74d15e'
+    },
+    {
+      url: '#',
+      img: 'img/post-img-4.jpg',
+      title: 'МРТ диагностика заболеваний печени',
+      text: 'Среди других паренхиматозных органов человеческого организма печень занимает главенствующую роль, выполняя множество',
+      tagname: 'заболевания',
+      tagcolor: '#ff016e'
+    }
+  ]
+}
+
+searchBanner: {
+  url: '#',
+  title: 'Вернутся к поиску клиники'
+}
+
 
 ---
 {% extends "layouts/_layout.html" %}
@@ -407,26 +468,7 @@ services:
   </div>
   <!-- end container -->
 
-  <!--begin container-->
-  <div class="container">
-
-    <div class="col col_lg-left">
-      <h2 class="clinics-metro__title">{{ title }}</h2>
-      <div class="clinics-metro__text">
-          На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.
-      </div>
-    </div>
-
-    <div class="col col_sm">
-      <div class="clinics-metro__topmap">
-        {% for test in mapInPopup %}
-        {% include "components/_map-link.html" %}
-        {% endfor %}
-      </div>
-    </div>
-
-  </div>
-  <!--end container-->
+  {% include "components/_top-info.html" %}
 
   <!-- begin container -->
   <div class="container">
@@ -480,18 +522,41 @@ services:
   </div>
   <!-- end container -->
 
-
-  <div class="clinics-metro__sales-section">
-    {% include "components/_sales-section.html" %}
-  </div>
-
-  <!-- begin container -->
-  <div class="container">
-    <div class="clinics-metro__services">
-      {% include "components/_services.html" %}
+  <div class="bg-white">
+    <div class="clinics-metro__sales">
+      {% include "components/_sales-section.html" %}
     </div>
+
+    <!-- begin container -->
+    <div class="container">
+      <div class="clinics-metro__services">
+        {% include "components/_services.html" %}
+      </div>
+    </div>
+    <!-- end container -->
   </div>
-  <!-- end container -->
+
+  <!-- begin clinics-metro__nearby -->
+  <div class="clinics-metro__nearby">
+    {% include "components/_clinics-nearby.html" %}
+  </div>
+  <!-- end clinics-metro__nearby -->
+
+  <div class="container">
+    <!-- begin clinic-metro__atricles -->
+    <div class="clinics-metro__articles">
+      {% include "components/_rel-posts.html" %}
+    </div>
+    <!-- end clinic-metro__atricles -->
+  </div>
+
+  <!-- begin clinic-metro__search-banner -->
+  <div class="clinic-metro__search-banner">
+    {% include "components/_search-banner.html" %}
+  </div>
+  <!-- end clinic-metro__search-banner -->
+
+
 
 </div>
 <!--end clinic-metro-->
