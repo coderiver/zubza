@@ -2,7 +2,10 @@
   <div class="container">
     <div class="search-banner__image image-group">
       <img class="image-group__head image-group__head_clinic" src="img/clinic.svg" alt="">
+      {% if searchBannerImg %}
+      {% else %}
       <img src="img/cloud.svg" alt="" class="image-group__cloud">
+      {% endif %}
     </div>
     <div class="search-banner__title section-title">{{ searchBanner.title }}</div>
   </div>
