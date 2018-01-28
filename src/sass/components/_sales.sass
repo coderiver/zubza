@@ -1,17 +1,45 @@
 .section-sales
 	// margin-bottom: 45px
+	+md
+		position: relative
 	&__title
 		margin-bottom: 15px
+		+md
+			font-size: 25px
+			text-align: center
+		+xs
+			font-size: 20px
 	&__after-head-text
 	&__list
 		margin-top: 22px
 		padding-right: 25px
+		+md
+			margin-top: 0
+			padding-right: 0
 	&__center
 		text-align: center
+		+md
+			display: none
 	&__btn-more
 		&.button
 			font-size: 16px
 			padding: 10px 22px 9px
+	&__wrapper
+		+md
+			position: relative
+	&__icon-mob
+		display: none
+		right: -15px
+		top: 0px
+		+md
+			display: block
+	.btn-prev, .btn-next
+		position: absolute
+		bottom: -0px
+	.btn-next
+		right: 0
+	.btn-prev
+		left: 0
 .sale-block 
 	background-color: $white
 	border-radius: 5px
@@ -21,6 +49,12 @@
 	position: relative
 	margin-bottom: 30px
 	font-size: 0
+	+md
+		padding: 16px 15px 19px
+	&__descr, &__map, &__info
+		+md
+			display: block
+			width: 100%
 	&__descr
 		display: inline-block
 		vertical-align: top
@@ -61,15 +95,27 @@
 		line-height: 1.5
 		margin-bottom: 31px
 		letter-spacing: -0.2px
+		+md
+			display: none
 	&__places-name
 		color: $another-blue
 		font-size: 18px
 		+PSemi
+		+md
+			display: none
+		&--mob
+			display: none
+			+md
+				display: block
 	&__map
 		display: inline-block
 		vertical-align: top
 		width: percentage(275/1155)
 		height: 156px
+		+md
+			max-width: 400px
+			margin-left: auto
+			margin-right: auto
 		.map-link 
 			width: 100%
 			height: 100%
@@ -85,6 +131,8 @@
 		width: percentage(330/1155)
 		padding-left: 40px
 		padding-top: 15px
+		+md
+			padding-left: 0
 	&__btn-wrapper
 		text-align: center
 		margin-top: 29px
@@ -96,3 +144,5 @@
 		top: 0
 		right: 0
 		transform: translate(50%, -50%)
+		+md
+			display: none

@@ -21,6 +21,16 @@ function sliders() {
   <path d="M0 0l16 9.4L0 19c.6-3.2 1-6.4 1-9.6C1 6.3.6 3.1 0 0z" fill="#ffffff"/>
   </svg></button>`;
 
+  let mobBtnPrev = `<button class="btn-prev-mob ">
+  <svg width="16" height="19" xmlns="http://www.w3.org/2000/svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19">
+  <path d="M16 19L0 9.6 16 0c-.6 3.2-1 6.4-1 9.6 0 3.1.4 6.3 1 9.4z" fill="#ffffff"/>
+  </svg></svg></button>`;
+  let mobBtnNext = `<button class="btn-next-mob ">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19">
+  <path d="M0 0l16 9.4L0 19c.6-3.2 1-6.4 1-9.6C1 6.3.6 3.1 0 0z" fill="#ffffff"/>
+  </svg></button>`;
+
 
 
 
@@ -108,6 +118,25 @@ function sliders() {
       },
       {
         breakpoint: 599,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: postBtnPrev,
+          nextArrow: postBtnNext,
+          dots: true
+        }
+      }
+    ]
+  });
+  $('.js-mob-sales-slider').slick({
+    responsive: [
+      {
+        breakpoint: 4000,
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 1023,
         settings: {
           infinite: false,
           slidesToShow: 1,
