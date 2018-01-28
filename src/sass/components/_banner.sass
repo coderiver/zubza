@@ -28,22 +28,41 @@
 		padding: 0 10px
 		width: 240px
 	&__item-image
-		background-size: contain
-		background-position: center
-		background-repeat: no-repeat
-		height: 154px
+		height: 145px
 		margin-bottom: 19px
-		width: 100%
+		position: relative
 	&__item-title
 		font-size: 37px
 		line-height: 1em
 		text-shadow: 0 3px 0 rgba(72, 61, 224, 0.24)
-		margin-bottom: 12px
+		margin-bottom: 8px
 		white-space: nowrap
 		+PExtra
 	&__item-txt
 		font-size: 18px
 		+PSemi
+	&__illustration
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 10
+		&_clinic
+			height: 97px
+			width: 142px
+		&_doctor
+			width: 115px
+			height: 101px
+		&_feedback
+			width: 107px
+			height: 82px
+			top: 15px
+	&__cloud
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 168px
 
 .image-group
 	position: relative
