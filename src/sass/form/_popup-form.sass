@@ -1,8 +1,13 @@
 .popup-form
 	text-align: left
+	.btn
+		width: 100%
+		margin-bottom: 20px
 	&__title
 		+PSemi
 		color: $black
+		&_mb
+			margin-bottom: 20px
 	&__text
 		font-size: 13px
 		color: $grey
@@ -15,6 +20,18 @@
 			+trans
 			&:hover
 				color: #14a8d9
-	.btn
-		width: 100%
+	&__controls
+		display: flex
+		align-items: center
 		margin-bottom: 20px
+		.btn
+			width: 180px
+			margin-bottom: 0
+	&__link
+		flex-grow: 1
+		text-align: center
+		+PBold
+		font-size: 14px
+		color: $cyan
+		padding: 2px 0 0 20px
+
