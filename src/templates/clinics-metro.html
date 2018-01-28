@@ -1,0 +1,60 @@
+---
+title: 'Стоматологии Москвы у метро Алтуфьево'
+outMode: 'out--bg-gray'
+logo: 'blue'
+breadcrumbs: ['Zubza']
+
+mapInPopup: [
+{
+  maplinkMode: 'map-link--search',
+  popupData: 'popup-map',
+  mapImg: 'map-search-img',
+  maplinkText: 'Поиск стоматологий на карте'
+}
+]
+
+
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--begin clinic-metro-->
+<div class="clinics-metro">
+  <!--begin container-->
+  <div class="container">
+    {% include "components/_breadcrumbs.html" %}
+
+    <!-- begin clinic-metro__top -->
+    <div class="clinics-metro__top">
+      <!-- begin clinic-metro__topleft -->
+      <div class="clinics-metro__topleft">
+        <h2 class="clinics-metro__title">{{ title }}</h2>
+        <div class="clinics-metro__text">
+          На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.
+        </div>
+      </div>
+      <!-- end clinic-metro__topleft -->
+
+      <!-- begin clinic-metro__topleft -->
+      <div class="clinics-metro__topright">
+        <div class="clinics-metro__map">
+          {% for test in mapInPopup %}
+          {% include "components/_map-link.html" %}
+          {% endfor %}
+        </div>
+      </div>
+      <!-- end clinic-metro__topleft -->
+    </div>
+    <!-- end clinic-metro__top -->
+
+
+
+  </div>
+  <!--end container-->
+
+</div>
+<!--end clinic-metro-->
+
+
+{% endblock %}
