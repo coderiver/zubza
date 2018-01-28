@@ -1,0 +1,67 @@
+.badge-slider
+	display: flex
+	justify-content: space-between
+	width: calc(100% + 30px)
+	position: relative
+	&__left
+		width: percentage(423/1400)
+	&__right
+		width: percentage(947/1400)
+		.slick-track
+			padding: 22px 10px 15px
+			height: 100%
+	&__titlebox
+		background-color: $cyan
+		border-top-right-radius: 6px
+		border-bottom-right-radius: 6px
+		padding: 46px 43px 40px
+		min-height: 215px
+	&__title
+		color: $white
+		+PSemi
+		margin-bottom: 19px
+		max-width: 230px
+	&__slide
+		height: 192px
+		padding-right: 40px
+		.sale-block
+			height: 100%
+			box-shadow: 0 4px 27px rgba(20,193,229,.22)
+			&__title
+				height: calc(100% - 40px)
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -webkit-box
+				-webkit-line-clamp: 5
+				-webkit-box-orient: vertical
+				font-size: 18px
+				color: #000
+			&__places-name
+				position: absolute
+				width: 100%
+				left: 0
+				padding: 0 20px
+				bottom: 20px
+
+.btn-prev,
+.btn-next
+	background-color: $white
+	border: 0
+	border-radius: 50%
+	width: 22px
+	height: 22px
+	display: inline-block
+	vertical-align: middle
+	font-size: 9px
+	position: relative
+	svg
+		width: 1em
+		height: 1em
+		+vcenter
+.btn-next
+	svg
+		margin-left: 1px
+.btn-prev
+	margin-right: 10px
+	svg
+		margin-left: -1px
