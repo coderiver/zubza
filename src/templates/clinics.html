@@ -1,5 +1,5 @@
 ---
-title: 'Стоматологии Москвы у метро Алтуфьево'
+title: 'Стоматологии Москвы'
 
 toptext: 'На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.'
 
@@ -140,10 +140,8 @@ metaFilters: [
 popularLinks:
   - Круглосуточные стоматологии
   - Стоматологии в центре города
-  - Самые низкие цены на лечение кариеса
-  - Врачи-хирурги
-  - Новые стоматологии
-  - Стоматологии Москвы на карте
+  - Самые низкие цены на лечение
+  - Самые низкие цены на лечение
 
 
 sales: [
@@ -202,8 +200,7 @@ sales: [
 ]
 
 
-servicesTitle: 'Не нашли, что искали?'
-servicesText: 'Попробуйте найти по услуге'
+servicesTitle: 'Найдите нужную услугу'
 
 services:
   -
@@ -786,6 +783,22 @@ clinicBoxes: [
 }
 ]
 
+linksList:
+  background: 'img/texture.png'
+  title: 'Или поищите врача по специализации'
+  items:
+    - 'Стоматологи-терапевты Москвы'
+    - 'Стоматологи-терапевты Москвы'
+    - 'Стоматологи-ортодонты Москвы'
+    - 'Стоматологи-ортодонты Москвы'
+    - 'Детские стоматологи Москвы'
+    - 'Детские стоматологи Москвы'
+    - 'Стоматологи-терапевты Москвы'
+    - 'Стоматологи-терапевты Москвы'
+    - 'Стоматологи-ортодонты Москвы'
+    - 'Стоматологи-ортодонты Москвы'
+    - 'Детские стоматологи Москвы'
+    - 'Детские стоматологи Москвы'
 
 ---
 {% extends "layouts/_layout.html" %}
@@ -806,18 +819,18 @@ clinicBoxes: [
 
     <div class="col col_sm">
 
-      <!-- begin clinics__filters -->
-      <div class="clinics__filters">
-        {% include "components/_hospital-filters.html" %}
-      </div>
-      <!-- end clinics__filters -->
-
       <!-- begin clinics__popular-links -->
       <div class="clinics__popular-links">
         <h4 class="h4">Популярное</h4>
         {% include "components/_popular-links.html" %}
       </div>
       <!-- end clinics__popular-links -->
+
+      <!-- begin clinics-metro__filters -->
+      <div class="clinics__filters">
+        {% include "components/_hospital-filters.html" %}
+      </div>
+      <!-- end clinics-metro__filters -->
 
       <div class="clinics__map">
         {% for test in mapInPopup %}
@@ -868,6 +881,13 @@ clinicBoxes: [
     <div class="clinics__sales">
       {% include "components/_sales-section.html" %}
     </div>
+
+    <!-- begin clinics__doctor-list -->
+    <div class="clinics__doctor-list">
+      {% include "components/_doctors-list.html" %}
+    </div>
+    <!-- end clinics__doctor-list -->
+
 
     <!-- begin container -->
     <div class="container">

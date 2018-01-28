@@ -27,3 +27,9 @@ PageList:
   ready: 50
 - file: service-page.html
   ready: 50
+- file: doctors.html
+  ready: 50
+- file: articles.html
+  ready: 50
+- file: clinics.html
+  ready: 50
