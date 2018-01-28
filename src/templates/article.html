@@ -435,8 +435,9 @@ hospitalDotsSlider: [
 {% block content %}
 <div class="article-content">
 	<div class="container">
+
+    {% include "components/_breadcrumbs.html" %}
 		<div class="col col_lg-left">
-			{% include "components/_breadcrumbs.html" %}
 			<div class="short-text">
 				<h2>Протезирование зубов</h2>
 				<div class="text text_gutter">
@@ -489,17 +490,27 @@ hospitalDotsSlider: [
 			 {% include "components/_faq-section.html" %}
       </div>
 		</div>
-		<div class="col col_sm">
+		<div class="col col_sm article-sidebar">
 			{% include "components/_articles-contents.html" %}
-			{% for test in sliderData %}
-			{% include "components/_count-slider.html" %}
-			{% endfor %}
-			{% include './components/_rec-clinic.html' %}
-			{% include './components/_articles-info.html' %}
+      <div class="article-reviews">
+  			{% for test in sliderData %}
+  			{% include "components/_count-slider.html" %}
+  			{% endfor %}
+      </div>
+      <div class="article-rec">
+			 {% include './components/_rec-clinic.html' %}
+      </div>
+      <div class="article-info">
+			 {% include './components/_articles-info.html' %}
+      </div>
 			{% include './components/_services-spec.html' %}
 		</div>
 	</div>
-	{% include "components/_rel-posts.html" %}
+  <div class="similar-post">
+    <div class="container">
+	   {% include "components/_rel-posts.html" %}
+    </div>
+  </div>
 	<div class="search-banner">
 		<div class="container">
 			<div class="search-banner__image image-group">
