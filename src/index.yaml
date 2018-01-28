@@ -23,3 +23,5 @@ PageList:
   ready: 50
 - file: article.html
   ready: 50
+- file: doctors.html
+  ready: 50
