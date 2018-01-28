@@ -319,6 +319,30 @@ doctors: [
     }
   }
 ]
+
+doctor: {
+  title: 'Ярцева Ирина Михайловна',
+  avatar: 'ava.jpg',
+  users: {
+    bought: '70',
+    glad: '65',
+  },
+  experience: '15 лет',
+  education: ['Диплом по специальности «Лечебное дело», РНИМУ им. Н. И. Пирогова (2006 г.)',
+              'Интернатура по специальности «Терапия», РНИМУ им. Н. И. Пирогова (2007 г.)'],
+  specialized: ['терапевтическая стоматология;','эстетическая реставрации зубов;','штифтовые реставрации после эндодонтического лечения;','микропротезирование;','лечение всех видов некариозных поражений зубов и кариеса, его осложнений.'],
+  taglist: ['Хирург', 'Парадонтолог'],
+  rate: {
+    stars: [
+      {starMode: 'is-color'},
+      {starMode: 'is-color'},
+      {starMode: 'is-color'},
+      {starMode: 'is-color'},
+      {starMode: ''}
+    ],
+    number: '4.6'
+  }
+}
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -371,6 +395,11 @@ doctors: [
   {% for doctor in doctors %}
     {% include "components/_doctor.html" %}
   {% endfor %}
+</div>
+
+<div style="width: 80%; margin: 20px auto">
+  {% include "components/_doctor-single.html" %}
+
 </div>
 
 
