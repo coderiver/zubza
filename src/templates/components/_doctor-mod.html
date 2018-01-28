@@ -1,4 +1,4 @@
-<div class="clinic-box clinic-box_mini clinic-box_doctor">
+<div class="clinic-box clinic-box_mini clinic-box_doctor {{doctor.clinicBoxMode}}">
   <div class="clinic-box__left">
     <div class="clinic-box__content">
       <div class="doctor">
@@ -40,23 +40,31 @@
           </div>
           <!-- end clinic-box__tablelist -->
           {% endif %}
-          <a href="" class="more-link more-link--sm">
+          <div class="clinic-box__spec-wrapper">
+           <a href="" class="more-link more-link--sm">
             <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
             <span>Весь прайслист клиники</span>
           </a>
+          {% if doctor.discount %}
+          <a href="#" class="sales-link">
+            <span>%</span> Акции
+          </a>
+          {% endif %}
         </div>
-      </div>
-      <div class="clinic-box__more clinic-box__more_has-border">
-        <div class="worktime-info">
-          <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-        </div> 
-        <a href="#" class="btn btn--green">Записаться</a>
+
       </div>
     </div>
+    <div class="clinic-box__more clinic-box__more_has-border">
+      <div class="worktime-info">
+        <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
+      </div> 
+      <a href="#" class="btn btn--green">Записаться</a>
+    </div>
   </div>
-  <div class="clinic-box__right">
-    {% for test in doctor.comments %}
-    {% include "components/_count-slider.html" %}
-    {% endfor %}
-  </div>
+</div>
+<div class="clinic-box__right">
+  {% for test in doctor.comments %}
+  {% include "components/_count-slider.html" %}
+  {% endfor %}
+</div>
 </div>
