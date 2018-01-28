@@ -2,7 +2,68 @@
 title: clinic page
 outMode: 'out--bg-gray'
 logo: 'blue'
-breadcrumbs: ['Zubza', 'Стоматологии', 'Все Свои на Арбатской']      
+breadcrumbs: ['Zubza', 'Стоматологии', 'Все Свои на Арбатской']     
+anchors: [
+{
+	mode: '',
+	anchorslist: [
+	{
+		text: 'Описание и контактная информация'
+	},
+	{
+		text: 'Цены'
+	},
+	{
+		text: 'Отзывы '
+	},
+	{
+		text: 'Врачи'
+	},
+	{
+		text: 'Лицензии и сертификаты'
+	},
+	{
+		text: 'Фото клиники',
+		active: 'is-active'
+	},
+	{
+		text: 'Акции'
+	},
+	{
+		text: 'Филиалы'
+	}
+	]
+}
+] 
+clinicBox: {
+rate: {
+stars: [
+{starMode: 'is-color'},
+{starMode: 'is-color'},
+{starMode: 'is-color'},
+{starMode: 'is-color'},
+{starMode: ''}
+],
+number: '4.6'
+},
+users: {
+bought: '70',
+glad: '65',
+},
+title: 'Стоматология «Все Свои» ведет прием  по следующим специализациям',
+taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
+textlist: [
+'<strong>250 врачей</strong> в штате стоматологмм «Все Свои»',
+'Сеть стоматологий работает <strong>с 2000 года</strong>',
+'<strong>100 филиалов</strong> по Москве и МО',
+'<strong>95 положительных отзывов</strong> от пользоваетлей Zubza',
+'<strong>2 активные акции</strong>'
+],
+location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+leftButton: true
+}
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -12,10 +73,265 @@ breadcrumbs: ['Zubza', 'Стоматологии', 'Все Свои на Арб�
 	<!--begin container-->
 	<div class="container">
 		{% include "components/_breadcrumbs.html" %}
+		<h2 class="clinic-page__title">Стоматологическая клиника «Все Свои» на Арбатской</h2>
 	</div>
 	<!--end container-->
-	
-	
+	{% include "components/_anchors.html" %}
+	<!--begin container-->
+	<div class="container">
+		{% include "components/_clinic-box.html" %}
+
+	</div>
+	<!--end container-->
+	<!--begin clinic-page__white-block-->
+	<div class="clinic-page__white-block">
+		<!--begin container-->
+		<div class="container">
+			{% set list = [{
+				item: 'Детские стоматологии'
+			}, {
+			item: 'Клиники ортодонтии'
+		}, {
+		item: 'Протезирование'
+	}, {
+	item: 'Хирургия'
+}, {
+item: 'Ортопедия'
+}, {
+item: 'Протезирование'
+}, {
+item: 'Хирургия'
+}, {
+item: 'Ортопедия'
+}, {
+item: 'Протезирование'
+}, {
+item: 'Хирургия'
+}, {
+item: 'Ортопедия'
+}, {
+item: 'Протезирование'
+}] %}
+{{mixins.filters({
+	title: 'Начните вводить название услуги',
+	list: list
+})}}
+<div class="costs">
+	<div class="costs__list costs__list_mb cost-table">
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title costs-table__title_head">
+					Название услуги
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__title costs-table__title_head">Цена</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__title costs-table__title_head">Цена со скидкой</div>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Виниры
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					18 080 р
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">18 080 р.</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Восстановление зубов
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					7 000 р
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">–</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Керамические коронки
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					11 010 р
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">11 010 р</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Металлокерамика
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					15 000 р
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">15 000 р</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Коронка на имплантат металлокерамическая Duceram Kiss
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					70 080 р.
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">–</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Культевая вкладка с керам.облицовкой для коронки диоксид циркония
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					18 000 р.
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">18 000 р.</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Культевая вкладка
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					35 000 р.
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">35 000 р.</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Протезы нейлоновые
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					50 100 р.
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">50 100 р.</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Циркониевые коронки
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					20 080 р.
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">20 080 р.</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+		<div class="costs-table__row">
+			<div class="costs-table__col costs-table__col_long">
+				<div class="costs-table__title">
+					Протезы бюгельные
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price costs-table__price_mod">
+					18 000 р.
+				</div>
+			</div>
+			<div class="costs-table__col costs-table__col_space-md">
+				<div class="costs-table__price">50 100 р.</div>
+			</div>
+			<div class="costs-table__col costs-table__col_last">
+				<a href="#" class="costs-table__enroll">Записаться <span>{{mixins.icon('arrow-sm')}}</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="costs__btn">
+		<a href="#" class="button button_hero">Показать все цена</a>
+	</div>
+</div>
+<div class="article article--sm article--mb-95">
+	<p>
+		Стоимость, указанная на сайте, не окончательная, не является <a href="#">Публичной офертой</a> и носит исключительно информационный характер. Цены в филиалах могут отличаться.
+		Администрация отсавляет за собой право изменять цены. Вы можете уточнить стоимость по телефону.
+	</p>
+</div>
+{% include './components/_reviews.html' %}
+</div>
+<!--end container-->
+
+</div>
+<!--end clinic-page__white-block-->
+
+
+
+
 </div>
 <!--end clinic-page-->
 

@@ -942,6 +942,36 @@
           </div>
         </div>
       </div>
+      <div class="popup popup--map js-popup js-is-map-popup" data-popup="popup-map">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="popup__map-wrapper">
+            <div class="gmap js-popup-map" id="popup-map"></div>
+          </div>
+          <script type="text/template" id="infobox">
+            <div class="baloon">
+              <!-- 				<button class="baloon__close js-infobox-close"></button> -->
+              <div className="baloon__content">
+                <p class="baloon__title">{{=baloon.title}}</p>
+                <div class="rate-stars  rate-stars--green rate-stars--sm"> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item is-color">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> <i class="rate-stars__item ">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</i> </div>
+                <p class="baloon__text">{{=baloon.text}}</p>
+                <p class="baloon__price">{{=baloon.price}}</p>
+              </div>
+            </div>
+          </script>
+        </div>
+      </div>
       <footer class="footer">
         <div class="container">
           <div class="footer__main">
