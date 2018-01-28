@@ -2,6 +2,9 @@
 	padding-top: 17px
 	padding-bottom: 11px
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+	position: relative
+	z-index: 1001
+	background-color: #fff
 	&_main
 		position: absolute
 		width: 100%
@@ -32,6 +35,39 @@
 		float: right
 		padding-top: 14px
 		margin-left: 20px
+	&_main
+		box-shadow: none
+		background-color: transparent
+		.menu
+			ul li
+				a
+					color: #fff
+				i
+					background-color: $pink
+					color: #fff
+
+		.login
+			&__text
+				color: #fff
+			&__icon
+				.icon
+					fill: #fff
+		.burger
+			&:before, i, &:after
+				background-color: #fff
+		.reg
+			&__btn
+				color: $black
+				background-color: #FFF
+		.cities-select
+			border-color: #fff
+			&__field
+				color: #fff
+			&__arrow
+				border-color: #fff
+			&__label
+				.icon
+					fill: #fff
 
 .cities-select
 	border-radius: 20px
@@ -43,6 +79,7 @@
 		color: $black
 		letter-spacing: 0.07px
 		padding: 12px 30px 8px 43px
+		text-align: left
 	&__label
 		position: absolute
 		top: 50%

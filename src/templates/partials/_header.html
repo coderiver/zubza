@@ -1,5 +1,4 @@
-{% set logo = 'blue' %}
-<div class="header {% if absoluteHeader %}header_main{% endif %}">
+<div class="header{% if headerMain %} header_main{% endif %}">
 	<div class="container header__in">
 		<div class="header__logo">
 			<a href="#"><img src="img/logo-{{logo}}.svg" alt=""></a>
@@ -7,7 +6,7 @@
 		<div class="header__select cities-select js-popup-link" data-popup="cities"> 
 			<div class="cities-select__field">Москва</div>
 			<div class="cities-select__label">{{mixins.icon('marker')}}</div>
-			<div class="cities-select__arrow">{{mixins.icon('arrow-down')}}</div>
+			<div class="cities-select__arrow"></div>
 		</div>
 		<div class="header__menu">
 			{% set menu = [{
@@ -41,7 +40,7 @@
 				</div>
 			</div>
 			<div class="header__burger">
-				<button class="burger">
+				<button class="burger js-burger">
 					<i></i>
 				</button>
 			</div>
