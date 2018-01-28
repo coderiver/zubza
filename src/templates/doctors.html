@@ -3,6 +3,7 @@ title: 'Стоматологи Москвы'
 outMode: 'out--bg-gray'
 logo: 'blue'
 breadcrumbs: ['Zubza', 'Врачи']     
+toptext: 'На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.'
 mapInPopup: [
 {
 	maplinkMode: 'map-link--search',
@@ -711,25 +712,13 @@ searchBanner: {
 		{% include "components/_breadcrumbs.html" %}
 	</div>
 	<!--end container-->
+
+    {% include "components/_top-info.html" %}
+
+    
 	<!--begin container-->
 	<div class="container">
-		<!--begin doctors-page__mb-27-->
-		<div class="doctors-page__mb-27">
-			<div class="col col_lg-left">
-				<h2 class="doctors-page__title">{{ title }}</h2>
-				<div class="doctors-page__text">
-					На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.
-				</div>
-			</div>
-			<div class="col col_sm">
-				<div class="clinics-metro__topmap">
-					{% for test in mapInPopup %}
-					{% include "components/_map-link.html" %}
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<!--end doctors-page__mb-27-->
+
 	</div>
 	<!--end container-->
 	<!--begin container-->
@@ -747,6 +736,7 @@ searchBanner: {
       </div>
       <!-- end doctors-page__popular-links -->
       <div class="doctors-page__map">
+
         {% for test in mapInPopup %}
         {% include "components/_map-link.html" %}
         {% endfor %}
