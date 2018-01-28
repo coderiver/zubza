@@ -1,5 +1,8 @@
 ---
 title: 'Стоматологии Москвы у метро Алтуфьево'
+
+toptext: 'На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.'
+
 outMode: 'out--bg-gray'
 logo: 'blue'
 breadcrumbs: ['Zubza']
@@ -449,8 +452,9 @@ relativePosts: {
 
 searchBanner: {
   url: '#',
-  title: 'Перейти к поиску клиники'
+  title: 'Вернутся к поиску клиники'
 }
+
 
 ---
 {% extends "layouts/_layout.html" %}
@@ -464,26 +468,7 @@ searchBanner: {
   </div>
   <!-- end container -->
 
-  <!--begin container-->
-  <div class="container">
-
-    <div class="col col_lg-left">
-      <h2 class="clinics-metro__title">{{ title }}</h2>
-      <div class="clinics-metro__text">
-          На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.
-      </div>
-    </div>
-
-    <div class="col col_sm">
-      <div class="clinics-metro__topmap">
-        {% for test in mapInPopup %}
-        {% include "components/_map-link.html" %}
-        {% endfor %}
-      </div>
-    </div>
-
-  </div>
-  <!--end container-->
+  {% include "components/_top-info.html" %}
 
   <!-- begin container -->
   <div class="container">

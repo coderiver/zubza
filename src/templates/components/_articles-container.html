@@ -1,16 +1,20 @@
 {% for item in articleContent %}
 <!-- begin article-container -->
-	<div class="articles-container">
+	<div class="articles-container {{item.mod}}">
 		<div class="articles-container__header">
 			<h2 class="articles-container__title">{{ item.title }}</h2>
+      {% if item.more %}
 			<a class="more-link more-link--sm" href="#">
         <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
 				<span>Все статьи по теме</span>
 			</a>
+      {% endif %}
 		</div>
 		<div class="articles-container__body">
-			{% set popularArticles = item.popularArticles %}
-			{% include "components/_popular-articles.html" %}
+      {% if item.popularArticles %}
+        {% set popularArticles = item.popularArticles %}
+        {% include "components/_popular-articles.html" %}
+      {% endif %}
 			<div class="articles-container__block">
 				{% set preview = item.preview %}
 				{% include "components/_articles-preview.html" %}
