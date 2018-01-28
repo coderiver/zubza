@@ -1,11 +1,14 @@
 .services
 	background-color: $white
 	padding: 100px 20px
+	&__top
+		margin-bottom: 58px
 	&__title
-		font-size: 35px 
-		margin-bottom: 58px 
+		font-size: 35px
 		text-align: center
 		+PSemi
+	&__text
+		text-align: center
 	&__in
 		max-width: 1180px
 		margin: 0 auto
@@ -14,7 +17,7 @@
 		justify-content: space-between
 		margin-bottom: 50px
 		&:last-of-type
-			margin-bottom: 0 
+			margin-bottom: 0
 	&__item-title
 		font-size: 20px
 		+PBold
@@ -47,10 +50,10 @@
 		z-index: 5
 	&__value
 		bottom: 0
-		color: $bright-blue 
+		color: $bright-blue
 		font-size: 15px
 		font-weight: 600
-		padding-left: 3px 
+		padding-left: 3px
 		position: absolute
 		right: 0
 		+OSSemi
@@ -58,4 +61,4 @@
 		margin-top: 12px
 	.more-link__icon
 		transition: transform linear 0.3s
-		 
+

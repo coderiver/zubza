@@ -1,0 +1,12 @@
+<ul class="popular-links">
+  {% for link in popularLinks %}
+  <li>
+    <a href="" class="more-link more-link--sm">
+      <i class="more-link__icon">
+        {{ mixins.icon('arrow-sm') }}
+      </i>
+      <span>{{ link}}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

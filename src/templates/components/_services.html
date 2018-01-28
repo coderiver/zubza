@@ -1,7 +1,12 @@
 <!-- begin services -->
 	<div class="services">
 		<div class="services__in">
-			<h2 class="services__title">{{ servicesTitle }}</h2>
+      <div class="services__top">
+  			<h2 class="services__title">{{ servicesTitle }}</h2>
+        {% if servicesText %}
+        <div class="services__text">{{ servicesText | safe }}</div>
+        {% endif %}
+      </div>
 			<div class="services__row">
 				{% for item in services %}
 				<div class="services__item">
