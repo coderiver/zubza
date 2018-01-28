@@ -251,6 +251,67 @@ sliderData3: [
 
 }
 ]
+
+doubleSliderData: [
+{
+	sliderParentMode: 'count-slider--double',
+	sliderMode: 'js-double-slider',
+	testSlides: [
+	{
+		text: ''
+	},
+	{
+		text: ''
+	}
+	,
+	{
+		text: ''
+	}
+	,
+	{
+		text: ''
+	}
+	],
+	slideMode: 'cslide--double',
+	headBlock: true,
+	headMode: 'cslide__head--cyan-border cslide__head--m',
+	headText: '<a href="#">Центр стоматологии «Интан»</a>',
+	rateBlock: true,
+	rateStarsMode: 'rate-stars--green ',
+	stars: [
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: 'is-color'
+	},
+	{
+		starMode: ''
+	},
+	{
+		starMode: ''
+	}
+	],
+	rateNumberMode: 'rate-number--orange ',
+	rateNumber: '3.7',
+	countUsers: false,
+	location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+	locationMode: 'location-info--dashed',
+	locationMetro: '<a href="#">ЦАО</a>, 
+	<a href="#">Марксистская <span class="gray-color">(1 км)</span></a>',
+	<a href="#">Римская <span class="gray-color">(1 км)</span></a>,
+	<a href="#">Таганская <span class="gray-color">(1 км)</span></a>',
+	workingTime: 'Круглосуточно',
+	map: true,
+	maplinkMode: '',
+	popupData: 'popup-map',
+	mapImg: 'map-double-slider',
+
+}
+]
 metaFilters: [
 {
 	metaMode: 'meta-filters--w-830 meta-filters--mb-31',
@@ -403,6 +464,8 @@ mapInPopup: [
 	<!-- end rec-hospitals__inner -->
 </div>
 <!-- end rec-hospitals -->
+{% include "components/_section-double-slider.html" %}
+
 
 {% include "components/_meta-filters.html" %}
 {% include "components/_anchors.html" %}

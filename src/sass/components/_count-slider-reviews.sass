@@ -33,6 +33,13 @@
 		.count-slider__content
 			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05)
 			border-radius: 5px
+	&--double
+		margin: 0 auto 0
+		.count-slider__content
+			margin-bottom: 0
+		.cslide
+			// &:nth-of-type(1n)
+			// 	margin-right: 30px
 .cslide
 	width: 280px
 	// display: inline-block
@@ -64,6 +71,11 @@
 					color: transparentize($cyan, .3)
 			.cslide__head-text
 				border-bottom: 1px solid rgba(#dce2e3, 0.5)
+		&--m
+			a
+				font-size: 18px
+				padding: 0 0px 5px
+
 	&__head-text
 		// color: $white
 		+PSemi
@@ -130,6 +142,13 @@
 		color: $white
 		background-color: $cyan
 		padding: 16px 20px 20px
+	&--double
+		border: 1px solid $black
+		padding: 13px 20px 17px
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+		max-width: 530px
+		// width: 530px
+		// margin: 0 20px
 		
 
 

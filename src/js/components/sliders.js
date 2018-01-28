@@ -45,6 +45,17 @@ function sliders() {
     nextArrow: btnNext,
     dots: true
   });
+  $('.js-double-slider').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1, 
+    prevArrow: btnPrev,
+    nextArrow: btnNext,
+    dots: false
+    // ,
+    // centerMode: true,
+    // variableWidth: true
+  });
 
 };
 module.exports = sliders;
