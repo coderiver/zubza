@@ -3,9 +3,14 @@
 		max-width: 818px
 	&__title
 		margin-bottom: 12px
+		+md
+			font-size: 25px
+			text-align: center
 .faq-item
 	padding-left: 37px
 	margin-bottom: 20px
+	+md
+		padding-left: 0
 	&__head
 		position: relative
 		width: 780px
@@ -14,13 +19,19 @@
 		border-radius: 10px
 		// padding-right: 40px
 		// padding-left: 35px
-		
 		padding: 9px 40px 9px 35px
+		+md
+			width: 100%
+			margin-left: 15px
+			padding-left: 54px
+			margin-bottom: 10px
 	&__icon
 		position: absolute
 		top: 50%
 		left: -10px
 		transform: translate(-50%, -50%)
+		+md
+			left: 15px
 		
 	&__head-text
 		font-size: 16px
@@ -34,6 +45,8 @@
 		display: block
 		+trans
 		z-index: 1
+		+md
+			display: none
 		svg
 			width: 13px
 			height: 7px
@@ -44,6 +57,9 @@
 		padding-right: 15px
 		padding-top: 8px
 		font-size: 14px
+		+sm
+			padding-left: 0
+			padding-right: 0
 	&__close
 		background: transparent
 		min-width: 73px
@@ -57,9 +73,13 @@
 		font-size: 14px
 		+PBold
 		color: #d7d7d7
+		+md
+			display: none
 	&:not(.faq-item--opened)
 		.faq-item__content
 			display: none
+			+md
+				display: block
 		.faq-item__head
 			cursor: pointer
 			+nosel

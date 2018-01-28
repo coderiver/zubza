@@ -13,7 +13,9 @@ import './components/showMore.js';
 
 sayHello();
 $(document).ready(function() {
-  faqDrop();
+  let windowW = $(document).width();
+
+  faqDrop(windowW);
   sliders();
   popup();
   gmap();

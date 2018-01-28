@@ -1,10 +1,10 @@
 
-function faqDrop() {
+function faqDrop(windowW) {
 
   // $head = drop.find('.js-faq-drop-head'),
   // $content = drop.find('.js-faq-drop-content');
 
-
+  if(windowW < 1024) return;
   $('.js-faq-drop-head').on('click', function() {
   	let $drops = $('.js-faq-drop');
   	let $content = $('.js-faq-drop-content');
