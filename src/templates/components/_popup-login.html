@@ -1,0 +1,27 @@
+<div class="popup js-popup popup--login" data-popup="popup-login">
+  <div class="popup__overlay js-popup-overlay"></div>
+  <div class="popup__content js-popup-content">
+    <div class="popup__close js-close-popup ">{{mixins.icon('close')}}</div>
+    <div class="logo">
+      <a href="#"><img src="img/logo-white-letters.svg" alt=""></a>
+    </div>
+    <form action="" class="form">
+      <div class="form__field form__field--100 form__field--icon">
+        <input type="email" class="input input--transparent input--icon" placeholder="Email">
+        {{mixins.icon('man')}}
+      </div>
+      <div class="form__field form__field--100 form__field--icon">
+        <input type="password" class="input input--transparent input--icon">
+        {{mixins.icon('lock')}}
+      </div>
+      <div class="form__field form__field--100">
+        <button type="submit" class="btn btn--white btn--100">Войти</button>
+      </div>
+    </form>
+    <a href="" class="forget-link">Забыли пароль?</a>
+    <div class="have-account">
+      Нет аккаунта? <a href="" class="js-popup-link" data-popup="popup-register">Зарегистрироваться</a>
+    </div>
+  </div>
+</div>
+

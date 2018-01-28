@@ -63,6 +63,19 @@
     <path d="M16 16H4c-1.1 0-2 .9-2 2s.9 2 2 2h12c1.1 0 2-.9 2-2s-.9-2-2-2z"/>
 </symbol><symbol id="icon-location" viewBox="0 0 70.7 83.8">
     <path d="M60.3 10.4s0-.2 0 0c-13.8-13.8-36.2-13.8-50 0-13.8 13.8-13.8 36.3 0 50.1l22.2 22.2c.8.8 1.8 1.2 2.8 1.2s2-.4 2.8-1.2l22.2-22.3c13.9-13.9 13.9-36.3 0-50zm-25 35.9c-8 0-14.5-6.5-14.5-14.5s6.5-14.5 14.5-14.5 14.5 6.5 14.5 14.5-6.5 14.5-14.5 14.5z"/>
+</symbol><symbol id="icon-lock" viewBox="0 0 66.3 86.2">
+    <style>
+        .st0{fill:none}.st0,.st1{stroke:#000;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10}
+    </style>
+    <title>
+        &#x417;&#x430;&#x43C;&#x43E;&#x43A;
+    </title>
+    <path class="st0" d="M6.6 35.7h53.1c1.4 0 2.6 1.1 2.6 2.6v41.3c0 1.4-1.1 2.6-2.6 2.6H6.6c-1.4 0-2.6-1.1-2.6-2.6V38.3c.1-1.4 1.2-2.6 2.6-2.6z"/>
+    <circle class="st1" cx="33.2" cy="59" r="2.7"/>
+    <path class="st0" d="M33.2 59v9.8"/>
+    <path class="st0" d="M13.3 24.3c-.2-11 8.5-20.1 19.5-20.3s20.1 8.5 20.3 19.4v.9"/>
+    <path class="st0" d="M13.3 24.3v11.4"/>
+    <path class="st0" d="M53.1 24.3v11.4"/>
 </symbol><symbol id="icon-man" viewBox="0 0 58 58">
     <title>
         Untitled 2
