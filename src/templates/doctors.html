@@ -1,16 +1,216 @@
 ---
-title: doctors page
+title: 'Стоматологи Москвы'
 outMode: 'out--bg-gray'
 logo: 'blue'
-breadcrumbs: ['Zubza', 'Стоматологии', 'Все Свои на Арбатской']     
-
+breadcrumbs: ['Zubza', 'Врачи']     
+mapInPopup: [
+{
+	maplinkMode: 'map-link--search',
+	popupData: 'popup-map',
+	mapImg: 'map-search-img',
+	maplinkText: 'Поиск стоматологий на карте'
+}
+]
+filters:
+  -
+    title: 'Выбрать врача'
+    type: 'select'
+    selects:
+      -
+        icon: 'location'
+        selectTitle: 'Метро, район или улица'
+        values:
+          - 'Алтуфьево'
+          - 'Алтуфьево 1'
+          - 'Алтуфьево 2'
+      -
+        icon: 'list'
+        selectTitle: 'Протезирование'
+        values:
+          - 'Алтуфьево'
+          - 'Алтуфьево 1'
+          - 'Алтуфьево 2'
+  -
+    title: 'Пользуется спросом'
+    type: 'checkbox'
+    values:
+      - 'Работает прямо сейчас'
+      - 'Недорогие'
+      - 'Бесплатная консультация'
+  -
+    title: 'Цена, руб.'
+    type: 'range'
+    min: 0
+    max: 100000
+    start: '12000 50000'
+    startMin: '12 000'
+    startMax: '50 000'
+    step: 1000
+  -
+    title: 'Пол врача'
+    type: 'checkbox'
+    values:
+      - 'Мужской'
+      - 'Женский'
+  -
+    title: 'Стаж работы'
+    type: 'checkbox'
+    values:
+      - 'До 5 лет'
+      - 'От 5 до 10 лет'
+      - 'От 10 лет'
+  -
+    title: 'Время работы'
+    type: 'checkbox'
+    values:
+      - 'Работает сейчас'
+      - 'Круглосуточно'
+      - 'выходным'
+  -
+    title: 'Льготы'
+    type: 'checkbox'
+    values:
+      - 'ОМС'
+      - 'ДМС'
+      - 'Пенсионерам'
+      - 'Студентам'
+  -
+    title: 'Оплата и кредит'
+    type: 'checkbox'
+    values:
+      - 'Кредит'
+      - 'Рассрочка'
+      - 'По карте'
+      - 'Наличными'
+  -
+    title: 'Наличие парковки'
+    type: 'checkbox'
+    values:
+      - 'Бесплатная, частная'
+      - 'Платная, общественная'
+  -
+    title: 'Наличие акций'
+    type: 'checkbox'
+    values:
+      - 'Все скидки и спецпредложения'
+filterTaglist: [
+  {
+    item: 'Стоматолог'
+  },
+  {
+    item: 'Ортодонт'
+  },
+  {
+    item: 'Протезист'
+  },
+  {
+    item: 'Хирург'
+  },
+  {
+    item: 'Ортопед'
+  },
+  {
+    item: 'Детский стоматолог'
+  }, 
+   {
+    item: 'Хирург'
+  },
+  {
+    item: '+ еще 10',
+    special: true
+  }
+]
+metaFilters: [
+{
+  metaMode: '',
+  metalist: [
+  {
+    tagname: 'Zubza рекомендует '
+  },
+  {
+    tagname: 'Самая низкая цена в начале '
+  },
+  {
+    tagname: 'Лучший рейтинг и цена'
+  },
+  {
+    tagname: 'Оценка по отзывам'
+  }
+  ]
+}
+]
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 <!--begin doctors-page-->
 <div class="doctors-page">
+	<!--begin container-->
+	<div class="container">
+		{% include "components/_breadcrumbs.html" %}
+	</div>
+	<!--end container-->
+	<!--begin container-->
+	<div class="container">
+		<!--begin doctors-page__mb-27-->
+		<div class="doctors-page__mb-27">
+			<div class="col col_lg-left">
+				<h2 class="doctors-page__title">{{ title }}</h2>
+				<div class="doctors-page__text">
+					На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.
+				</div>
+			</div>
+			<div class="col col_sm">
+				<div class="clinics-metro__topmap">
+					{% for test in mapInPopup %}
+					{% include "components/_map-link.html" %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<!--end doctors-page__mb-27-->
+	</div>
+	<!--end container-->
+	<!--begin container-->
+	<div class="container">
+		<!--begin col col_sm-->
+		<div class="col col_sm">
+			<!-- begin doctors-page__filters -->
+			<div class="doctors-page__filters">
+				{% include "components/_hospital-filters.html" %}
+			</div>
+			<!-- end doctors-page__filters -->
+		</div>
+		<!--end col col_sm-->
+		<!--begin col col_lg-right-->
+		<div class="col col_lg-right">
+			<div class="filter-section">
+				<h4 class="filter-section__title">Специализации врачей</h4>
+				<!-- begin filter-section__taglist -->
+				<div class="filter-section__taglist">
+					<div class="tagi">
+						<ul>
+							{% for tag in filterTaglist %}
+							<li><a href="#" {%if tag.special %}class="more-tags"{% endif %}>{{ tag.item }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<!-- end filter-section__taglist -->
 
+				<!-- begin filter-section__meta-filters -->
+				<div class="filter-section__meta-filters">
+					{% include "components/_meta-filters.html" %}
+					
+				</div>
+				<!-- end filter-section__meta-filters -->
+			</div>
+		</div>
+		<!--end col col_lg-right-->
+
+		
+	</div>
+	<!--end container-->
 
 </div>
 <!--end doctors-page-->
