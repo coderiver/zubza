@@ -45,5 +45,34 @@
 				</button>
 			</div>
 		</div>
+		<div class="header__submenu">
+			{% set submenu = [{
+				item: 'Услуги и цены',
+				active: true
+			}, {
+				item: 'Акции'
+			}, {
+				item: 'Памятка пациенту'
+			}, {
+				item: 'Справочник здоровья'
+			}, {
+				item: 'Как это работает'
+			}, {
+				item: 'Медицинским центрам'
+			}, {
+				item: 'Врачам'
+			}, {
+				item: 'О проекте'
+			}] %}
+			<div class="submenu">
+				<ul>
+					{% for item in submenu %}
+					<li {% if item.active %}class="is-active"{% endif %}>
+						<a href="#">{{item.item}}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
