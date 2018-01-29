@@ -54,7 +54,18 @@ class Gallery {
   		slidesToShow: 1,
     	slidesToScroll: 1, 
     	prevArrow: '.btnPrev',
-    	nextArrow: '.btnNext'
+    	nextArrow: '.btnNext',
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true
+          }
+        },
+      ]
 
   	});
 

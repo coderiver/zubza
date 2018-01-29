@@ -35,9 +35,9 @@
           </div>
           <div class="header__auth">
             <div class="auth">
-              <div class="auth__item auth__login login">
+              <div class="auth__item auth__login login js-popup-link" data-popup="popup-login">
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
-                <div class="login__text js-popup-link" data-popup="popup-login">Вход</div>
+                <div class="login__text">Вход</div>
               </div>
               <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
@@ -1037,6 +1037,35 @@
               <div class="reminder__btn"> <a href="#" class="button button_hero button_sm">Нет, изменить</a> </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="popup js-popup popup_appoint" data-popup="">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <!-- begin popup-cols -->
+          <div class="popup-cols">
+            <!-- begin popup-cols__left -->
+            <div class="popup-cols__left">
+              <div class="popup-cols__logo"> <img src="img/logo-text.svg" alt=""> </div>
+              <div class="popup-cols__name"></div>
+              <div class="popup-cols__image"> <img src="" alt=""> </div>
+            </div>
+            <!-- end popup-cols__left -->
+            <!-- begin popup-cols__right -->
+            <div class="popup-cols__right">
+              <div class="popup-form">
+                <h4 class="popup-form__title"></h4>
+                <!-- begin popup-form__text -->
+                <div class="popup-form__text"></div>
+                <!-- end popup-form__text -->
+                <form action=""> <button type="submit" class="btn btn--green"></button> </form>
+                <div class="popup-form__policy"></div>
+              </div>
+            </div>
+            <!-- end popup-cols__right -->
+          </div>
+          <!-- end popup-cols -->
         </div>
       </div>
       <footer class="footer">

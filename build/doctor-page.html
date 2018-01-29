@@ -35,9 +35,9 @@
           </div>
           <div class="header__auth">
             <div class="auth">
-              <div class="auth__item auth__login login">
+              <div class="auth__item auth__login login js-popup-link" data-popup="popup-login">
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
-                <div class="login__text js-popup-link" data-popup="popup-login">Вход</div>
+                <div class="login__text">Вход</div>
               </div>
               <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
@@ -73,18 +73,77 @@
         </div>
         <!-- end container -->
         <!--begin anchors-->
-        <div class="anchors ">
+        <div class="anchors  js-anchors-mob-drop">
           <!--begin container-->
           <div class="container">
-            <div class="anchors__list">
-              <div class="anchors__item "> <a href="#">О враче</a> </div>
-              <div class="anchors__item "> <a href="#">Где принимает</a> </div>
-              <div class="anchors__item "> <a href="#">Цены на услуги </a> </div>
-              <div class="anchors__item "> <a href="#">Отзывы</a> </div>
-              <div class="anchors__item "> <a href="#">Акции</a> </div>
-              <div class="anchors__item is-active"> <a href="#">Врачи</a> </div>
-              <div class="anchors__item "> <a href="#">Лицензии и сертификаты</a> </div>
-              <div class="anchors__item "> <a href="#">Другие врачи поблизости</a> </div>
+            <div class="anchors__mob-title js-anchors-mob-title"> Навигация по странице
+              <div class="anchors__close-mob "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+            </div>
+            <div class="anchors__list js-anchors-mob-content">
+              <div class="anchors__item ">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> О враче </a>
+              </div>
+              <div class="anchors__item ">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> Где принимает </a>
+              </div>
+              <div class="anchors__item ">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> Цены на услуги </a>
+              </div>
+              <div class="anchors__item ">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> Отзывы </a>
+              </div>
+              <div class="anchors__item ">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> Акции </a>
+              </div>
+              <div class="anchors__item is-active">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> Врачи </a>
+              </div>
+              <div class="anchors__item ">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> Лицензии и сертификаты </a>
+              </div>
+              <div class="anchors__item ">
+                <a href="#">
+                  <div class="anchors__item-icon-mob "> <i>
+							
+<svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
+
+						</i> </div> Другие врачи поблизости </a>
+              </div>
             </div>
           </div>
           <!--end container-->
@@ -95,7 +154,21 @@
           <div class="clinic-box clinic-box_mini clinic-box_doctor-single">
             <div class="clinic-box__content">
               <div class="clinic-box__rate">
-                <h2 class="clinic-box__title">Ярцева Ирина Михайловна</h2>
+                <div class="doctor__right-topline">
+                  <div class="doctor__avatar doctor__avatar--mob"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
+                  <h2 class="clinic-box__title">Ярцева Ирина Михайловна</h2>
+                  <div class="topline__left topline__left--mob">
+                    <div class="doctor__experience"> Стаж 15 лет </div>
+                    <div class="clinic-box__tagi">
+                      <div class="tagi">
+                        <ul>
+                          <li><a href="#">Хирург</a></li>
+                          <li><a href="#">Парадонтолог</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="rate-wrapper">
                   <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
             
@@ -122,6 +195,31 @@
                   <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
                   <!--end rate-number-->
                 </div>
+              </div>
+              <div class="doctor__right-rateline">
+                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item ">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> </div>
+                <!--begin rate-number-->
+                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
               </div>
               <div class="doctor">
                 <div class="doctor__left">
@@ -164,8 +262,7 @@
                       <li class="list__item">микропротезирование;</li>
                       <li class="list__item">лечение всех видов некариозных поражений зубов и кариеса, его осложнений.</li>
                     </ul>
-                  </div>
-                </div>
+                  </div> <a href="#" class="btn btn--green js-popup-link btn--doctor" data-popup="popup-appoint">Записаться</a> </div>
               </div>
             </div>
           </div>
@@ -746,7 +843,8 @@
                 уточнить стоимость по телефону. </p>
             </div>
             <div class="reviews">
-              <div class="reviews__title h3"> Отзывы о враче </div>
+              <div class="reviews__title h3 hide-md"> Отзывы о враче </div>
+              <div class="reviews__title h3 show-md"> </div>
               <div class="reviews__list review">
                 <div class="review__row">
                   <div class="review__state">
@@ -761,8 +859,10 @@
 </svg> </div>
                       <div class="review-status__title"> Рекомендую </div>
                     </div>
-                    <div class="review__author">Анна Андреевна</div>
-                    <div class="review__date">22.12.17</div>
+                    <div class="review__wrapper">
+                      <div class="review__author">Анна Андреевна</div>
+                      <div class="review__date">22.12.17</div>
+                    </div>
                   </div>
                   <div class="review__body">
                     <div class="review__top">
@@ -798,8 +898,10 @@
 </svg> </div>
                       <div class="review-status__title"> Не Рекомендую </div>
                     </div>
-                    <div class="review__author">Анна Андреевна</div>
-                    <div class="review__date">22.12.17</div>
+                    <div class="review__wrapper">
+                      <div class="review__author">Анна Андреевна</div>
+                      <div class="review__date">22.12.17</div>
+                    </div>
                   </div>
                   <div class="review__body">
                     <div class="review__top">
@@ -832,8 +934,10 @@
 </svg> </div>
                       <div class="review-status__title"> Рекомендую </div>
                     </div>
-                    <div class="review__author">Анна Андреевна</div>
-                    <div class="review__date">22.12.17</div>
+                    <div class="review__wrapper">
+                      <div class="review__author">Анна Андреевна</div>
+                      <div class="review__date">22.12.17</div>
+                    </div>
                   </div>
                   <div class="review__body">
                     <div class="review__top">
@@ -869,8 +973,10 @@
 </svg> </div>
                       <div class="review-status__title"> Не Рекомендую </div>
                     </div>
-                    <div class="review__author">Анна Андреевна</div>
-                    <div class="review__date">22.12.17</div>
+                    <div class="review__wrapper">
+                      <div class="review__author">Анна Андреевна</div>
+                      <div class="review__date">22.12.17</div>
+                    </div>
                   </div>
                   <div class="review__body">
                     <div class="review__top">
@@ -903,8 +1009,10 @@
 </svg> </div>
                       <div class="review-status__title"> Рекомендую </div>
                     </div>
-                    <div class="review__author">Анна Андреевна</div>
-                    <div class="review__date">22.12.17</div>
+                    <div class="review__wrapper">
+                      <div class="review__author">Анна Андреевна</div>
+                      <div class="review__date">22.12.17</div>
+                    </div>
                   </div>
                   <div class="review__body">
                     <div class="review__top">
@@ -1087,1038 +1195,1121 @@
           </div>
           <!--end license-->
           <!-- begin container -->
-          <div class="doctor-page__clinic-boxes container">
-            <h2 class="doctor-page__title">Врачи той же специальности поблизости</h2>
-            <div class="clinic-box clinic-box_mini clinic-box_doctor ">
-              <div class="clinic-box__left">
-                <div class="clinic-box__content">
-                  <div class="doctor">
-                    <div class="doctor__left">
-                      <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
-                    </div>
-                    <div class="doctor__right">
-                      <div class="doctor__title"><strong>Ярцева Ирина Михайловна</strong>, стаж 10 лет</div>
-                      <div class="clinic-box__tagi">
-                        <div class="tagi">
-                          <ul>
-                            <li><a href="#">Хирург</a></li>
-                            <li><a href="#">Парадонтолог</a></li>
-                          </ul>
-                        </div>
+          <div class="container">
+            <div class="doctor-page__clinic-boxes">
+              <h2 class="doctor-page__title">Врачи той же специальности поблизости</h2>
+              <div class="clinic-box clinic-box_mini clinic-box_doctor ">
+                <div class="clinic-box__left">
+                  <div class="clinic-box__content">
+                    <div class="doctor">
+                      <div class="doctor__left">
+                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
                       </div>
-                      <div class="location-info location-info--dashed"> <i class="location-info__icon">
+                      <div class="doctor__right">
+                        <div class="doctor__right-topline">
+                          <div class="doctor__avatar doctor__avatar--mob"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
+                          <div class="doctor__title"><strong>Ярцева Ирина Михайловна</strong> стаж 10 лет</div>
+                          <div class="clinic-box__tagi">
+                            <div class="tagi">
+                              <ul>
+                                <li><a href="#">Хирург</a></li>
+                                <li><a href="#">Парадонтолог</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="doctor__right-rateline">
+                          <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item ">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> </div>
+                          <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                        </div>
+                        <div class="location-info location-info--dashed"> <i class="location-info__icon">
 <svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg>
 </i> <a href="">г. Москва, ул. Волочаевская, д. 15, стр.1</a> </div>
-                      <div class="metro-info"> <a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a> </div>
-                      <!-- begin clinic-box__tablelist -->
-                      <div class="clinic-box__tablelist">
-                        <div class="tablelist">
-                          <div class="tablelist__row">
-                            <div class="tablelist__col">Консультация стоматолога</div>
-                            <div class="tablelist__col"><span class="text-cyan text-bold">Бесплатно</span></div>
-                          </div>
-                          <div class="tablelist__row">
-                            <div class="tablelist__col">Лечение кариеса</div>
-                            <div class="tablelist__col"><span class="text-cyan text-bold">от 500 руб.</span></div>
+                        <div class="metro-info"> <a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a> </div>
+                        <!-- begin clinic-box__tablelist -->
+                        <div class="clinic-box__tablelist">
+                          <div class="tablelist">
+                            <div class="tablelist__row">
+                              <div class="tablelist__col">Консультация стоматолога</div>
+                              <div class="tablelist__col"><span class="text-cyan text-bold">Бесплатно</span></div>
+                            </div>
+                            <div class="tablelist__row">
+                              <div class="tablelist__col">Лечение кариеса</div>
+                              <div class="tablelist__col"><span class="text-cyan text-bold">от 500 руб.</span></div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <!-- end clinic-box__tablelist -->
-                      <div class="clinic-box__spec-wrapper"> <a href="" class="more-link more-link--sm">
+                        <!-- end clinic-box__tablelist -->
+                        <div class="clinic-box__spec-wrapper"> <a href="" class="more-link more-link--sm">
             <i class="more-link__icon">
 <svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
 </i>
             <span>Весь прайслист клиники</span>
           </a> </div>
-                    </div>
-                  </div>
-                  <div class="clinic-box__more clinic-box__more_has-border">
-                    <div class="worktime-info">
-                      <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-                    </div> <a href="#" class="btn btn--green">Записаться</a> </div>
-                </div>
-              </div>
-              <div class="clinic-box__right">
-                <!--begin count-slider-->
-                <div class="count-slider  js-slider-count-parent ">
-                  <!--begin count-slider__content-->
-                  <div class="count-slider__content js-slider-count ">
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
                       </div>
-                      <!--end cslide__inner-->
                     </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                  </div>
-                  <!--end count-slider__content-->
-                  <div class="count-slider__count">
-                    <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
-                    <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+                    <div class="clinic-box__more clinic-box__more_has-border">
+                      <div class="worktime-info">
+                        <p><span class="worktime-info__title">Режим работы</span>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
+                      </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                 </div>
-                <!--end count-slider-->
-              </div>
-            </div>
-            <div class="clinic-box clinic-box_mini clinic-box_doctor ">
-              <div class="clinic-box__left">
-                <div class="clinic-box__content">
-                  <div class="doctor">
-                    <div class="doctor__left">
-                      <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
-                    </div>
-                    <div class="doctor__right">
-                      <div class="doctor__title"><strong>Ярцева Ирина Михайловна</strong>, стаж 10 лет</div>
-                      <div class="clinic-box__tagi">
-                        <div class="tagi">
-                          <ul>
-                            <li><a href="#">Хирург</a></li>
-                            <li><a href="#">Парадонтолог</a></li>
-                          </ul>
+                <div class="clinic-box__right">
+                  <!--begin count-slider-->
+                  <div class="count-slider  js-slider-count-parent ">
+                    <!--begin count-slider__content-->
+                    <div class="count-slider__content js-slider-count ">
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
                         </div>
+                        <!--end cslide__inner-->
                       </div>
-                      <div class="location-info location-info--dashed"> <i class="location-info__icon">
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                    </div>
+                    <!--end count-slider__content-->
+                    <div class="count-slider__count">
+                      <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
+                      <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+                    </div>
+                  </div>
+                  <!--end count-slider-->
+                </div>
+              </div>
+              <div class="clinic-box clinic-box_mini clinic-box_doctor ">
+                <div class="clinic-box__left">
+                  <div class="clinic-box__content">
+                    <div class="doctor">
+                      <div class="doctor__left">
+                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
+                      </div>
+                      <div class="doctor__right">
+                        <div class="doctor__right-topline">
+                          <div class="doctor__avatar doctor__avatar--mob"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
+                          <div class="doctor__title"><strong>Ярцева Ирина Михайловна</strong> стаж 10 лет</div>
+                          <div class="clinic-box__tagi">
+                            <div class="tagi">
+                              <ul>
+                                <li><a href="#">Хирург</a></li>
+                                <li><a href="#">Парадонтолог</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="doctor__right-rateline">
+                          <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item ">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> </div>
+                          <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                        </div>
+                        <div class="location-info location-info--dashed"> <i class="location-info__icon">
 <svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg>
 </i> <a href="">г. Москва, ул. Волочаевская, д. 15, стр.1</a> </div>
-                      <div class="metro-info"> <a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a> </div>
-                      <!-- begin clinic-box__tablelist -->
-                      <div class="clinic-box__tablelist">
-                        <div class="tablelist">
-                          <div class="tablelist__row">
-                            <div class="tablelist__col">Консультация стоматолога</div>
-                            <div class="tablelist__col"><span class="text-cyan text-bold">Бесплатно</span></div>
-                          </div>
-                          <div class="tablelist__row">
-                            <div class="tablelist__col">Лечение кариеса</div>
-                            <div class="tablelist__col"><span class="text-cyan text-bold">от 500 руб.</span></div>
+                        <div class="metro-info"> <a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a> </div>
+                        <!-- begin clinic-box__tablelist -->
+                        <div class="clinic-box__tablelist">
+                          <div class="tablelist">
+                            <div class="tablelist__row">
+                              <div class="tablelist__col">Консультация стоматолога</div>
+                              <div class="tablelist__col"><span class="text-cyan text-bold">Бесплатно</span></div>
+                            </div>
+                            <div class="tablelist__row">
+                              <div class="tablelist__col">Лечение кариеса</div>
+                              <div class="tablelist__col"><span class="text-cyan text-bold">от 500 руб.</span></div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <!-- end clinic-box__tablelist -->
-                      <div class="clinic-box__spec-wrapper"> <a href="" class="more-link more-link--sm">
+                        <!-- end clinic-box__tablelist -->
+                        <div class="clinic-box__spec-wrapper"> <a href="" class="more-link more-link--sm">
             <i class="more-link__icon">
 <svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
 </i>
             <span>Весь прайслист клиники</span>
           </a> </div>
-                    </div>
-                  </div>
-                  <div class="clinic-box__more clinic-box__more_has-border">
-                    <div class="worktime-info">
-                      <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-                    </div> <a href="#" class="btn btn--green">Записаться</a> </div>
-                </div>
-              </div>
-              <div class="clinic-box__right">
-                <!--begin count-slider-->
-                <div class="count-slider  js-slider-count-parent ">
-                  <!--begin count-slider__content-->
-                  <div class="count-slider__content js-slider-count ">
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
                       </div>
-                      <!--end cslide__inner-->
                     </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                  </div>
-                  <!--end count-slider__content-->
-                  <div class="count-slider__count">
-                    <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
-                    <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+                    <div class="clinic-box__more clinic-box__more_has-border">
+                      <div class="worktime-info">
+                        <p><span class="worktime-info__title">Режим работы</span>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
+                      </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                 </div>
-                <!--end count-slider-->
-              </div>
-            </div>
-            <div class="clinic-box clinic-box_mini clinic-box_doctor ">
-              <div class="clinic-box__left">
-                <div class="clinic-box__content">
-                  <div class="doctor">
-                    <div class="doctor__left">
-                      <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
-                    </div>
-                    <div class="doctor__right">
-                      <div class="doctor__title"><strong>Ярцева Ирина Михайловна</strong>, стаж 10 лет</div>
-                      <div class="clinic-box__tagi">
-                        <div class="tagi">
-                          <ul>
-                            <li><a href="#">Хирург</a></li>
-                            <li><a href="#">Парадонтолог</a></li>
-                          </ul>
+                <div class="clinic-box__right">
+                  <!--begin count-slider-->
+                  <div class="count-slider  js-slider-count-parent ">
+                    <!--begin count-slider__content-->
+                    <div class="count-slider__content js-slider-count ">
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
                         </div>
+                        <!--end cslide__inner-->
                       </div>
-                      <div class="location-info location-info--dashed"> <i class="location-info__icon">
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                    </div>
+                    <!--end count-slider__content-->
+                    <div class="count-slider__count">
+                      <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
+                      <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+                    </div>
+                  </div>
+                  <!--end count-slider-->
+                </div>
+              </div>
+              <div class="clinic-box clinic-box_mini clinic-box_doctor ">
+                <div class="clinic-box__left">
+                  <div class="clinic-box__content">
+                    <div class="doctor">
+                      <div class="doctor__left">
+                        <div class="doctor__avatar"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
+                      </div>
+                      <div class="doctor__right">
+                        <div class="doctor__right-topline">
+                          <div class="doctor__avatar doctor__avatar--mob"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
+                          <div class="doctor__title"><strong>Ярцева Ирина Михайловна</strong> стаж 10 лет</div>
+                          <div class="clinic-box__tagi">
+                            <div class="tagi">
+                              <ul>
+                                <li><a href="#">Хирург</a></li>
+                                <li><a href="#">Парадонтолог</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="doctor__right-rateline">
+                          <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item is-color">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> <i class="rate-stars__item ">
+                  
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+                </i> </div>
+                          <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                        </div>
+                        <div class="location-info location-info--dashed"> <i class="location-info__icon">
 <svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg>
 </i> <a href="">г. Москва, ул. Волочаевская, д. 15, стр.1</a> </div>
-                      <div class="metro-info"> <a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a> </div>
-                      <!-- begin clinic-box__tablelist -->
-                      <div class="clinic-box__tablelist">
-                        <div class="tablelist">
-                          <div class="tablelist__row">
-                            <div class="tablelist__col">Консультация стоматолога</div>
-                            <div class="tablelist__col"><span class="text-cyan text-bold">Бесплатно</span></div>
-                          </div>
-                          <div class="tablelist__row">
-                            <div class="tablelist__col">Лечение кариеса</div>
-                            <div class="tablelist__col"><span class="text-cyan text-bold">от 500 руб.</span></div>
+                        <div class="metro-info"> <a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a> </div>
+                        <!-- begin clinic-box__tablelist -->
+                        <div class="clinic-box__tablelist">
+                          <div class="tablelist">
+                            <div class="tablelist__row">
+                              <div class="tablelist__col">Консультация стоматолога</div>
+                              <div class="tablelist__col"><span class="text-cyan text-bold">Бесплатно</span></div>
+                            </div>
+                            <div class="tablelist__row">
+                              <div class="tablelist__col">Лечение кариеса</div>
+                              <div class="tablelist__col"><span class="text-cyan text-bold">от 500 руб.</span></div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <!-- end clinic-box__tablelist -->
-                      <div class="clinic-box__spec-wrapper"> <a href="" class="more-link more-link--sm">
+                        <!-- end clinic-box__tablelist -->
+                        <div class="clinic-box__spec-wrapper"> <a href="" class="more-link more-link--sm">
             <i class="more-link__icon">
 <svg class="icon icon-arrow-sm"><use xlink:href="img/sprite.svg#icon-arrow-sm"></use></svg>
 </i>
             <span>Весь прайслист клиники</span>
           </a> </div>
-                    </div>
-                  </div>
-                  <div class="clinic-box__more clinic-box__more_has-border">
-                    <div class="worktime-info">
-                      <p>Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
-                    </div> <a href="#" class="btn btn--green">Записаться</a> </div>
-                </div>
-              </div>
-              <div class="clinic-box__right">
-                <!--begin count-slider-->
-                <div class="count-slider  js-slider-count-parent ">
-                  <!--begin count-slider__content-->
-                  <div class="count-slider__content js-slider-count ">
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
                       </div>
-                      <!--end cslide__inner-->
                     </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                    <!--begin count-slide-->
-                    <div class="cslide  js-slider-count-slide">
-                      <!--begin cslide__inner-->
-                      <div class="cslide__inner">
-                        <!--begin cslide__head-->
-                        <div class="cslide__head ">
-                          <!--begin cslide__head-inner-->
-                          <div class="cslide__head-inner">
-                            <!--begin rate-wrapper-->
-                            <div class="rate-wrapper">
-                              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item is-color">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> <i class="rate-stars__item ">
-		
-<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
-
-	</i> </div>
-                              <!--begin rate-number-->
-                              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
-                              <!--end rate-number-->
-                            </div>
-                            <!--end rate-wrapper-->
-                          </div>
-                          <!--end cslide__head-inner-->
-                        </div>
-                        <!--end cslide__head-->
-                        <!--begin cslide__count-block-->
-                        <div class="cslide__count-block">
-                          <!--begin count-users-->
-                          <div class="count-users count-users--mb-16 count-users--gray">
-                            <div class="count-users__bought count-users__bought--cyan">
-                              <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
-                              <p>ЗАПИСАЛОСЬ</p>
-                            </div> <span class="count-users__separator">/</span>
-                            <div class="count-users__glad count-users__glad--green">
-                              <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
-                              <p>ДОВОЛЬНЫ</p>
-                            </div>
-                          </div>
-                          <!--end count-users-->
-                        </div>
-                        <!--end cslide__count-block-->
-                        <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
-                        <!--begin cslide__text-->
-                        <div class="cslide__text cslide__text--mb-none">
-                          <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
-                            из-за технического сбоев я опоздала к своему лечащему врачу. </p>
-                        </div>
-                        <!--end cslide__text-->
-                        <!--begin cslide__recomend-->
-                        <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
-                        <!--end cslide__recomend-->
-                      </div>
-                      <!--end cslide__inner-->
-                    </div>
-                    <!--end count-slide-->
-                  </div>
-                  <!--end count-slider__content-->
-                  <div class="count-slider__count">
-                    <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
-                    <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+                    <div class="clinic-box__more clinic-box__more_has-border">
+                      <div class="worktime-info">
+                        <p><span class="worktime-info__title">Режим работы</span>Пн-Вт 9:00 – 21:00, Сб-Вс выходной</p>
+                      </div> <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a> </div>
                   </div>
                 </div>
-                <!--end count-slider-->
+                <div class="clinic-box__right">
+                  <!--begin count-slider-->
+                  <div class="count-slider  js-slider-count-parent ">
+                    <!--begin count-slider__content-->
+                    <div class="count-slider__content js-slider-count ">
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                      <!--begin count-slide-->
+                      <div class="cslide  js-slider-count-slide">
+                        <!--begin cslide__inner-->
+                        <div class="cslide__inner">
+                          <!--begin cslide__head-->
+                          <div class="cslide__head ">
+                            <!--begin cslide__head-inner-->
+                            <div class="cslide__head-inner">
+                              <!--begin rate-wrapper-->
+                              <div class="rate-wrapper">
+                                <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item is-color">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> <i class="rate-stars__item ">
+		
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+	</i> </div>
+                                <!--begin rate-number-->
+                                <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
+                                <!--end rate-number-->
+                              </div>
+                              <!--end rate-wrapper-->
+                            </div>
+                            <!--end cslide__head-inner-->
+                          </div>
+                          <!--end cslide__head-->
+                          <!--begin cslide__count-block-->
+                          <div class="cslide__count-block">
+                            <!--begin count-users-->
+                            <div class="count-users count-users--mb-16 count-users--gray">
+                              <div class="count-users__bought count-users__bought--cyan">
+                                <div> <span>70</span> <i class="count-users__icon-user "></i> </div>
+                                <p>ЗАПИСАЛОСЬ</p>
+                              </div> <span class="count-users__separator">/</span>
+                              <div class="count-users__glad count-users__glad--green">
+                                <div> <span>65</span> <i class="count-users__icon-heart "></i> </div>
+                                <p>ДОВОЛЬНЫ</p>
+                              </div>
+                            </div>
+                            <!--end count-users-->
+                          </div>
+                          <!--end cslide__count-block-->
+                          <p class="cslide__info cslide__info--gray">Анна, 22.12.17</p>
+                          <!--begin cslide__text-->
+                          <div class="cslide__text cslide__text--mb-none">
+                            <p> Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых
+                              из-за технического сбоев я опоздала к своему лечащему врачу. </p>
+                          </div>
+                          <!--end cslide__text-->
+                          <!--begin cslide__recomend-->
+                          <div class="cslide__recomend"> <i></i> РЕКОМЕНДУЮ </div>
+                          <!--end cslide__recomend-->
+                        </div>
+                        <!--end cslide__inner-->
+                      </div>
+                      <!--end count-slide-->
+                    </div>
+                    <!--end count-slider__content-->
+                    <div class="count-slider__count">
+                      <p class="count-slider__count-main"> <span class="js-slider-count-all">2</span> отзыва(ов) </p>
+                      <p> <span class="js-slider-count-current-slide">1</span> из <span class="js-slider-count-all">2</span> </p>
+                    </div>
+                  </div>
+                  <!--end count-slider-->
+                </div>
               </div>
             </div>
           </div>
@@ -2321,67 +2512,6 @@
         </div>
       </div>
       <!-- end doctor-page -->
-      <div class="popup js-popup popup_appoint" data-popup="popup-appoint">
-        <div class="popup__overlay js-popup-overlay"></div>
-        <div class="popup__content js-popup-content">
-          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
-          <!-- begin popup-cols -->
-          <div class="popup-cols">
-            <!-- begin popup-cols__left -->
-            <div class="popup-cols__left">
-              <div class="popup-cols__logo"> <img src="img/logo-text.svg" alt=""> </div>
-              <div class="popup-cols__name">Все стоматологи вашего городa</div>
-              <div class="popup-cols__image"> <img src="img/doctor-black-white.png" alt=""> </div>
-            </div>
-            <!-- end popup-cols__left -->
-            <!-- begin popup-cols__right -->
-            <div class="popup-cols__right">
-              <div class="popup-form">
-                <h4 class="popup-form__title">Протезист Ярцева Ангелина Алексеевна</h4>
-                <!-- begin popup-form__text -->
-                <div class="popup-form__text">
-                  <p>г. Москва, ул. Волочаевская, д. 15, стр.1</p>
-                  <p>ЦАО, Марксистская (1 км), Римская (1 км), Таганская (1 км)</p>
-                </div>
-                <!-- end popup-form__text -->
-                <form action="">
-                  <div class="form-field"> <label for="">Услуга</label>
-                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Название услуги"> </div>
-                  </div>
-                  <div class="form-field"> <label for="">Дата и время</label>
-                    <div class="form-field__in form-field__in_flex">
-                      <div class="form-field__col"> <input type="text" class="textfield js-datepicker" placeholder="дд.мм.гг">
-                        <div class="input-icon"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> </div>
-                      </div>
-                      <div class="form-field__col"> <select class="js-select" data-field="Время" data-icon="arrow-down">
-                    
-                    <option value="qweqe">9:30</option>
-                    
-                    <option value="qweqe">10:00</option>
-                    
-                    <option value="qweqe">11:00</option>
-                    
-                    <option value="qweqe">12:00</option>
-                    
-                    <option value="qweqe">12:30</option>
-                    
-                  </select> </div>
-                    </div>
-                  </div>
-                  <div class="form-field"> <label for="">Ваше имя</label>
-                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Введите свое имя"> </div>
-                  </div>
-                  <div class="form-field"> <label for="">Ваш телефон</label>
-                    <div class="form-field__in is-invalid"> <input type="text" class="textfield" placeholder="+7 ( ___ ) ___ - __ - __"> <span class="form-field__error">Введите телефон</span> </div>
-                  </div> <button type="submit" class="btn btn--green">Записаться</button> </form>
-                <div class="popup-form__policy">Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a></div>
-              </div>
-            </div>
-            <!-- end popup-cols__right -->
-          </div>
-          <!-- end popup-cols -->
-        </div>
-      </div>
       <div class="js-popup popup popup_cities" data-popup="cities">
         <div class="js-popup-overlay popup__overlay"></div>
         <div class="popup__content js-popup-content">
@@ -2846,6 +2976,67 @@
               <div class="reminder__btn"> <a href="#" class="button button_hero button_sm">Нет, изменить</a> </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="popup js-popup popup_appoint" data-popup="popup-appoint">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <!-- begin popup-cols -->
+          <div class="popup-cols">
+            <!-- begin popup-cols__left -->
+            <div class="popup-cols__left">
+              <div class="popup-cols__logo"> <img src="img/logo-text.svg" alt=""> </div>
+              <div class="popup-cols__name">Все стоматологи вашего городa</div>
+              <div class="popup-cols__image"> <img src="img/doctor-black-white.png" alt=""> </div>
+            </div>
+            <!-- end popup-cols__left -->
+            <!-- begin popup-cols__right -->
+            <div class="popup-cols__right">
+              <div class="popup-form">
+                <h4 class="popup-form__title">Протезист Ярцева Ангелина Алексеевна</h4>
+                <!-- begin popup-form__text -->
+                <div class="popup-form__text">
+                  <p>г. Москва, ул. Волочаевская, д. 15, стр.1</p>
+                  <p>ЦАО, Марксистская (1 км), Римская (1 км), Таганская (1 км)</p>
+                </div>
+                <!-- end popup-form__text -->
+                <form action="">
+                  <div class="form-field"> <label for="">Услуга</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Название услуги"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Дата и время</label>
+                    <div class="form-field__in form-field__in_flex">
+                      <div class="form-field__col"> <input type="text" class="textfield js-datepicker" placeholder="дд.мм.гг">
+                        <div class="input-icon"> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg> </div>
+                      </div>
+                      <div class="form-field__col"> <select class="js-select" data-field="Время" data-icon="arrow-down">
+                    
+                    <option value="qweqe">9:30</option>
+                    
+                    <option value="qweqe">10:00</option>
+                    
+                    <option value="qweqe">11:00</option>
+                    
+                    <option value="qweqe">12:00</option>
+                    
+                    <option value="qweqe">12:30</option>
+                    
+                  </select> </div>
+                    </div>
+                  </div>
+                  <div class="form-field"> <label for="">Ваше имя</label>
+                    <div class="form-field__in"> <input type="text" class="textfield" placeholder="Введите свое имя"> </div>
+                  </div>
+                  <div class="form-field"> <label for="">Ваш телефон</label>
+                    <div class="form-field__in is-invalid"> <input type="text" class="textfield" placeholder="+7 ( ___ ) ___ - __ - __"> <span class="form-field__error">Введите телефон</span> </div>
+                  </div> <button type="submit" class="btn btn--green">Записаться</button> </form>
+                <div class="popup-form__policy">Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a></div>
+              </div>
+            </div>
+            <!-- end popup-cols__right -->
+          </div>
+          <!-- end popup-cols -->
         </div>
       </div>
       <footer class="footer">

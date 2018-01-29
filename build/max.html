@@ -35,9 +35,9 @@
           </div>
           <div class="header__auth">
             <div class="auth">
-              <div class="auth__item auth__login login">
+              <div class="auth__item auth__login login js-popup-link" data-popup="popup-login">
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
-                <div class="login__text js-popup-link" data-popup="popup-login">Вход</div>
+                <div class="login__text">Вход</div>
               </div>
               <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
@@ -849,7 +849,21 @@
         <div class="clinic-box clinic-box_mini clinic-box_doctor-single">
           <div class="clinic-box__content">
             <div class="clinic-box__rate">
-              <h2 class="clinic-box__title">Ярцева Ирина Михайловна</h2>
+              <div class="doctor__right-topline">
+                <div class="doctor__avatar doctor__avatar--mob"> <img src="img/ava.jpg" alt="Ярцева Ирина Михайловна"> </div>
+                <h2 class="clinic-box__title">Ярцева Ирина Михайловна</h2>
+                <div class="topline__left topline__left--mob">
+                  <div class="doctor__experience"> Стаж 15 лет </div>
+                  <div class="clinic-box__tagi">
+                    <div class="tagi">
+                      <ul>
+                        <li><a href="#">Хирург</a></li>
+                        <li><a href="#">Парадонтолог</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="rate-wrapper">
                 <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
             
@@ -876,6 +890,31 @@
                 <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
                 <!--end rate-number-->
               </div>
+            </div>
+            <div class="doctor__right-rateline">
+              <div class="rate-stars rate-stars--green"> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item is-color">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> <i class="rate-stars__item ">
+          
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+
+        </i> </div>
+              <!--begin rate-number-->
+              <div class="rate-number rate-number--green"> рейтинг <span>4.6</span> </div>
             </div>
             <div class="doctor">
               <div class="doctor__left">
@@ -918,8 +957,7 @@
                     <li class="list__item">микропротезирование;</li>
                     <li class="list__item">лечение всех видов некариозных поражений зубов и кариеса, его осложнений.</li>
                   </ul>
-                </div>
-              </div>
+                </div> <a href="#" class="btn btn--green js-popup-link btn--doctor" data-popup="popup-appoint">Записаться</a> </div>
             </div>
           </div>
         </div>
@@ -1388,6 +1426,35 @@
               <div class="reminder__btn"> <a href="#" class="button button_hero button_sm">Нет, изменить</a> </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="popup js-popup popup_appoint" data-popup="">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content">
+          <div class="popup__close js-close-popup "> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <!-- begin popup-cols -->
+          <div class="popup-cols">
+            <!-- begin popup-cols__left -->
+            <div class="popup-cols__left">
+              <div class="popup-cols__logo"> <img src="img/logo-text.svg" alt=""> </div>
+              <div class="popup-cols__name"></div>
+              <div class="popup-cols__image"> <img src="" alt=""> </div>
+            </div>
+            <!-- end popup-cols__left -->
+            <!-- begin popup-cols__right -->
+            <div class="popup-cols__right">
+              <div class="popup-form">
+                <h4 class="popup-form__title"></h4>
+                <!-- begin popup-form__text -->
+                <div class="popup-form__text"></div>
+                <!-- end popup-form__text -->
+                <form action=""> <button type="submit" class="btn btn--green"></button> </form>
+                <div class="popup-form__policy"></div>
+              </div>
+            </div>
+            <!-- end popup-cols__right -->
+          </div>
+          <!-- end popup-cols -->
         </div>
       </div>
       <footer class="footer">

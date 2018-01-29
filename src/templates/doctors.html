@@ -140,6 +140,25 @@ metaFilters: [
   ]
 }
 ]
+
+
+mobFilters: [
+  {
+    icon: 'location',
+    name: 'На карте'
+  },
+  {
+    icon: 'sort',
+    name: 'Сортировать',
+    action: 'js-show-meta-filters'
+  },
+  {
+    icon: 'filt',
+    name: 'Фильтры',
+    action: 'js-show-filters'
+  }
+]
+
 sales: [
 {
   sectionMode: '',
@@ -701,6 +720,50 @@ searchBanner: {
   url: '#',
   title: 'Вернуться к поиску врача'
 }
+
+popupForm: {
+  dataPopup: 'popup-appoint',
+  name: 'Все стоматологи вашего городa',
+  pic: 'img/doctor-black-white.png',
+  form: {
+    title: 'Протезист Ярцева Ангелина Алексеевна',
+    text: '<p>г. Москва, ул. Волочаевская, д. 15, стр.1</p><p>ЦАО, Марксистская (1 км), Римская (1 км), Таганская (1 км)</p>',
+    fields: [
+      {
+        label: 'Услуга',
+        input: 'Название услуги'
+      },
+      {
+        label: 'Дата и время',
+        cols: [
+          {
+            datepicker: 'дд.мм.гг'
+          },
+          {
+            select: {
+              field: 'Время',
+              options: ['9:30','10:00','11:00', '12:00', '12:30'],
+            }
+          }
+        ]
+      },
+      {
+        label: 'Ваше имя',
+        input: 'Введите свое имя'
+      },
+      {
+        label: 'Ваш телефон',
+        input: '+7 ( ___ ) ___ - __ - __',
+        invalid: true,
+        validationMessage: 'Введите телефон'
+      }
+    ],
+    submitButton: 'Записаться',
+    policy: 'Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a>'
+  }
+}
+
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -745,7 +808,7 @@ searchBanner: {
 		</div>
 		<!--end col col_sm-->
 		<!--begin col col_lg-right-->
-		<div class="col col_lg-right">
+		<div class="col col_lg-right js-map-mob-append">
 			<div class="filter-section">
 				<h4 class="filter-section__title">Специализации врачей</h4>
 				<!-- begin filter-section__taglist -->
@@ -759,6 +822,12 @@ searchBanner: {
 					</div>
 				</div>
 				<!-- end filter-section__taglist -->
+
+        <!-- begin filter-section__mob-filters -->
+        <div class="filter-section__mob-filters">
+          {% include "components/_mob-filters.html" %}
+        </div>
+        <!-- end filter-section__mob-filters -->
 
 				<!-- begin filter-section__meta-filters -->
 				<div class="filter-section__meta-filters">

@@ -1,7 +1,26 @@
 <div class="clinic-box clinic-box_mini clinic-box_doctor-single">
   <div class="clinic-box__content">
     <div class="clinic-box__rate">
-      <h2 class="clinic-box__title">{{ doctor.title | safe }}</h2>
+      <div class="doctor__right-topline">
+        <div class="doctor__avatar doctor__avatar--mob">
+          <img src="img/{{doctor.avatar}}" alt="{{ doctor.title }}">
+        </div>
+        <h2 class="clinic-box__title">{{ doctor.title | safe }}</h2>
+        <div class="topline__left topline__left--mob">
+          <div class="doctor__experience">
+            Стаж {{doctor.experience}}
+          </div>
+          <div class="clinic-box__tagi">
+            <div class="tagi">
+              <ul>
+                {% for i in doctor.taglist %}
+                <li><a href="#">{{ i | safe }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+         </div>
+      </div>
       <div class="rate-wrapper">
         <div class="rate-stars rate-stars--green">
           {% for star in doctor.rate.stars %}
@@ -15,6 +34,19 @@
           рейтинг <span>{{ doctor.rate.number }}</span>
         </div>
         <!--end rate-number-->
+      </div>
+    </div>
+    <div class="doctor__right-rateline">
+      <div class="rate-stars rate-stars--green">
+        {% for star in doctor.rate.stars %}
+        <i class="rate-stars__item {{ star.starMode }}">
+          {{ mixins.icon('star') }}
+        </i>
+        {% endfor %}
+      </div>
+      <!--begin rate-number-->
+      <div class="rate-number rate-number--green">
+        рейтинг <span>{{ doctor.rate.number }}</span>
       </div>
     </div>
     <div class="doctor">
@@ -73,6 +105,7 @@
             {%endfor%}
           </ul>
         </div>
+        <a href="#" class="btn btn--green js-popup-link btn--doctor" data-popup="popup-appoint">Записаться</a>
 
       </div>
     </div>

@@ -2,7 +2,9 @@
 title: Все Свои на Арбатской
 outMode: 'out--bg-gray'
 logo: 'blue'
-breadcrumbs: ['Zubza', 'Стоматологии']     
+reviewsTitle: 'Отзывы о стоматологической клинике «Все Свои» на Арбатской'
+reviewsTitleMob: 'Отзывы о клинике'
+breadcrumbs: ['Zubza', 'Стоматологии']
 anchors: [
 {
 	mode: '',
@@ -34,7 +36,7 @@ anchors: [
 	}
 	]
 }
-] 
+]
 clinicBox: {
 rate: {
 stars: [
@@ -445,7 +447,7 @@ doubleSliderData: [
 	countUsers: false,
 	location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
 	locationMode: 'location-info--dashed',
-	locationMetro: '<a href="#">ЦАО</a>, 
+	locationMetro: '<a href="#">ЦАО</a>,
 	<a href="#">Марксистская <span class="gray-color">(1 км)</span></a>',
 	<a href="#">Римская <span class="gray-color">(1 км)</span></a>,
 	<a href="#">Таганская <span class="gray-color">(1 км)</span></a>',
@@ -651,6 +653,55 @@ services:
         name: 'Восстановление зубов'
         value: 'от 1500р.'
 
+popupForm: {
+  dataPopup: 'popup-appoint',
+  name: 'Все стоматологии вашего города',
+  pic: 'img/house-black-white.png',
+  form: {
+    title: 'Стоматология «Все Свои» на Кронштадской',
+    text: '<p>г. Москва, ул. Волочаевская, д. 15, стр.1</p><p>ЦАО, Марксистская (1 км), Римская (1 км), Таганская (1 км)</p>',
+    fields: [
+      {
+        label: 'Врач',
+        select: {
+          field: 'Неважно',
+          options: ['Неважно','Неважно','Неважно']
+        }
+      },
+      {
+        label: 'Услуга',
+        input: 'Название услуги'
+      },
+      {
+        label: 'Дата и время',
+        cols: [
+          {
+            datepicker: 'дд.мм.гг'
+          },
+          {
+            select: {
+              field: 'Время',
+              options: ['9:30','10:00','11:00', '12:00', '12:30'],
+            }
+          }
+        ]
+      },
+      {
+        label: 'Ваше имя',
+        input: 'Введите свое имя'
+      },
+      {
+        label: 'Ваш телефон',
+        input: '+7 ( ___ ) ___ - __ - __',
+        invalid: true,
+        validationMessage: 'Введите телефон'
+      }
+    ],
+    submitButton: 'Записаться',
+    policy: 'Нажимая кнопку «Записаться», вы принимаете и соглашаетесь с условиями <a href="">Публичной оферты</a> и <a href="">Политикой конфеденциальности</a>'
+  }
+}
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -669,7 +720,7 @@ services:
 		<div class="clinic-page__mb-50">
 			{% include "components/_clinic-box.html" %}
 		</div>
-		
+
 
 	</div>
 	<!--end container-->
@@ -696,8 +747,7 @@ item: 'Хирургия'
 }, {
 item: 'Ортопедия'
 }, {
-item: 'Протезирование',
-isActive: 'true'
+item: 'Протезирование'
 }, {
 item: 'Хирургия'
 }, {
@@ -941,7 +991,7 @@ item: 'Протезирование'
 <!--begin container-->
 <div class="container">
 	{% include "components/_clinic-gallery.html" %}
-	
+
 </div>
 <!--end container-->
 {% include "components/_sales-section.html" %}
