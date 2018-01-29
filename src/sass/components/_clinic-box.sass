@@ -11,9 +11,17 @@
 		width: percentage(720/1120)
 		padding-right: 30px
 		border-right: 1px solid $gray-border
+		+md
+			width: 100%
+			padding-right: 0
+			border-right: 0
 	&__right
 		width: percentage(400/1120)
 		padding-left: 30px
+		+md
+			width: 100%
+			padding-left: 0
+			padding-bottom: 5px
 	&__content
 		border-top: 1px solid $gray-border
 		padding-top: 20px
@@ -26,6 +34,11 @@
 	&__title
 		margin-bottom: 10px
 		+PSemi
+		+md
+			font-size: 25px
+			text-align: center
+			border-bottom: 1px solid $gray-border
+			padding-bottom: 5px
 	&__titlelink
 		color: $cyan
 		font-size: 20px
@@ -37,6 +50,9 @@
 			opacity: .7
 	&__list
 		font-size: 14px
+		+md
+			border-bottom: 1px solid $gray-border
+			margin-bottom: 15px
 		.list
 			margin: 15px 0
 			&__item
@@ -53,10 +69,15 @@
 			padding-top: 15px
 	&__more-left-btn
 		margin-left: 28px
+
 	&__map
 		border-radius: 6px
 		overflow: hidden
 		margin-bottom: 20px
+		+md
+			max-width: 500px
+		+xs
+			height: 155px
 		img
 			width: 100%
 			height: 254px
@@ -71,14 +92,24 @@
 	.location-info
 		font-size: 16px
 		padding-left: 25px
+		+md
+			font-size: 13px
+		a
+			+md
+				text-decoration: underline
+				text-decoration-style: dashed
 	.metro-info
 		font-size: 16px
 		padding-left: 25px
+		+md
+			font-size: 13px
 		&:before
 			top: 4px
 	.worktime-info
 		font-size: 16px
 		padding-left: 25px
+		+md
+			font-size: 13px
 		&:before
 			top: 2px
 		&__title
@@ -109,6 +140,28 @@
 		span
 			+md
 				font-size: 20px
+	.button
+		+xs
+			width: 100%
+			text-align: center
+	&_branch
+		.clinic-box__title
+			+md
+				font-size: 18px
+				color: $cyan
+		.clinic-box__mobflex
+			+xs
+				display: flex
+				flex-direction: column
+
+			.more-link
+				+xs
+					order: 1
+					margin-bottom: 20px
+					margin-left: 0
+			.btn
+				+xs
+					order: 2
 	&_mini
 		.location-info
 			font-size: 14px

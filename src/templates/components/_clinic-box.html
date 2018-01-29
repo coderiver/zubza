@@ -1,7 +1,7 @@
 <!-- begin clinic-box -->
-<div class="clinic-box {{clinicBox.mod }}">
+<div class="clinic-box {{clinicBox.mod }} js-right-desk-append">
   <!-- begin clinic-box__left -->
-  <div class="clinic-box__left">
+  <div class="clinic-box__left js-title-mob-prepend">
     <!-- begin clinic-box__rate -->
     <div class="clinic-box__rate">
 
@@ -47,9 +47,11 @@
     </div>
     <!-- end clinic-box__rate -->
 
-    <div class="clinic-box__content">
+    <div class="clinic-box__mob-right js-right-mob-append"></div>
+
+    <div class="clinic-box__content js-title-desk-prepend">
       {% if clinicBox.title %}
-      <h4 class="clinic-box__title">{{ clinicBox.title | safe }}</h4>
+      <h4 class="clinic-box__title js-title-move">{{ clinicBox.title | safe }}</h4>
       {% endif %}
 
       {% if clinicBox.titlelink %}
@@ -99,17 +101,19 @@
       {% endif %}
 
 
-      {% if clinicBox.leftButton %}
+      <div class="clinic-box__mobflex">
+        {% if clinicBox.leftButton %}
 
-      <a href="#" class="js-popup-link {% if clinicBox.leftButtonGreen %}btn btn--green {% else %}button button_cyan{% endif %}" data-popup="popup-appoint">Записаться</a>
-      {% endif %}
+        <a href="#" class="js-popup-link {% if clinicBox.leftButtonGreen %}btn btn--green {% else %}button button_cyan{% endif %}" data-popup="popup-appoint">Записаться</a>
+        {% endif %}
 
-      {% if clinicBox.leftButtonMoreClinic %}
-      <a class="more-link more-link--sm clinic-box__more-left-btn" href="#">
-        <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
-        <span>{{clinicBox.leftButtonMoreClinic}}</span>
-      </a>
-      {% endif %}
+        {% if clinicBox.leftButtonMoreClinic %}
+        <a class="more-link more-link--sm clinic-box__more-left-btn" href="#">
+          <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+          <span>{{clinicBox.leftButtonMoreClinic}}</span>
+        </a>
+        {% endif %}
+      </div>
 
       {% if clinicBox.rightButton %}
       <!-- begin clinic-box__more -->
@@ -129,7 +133,7 @@
   <!-- end clinic-box__left -->
 
   <!-- begin clinic-box__right -->
-  <div class="clinic-box__right">
+  <div class="clinic-box__right js-right-move">
     <!-- begin clinic-box__map -->
     <div class="clinic-box__map {{clinicBox.MapMode}}">
       <a class="map-link js-popup-link" href="#" data-popup="popup-map">
