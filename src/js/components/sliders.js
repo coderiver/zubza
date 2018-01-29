@@ -148,6 +148,36 @@ function sliders() {
       }
     ]
   });
+  $('.js-license-mob-slider').slick({
+    responsive: [
+      {
+        breakpoint: 4000,
+        settings: 'unslick'
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: postBtnPrev,
+          nextArrow: postBtnNext,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: postBtnPrev,
+          nextArrow: postBtnNext,
+          dots: true
+        }
+      }
+    ]
+  });
 
 };
 module.exports = sliders;
