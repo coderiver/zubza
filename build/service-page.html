@@ -15,6 +15,7 @@
     <div class="out out--bg-gray">
       <div class="header">
         <div class="container header__in">
+          <div class="header__mob-filters-close js-hide-filters"> <svg class="icon icon-arrow-l"><use xlink:href="img/sprite.svg#icon-arrow-l"></use></svg> </div>
           <div class="header__logo"> <a href="#"><img src="img/logo-blue.svg" alt=""></a> </div>
           <div class="header__select cities-select js-popup-link" data-popup="cities">
             <div class="cities-select__field">Москва</div>
@@ -93,7 +94,7 @@
         <div class="container">
           <div class="col col_sm">
             <!-- begin hospital-filters -->
-            <form class="hospital-filters">
+            <form class="hospital-filters js-mob-filters">
               <div class="hospital-filters__in">
                 <div class="hospital-filters__block">
                   <h2 class="hospital-filters__title">Подобрать клинику</h2> <select class="form__select js-select" data-field="Метро, район или улица" data-icon="arrow-down" data-label="location">
@@ -239,6 +240,9 @@
                   <!-- end checkbox -->
                 </div>
               </div>
+              <!-- begin hospital-filters__mob-btns -->
+              <div class="hospital-filters__mob-btns"> <a href="" class="btn btn--green">Применить фильтры</a> <a href="" class="btn btn--green-border">Сбросить</a> </div>
+              <!-- end hospital-filters__mob-btns -->
             </form>
             <!-- end hospital-filters -->
             <div class="service-page__popular-links">
