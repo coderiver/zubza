@@ -1,7 +1,27 @@
 .articles-container
 	margin-bottom: 100px
+	+sm
+		margin-bottom: 20px
+		border-bottom: 1px solid $gray-border
+		&:last-child
+			border-bottom: none
+		.articles-preview__image
+			display: none
+		.articles-preview__info
+			padding-left: 0
+		.meta-tag
+			display: none
+		.more-link
+			display: none
+		.articles-preview
+			padding: 0
+		.articles-preview__textual
+			max-height: 67px
+			overflow: hidden
 	&__header
 		position: relative
+		+sm
+			display: none
 		&:before
 			+pseudo
 			bottom: 0
