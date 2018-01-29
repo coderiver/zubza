@@ -6,6 +6,9 @@
 	z-index: 1001
 	background-color: #fff
 	margin-bottom: 28px
+	+lg
+		padding-top: 10px
+		padding-bottom: 5px
 	&_main
 		position: absolute
 		width: 100%
@@ -19,24 +22,43 @@
 		img
 			max-width: 100%
 			height: auto
+		+lg
+			width: 120px
+			padding-top: 10px
+		+md
+			width: 100px
+			padding-top: 6px
 	&__select
 		float: left
 		margin-left: 50px
 		width: 205px
 		margin-top: 8px
+		+r(1220)
+			margin-left: 20px
+		+lg
+			width: 165px
+		+md
+			display: none
 	&__menu
 		float: left
 		margin-left: 50px
 		padding-top: 15px
+		+r(1220)
+			margin-left: 20px
+		+md
+			display: none
 	&__auth
 		float: right
-		margin-left: 50px
 		padding-top: 6px
 		+clr
+		+md
+			padding-top: 0
 	&__burger
 		float: right
 		padding-top: 14px
 		margin-left: 20px
+		+md
+			padding-top: 12px
 	&__submenu
 		position: absolute
 		right: 25px
@@ -124,6 +146,9 @@
 		display: inline-block
 		+trans
 		background-color: $cyan
+		+lg
+			font-size: 13px
+			padding: 10px 21px 8px
 
 .cities-select
 	border-radius: 20px
@@ -136,6 +161,9 @@
 		letter-spacing: 0.07px
 		padding: 12px 30px 8px 43px
 		text-align: left
+		+lg
+			padding: 12px 20px 8px 25px
+			font-size: 13px
 	&__label
 		position: absolute
 		top: 50%
@@ -145,6 +173,11 @@
 		.icon
 			fill: $cyan
 			font-size: 18px
+			+lg
+				font-size: 13px
+		+lg
+			left: 10px
+			margin-top: 0
 	&__arrow
 		position: absolute
 		top: 14px
@@ -154,4 +187,9 @@
 		height: 8px
 		border-left: 2px solid $cyan
 		border-bottom: 2px solid $cyan
+		+lg
+			right: 15px
+			width: 6px
+			height: 6px
+			border-width: 1px
 
