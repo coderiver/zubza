@@ -1,6 +1,8 @@
 .services
 	background-color: $white
 	padding: 96px 20px 50px
+	+md
+		padding: 50px 0
 	$this: &
 	&__top
 		margin-bottom: 52px
@@ -30,16 +32,20 @@
 			border-radius: 25px
 			color: $cyan
 			padding: 15px 40px 12px 20px
-			margin-bottom: 20px 
+			margin-bottom: 0px 
 			+PReg
 		& > svg
 			display: none
 			position: absolute
 			top: 50%
 			right: 18px
-			transform: translateY(-50%)  
+			// transform: translateY(-50%)  
+			margin-top: -10px
+			transform-origin: 50% 50%
 			stroke: $cyan
 			width: 14px 
+			transform: rotateZ(-90deg)
+			+trans
 			+md
 				display: block  
 	&__item
@@ -47,13 +53,19 @@
 		width: 333px
 		+md
 			margin: 0 auto
-			margin-bottom: 30px
+			margin-bottom: 10px
 			max-width: 320px
 			width: 100%   
 		&:last-of-type
 			margin-right: 0
 			+md
 				margin-right: auto 
+		+md
+			&.is-open
+				margin-bottom: 25px
+				.services__item-title
+					svg
+						transform: rotateZ(0deg)
 	&__list
 		margin-top: 8px
 		&.is-active
@@ -63,6 +75,8 @@
 			&:last-of-type
 				+md
 					display: none
+		+md
+			display: none
 
 	&__list-item
 		display: block
@@ -92,6 +106,8 @@
 	&__value
 		background-color: $white
 		z-index: 5
+		+md
+			font-size: 14px
 	&__value
 		bottom: 0
 		color: $bright-blue
