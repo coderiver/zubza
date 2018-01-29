@@ -5,6 +5,8 @@
 	box-shadow: 0 4px 16px rgba(0,0,0,.05)
 	display: flex
 	margin-bottom: 20px
+	+md
+		padding: 20px
 	&__left
 		width: percentage(720/1120)
 		padding-right: 30px
@@ -77,6 +79,10 @@
 		padding-left: 25px
 		&:before
 			top: 2px
+		&__title
+			display: block
+			+r(720)
+				display: none
 	.count-users
 		color: $gray-simple
 	.rate-stars
@@ -236,6 +242,14 @@
 			&__content
 				border-top: none
 				padding-top: 0
+			&__right
+				+md
+					display: none
+			&__left
+				+md
+					width: 100%
+					padding-right: 0
+					border-right: none
 		.cslide
 			padding: 0
 		& + .clinic-box_doctor

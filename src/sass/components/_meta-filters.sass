@@ -19,6 +19,15 @@
 			display: flex
 		.meta-filter
 			flex-basis: 100 / 3 + %
+			min-height: 36px
+			padding: 12px 4px 10px
+			span
+				color: $cyan
+				font-size: 14px
+			&__icon
+				+r(352)
+					display: block
+					margin-bottom: 5px
 .meta-filter
 	// display: inline-block
 	// vertical-align: top
@@ -59,8 +68,8 @@
 		.icon
 			+trans
 			fill: $cyan
-			font-size: 16px
-			margin-right: 8px
+			font-size: 12px
+			margin-right: 5px
 			position: relative
 			top: -2px
 		& + span

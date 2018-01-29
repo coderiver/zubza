@@ -1,6 +1,9 @@
 <div class="reviews">
-	<div class="reviews__title h3">
+	<div class="reviews__title h3 hide-md">
 		{{ reviewsTitle }}
+	</div>
+	<div class="reviews__title h3 show-md">
+		{{ reviewsTitleMob }}
 	</div>
 	<div class="reviews__list review">
 		{% set review = [{
@@ -37,8 +40,10 @@
 					</div>
 				</div>
 				{% endif %}
-				<div class="review__author">Анна Андреевна</div>
-				<div class="review__date">22.12.17</div>
+				<div class="review__wrapper">
+					<div class="review__author">Анна Андреевна</div>
+					<div class="review__date">22.12.17</div>
+				</div>
 			</div>
 			<div class="review__body">
 				<div class="review__top">

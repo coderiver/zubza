@@ -140,6 +140,25 @@ metaFilters: [
   ]
 }
 ]
+
+
+mobFilters: [
+  {
+    icon: 'location',
+    name: 'На карте'
+  },
+  {
+    icon: 'sort',
+    name: 'Сортировать',
+    action: 'js-show-meta-filters'
+  },
+  {
+    icon: 'filt',
+    name: 'Фильтры',
+    action: 'js-show-filters'
+  }
+]
+
 sales: [
 {
   sectionMode: '',
@@ -745,7 +764,7 @@ searchBanner: {
 		</div>
 		<!--end col col_sm-->
 		<!--begin col col_lg-right-->
-		<div class="col col_lg-right">
+		<div class="col col_lg-right js-map-mob-append">
 			<div class="filter-section">
 				<h4 class="filter-section__title">Специализации врачей</h4>
 				<!-- begin filter-section__taglist -->
@@ -759,6 +778,12 @@ searchBanner: {
 					</div>
 				</div>
 				<!-- end filter-section__taglist -->
+
+        <!-- begin filter-section__mob-filters -->
+        <div class="filter-section__mob-filters">
+          {% include "components/_mob-filters.html" %}
+        </div>
+        <!-- end filter-section__mob-filters -->
 
 				<!-- begin filter-section__meta-filters -->
 				<div class="filter-section__meta-filters">

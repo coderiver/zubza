@@ -3,9 +3,13 @@
 	&__popular-links
 		margin-top: 28px
 		margin-bottom: 25px
+		+md
+			display: none
 		h4
 			margin-bottom: 10px
 	&__map
+		+md
+			display: none
 		.map-link
 			height: 145px
 	&__mb-27
@@ -23,3 +27,8 @@
 	.more-link
 		&__icon
 			top: 8px
+	.top-info__map
+		padding-top: 30px
+		.map-link
+			margin: 0 auto 5px
+			display: block

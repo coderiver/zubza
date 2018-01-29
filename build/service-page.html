@@ -35,9 +35,9 @@
           </div>
           <div class="header__auth">
             <div class="auth">
-              <div class="auth__item auth__login login">
+              <div class="auth__item auth__login login js-popup-link" data-popup="popup-login">
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
-                <div class="login__text js-popup-link" data-popup="popup-login">Вход</div>
+                <div class="login__text">Вход</div>
               </div>
               <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
@@ -77,8 +77,8 @@
                 <h2 class="top-info__title">Лечение кареса в Москве</h2>
                 <div class="top-info__text">На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.</div>
               </div>
-              <div class="col col_sm">
-                <div class="top-info__map"> <a class="map-link js-popup-link map-link--search" href="#" data-popup="popup-map">
+              <div class="col col_sm js-map-desk-append">
+                <div class="top-info__map js-mob-move" data-target="js-map-mob-append" data-source="js-map-desk-append"> <a class="map-link js-popup-link map-link--search" href="#" data-popup="popup-map">
 	<img src="img/map-search-img.jpg" alt="alt">
 	
 	<p>Поиск стоматологий на карте</p>
@@ -288,7 +288,37 @@
 	
 </a> </div>
           <div class="col col_lg-right">
-            <div class="filter-section__content">
+            <div class="filter-section__content  js-map-mob-append">
+              <!--begin meta-filters-->
+              <div class="meta-filters meta-filters_mob"> <a href="#" class="meta-filter">
+
+    
+    <i class="meta-filter__icon">
+<svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg>
+</i>
+    
+
+    <span>На карте</span>
+  </a> <a href="#" class="meta-filter js-show-meta-filters">
+
+    
+    <i class="meta-filter__icon">
+<svg class="icon icon-sort"><use xlink:href="img/sprite.svg#icon-sort"></use></svg>
+</i>
+    
+
+    <span>Сортировать</span>
+  </a> <a href="#" class="meta-filter js-show-filters">
+
+    
+    <i class="meta-filter__icon">
+<svg class="icon icon-filt"><use xlink:href="img/sprite.svg#icon-filt"></use></svg>
+</i>
+    
+
+    <span>Фильтры</span>
+  </a> </div>
+              <!--end meta-filters-->
               <div class="clinic-box clinic-box_mini clinic-box_hosp-info">
                 <div class="clinic-box__left">
                   <div class="clinic-box__content"> <a href="" class="clinic-box__titlelink">Стоматология «Имплантмастер»</a>
