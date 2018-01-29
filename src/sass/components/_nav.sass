@@ -115,3 +115,85 @@
 		font-size: 15px
 		+PBold
 
+
+
+.mobi
+	background-color: #fff
+	+coverdiv
+	display: none
+	padding-top: 21px
+	overflow-y: auto
+	padding-bottom: 100px
+	+md
+		display: block
+	&__section
+		&:not(:last-child)
+			margin-bottom: 28px
+	&__title
+		font-size: 14px
+		color: #d0cece
+		text-transform: uppercase
+		line-height: 1
+		+PBold
+		letter-spacing: -.8px
+		padding-bottom: 10px
+		position: relative
+		padding: 0 48px 7px 48px
+		border-bottom: 1px solid #eaf1f4
+		+r(399)
+			padding-left: 20px
+			padding-right: 20px
+
+.mob-list
+	&__item
+		line-height: 1
+		border-bottom: 1px solid #eaf1f4
+		padding: 8px 48px 11px
+		position: relative
+		+r(399)
+			padding-left: 20px
+			padding-right: 20px
+		&_icon
+			padding-left: 70px
+			+r(399)
+				padding-left: 40px
+	&__link
+		font-size: 14px
+		color: $black
+		+OSReg
+		line-height: 1
+		display: block
+	&__select
+		color: $cyan
+		font-size: 14px
+		position: relative
+		width: 100%
+		display: block
+		+OSReg
+		&:before
+			content: ''
+			position: absolute
+			right: 4px
+			top: 4px
+			height: 6px
+			width: 6px
+			border-right: 2px solid $grey
+			border-bottom: 2px solid $grey
+			transform: rotate(-45deg)
+	&__label
+		position: absolute
+		left: 49px
+		top: 6px
+		height: 15px
+		width: 15px
+		border-radius: 50%
+		background-color: $pink
+		color: #fff
+		font-size: 9px
+		+OSExtra
+		display: flex
+		align-items: center
+		justify-content: center
+		+r(399)
+			left: 19px
+

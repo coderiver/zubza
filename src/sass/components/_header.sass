@@ -82,6 +82,13 @@
 		&.is-active
 			visibility: visible
 			opacity: 1
+		+md
+			position: fixed
+			top: 60px
+			left: 0
+			right: 0
+			height: 100%
+			width: 100%
 	&_main
 		box-shadow: none
 		background-color: transparent
@@ -123,6 +130,8 @@
 	border-radius: 10px
 	position: relative
 	box-shadow: 0 4px 27px rgba(0, 0, 0, 0.2)
+	+md
+		display: none
 	&:before
 		content: ''
 		position: absolute

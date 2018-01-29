@@ -74,6 +74,84 @@
 					{% endfor %}
 				</ul>
 			</div>
+			<div class="mobi">
+				{% set mobi = [{
+					title: 'Личный кабинет',
+					list: [{
+						item: 'Вход'
+					}, {
+						item: 'Регистрация нового пользователя'
+					}]
+				}, {
+					title: 'Ваш город',
+					list: [{
+						item: 'Санкт-Петербург'
+					}],
+					mobSelectCity: true
+				}, {
+					title: 'меню',
+					list: [{
+						item: 'Клиники'
+					}, {
+						item: 'Врачи'
+					}, {
+						item: 'Услуги и цены'
+					}, {
+						item: 'Акции',
+						label: true
+					}, {
+						item: 'Памятка пациенту'
+					}, {
+						item: 'Как записаться'
+					}]
+				}, {
+					title: 'О проекте',
+					list: [{
+						item: 'О проекте'
+					}, {
+						item: 'Как это работает'
+					}, {
+						item: 'Медицинским центрам'
+					}, {
+						item: 'Врачам'
+					}]
+				}, {
+					title: 'Специализации врачей',
+					list: [{
+						item: 'Детский стоматолог'
+					}, {
+						item: 'Стоматолог терапевт'
+					}, {
+						item: 'Ортодонт'
+					}, {
+						item: 'Хирург'
+					}, {
+						item: 'Детский стоматолог'
+					}]
+				}] %}
+				
+				<div class="mobi__wrapper">
+					{% for section in mobi %}
+					<div class="mobi__section">
+						<div class="mobi__title">{{section.title}}</div>
+						<div class="mobi__list mob-list">
+							{% for list in section.list %}
+							{% if section.mobSelectCity != true %}
+							<div class="mob-list__item {% if list.label %} mob-list__item_icon{% endif %}">
+								<a href="#" class="mob-list__link">{{list.item}}{% if list.label %}<span class="mob-list__label">%</span>{% endif %}</a>
+							</div>
+							{% else %}
+							<div class="mob-list__item">
+								<a href="#" class="mob-list__select">{{list.item}}</a>
+							</div>
+							{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+
 		</div>
 	</div>
 </div>
