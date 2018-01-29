@@ -101,6 +101,10 @@ function gmap() {
   };
 	
 
+  //init on links page
+  if($('.js-links-popup-page-map-init')[0]) {
+    myMap.init();
+  };
 
  	// myMap.onload(function() {
 
