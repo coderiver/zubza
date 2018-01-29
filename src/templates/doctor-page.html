@@ -704,10 +704,16 @@ popupForm: {
 				{{mixins.filters({
 					title: 'Начните вводить название услуги',
 					list: list,
-					placeholder: 'Название услуги',
+					placeholder: 'Поиск по названию услуги',
 					icon: true,
           filtersListTitle: 'Выберите специализацию',
-          tagToDropdown: true
+          tagsTableMod: true,
+          filtersTableMod: true,
+          clinics: [
+            'Клиника "Все свои на Арбатской"',
+            'Клиника "Все свои на Кронштадской"',
+            'Клиника "Все свои на Ленинском проспекте"'
+          ]
 				})}}
 				<div class="costs">
 				    <div class="costs__list costs__list_mb cost-table">

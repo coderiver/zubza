@@ -342,10 +342,15 @@ services:
           <div class="search-label">Поиск по статьям</div>
           <input type="text" class="textfield" placeholder="Поиск...">
         </div>
-        <div class="tagi">
+        <div class="tagi tagi_tablet-mod js-tag-mob">
+          <div class="filters__textfield tagi__btn">
+            <input type="text" class="textfield textfield_mod js-tag-btn" placeholder="Выберите специализацию" disabled /> 
+            {{mixins.icon('list')}}
+            {{mixins.icon('arrow-down')}}
+          </div>
           <ul>
             {% for item in taglist %}
-            <li><a href="#">{{ item | safe }}</a></li>
+            <li><a href="#" class="js-tag-list-item">{{ item | safe }}</a></li>
             {% endfor %}
           </ul>
         </div>
