@@ -35,9 +35,9 @@
           </div>
           <div class="header__auth">
             <div class="auth">
-              <div class="auth__item auth__login login">
+              <div class="auth__item auth__login login js-popup-link" data-popup="popup-login">
                 <div class="login__icon"> <svg class="icon icon-man"><use xlink:href="img/sprite.svg#icon-man"></use></svg> </div>
-                <div class="login__text js-popup-link" data-popup="popup-login">Вход</div>
+                <div class="login__text">Вход</div>
               </div>
               <div class="auth__item auth__reg reg"> <a href="#" class="reg__btn js-popup-link" data-popup="popup-register">Регистрация</a> </div>
             </div>
@@ -78,8 +78,8 @@
               <h2 class="top-info__title">Стоматологии Москвы у метро Алтуфьево</h2>
               <div class="top-info__text">На Zubza вы можете записаться на прием к стоматологу онлайн и найти адреса, цены, акции всех стоматологий Москвы и области. Бесплатная консультация и запись на исследование со скидками от Zubza.</div>
             </div>
-            <div class="col col_sm">
-              <div class="top-info__map"> <a class="map-link js-popup-link map-link--search" href="#" data-popup="popup-map">
+            <div class="col col_sm js-map-desk-append">
+              <div class="top-info__map js-mob-move" data-target="js-map-mob-append" data-source="js-map-desk-append"> <a class="map-link js-popup-link map-link--search" href="#" data-popup="popup-map">
 	<img src="img/map-search-img.jpg" alt="alt">
 	
 	<p>Поиск стоматологий на карте</p>
@@ -311,7 +311,7 @@
 </a> </div>
           </div>
           <div class="col col_lg-right">
-            <div class="filter-section">
+            <div class="filter-section js-map-mob-append">
               <h4 class="filter-section__title">Специализации стоматологий</h4>
               <!-- begin filter-section__taglist -->
               <div class="filter-section__taglist">

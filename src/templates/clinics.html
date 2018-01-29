@@ -928,7 +928,7 @@ popupForm: {
     </div>
 
     <div class="col col_lg-right">
-      <div class="filter-section">
+      <div class="filter-section js-map-mob-append">
         <h4 class="filter-section__title">Специализации стоматологий</h4>
         <!-- begin filter-section__taglist -->
         <div class="filter-section__taglist">
@@ -942,17 +942,17 @@ popupForm: {
         </div>
         <!-- end filter-section__taglist -->
 
-        <!-- begin filter-section__meta-filters -->
-        <div class="filter-section__meta-filters">
-          {% include "components/_meta-filters.html" %}
-        </div>
-        <!-- end filter-section__meta-filters -->
-
         <!-- begin filter-section__mob-filters -->
         <div class="filter-section__mob-filters">
           {% include "components/_mob-filters.html" %}
         </div>
         <!-- end filter-section__mob-filters -->
+
+        <!-- begin filter-section__meta-filters -->
+        <div class="filter-section__meta-filters">
+          {% include "components/_meta-filters.html" %}
+        </div>
+        <!-- end filter-section__meta-filters -->
 
         <div class="filter-section__content">
           {% for clinicBox in clinicBoxes %}
