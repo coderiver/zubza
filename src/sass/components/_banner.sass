@@ -8,6 +8,8 @@
 	background: linear-gradient(to bottom, rgba(59,216,247,1) 0%, rgba(20,193,229,1) 100%)
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bd8f7', endColorstr='#14c1e5', GradientType=0 )
 	padding: 140px 0 135px
+	+md
+		padding: 65px 0 75px
 	&__in
 		color: $white
 		max-width: 896px
@@ -19,18 +21,35 @@
 		text-align: center
 		text-shadow: 0 3px 0 rgba(72, 61, 224, 0.24)
 		+PSemi
+		+md
+			font-size: 25px
 	&__grid
 		display: flex
 		flex-direction: row
 		justify-content: space-between
+		+md
+			flex-direction: column
+			align-items: center
 	&__item
 		text-align: center
 		padding: 0 10px
 		width: 240px
+		+md
+			width: 290px
+			display: flex
+			text-align: left
+			&:not(:last-child)
+				margin-bottom: 44px
 	&__item-image
 		height: 145px
 		margin-bottom: 19px
 		position: relative
+		+md
+			height: 75px
+			margin-right: 40px
+			min-width: 98px
+		+r(375)
+			margin-right: 20px
 	&__item-title
 		font-size: 37px
 		line-height: 1em
@@ -38,9 +57,13 @@
 		margin-bottom: 8px
 		white-space: nowrap
 		+PExtra
+		+md
+			font-size: 25px
 	&__item-txt
 		font-size: 18px
 		+PSemi
+		+md
+			font-size: 14px
 	&__illustration
 		position: absolute
 		top: 0
@@ -50,19 +73,30 @@
 		&_clinic
 			height: 97px
 			width: 142px
+			+md
+				height: 58px
+				width: 84px
 		&_doctor
 			width: 115px
 			height: 101px
+			+md
+				height: 60px
+				width: 68px
 		&_feedback
 			width: 107px
 			height: 82px
 			top: 15px
+			+md
+				height: 49px
+				width: 63px
 	&__cloud
 		position: absolute
 		bottom: 0
 		left: 50%
 		transform: translateX(-50%)
 		width: 168px
+		+md
+			width: 98px
 
 .image-group
 	position: relative

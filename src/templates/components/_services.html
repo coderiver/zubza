@@ -1,5 +1,5 @@
 <!-- begin services -->
-	<div class="services">
+	<div class="services ">
 		<div class="services__in">
       <div class="services__top">
   			<h2 class="services__title">{{ servicesTitle }}</h2>
@@ -9,12 +9,12 @@
       </div>
 			<div class="services__row">
 				{% for item in services %}
-				<div class="services__item">
-					<div class="services__item-title">
+				<div class="services__item js-mob-services">
+					<div class="services__item-title js-mob-services-title">
 						{{ item.title }}
 						{{ mixins.icon('arrow-down') }}
 					</div>
-					<ul class="services__list js-show-more" data-items="4">
+					<ul class="services__list js-show-more js-mob-services-content" data-items="4">
 						{% for item in item.items %}
 						<li class="services__list-item js-show-more-item">
 							<span class="services__name">{{ item.name }}</span>
