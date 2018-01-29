@@ -5,6 +5,8 @@
 		float: left
 		padding-top: 6px
 		padding-left: 4px
+		& + .filters__select
+			margin-top: 10px 
 	&__title
 		font-size: 13px
 		+PReg
@@ -23,6 +25,37 @@
 			left: 15px
 			fill: $grey
 			font-size: 16px
+	&__select
+		max-width: 300px
+		.custom-select
+			&__field
+				border: 1px solid $grey
+				border-radius: 20px
+				font-size: 14px 
+				padding: 12px 40px 8px 20px
+				position: relative
+				margin-right: 0
+				margin-left: 0  
+				color: $grey
+				width: 100%
+				+PReg
+				.icon
+					height: 16px
+					right: 20px
+			&__dropdown
+				border: 1px solid $grey
+				border-top: none 
+			&.is-open
+				.custom-select
+					&__field
+						border-radius: 20px 20px 0 0
+		select
+			display: none 
+		&_tablet
+			display: none
+			margin: auto 
+			+md
+				display: block 
 	&_tablet-mod
 		+md
 			.filters
@@ -40,35 +73,8 @@
 					margin: 10px auto 0
 					width: 100%
 				&__textfield
-					margin: auto 
-			.tagi
-				max-width: 300px 
-				width: 100%
-				&__btn
-					display: block
-				ul
-					display: none
-					max-width: 300px
-					margin: 0 
-					border: 1px solid $grey
-					border-radius: 0 0 25px 25px
-					overflow: hidden
-					border-top: none
-				li
-					display: block
-					padding: 0
-					margin-bottom: 0
-					a
-						background-color: $white
-						border: none
-						display: block
-						color: $black
-						border-radius: 0
-					&.is-active
-						display: none
-				&.is-open
-					ul
-						display: block 
+					margin: auto
+			 
 .tagi
 	&__btn
 		display: none 
@@ -131,6 +137,36 @@
 				.icon
 					&-arrow-down
 						transform: rotate(180deg) translate(0, 50%)
+	&_tablet-mod
+		+md
+			max-width: 300px 
+			width: 100%
+			ul
+				display: none
+				max-width: 300px
+				margin: 0 
+				border: 1px solid $grey
+				border-radius: 0 0 25px 25px
+				overflow: hidden
+				border-top: none
+				li
+					display: block
+					padding: 0
+					margin-bottom: 0
+					a
+						background-color: $white
+						border: none
+						display: block
+						color: $black
+						border-radius: 0
+				&.is-active
+					display: none
+			.tagi
+				&__btn
+					display: block
+			&.is-open
+				ul
+					display: block
 	
 .checkbox
 	display: block

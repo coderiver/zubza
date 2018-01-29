@@ -3,9 +3,16 @@
 		margin-bottom: 17px
 	&__line
 		display: flex
+		+md
+			flex-direction: column
+			align-items: center
 	&__search
 		min-width: 220px
 		margin-right: 40px
+		+md
+			margin-right: 0
+			margin-bottom: 10px  
+			width: 300px
 		.search-label
 			margin-left: 7px
 			+PReg
