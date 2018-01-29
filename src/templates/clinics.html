@@ -137,6 +137,23 @@ metaFilters: [
 }
 ]
 
+mobFilters: [
+  {
+    icon: 'location',
+    name: 'На карте'
+  },
+  {
+    icon: 'sort',
+    name: 'Сортировать',
+    action: 'js-show-meta-filters'
+  },
+  {
+    icon: 'filt',
+    name: 'Фильтры',
+    action: 'js-show-filters'
+  }
+]
+
 popularLinks:
   - Круглосуточные стоматологии
   - Стоматологии в центре города
@@ -459,6 +476,27 @@ clinicBoxes: [
       url: ''
     },
     gallery: ['clinic-gallery.jpg', 'clinic-gallery.jpg', 'clinic-gallery.jpg'],
+    rateBlock: true,
+    rateStarsMode: 'rate-stars--green',
+    stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        },
+        {
+          starMode: ''
+        }
+    ],
+    rateNumberMode: 'rate-number--orange',
+    rateNumber: '3.7',
     location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
     metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
     worktime: 'Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
@@ -909,6 +947,12 @@ popupForm: {
           {% include "components/_meta-filters.html" %}
         </div>
         <!-- end filter-section__meta-filters -->
+
+        <!-- begin filter-section__mob-filters -->
+        <div class="filter-section__mob-filters">
+          {% include "components/_mob-filters.html" %}
+        </div>
+        <!-- end filter-section__mob-filters -->
 
         <div class="filter-section__content">
           {% for clinicBox in clinicBoxes %}

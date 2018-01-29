@@ -1,0 +1,14 @@
+<!--begin meta-filters-->
+<div class="meta-filters meta-filters_mob">
+  {% for filter in mobFilters %}
+  <a href="#" class="meta-filter{% if filter.action %} {{ filter.action }}{% endif %}">
+
+    {% if filter.icon %}
+    <i class="meta-filter__icon">{{ mixins.icon(filter.icon) }}</i>
+    {% endif %}
+
+    <span>{{ filter.name }}</span>
+  </a>
+  {% endfor %}
+</div>
+<!--end meta-filters-->
