@@ -255,8 +255,9 @@
 		.clinic-box
 			&__title
 				margin-bottom: 0
-			&__rate
-				margin-bottom: 15px
+			&__tagi--none--720
+				+r(720)
+					display: none
 			&__content
 				border-top: none
 				padding-top: 0
@@ -268,6 +269,14 @@
 					width: 100%
 					padding-right: 0
 					border-right: none
+			&__rate
+				margin-bottom: 15px
+				.rate-wrapper
+					+r(720)
+						display: none
+		.doctor__list
+			+r(720)
+				display: none
 		.cslide
 			padding: 0
 		& + .clinic-box_doctor
