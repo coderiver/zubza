@@ -74,10 +74,20 @@ function sliders() {
     slidesToScroll: 1,
     prevArrow: btnPrev,
     nextArrow: btnNext,
-    dots: false
-    // ,
-    // centerMode: true,
-    // variableWidth: true
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: postBtnPrev,
+          nextArrow: postBtnNext,
+          dots: true
+        }
+      }
+    ]
   });
   $('.js-badge-slider').slick({
     infinite: false,
