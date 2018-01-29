@@ -14,6 +14,7 @@
 		letter-spacing: -.6px
 
 .input
+	appearance: none
 	font-size: 16px
 	color: $black
 	width: 100%
@@ -22,6 +23,11 @@
 	padding: 19px 22px 12px
 	background-color: #fff
 	+PReg
+	&:focus::-webkit-textfield-decoration-container
+		visibility: hidden
+		pointer-events: none
+		position: absolute
+		left: 20px
 	+placeholder
 		color: $grey
 	&--transparent
@@ -54,17 +60,25 @@
 	display: flex
 	align-items: center
 	padding-bottom: 20px
+	+sm
+		flex-direction: column
+		align-items: flex-start
 	label
 		+PReg
 		font-size: 16px
 		color: $black
 		width: 120px
 		word-break: break-word
+		+sm
+			font-size: 14px
+			margin-left: 16px
 	select
 		display: none
 	&__in
 		flex-grow: 1
 		position: relative
+		+sm
+			width: 100%
 		&_flex
 			display: flex
 			justify-content: space-between
