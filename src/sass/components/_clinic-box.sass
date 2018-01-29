@@ -258,14 +258,26 @@
 		.clinic-box
 			&__title
 				margin-bottom: 0
+				+r(720)
+					font-size: 20px
 			&__rate
 				padding-bottom: 20px
 				border-bottom: 1px solid $gray-border
 				margin-bottom: 15px
+				+r(720)
+					margin-bottom: 0
+					padding-bottom: 0
+					border-bottom: none
+				.rate-wrapper
+					+r(720)
+						display: none
 			&__content
 				width: 100%
 				border-top: none
 				padding-top: 0
+		.doctor__right-rateline
+			border-bottom: 1px solid $gray-border
+			padding-bottom: 5px
 
 	&_small-content
 		padding: 20px
