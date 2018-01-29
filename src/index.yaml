@@ -33,3 +33,5 @@ PageList:
   ready: 50
 - file: clinics.html
   ready: 50
+- file: links.html
+  ready: 50

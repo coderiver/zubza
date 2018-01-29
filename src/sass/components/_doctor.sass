@@ -5,6 +5,7 @@
 		.btn
 			width: 175px
 		+r(720)
+			display: none
 			margin-right: 0
 	&__right
 		flex-grow: 1
@@ -17,6 +18,7 @@
 	&__right-topline
 		+clr
 		+r(720)
+			width: 100%
 			padding-bottom: 10px
 			margin-bottom: 10px
 			border-bottom: 1px solid $gray-border
@@ -42,9 +44,15 @@
 			+r(720)
 				display: inline-block
 				float: left
+	&__lists
+		+r(720)
+			border-bottom: 1px solid $gray-border
+			margin-bottom: 10px
 	&__list
 		font-size: 14px
 		line-height: 24px
+		+r(720)
+			font-size: 12px
 		span
 			+OSBold
 	&__title
@@ -71,3 +79,10 @@
 	.topline
 		display: flex
 		justify-content: space-between
+		&__left
+			+r(720)
+				display: none
+			&--left
+				display: none
+				+r(720)
+					display: block
