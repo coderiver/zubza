@@ -6,6 +6,10 @@
 		font-size: 30px
 		margin-bottom: 28px  
 		+PSemi
+		+md
+			text-align: center
+			margin-bottom: 19px
+			font-size: 25px
 	&__side
 		display: inline-block
 		font-size: 16px
@@ -13,22 +17,35 @@
 		width: 62% 
 		&_sm
 			width: 38%
+			+md
+				width: 100%
+				display: block
 		&_lg
 			padding-left: 30px
+			+md
+				display: none
 	&__footer
 		position: relative
 		margin: 0 auto 
 		width: 275px
+		+md
+			width: 250px
 	&__image
 		border-radius: 10px
 		height: 300px 
 		width: 100%
+		+md
+			max-width: 450px
+			margin-left: auto
+			margin-right: auto
 	&__text
 		font-size: 14px 
 		margin: 20px auto 0
 		max-width: 200px 
 		text-align: center
 		opacity: 0
+		+md
+			display: none
 	&__grid
 		font-size: 0 
 	&__item
@@ -70,3 +87,10 @@
 		.clinic-gallery__text
 			opacity: 1
 			transition: opacity 0.4s ease-out 0.4s
+	.slick-dots
+		+md
+			margin-top: 6px
+		li
+			+md
+				margin: 5px
+
