@@ -15,11 +15,18 @@
 			{% endif %}
 		</div>
 	</div>
-	<div class="filters__list">
-		<div class="tagi">
+	<div class="filters__list">	
+		<div class="tagi js-tag-mob">
+			<div class="filters__textfield tagi__btn">
+				<input type="text" class="textfield{% if config.icon %} textfield_mod{% endif %} js-tag-btn" placeholder="{{ config.filtersListTitle }}" disabled />
+				{% if config.icon %} 
+				{{icon('list')}}
+				{% endif %}
+				{{icon('arrow-down')}}
+			</div>
 			<ul>
 				{% for item in config.list %}
-				<li><a href="#">{{item.item}}</a></li>
+				<li class="{% if item.isActive %}is-active{% endif %}"><a href="#" class="js-tag-list-item">{{item.item}}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
