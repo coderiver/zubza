@@ -5,7 +5,7 @@
 
 {% macro filters(config) %}
 
-<div class="filters">
+<div class="filters {% if config.tagToDropdown %}filters_tablet-mod{% endif %}">
 	<div class="filters__field">
 		<div class="filters__title">{{config.title}}</div>
 		<div class="filters__textfield">
