@@ -1,24 +1,28 @@
 <!-- begin banner -->
-	<div class="banner">
-		<div class="banner__in">
-			<h2 class="banner__title">
-				{% for item in banner.title %}
-				{% if loop.index != 1 %}<br />{% endif %}
-				{{ item }}
-				{% endfor %}
-			</h2>
-			<div class="banner__grid">
-			{% for item in banner.items %}
-				<div class="banner__item">
-					<div class="banner__item-image">
-						<img src="{{item.img}}" alt="" class="banner__illustration banner__illustration_{{item.mod}}">
-						<img class="banner__cloud" src="img/cloud.svg" alt="">
-					</div>
-					<div class="banner__item-title">{{ item.title }}</div>
-					<div class="banner__item-txt">{{ item.text }}</div>
-				</div>
-			{% endfor %}
-			</div>
-		</div>
-	</div>
+<div class="banner">
+  <div class="container">
+    <div class="banner__in">
+      <h2 class="banner__title">
+        {% for item in banner.title %}
+        {% if loop.index != 1 %}<br/>{% endif %}
+        {{ item }}
+        {% endfor %}
+      </h2>
+      <div class="banner__grid">
+        {% for item in banner.items %}
+        <div class="banner__item">
+          <div class="banner__item-image">
+            <img src="{{item.img}}" alt="" class="banner__illustration banner__illustration_{{item.mod}}">
+            <img class="banner__cloud" src="img/cloud.svg" alt="">
+          </div>
+          <div class="bunner__item-content">
+            <div class="banner__item-title">{{ item.title }}</div>
+            <div class="banner__item-txt">{{ item.text }}</div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 <!-- end banner -->
