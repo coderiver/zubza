@@ -11,6 +11,7 @@ import './components/range.js';
 import './components/data-picker.js';
 import './components/burgerMenu.js';
 import './components/showMore.js';
+import './components/mob-filters.js';
 
 sayHello();
 $(document).ready(function() {

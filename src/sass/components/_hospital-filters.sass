@@ -3,6 +3,15 @@
 	border-radius: 5px
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
 	padding: 30px
+	+md
+		display: none
+		&.is-active
+			display: block
+			position: absolute
+			top: 60px
+			left: 0
+			z-index: 1000
+			width: 100%
 	&__block
 		margin-bottom: 27px
 		&:last-of-type
@@ -11,6 +20,11 @@
 		font-size: 20px
 		margin-bottom: 5px
 		+PBold
+	&__mob-btns
+		margin-top: 30px
+		.btn
+			padding: 9px 15px 8px
+			margin-bottom: 20px
 	.custom-select
 		margin-bottom: 10px
 		&:last-of-type

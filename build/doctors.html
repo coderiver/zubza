@@ -15,6 +15,7 @@
     <div class="out out--bg-gray">
       <div class="header">
         <div class="container header__in">
+          <div class="header__mob-filters-close js-hide-filters"> <svg class="icon icon-arrow-l"><use xlink:href="img/sprite.svg#icon-arrow-l"></use></svg> </div>
           <div class="header__logo"> <a href="#"><img src="img/logo-blue.svg" alt=""></a> </div>
           <div class="header__select cities-select js-popup-link" data-popup="cities">
             <div class="cities-select__field">Москва</div>
@@ -99,7 +100,7 @@
             <!-- begin doctors-page__filters -->
             <div class="doctors-page__filters">
               <!-- begin hospital-filters -->
-              <form class="hospital-filters">
+              <form class="hospital-filters js-mob-filters">
                 <div class="hospital-filters__in">
                   <div class="hospital-filters__block">
                     <h2 class="hospital-filters__title">Выбрать врача</h2> <select class="form__select js-select" data-field="Метро, район или улица" data-icon="arrow-down" data-label="location">
@@ -263,6 +264,9 @@
                     <!-- end checkbox -->
                   </div>
                 </div>
+                <!-- begin hospital-filters__mob-btns -->
+                <div class="hospital-filters__mob-btns"> <a href="" class="btn btn--green">Применить фильтры</a> <a href="" class="btn btn--green-border">Сбросить</a> </div>
+                <!-- end hospital-filters__mob-btns -->
               </form>
               <!-- end hospital-filters -->
             </div>
@@ -2201,8 +2205,10 @@
         <!--end container-->
         <a href="#" class="search-banner">
           <div class="container">
-            <div class="search-banner__image image-group"> <img class="image-group__head image-group__head_clinic" src="img/clinic.svg" alt=""> <img src="img/cloud.svg" alt="" class="image-group__cloud"> </div>
-            <div class="search-banner__title section-title">Вернуться к поиску врача</div>
+            <div class="search-banner__wrapper">
+              <div class="search-banner__image image-group"> <img class="image-group__head image-group__head_clinic" src="img/clinic.svg" alt=""> <img src="img/cloud.svg" alt="" class="image-group__cloud"> </div>
+              <div class="search-banner__title section-title">Вернуться к поиску врача</div>
+            </div>
           </div>
         </a>
       </div>

@@ -15,6 +15,7 @@
     <div class="out ">
       <div class="header">
         <div class="container header__in">
+          <div class="header__mob-filters-close js-hide-filters"> <svg class="icon icon-arrow-l"><use xlink:href="img/sprite.svg#icon-arrow-l"></use></svg> </div>
           <div class="header__logo"> <a href="#"><img src="img/logo-.svg" alt=""></a> </div>
           <div class="header__select cities-select js-popup-link" data-popup="cities">
             <div class="cities-select__field">Москва</div>
@@ -378,30 +379,38 @@
       <!-- end clinic-gallery --><br />
       <!-- begin banner -->
       <div class="banner">
-        <div class="banner__in">
-          <h2 class="banner__title"> 200 000 пациентов в год <br /> доверяют нам свое здоровье и улыбку </h2>
-          <div class="banner__grid">
-            <div class="banner__item">
-              <div class="banner__item-image"> <img src="./img/clinic.png" alt="" class="banner__illustration banner__illustration_"> <img class="banner__cloud" src="img/cloud.svg" alt=""> </div>
-              <div class="banner__item-title">200 000</div>
-              <div class="banner__item-txt">клиник работают с Zubza</div>
-            </div>
-            <div class="banner__item">
-              <div class="banner__item-image"> <img src="./img/doctor.png" alt="" class="banner__illustration banner__illustration_"> <img class="banner__cloud" src="img/cloud.svg" alt=""> </div>
-              <div class="banner__item-title">4 534 235</div>
-              <div class="banner__item-txt">врачей принимают по записи через Zubza </div>
-            </div>
-            <div class="banner__item">
-              <div class="banner__item-image"> <img src="./img/feedback.png" alt="" class="banner__illustration banner__illustration_"> <img class="banner__cloud" src="img/cloud.svg" alt=""> </div>
-              <div class="banner__item-title">8 734 234</div>
-              <div class="banner__item-txt">проверенных отзыва о стоматологиях и врачах</div>
+        <div class="container">
+          <div class="banner__in">
+            <h2 class="banner__title"> 200 000 пациентов в год <br/> доверяют нам свое здоровье и улыбку </h2>
+            <div class="banner__grid">
+              <div class="banner__item">
+                <div class="banner__item-image"> <img src="./img/clinic.png" alt="" class="banner__illustration banner__illustration_"> <img class="banner__cloud" src="img/cloud.svg" alt=""> </div>
+                <div class="bunner__item-content">
+                  <div class="banner__item-title">200 000</div>
+                  <div class="banner__item-txt">клиник работают с Zubza</div>
+                </div>
+              </div>
+              <div class="banner__item">
+                <div class="banner__item-image"> <img src="./img/doctor.png" alt="" class="banner__illustration banner__illustration_"> <img class="banner__cloud" src="img/cloud.svg" alt=""> </div>
+                <div class="bunner__item-content">
+                  <div class="banner__item-title">4 534 235</div>
+                  <div class="banner__item-txt">врачей принимают по записи через Zubza </div>
+                </div>
+              </div>
+              <div class="banner__item">
+                <div class="banner__item-image"> <img src="./img/feedback.png" alt="" class="banner__illustration banner__illustration_"> <img class="banner__cloud" src="img/cloud.svg" alt=""> </div>
+                <div class="bunner__item-content">
+                  <div class="banner__item-title">8 734 234</div>
+                  <div class="banner__item-txt">проверенных отзыва о стоматологиях и врачах</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- end banner --><br />
       <!-- begin hospital-filters -->
-      <form class="hospital-filters">
+      <form class="hospital-filters js-mob-filters">
         <div class="hospital-filters__in">
           <div class="hospital-filters__block">
             <h2 class="hospital-filters__title">Подобрать клинику</h2> <select class="form__select js-select" data-field="Услуга, врач или клиника" data-icon="arrow-down" data-label="location">
@@ -548,6 +557,9 @@
             <!-- end checkbox -->
           </div>
         </div>
+        <!-- begin hospital-filters__mob-btns -->
+        <div class="hospital-filters__mob-btns"> <a href="" class="btn btn--green">Применить фильтры</a> <a href="" class="btn btn--green-border">Сбросить</a> </div>
+        <!-- end hospital-filters__mob-btns -->
       </form>
       <!-- end hospital-filters --><br />
       <div class="js-popup popup popup_cities" data-popup="cities">

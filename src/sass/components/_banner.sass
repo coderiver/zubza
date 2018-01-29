@@ -8,6 +8,8 @@
 	background: linear-gradient(to bottom, rgba(59,216,247,1) 0%, rgba(20,193,229,1) 100%)
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bd8f7', endColorstr='#14c1e5', GradientType=0 )
 	padding: 140px 0 135px
+	+md
+		padding: 65px 0 75px
 	&__in
 		color: $white
 		max-width: 896px
@@ -19,18 +21,35 @@
 		text-align: center
 		text-shadow: 0 3px 0 rgba(72, 61, 224, 0.24)
 		+PSemi
+		+md
+			font-size: 25px
 	&__grid
 		display: flex
 		flex-direction: row
 		justify-content: space-between
+		+md
+			flex-direction: column
+			align-items: center
 	&__item
 		text-align: center
 		padding: 0 10px
 		width: 240px
+		+md
+			width: 290px
+			display: flex
+			text-align: left
+			&:not(:last-child)
+				margin-bottom: 44px
 	&__item-image
 		height: 145px
 		margin-bottom: 19px
 		position: relative
+		+md
+			height: 75px
+			margin-right: 40px
+			min-width: 98px
+		+r(375)
+			margin-right: 20px
 	&__item-title
 		font-size: 37px
 		line-height: 1em
@@ -38,9 +57,13 @@
 		margin-bottom: 8px
 		white-space: nowrap
 		+PExtra
+		+md
+			font-size: 25px
 	&__item-txt
 		font-size: 18px
 		+PSemi
+		+md
+			font-size: 14px
 	&__illustration
 		position: absolute
 		top: 0
@@ -50,25 +73,39 @@
 		&_clinic
 			height: 97px
 			width: 142px
+			+md
+				height: 58px
+				width: 84px
 		&_doctor
 			width: 115px
 			height: 101px
+			+md
+				height: 60px
+				width: 68px
 		&_feedback
 			width: 107px
 			height: 82px
 			top: 15px
+			+md
+				height: 49px
+				width: 63px
 	&__cloud
 		position: absolute
 		bottom: 0
 		left: 50%
 		transform: translateX(-50%)
 		width: 168px
+		+md
+			width: 98px
 
 .image-group
 	position: relative
 	z-index: 10
 	width: 135px
 	height: 110px
+	+md
+		width: 100px
+		height: 105px
 	&__head
 		position: absolute
 		top: 0
@@ -78,11 +115,18 @@
 			height: 74px
 			width: 107px
 			margin-left: -5px
+			+md
+				margin-left: -2px
+				width: 84px
+				height: 90px
+
 	&__cloud
 		position: absolute
 		left: 0
 		bottom: 0
 		z-index: -1
+		+md
+			width: 100%
 
 .search-banner
 	display: block
@@ -90,10 +134,29 @@
 	padding-top: 33px
 	padding-bottom: 32px
 	background-image: linear-gradient(-30deg, #14c1e5 0%, #3bd7f7 100%)
+	+md
+		+clr
+		padding-top: 21px
+		padding-bottom: 35px
+		display: flex
+		justify-content: center
+	&__wrapper
+		display: block
+		+sm
+			margin-right: -40px
+			margin-left: -57px
+			+clr
+		+r(400)
+			margin-left: -10px
+			margin-right: -20px
 	&__image
 		display: inline-block
 		vertical-align: middle
 		left: -27px
+		+md
+			left: 0
+			float: left
+			margin-right: 10px
 	&__title
 		display: inline-block
 		vertical-align: middle
@@ -101,7 +164,18 @@
 		margin-left: 44px
 		padding-top: 11px
 		letter-spacing: -.9px
-
+		+md
+			font-size: 23px
+			text-align: center
+			width: 210px
+			float: left
+			margin-left: 0
+			padding-top: 33px
+			letter-spacing: .7px
+		+r(400)
+			font-size: 20px
+			padding-top: 40px
+			width: 200px
 
 
 
