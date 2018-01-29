@@ -1,12 +1,20 @@
-import {DOC, ACTIVE, BODY} from '../_const';
+import {DOC, ACTIVE, BODY, WIN, HIDDEN} from '../_const';
 
 const burger = '.js-burger';
 const submenu = $('.js-submenu');
 
 DOC.on('click', burger, (e) => {
+
   let that = $(e.currentTarget);
-  that.toggleClass(ACTIVE);
-  submenu.toggleClass(ACTIVE);
+  if(WIN.width < 1023) {
+  	that.toggleClass(ACTIVE);
+  	submenu.toggleClass(ACTIVE);
+  } else {
+    BODY.addClass(HIDDEN);
+    that.toggleClass(ACTIVE);
+  	submenu.toggleClass(ACTIVE);
+  }
+
 });
 
 BODY.click((e) => {

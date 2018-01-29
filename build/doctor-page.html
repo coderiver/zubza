@@ -58,6 +58,53 @@
                 <li> <a href="#">О проекте</a> </li>
               </ul>
             </div>
+            <div class="mobi">
+              <div class="mobi__wrapper">
+                <div class="mobi__section">
+                  <div class="mobi__title">Личный кабинет</div>
+                  <div class="mobi__list mob-list">
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Вход</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Регистрация нового пользователя</a> </div>
+                  </div>
+                </div>
+                <div class="mobi__section">
+                  <div class="mobi__title">Ваш город</div>
+                  <div class="mobi__list mob-list">
+                    <div class="mob-list__item"> <a href="#" class="mob-list__select">Санкт-Петербург</a> </div>
+                  </div>
+                </div>
+                <div class="mobi__section">
+                  <div class="mobi__title">меню</div>
+                  <div class="mobi__list mob-list">
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Клиники</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Врачи</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Услуги и цены</a> </div>
+                    <div class="mob-list__item  mob-list__item_icon"> <a href="#" class="mob-list__link">Акции<span class="mob-list__label">%</span></a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Памятка пациенту</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Как записаться</a> </div>
+                  </div>
+                </div>
+                <div class="mobi__section">
+                  <div class="mobi__title">О проекте</div>
+                  <div class="mobi__list mob-list">
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">О проекте</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Как это работает</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Медицинским центрам</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Врачам</a> </div>
+                  </div>
+                </div>
+                <div class="mobi__section">
+                  <div class="mobi__title">Специализации врачей</div>
+                  <div class="mobi__list mob-list">
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Детский стоматолог</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Стоматолог терапевт</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Ортодонт</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Хирург</a> </div>
+                    <div class="mob-list__item "> <a href="#" class="mob-list__link">Детский стоматолог</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -481,10 +528,19 @@
             <div class="filters filters_tablet-mod">
               <div class="filters__field">
                 <div class="filters__title">Начните вводить название услуги</div>
-                <div class="filters__textfield"> <input type="text" class="textfield textfield_mod" placeholder="Название услуги"> <svg class="icon icon-list"><use xlink:href="img/sprite.svg#icon-list"></use></svg> </div>
+                <div class="filters__textfield"> <input type="text" class="textfield textfield_mod" placeholder="Поиск по названию услуги"> <svg class="icon icon-list"><use xlink:href="img/sprite.svg#icon-list"></use></svg> </div>
               </div>
+              <div class="filters__select filters__select_tablet"> <select class="js-select js-clinics-select" data-field="Выберите клинику" data-icon="arrow-down">
+		
+			<option value="Клиника &quot;Все свои на Арбатской&quot;" data-clinic="1" selected="true">Клиника &quot;Все свои на Арбатской&quot;</option>
+		
+			<option value="Клиника &quot;Все свои на Кронштадской&quot;" data-clinic="2" selected="true">Клиника &quot;Все свои на Кронштадской&quot;</option>
+		
+			<option value="Клиника &quot;Все свои на Ленинском проспекте&quot;" data-clinic="3" selected="true">Клиника &quot;Все свои на Ленинском проспекте&quot;</option>
+		
+		</select> </div>
               <div class="filters__list">
-                <div class="tagi js-tag-mob">
+                <div class="tagi tagi_tablet-mod js-tag-mob">
                   <div class="filters__textfield tagi__btn"> <input type="text" class="textfield textfield_mod js-tag-btn" placeholder="Выберите специализацию" disabled /> <svg class="icon icon-list"><use xlink:href="img/sprite.svg#icon-list"></use></svg> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg>                    </div>
                   <ul>
                     <li class=""><a href="#" class="js-tag-list-item">Детские стоматологии</a></li>
