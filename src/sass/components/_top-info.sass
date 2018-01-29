@@ -2,7 +2,10 @@
 	margin-bottom: 30px
 	&__map
 		.map-link
-			border: 1px solid $cyan
+			border: 1px solid transparent
 			height: 88px
+			+trans
+			&:hover
+				border-color: $cyan
 			p
 				padding: 4px 5px 1px
