@@ -5,6 +5,9 @@
 	text-align: center
 	padding-top: 61px
 	padding-bottom: 53px
+	+md
+		padding-top: 31px
+		padding-bottom: 44px
 	&--light
 		background-color: $almost-white
 		.doctors-list
@@ -20,16 +23,29 @@
 	&__title
 		margin-bottom: 34px
 		font-size: 35px
+		+md
+			font-size: 25px
+			padding: 0 40px
+			letter-spacing: -.4px
+			margin-bottom: 26px
 	&__list
 		margin: 0 -70px
 
 .specialists
 	padding-left: 181px
 	+clr
+	+lg
+		padding-left: 100px
+	+md
+		padding-left: 0
+		display: inline-block
 	&__item
 		float: left
 		width: 50%
 		text-align: left
+		+md
+			width: auto
+			clear: both
 		&:not(:last-child)
 			margin-bottom: 12px
 		a
