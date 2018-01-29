@@ -3,9 +3,15 @@
 	text-align: center
 	padding-top: 66px
 	padding-bottom: 80px
+	+md
+		padding-top: 46px
+		padding-bottom: 54px
 	&__title
 		margin-bottom: 10px
 		letter-spacing: -.7px
+		+md
+			font-size: 20px
+			margin-bottom: 27px
 	&__descr
 		font-size: 20px
 		color: #fff
@@ -14,6 +20,8 @@
 		margin: 0 auto 74px
 		letter-spacing: -0.25px
 		+OSReg
+		+md
+			display: none
 	&__list
 		max-width: 1000px
 		margin: 0 auto
@@ -21,11 +29,23 @@
 		margin: 0 -15px
 		font-size: 0
 		text-align: center
+		display: flex
+		flex-wrap: wrap
+		+md
+			max-width: 600px
+			margin: 0 auto
+		+sm
+			max-width: 230px
 	&__item
 		padding: 0 15px
-		display: inline-block
-		vertical-align: top
 		width: 25%
+		display: flex
+		+md
+			width: 50%
+			margin-bottom: 15px
+		+sm
+			width: 100%
+			padding: 0
 	&__text
 		display: inline-block
 		position: relative
@@ -39,6 +59,10 @@
 			display: inline-block
 			vertical-align: middle
 			margin-right: 10px
+			+lg
+				margin-right: 0
+			+md
+				margin-right: 12px
 			.icon
 				position: absolute
 				top: 50%
@@ -59,3 +83,8 @@
 		justify-content: center
 		width: 100%
 		padding: 15px
+		+md
+			padding: 14px 10px 14px 22px
+		+sm
+			font-size: 18px
+			justify-content: flex-start
