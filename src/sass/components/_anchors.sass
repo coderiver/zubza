@@ -2,17 +2,45 @@
 	background-color: #fafafa
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
 	margin-bottom: 30px
+	+md
+		margin-bottom: 15px
+		position: relative
+	+xs
+		margin-bottom: 10px
 	&__list
-		// display: flex
-		// flex-wrap: wrap
-		// justify-content: space-between
-		+justify
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		// +justify
+		+md
+			background-color: $cyan
+			text-align: left
+			display: none
+			padding-top: 17px
+			padding-bottom: 26px
+			padding-left: 70px
+			padding-right: 70px
+			z-index: 20
+			position: absolute
+			left: 0
+			width: 100%
+			top: 100%
+		+r(399)
+			padding-left: 20px
+			padding-right: 20px
 	&__item
 		min-height: 40px
 		line-height: 1
 		padding: 12px 10px 11px
 		display: inline-block
 		vertical-align: top
+		+md
+			display: block
+			padding: 0
+			margin-bottom: 15px
+			min-height: auto
+			&:last-of-type
+				margin-bottom: 0
 		a
 			+PBold
 			font-size: 15px
@@ -20,8 +48,77 @@
 			+trans
 			&:hover
 				color: $green
+			+md
+				color: $white
+				padding-left: 27px
+				position: relative
+				&:hover
+					color: $white
 		&.is-active
 			a
 				color: $green
+				+md
+					color: $white
+	&__mob-title, &__close-mob, &__item-icon-mob
+		display: none
+
+	&__mob-title
+		background-color: #14badb
+		box-shadow: 2px 3.5px 16px rgba(0, 0, 0, 0.05)
+		text-align: center
+		color: $white
+		padding: 6px 10px
+		+PBold
+		font-size: 15px
+		position: relative
+		+md
+			display: block
+	&__item-icon-mob
+		width: 16px
+		height: 16px
+		vertical-align: top
+		border-radius: 50%
+		position: absolute
+		left: 0
+		top: 0
+		background: rgba($white, 0.5)
+		i
+			font-size: 0
+			+vcenter
+			margin-left: 1px
+		svg
+			font-size: 6px
+			fill: $cyan
+			width: 6px
+			height: 6px
+		+md
+			display: inline-block
+	&__close-mob
+		+md
+			position: absolute
+			right: 38px
+			top: 50%
+			transform: translateY(-50%)
+			&:before
+				content: ''
+				position: absolute
+				top: -4px
+				right: -6px
+				bottom: -4px
+				left: -6px
+		+r(399)
+			right: 20px
+		svg
+			fill: $white
+			font-size: 11px
+		&.is-hidden
+			display: none
+	.container
+		+md
+			padding: 0
+	&.is-open
+		.anchors__close-mob
+			display: block
 	&--mb-75
 		margin-bottom: 75px
+	

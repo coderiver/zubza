@@ -1,14 +1,29 @@
 {% for testGlobal in anchors %}
 <!--begin anchors-->
-<div class="anchors {{testGlobal.mode}}">
+<div class="anchors {{testGlobal.mode}} js-anchors-mob-drop">
 	<!--begin container-->
 	<div class="container">
-		<div class="anchors__list">
+		<div class="anchors__mob-title js-anchors-mob-title">
+			Навигация по странице
+			<div class="anchors__close-mob ">
+				{{mixins.icon('close')}}
+			</div>
+		</div>
+		<div class="anchors__list js-anchors-mob-content">
 			{% for test in testGlobal.anchorslist %}
 			<div class="anchors__item {{test.active}}">
-				<a href="#">{{test.text}}</a>
+				<a href="#">
+					<div class="anchors__item-icon-mob ">
+						<i >
+							{{mixins.icon('arrow-sm')}}
+						</i>
+					</div>
+
+					{{test.text}}
+				</a>
 			</div>
 			{% endfor %}
+
 		</div>
 	</div>
 	<!--end container-->
