@@ -32,6 +32,8 @@
 			vertical-align: middle
 			padding: 0 5px
 			margin-bottom: 10px
+			&:first-child
+				padding-left: 0
 			a
 				padding: 7px 13px
 				color: $cyan
@@ -53,6 +55,10 @@
 					&:hover
 						color: $cyan
 						opacity: .7
+				+r(720)
+					font-size: 12px
+					min-height: 20px
+					padding: 3px 8px
 			&.is-active
 				a
 					background-color: $cyan

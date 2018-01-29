@@ -7,8 +7,8 @@
         <div class="top-info__text">{{ toptext | safe }}</div>
       </div>
 
-      <div class="col col_sm">
-        <div class="top-info__map">
+      <div class="col col_sm js-map-desk-append">
+        <div class="top-info__map js-mob-move" data-target="js-map-mob-append" data-source="js-map-desk-append">
           {% for test in mapInPopup %}
           {% include "components/_map-link.html" %}
           {% endfor %}
