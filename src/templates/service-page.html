@@ -118,6 +118,23 @@ metaFilters: [
 }
 ]
 
+mobFilters: [
+  {
+    icon: 'location',
+    name: 'На карте'
+  },
+  {
+    icon: 'sort',
+    name: 'Сортировать',
+    action: 'js-show-meta-filters'
+  },
+  {
+    icon: 'filt',
+    name: 'Фильтры',
+    action: 'js-show-filters'
+  }
+]
+
 clinicBoxes: [
   {
     titlelink: {
@@ -798,7 +815,9 @@ linksList:
 				    {% endfor %}
 				</div>
 				<div class="col col_lg-right">
-					<div class="filter-section__content">
+					<div class="filter-section__content  js-map-mob-append">
+
+                {% include "components/_mob-filters.html" %}
 
 			          {% for clinicBox in clinicBoxes %}
 			          {% include "components/_short-hospital-info.html" %}
@@ -809,7 +828,7 @@ linksList:
 			          </div>
 
 			        </div>
-				</div>	
+				</div>
 			</div>
 		<!-- end container -->
 		<!-- begin section -->
