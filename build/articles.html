@@ -116,11 +116,12 @@
           </div>
           <div class="col col_lg-left">
             <h2>Справочник</h2>
-            <div class="text">
+            <div class="text hide-sm">
               <p> Здесь собираются и постоянно обновляются полезные статьи о здоровье, заболеваниях, медицинских направлениях, современных методах лечения и диагностики </p>
             </div>
             <!--begin meta-filters-->
-            <div class="meta-filters meta-filters--w-830"> <a class="meta-filter " href="#">
+            <div class="meta-filters meta-filters--w-830">
+              <p class="meta-filters__title-mob">Поиск по темам:</p> <a class="meta-filter " href="#">
 	
 	<span>Популярное</span>
 	
@@ -398,13 +399,25 @@
           </div>
           <!-- end article-container -->
         </div>
-        <section class="rel-posts ">
-          <!--begin container-->
-          <div class="rel-posts__inner js-mob-posts-slider"> </div>
-          <!-- begin rel-posts__button -->
-          <!-- end rel-posts__button -->
-          <!--end container-->
-        </section>
+        <div class="container">
+          <div class="show-sm" style="margin-bottom: 45px">
+            <!-- begin pagination -->
+            <div class="pagination">
+              <div class="pagination__in"> <span class="pagination__text">Больше статей:</span>
+                <ul class="pagination__link-list">
+                  <li class="pagination__item is-active"> <a href="#" class="pagination__link">1</a> </li>
+                  <li class="pagination__item "> <a href="#" class="pagination__link">2</a> </li>
+                  <li class="pagination__item "> <a href="#" class="pagination__link">3</a> </li>
+                  <li class="pagination__item "> <a href="#" class="pagination__link">4</a> </li>
+                  <li class="pagination__item "> <a href="#" class="pagination__link">5</a> </li>
+                  <li class="pagination__item"> <span class="pagination__link">...</span> </li>
+                  <li class="pagination__item"> <a href="#" class="pagination__link">22</a> </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end pagination -->
+          </div>
+        </div>
         <div class="search-banner">
           <div class="container">
             <div class="search-banner__image image-group"> <img class="image-group__head image-group__head_clinic" src="img/clinic.svg" alt=""> <img src="img/cloud.svg" alt="" class="image-group__cloud"> </div>

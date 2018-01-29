@@ -198,7 +198,7 @@
         <!--end anchors-->
         <!-- begin container -->
         <div class="container">
-          <div class="clinic-box clinic-box_mini clinic-box_doctor-single">
+          <div class="clinic-box clinic-box_mini clinic-box_doctor-single doctor">
             <div class="clinic-box__content">
               <div class="clinic-box__rate">
                 <div class="doctor__right-topline">
@@ -521,13 +521,22 @@
             <div class="doctor-page__textual">
               <p> Воспользуйтесь поиском или выберите специализацию </p>
             </div>
-            <div class="filters">
+            <div class="filters filters_tablet-mod">
               <div class="filters__field">
                 <div class="filters__title">Начните вводить название услуги</div>
-                <div class="filters__textfield"> <input type="text" class="textfield textfield_mod" placeholder="Название услуги"> <svg class="icon icon-list"><use xlink:href="img/sprite.svg#icon-list"></use></svg> </div>
+                <div class="filters__textfield"> <input type="text" class="textfield textfield_mod" placeholder="Поиск по названию услуги"> <svg class="icon icon-list"><use xlink:href="img/sprite.svg#icon-list"></use></svg> </div>
               </div>
+              <div class="filters__select filters__select_tablet"> <select class="js-select js-clinics-select" data-field="Выберите клинику" data-icon="arrow-down">
+		
+			<option value="Клиника &quot;Все свои на Арбатской&quot;" data-clinic="1" selected="true">Клиника &quot;Все свои на Арбатской&quot;</option>
+		
+			<option value="Клиника &quot;Все свои на Кронштадской&quot;" data-clinic="2" selected="true">Клиника &quot;Все свои на Кронштадской&quot;</option>
+		
+			<option value="Клиника &quot;Все свои на Ленинском проспекте&quot;" data-clinic="3" selected="true">Клиника &quot;Все свои на Ленинском проспекте&quot;</option>
+		
+		</select> </div>
               <div class="filters__list">
-                <div class="tagi js-tag-mob">
+                <div class="tagi tagi_tablet-mod js-tag-mob">
                   <div class="filters__textfield tagi__btn"> <input type="text" class="textfield textfield_mod js-tag-btn" placeholder="Выберите специализацию" disabled /> <svg class="icon icon-list"><use xlink:href="img/sprite.svg#icon-list"></use></svg> <svg class="icon icon-arrow-down"><use xlink:href="img/sprite.svg#icon-arrow-down"></use></svg>                    </div>
                   <ul>
                     <li class=""><a href="#" class="js-tag-list-item">Детские стоматологии</a></li>

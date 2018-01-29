@@ -6,15 +6,17 @@ function MobTagDrop(windowW) {
 
   	$(item).on('click', (e) => {
 
-  		e.preventDefault();
+      let target = e.target || e.srcElement;
+
+  		if($(target).hasClass('js-tag-btn')) {
+        e.preventDefault();
+      }
 
   		$(item).toggleClass('is-open');
 
-  		let target = e.target || e.srcElement;
-
-  		if($(target).hasClass('js-tag-list-item')) {
-  			$(item).find('.js-tag-btn').val($(target).html());
-  		}
+  		// if($(target).hasClass('js-tag-list-item')) {
+  		// 	$(item).find('.js-tag-btn').val($(target).html());
+  		// }
 
   	});
 

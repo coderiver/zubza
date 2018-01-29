@@ -5,7 +5,7 @@
 
 {% macro filters(config) %}
 
-<div class="filters">
+<div class="filters {% if config.filtersTableMod %}filters_tablet-mod{% endif %}">
 	<div class="filters__field">
 		<div class="filters__title">{{config.title}}</div>
 		<div class="filters__textfield">
@@ -15,8 +15,17 @@
 			{% endif %}
 		</div>
 	</div>
+	{% if config.clinics %}
+	<div class="filters__select filters__select_tablet">
+		<select class="js-select js-clinics-select" data-field="Выберите клинику" data-icon="arrow-down">
+		{% for item in config.clinics %}
+			<option value="{{ item }}" data-clinic="{{ loop.index }}" selected="true">{{ item }}</option>
+		{% endfor %}
+		</select>	
+	</div>
+	{% endif %}
 	<div class="filters__list">	
-		<div class="tagi js-tag-mob">
+		<div class="tagi {% if config.tagsTableMod %}tagi_tablet-mod{% endif %} js-tag-mob">
 			<div class="filters__textfield tagi__btn">
 				<input type="text" class="textfield{% if config.icon %} textfield_mod{% endif %} js-tag-btn" placeholder="{{ config.filtersListTitle }}" disabled />
 				{% if config.icon %} 

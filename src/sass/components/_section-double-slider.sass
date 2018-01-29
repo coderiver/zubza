@@ -1,11 +1,20 @@
 .section-double-slider
 	background: $white
 	padding-top: 46px
+	+md
+		padding-top: 0
+		background: none
 	&__title
 		margin-bottom: 30px
+		+md
+			text-align: center
+			font-size: 25px
+			margin-bottom: 20px
 	&__inner
 		padding: 0 44px
 		position: relative
+		+md
+			padding: 0
 
 	.btnPrev, .btnNext
 		bottom: auto

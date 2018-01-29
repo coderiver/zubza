@@ -5,6 +5,19 @@
 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
 	overflow: hidden
 	display: flex
+	+md
+		display: block
+		box-shadow: none
+		border-radius: 0
+		margin-bottom: 8px
+	&__title-mob
+		display: none
+		font-size: 14px
+		margin-bottom: 4px
+		+PReg
+
+		+md
+			display: block
 	.meta-filter
 		border-right: 1px solid rgba($really-grey, 0.5)
 		&:last-of-type
@@ -39,11 +52,22 @@
 	padding: 17px 15px 14px
 	line-height: 1
 	+trans
+	+md
+		display: inline-block
+		vertical-align: top
+		padding: 5px
+		min-height: auto
+		border: 1px solid rgba(#bbb, 0.3)
+		border-radius: 10px
+		margin-right: 8px
+		margin-bottom: 8px
+
 	&:hover,
 	&.is-active
 		background-color: $cyan
 		.meta-tag, span
 			color: $white
+
 		.meta-filter__icon
 			.icon
 				fill: $white
@@ -51,13 +75,21 @@
 		text-transform: none
 		display: inline-block
 		vertical-align: top
+		+md
+			padding-left: 12px
 		&__circle
 			top: 1px
+			+md
+				width: 8px
+				height: 8px
 	.meta-tag, span
 		color: $black
 		+PReg
 		font-size: 14px
 		+trans
+		+md
+			font-size: 12px
+			+OSReg
 	&.is-active
 		background-color: $cyan
 		.meta-tag, span
