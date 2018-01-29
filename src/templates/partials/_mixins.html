@@ -15,6 +15,13 @@
 			{% endif %}
 		</div>
 	</div>
+	{% if config.clinics %}
+	{% for item in config.clinics %}
+	<select>
+		<option value="{{ item }}">{{ item }}</option>
+	</select>
+	{% endfor %}
+	{% endif %}
 	<div class="filters__list">	
 		<div class="tagi js-tag-mob">
 			<div class="filters__textfield tagi__btn">
