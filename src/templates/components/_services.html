@@ -10,7 +10,10 @@
 			<div class="services__row">
 				{% for item in services %}
 				<div class="services__item">
-					<div class="services__item-title">{{ item.title }}</div>
+					<div class="services__item-title">
+						{{ item.title }}
+						{{ mixins.icon('arrow-down') }}
+					</div>
 					<ul class="services__list js-show-more" data-items="4">
 						{% for item in item.items %}
 						<li class="services__list-item js-show-more-item">
