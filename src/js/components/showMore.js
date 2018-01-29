@@ -17,9 +17,7 @@ class ShowMore {
   	$(this.items).each((index, item) => {
 
   		if((index < this.showItems) || (index === itemsLength)) return;
-  		$(item).css({
-  			'display': 'none'
-  		});
+      $(item).addClass('is-hidden');
 
   	});
 
@@ -29,9 +27,7 @@ class ShowMore {
 
   	$(this.items).each((index, item) => {
 
-  		$(item).css({
-  			'display': 'block'
-  		});
+      $(item).removeClass('is-hidden');
 
   	});
 
