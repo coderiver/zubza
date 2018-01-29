@@ -137,6 +137,23 @@ metaFilters: [
 }
 ]
 
+mobFilters: [
+  {
+    icon: 'location',
+    name: 'На карте'
+  },
+  {
+    icon: 'sort',
+    name: 'Сортировать',
+    action: 'js-show-meta-filters'
+  },
+  {
+    icon: 'filt',
+    name: 'Фильтры',
+    action: 'js-show-filters'
+  }
+]
+
 popularLinks:
   - Круглосуточные стоматологии
   - Стоматологии в центре города
@@ -930,6 +947,12 @@ popupForm: {
           {% include "components/_meta-filters.html" %}
         </div>
         <!-- end filter-section__meta-filters -->
+
+        <!-- begin filter-section__mob-filters -->
+        <div class="filter-section__mob-filters">
+          {% include "components/_mob-filters.html" %}
+        </div>
+        <!-- end filter-section__mob-filters -->
 
         <div class="filter-section__content">
           {% for clinicBox in clinicBoxes %}
