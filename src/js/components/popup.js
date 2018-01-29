@@ -9,7 +9,7 @@ function popup() {
     if(target.hasClass('js-is-map-popup')) {
       PubSub.publish('open-map-popup');
     };
-    
+    $('.js-popup').fadeOut(200);
     target.fadeIn(300);
     $('body').addClass('is-hidden');
   });
