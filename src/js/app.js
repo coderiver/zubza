@@ -4,6 +4,7 @@ import sliders from './components/sliders.js';
 import popup from './components/popup.js';
 import gmap from './components/gmap.js';
 import servicesMobDrop from './components/services-mob-drop.js';
+import anchorsMobDrop from './components/anchors-mob-drop.js';
 import './components/select.js';
 import './components/gallery.js';
 import './components/tableDrop.js';
@@ -22,6 +23,7 @@ $(document).ready(function() {
   popup();
   gmap();
   servicesMobDrop(windowW);
+  anchorsMobDrop(windowW);
 
 // ready
 });
