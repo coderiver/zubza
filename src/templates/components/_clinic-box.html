@@ -100,7 +100,8 @@
 
 
       {% if clinicBox.leftButton %}
-      <a href="#" class="button button_cyan">Записаться</a>
+
+      <a href="#" class=" {% if clinicBox.leftButtonGreen %}btn btn--green {% else %}button button_cyan{% endif %}">Записаться</a>
       {% endif %}
 
       {% if clinicBox.leftButtonMoreClinic %}
