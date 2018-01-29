@@ -84,7 +84,49 @@ function sliders() {
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: $('.js-badge-prev'),
-    nextArrow: $('.js-badge-next')
+    nextArrow: $('.js-badge-next'),
+    responsive: [
+      {
+        breakpoint: 4000,
+        settings: {
+          prevArrow: $('.js-badge-prev'),
+          nextArrow: $('.js-badge-next'),
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          prevArrow: postBtnPrev,
+          nextArrow: postBtnNext,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: postBtnPrev,
+          nextArrow: postBtnNext,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 599,
+        settings: {
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: postBtnPrev,
+          nextArrow: postBtnNext,
+          dots: true
+        }
+      }
+    ]
   });
 
 
