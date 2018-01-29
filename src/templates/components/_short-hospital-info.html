@@ -9,6 +9,17 @@
         {% endfor %}
       </ul>
 
+      <div class="clinic-box__mob-rate">
+        {% if clinicBox.rateBlock %}
+        {% set test = clinicBox %}
+        <!--begin cslide__head-inner-->
+        <div class="cslide__head-inner">
+          {% include "components/_rate-wrapper.html" %}
+        </div>
+        <!--end cslide__head-inner-->
+        {% endif %}
+      </div>
+
       <div class="location-info">
         <i class="location-info__icon">{{ mixins.icon('location') }}</i>
         <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>

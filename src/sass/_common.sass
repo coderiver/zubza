@@ -49,11 +49,18 @@ h4, .h4
 	&_lg-left
 		width: percentage(900/1180)
 		padding-right: 20px
+		+md
+			padding-right: 0
 	&_lg-right
 		width: percentage(900/1180)
 		padding-left: 20px
+		+md
+			padding-left: 0
 	&_sm
 		width: percentage(280/1180)
+	+md
+		float: none
+		width: 100%
 
 .text
 	line-height: 1.5

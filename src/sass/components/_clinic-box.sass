@@ -169,6 +169,62 @@
 			&__content
 				border-top: none
 				padding-top: 0
+			&__right
+				+md
+					display: none
+			&__left
+				+md
+					width: 100%
+					padding-right: 0
+					border-right: 0
+			&__gallery
+				+md
+					display: none
+			&__price-list
+				li
+					+md
+						font-size: 12px
+					span
+						&:nth-child(2)
+							font-size: 12px
+			&__titlelink
+				+md
+					padding-bottom: 5px
+					border-bottom: 1px solid #edf0f1
+		.more-link
+			span
+				+md
+					font-size: 14px
+		.sales-link
+			+md
+				display: none
+		.location-info
+			a
+				+md
+					font-size: 13px
+					text-decoration: underline
+					text-decoration-style: dashed
+		.metro-info
+			+md
+				font-size: 13px
+		.worktime-info
+			+md
+				font-size: 13px
+		.rate-wrapper
+			+md
+				margin-bottom: 15px
+		.rate-stars
+			+md
+				margin-left: 0
+			&__item
+				svg
+					+md
+						font-size: 15px
+		.rate-number
+			span
+				+md
+					font-size: 20px
+					line-height: 1
 		.cslide
 			padding: 0
 	&_doctor
@@ -196,6 +252,7 @@
 				width: 100%
 				border-top: none
 				padding-top: 0
+
 	&_small-content
 		padding: 20px
 		.doctor__left

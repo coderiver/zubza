@@ -1,9 +1,9 @@
 .services
 	background-color: $white
-	padding: 100px 20px
+	padding: 96px 20px 50px
 	$this: &
 	&__top
-		margin-bottom: 58px
+		margin-bottom: 52px
 	&__title
 		font-size: 35px
 		text-align: center
@@ -16,29 +16,72 @@
 	&__row
 		display: flex
 		justify-content: space-between
-		margin-bottom: 50px
-		&:last-of-type
-			margin-bottom: 0
+		margin-bottom: 48px
+		+md
+			display: block
+			margin-bottom: 0  
 	&__item-title
 		font-size: 20px
+		position: relative 
 		+PBold
+		+md
+			background-color: #edf9fb 
+			border: 1px solid #b8ecf7
+			border-radius: 25px
+			color: $cyan
+			padding: 15px 40px 12px 20px
+			margin-bottom: 20px 
+			+PReg
+		& > svg
+			display: none
+			position: absolute
+			top: 50%
+			right: 18px
+			transform: translateY(-50%)  
+			stroke: $cyan
+			width: 14px 
+			+md
+				display: block  
 	&__item
+		margin-right: 20px 
 		width: 333px
+		+md
+			margin: 0 auto
+			margin-bottom: 30px
+			max-width: 320px
+			width: 100%   
+		&:last-of-type
+			margin-right: 0
+			+md
+				margin-right: auto 
 	&__list
-		margin-top: 10px
+		margin-top: 8px
 		&.is-active
 			.more-link__icon
 				transform: translateY(-50%) rotate(-90deg)
+		li
+			&:last-of-type
+				+md
+					display: none
 
 	&__list-item
 		display: block
 		position: relative
+		margin-bottom: 7px 
 		&:before
 			+pseudo
 			top: auto
 			bottom: 5px
 			border-bottom: 1px dotted #b8b8b8
 			width: 100%
+		&:last-of-type
+			margin-bottom: 0
+			+md
+				display: none
+		&.is-hidden
+			display: none
+			+md
+				display: block  
 	&__name
 		display: inline-block
 		font-size: 17px
@@ -59,9 +102,15 @@
 		right: 0
 		+OSSemi
 	&__link
-		margin-top: 12px
-	.more-link__icon
-		transition: transform linear 0.3s
+		margin-top: 1px
+	.more-link
+		font-size: 17px 
+		&__icon
+			height: 21px 
+			transition: transform linear 0.3s
+			width: 21px
+		span
+			padding-left: 30px  
 	&_mod
 		padding: 0
 		#{$this}__name
