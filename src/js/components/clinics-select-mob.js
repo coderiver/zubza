@@ -26,7 +26,7 @@ function clinicsSelectMob(windowW) {
     clinicSelect.on('click', () => {
 
 	  	let currentSelectedOpt = $(clinicSelect).find('option:selected');
-	  	let currentTableIndex = selectedOpt.data().clinic;
+	  	let currentTableIndex = currentSelectedOpt.data().clinic;
 
 	  	updTables(currentTableIndex);
 
