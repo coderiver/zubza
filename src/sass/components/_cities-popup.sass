@@ -1,4 +1,7 @@
 .pcities
+	+md
+		display: none
+		
 	&__title
 		margin-bottom: 15px
 	&__input
@@ -35,3 +38,58 @@
 					font-size: 14px
 					a
 						color: $cyan
+
+
+.mcities
+	text-align: center
+	padding-top: 6px
+	display: none
+	+md
+		display: block
+		
+	&__input
+		margin-bottom: 20px
+		position: relative
+		.icon
+			position: absolute
+			top: 50%
+			left: 20px
+			margin-top: -6px
+			font-size: 12px
+			fill: $grey
+	&__title
+		+PSemi
+		font-size: 20px
+		color: $black
+		margin-bottom: 15px
+	&__list
+		text-align: left
+		margin-bottom: 20px
+	&__item
+		&:not(:last-child)
+			margin-bottom: 10px
+	&__link
+		display: block
+		border: 1px solid $cyan
+		border-radius: 25px
+		color: $cyan
+		font-size: 16px
+		min-height: 40px
+		background-color: #edf9fb
+		padding-left: 21px
+		position: relative
+		padding-top: 12px
+		padding-right: 30px
+		padding-bottom: 5px
+		+PReg
+		&:before
+			content: ''
+			position: absolute
+			right: 22px
+			top: 50%
+			margin-top: -4px
+			height: 9px
+			width: 9px
+			border-left: 2px solid $cyan
+			border-bottom: 2px solid $cyan
+			transform: rotate(-135deg)

@@ -86,5 +86,28 @@
         {% endfor %}
       </div>
     </div>
+    <div class="mcities">
+      <h4 class="mcities__title">
+        Выберите город
+      </h4>
+      <div class="mcities__input">
+        <input type="text" class="textfield textfield_mod" placeholder="Введите название города">
+        {{mixins.icon('search')}}
+      </div>
+      <div class="mcities__list">
+        <div class="mcities__item">
+          <a href="#" class="mcities__link">Москва</a>
+        </div>
+        <div class="mcities__item">
+          <a href="#" class="mcities__link">Санкт-Петербург</a>
+        </div>
+        <div class="mcities__item">
+          <a href="#" class="mcities__link">Казань</a>
+        </div>
+      </div>
+      <div class="mcities__btn">
+        <a href="#" class="btn btn--green-wide js-close-popup">Отмена</a>
+      </div>
+    </div>
   </div>
 </div>
