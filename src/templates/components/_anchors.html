@@ -11,8 +11,8 @@
 		</div>
 		<div class="anchors__list js-anchors-mob-content">
 			{% for test in testGlobal.anchorslist %}
-			<div class="anchors__item {{test.active}}">
-				<a href="#">
+			<div class="anchors__item ">
+				<a href="#" class="js-scroll-to-link" data-sroll-target="{{test.scrollTo}}">
 					<div class="anchors__item-icon-mob ">
 						<i >
 							{{mixins.icon('arrow-sm')}}

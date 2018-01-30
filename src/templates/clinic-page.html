@@ -10,29 +10,36 @@ anchors: [
 	mode: '',
 	anchorslist: [
 	{
-		text: 'Описание и контактная информация'
+		text: 'Описание и контактная информация',
+		scrollTo: 'descr'
 	},
 	{
-		text: 'Цены'
+		text: 'Цены',
+		scrollTo: 'prices'
 	},
 	{
-		text: 'Отзывы '
+		text: 'Отзывы ',
+		scrollTo: 'reviews'
 	},
 	{
-		text: 'Врачи'
+		text: 'Врачи',
+		scrollTo: 'doctors'
 	},
 	{
-		text: 'Лицензии и сертификаты'
+		text: 'Лицензии и сертификаты',
+		scrollTo: 'license'
 	},
 	{
 		text: 'Фото клиники',
-		active: 'is-active'
+		scrollTo: 'clinic-photo'
 	},
 	{
-		text: 'Акции'
+		text: 'Акции',
+		scrollTo: 'sales'
 	},
 	{
-		text: 'Филиалы'
+		text: 'Филиалы',
+		scrollTo: 'branches'
 	}
 	]
 }
@@ -720,16 +727,16 @@ popupForm: {
 	{% include "components/_anchors.html" %}
 	<!--begin container-->
 	<div class="container">
-		<div class="clinic-page__mb-50">
+		<div class="clinic-page__mb-50" data-scroll="descr">
 			{% include "components/_clinic-box.html" %}
 		</div>
 	</div>
 	<!--end container-->
 	<!--begin clinic-page__white-block-->
-	<div class="clinic-page__white-block">
+	<div class="clinic-page__white-block" >
 		<!--begin container-->
 		<div class="container">
-			<h3 class="clinic-page__title-sec">Цены на услуги в стоматологической клинике «Все Свои» на Арбатской</h3>
+			<h3 class="clinic-page__title-sec" data-scroll="prices">Цены на услуги в стоматологической клинике «Все Свои» на Арбатской</h3>
 			<p class="clinic-page__mb-35">Воспользуйтесь поиском или выберите специализацию </p>
 			{% set list = [{
 				item: 'Детские стоматологии'
@@ -971,12 +978,12 @@ item: 'Протезирование'
 		Администрация отсавляет за собой право изменять цены. Вы можете уточнить стоимость по телефону.
 	</p>
 </div>
-<div class="clinic-page__mb-95">
+<div class="clinic-page__mb-95" data-scroll="reviews">
 	{% include './components/_reviews.html' %}
 </div>
 
 <div >
-	<h2 class="clinic-page__mb-27 clinic-page__center-mob">Врачи стоматологической клиники «Все Свои» на Арбатской</h2>
+	<h2 class="clinic-page__mb-27 clinic-page__center-mob" data-scroll="doctors">Врачи стоматологической клиники «Все Свои» на Арбатской</h2>
 	{% for doctor in doctors %}
 	{% include "components/_doctor.html" %}
 	{% endfor %}
@@ -987,17 +994,22 @@ item: 'Протезирование'
 </div>
 <!--end container-->
 <!--begin clinic-page__mb-95-->
-<div class="clinic-page__mb-95">
+<div class="clinic-page__mb-95" data-scroll="license">
 	{% include "components/_license.html" %}
 </div>
 <!--end clinic-page__mb-95-->
 <!--begin container-->
 <div class="container">
+	<div data-scroll="clinic-photo">
 	{% include "components/_clinic-gallery.html" %}
+		
+	</div>
 
 </div>
 <!--end container-->
+<div data-scroll="sales">
 {% include "components/_sales-section.html" %}
+</div>
 </div>
 <!--end clinic-page__white-block-->
 
@@ -1005,7 +1017,7 @@ item: 'Протезирование'
 <!--begin container-->
 <div class="container ">
 	<!--begin clinic-page__p-50-->
-	<div class="clinic-page__p-50 clinic-page__branches">
+	<div class="clinic-page__p-50 clinic-page__branches" data-scroll="branches">
 			<h3 class="h3 clinic-page__mb-27">Адреса филиалов</h3>
 		{% for clinicBox in clinicBoxBranches %}
 		{% include "components/_clinic-box.html" %}
