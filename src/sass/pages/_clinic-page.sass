@@ -1,10 +1,13 @@
 .clinic-page
 	&__title
 		margin-bottom: 19px
+		+md
+			display: none
 	&__title-sec
 		margin-bottom: 15px
 		+md
 			text-align: center
+			margin-bottom: 5px
 			& + p
 				text-align: center 
 	&__white-block
@@ -12,11 +15,17 @@
 		padding-top: 50px
 		padding-bottom: 50px
 		+md
-			background: none
+			padding-top: 30px
+		// 	background: none
 		&--pb-0
 			padding-bottom: 0
+			+md
+				padding-top: 0
+				background: transparent
 	&__mb-35
 		margin-bottom: 35px
+		+md
+				margin-bottom: 15px
 	&__mb-27
 		margin-bottom: 27px
 	&__mb-50
@@ -25,9 +34,21 @@
 		margin-top: 30px
 	&__mb-95
 		margin-bottom: 95px
+		+md
+			margin-bottom: 60px
+	&__center-mob
+			+md
+				text-align: center
+	&__hidden-mob
+			+md
+				display: none
+	&__mob-bg-white
+		+md
+			background: $white
 	&__p-50
 		padding-top: 50px
 		padding-bottom: 50px
+
 	&__branches
 		.h3
 			+md
@@ -41,6 +62,12 @@
 			min-width: 175px
 		.more-link
 			margin-top: 10px
+	.breadcrumbs
+			+md
+				margin-bottom: 48px
+	.anchors 
+		+md
+			display: none
 	.white-block
 		background: $white
 	.costs
@@ -49,11 +76,30 @@
 			position: relative
 			left: -40px  
 			width: calc(100% + 80px)
+		&__list_mb
+				+md
+					margin-bottom: 20px
 	.filters
 		margin-bottom: 20px
+		+md
+			margin-bottom: 15px
 	.clinic-gallery
 		margin-bottom: 95px
+		+md
+			margin-bottom: 55px
 	.services
 		padding-bottom: 50px
+		+md
+			padding-top: 40px
+		&__top
+			margin-bottom: 20px
 	.clinic-boxes
 		padding-top: 50px
+	.license
+		+md
+			margin-top: 30px
+	.slick-list
+		+md
+			background-color: $white
+			border-radius: 5px
+			box-shadow: 2px 3.5px 16px rgba(0, 0, 0, 0.05)

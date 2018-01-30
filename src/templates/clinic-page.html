@@ -723,8 +723,6 @@ popupForm: {
 		<div class="clinic-page__mb-50">
 			{% include "components/_clinic-box.html" %}
 		</div>
-
-
 	</div>
 	<!--end container-->
 	<!--begin clinic-page__white-block-->
@@ -978,11 +976,11 @@ item: 'Протезирование'
 </div>
 
 <div >
-	<h2 class="clinic-page__mb-27">Врачи стоматологической клиники «Все Свои» на Арбатской</h2>
+	<h2 class="clinic-page__mb-27 clinic-page__center-mob">Врачи стоматологической клиники «Все Свои» на Арбатской</h2>
 	{% for doctor in doctors %}
 	{% include "components/_doctor.html" %}
 	{% endfor %}
-	<div class="centered clinic-page__mt-30 clinic-page__mb-50">
+	<div class="centered clinic-page__mt-30 clinic-page__mb-50 clinic-page__hidden-mob">
 		<a href="#" class="button button_hero button_hero_sm">Показать всех врачей</a>
 	</div>
 </div>
@@ -1005,14 +1003,14 @@ item: 'Протезирование'
 
 
 <!--begin container-->
-<div class="container">
+<div class="container ">
 	<!--begin clinic-page__p-50-->
 	<div class="clinic-page__p-50 clinic-page__branches">
 			<h3 class="h3 clinic-page__mb-27">Адреса филиалов</h3>
 		{% for clinicBox in clinicBoxBranches %}
 		{% include "components/_clinic-box.html" %}
 		{% endfor %}
-		<div class="centered clinic-page__mt-30">
+		<div class="centered clinic-page__mt-30 clinic-page__hidden-mob">
 			<a href="#" class="button button_hero button_hero_sm">Показать все филиалы</a>
 		</div>
 	</div>
@@ -1034,7 +1032,7 @@ item: 'Протезирование'
 
 	{% include './components/_callback.html' %}
 	<!--begin container-->
-	<div class="container">
+	<div class="container clinic-page__mob-bg-white">
 		{% include "components/_services.html" %}
 	</div>
 	<!--end container-->
