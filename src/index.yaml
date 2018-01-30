@@ -1,18 +1,6 @@
 ProjectTitle: zubza-final
 
 PageList:
-- file: tasks.html
-  ready: 50
-- file: max.html
-  ready: 50
-- file: Serhii.html
-  ready: 50
-- file: bogdan.html
-  ready: 50
-- file: olya.html
-  ready: 50
-- file: yana.html
-  ready: 50
 - file: clinic-page.html
   ready: 50
 - file: main.html
