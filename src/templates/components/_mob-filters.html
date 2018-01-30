@@ -1,7 +1,7 @@
 <!--begin meta-filters-->
 <div class="meta-filters meta-filters_mob">
   {% for filter in mobFilters %}
-  <a href="#" class="meta-filter{% if filter.action %} {{ filter.action }}{% endif %}">
+  <a href="#" class="meta-filter{% if filter.action %} {{ filter.action }}{% endif %}" {% if filter.popup %}data-popup="{{ filter.popup }}"{% endif%}>
 
     {% if filter.icon %}
     <i class="meta-filter__icon">{{ mixins.icon(filter.icon) }}</i>

@@ -122,7 +122,8 @@ metaFilters: [
   metaMode: '',
   metalist: [
   {
-    tagname: 'Zubza рекомендует '
+    tagname: 'Zubza рекомендует ',
+    active: true
   },
   {
     tagname: 'Самая низкая цена в начале '
@@ -140,7 +141,9 @@ metaFilters: [
 mobFilters: [
   {
     icon: 'location',
-    name: 'На карте'
+    name: 'На карте',
+    action: 'js-popup-link',
+    popup: 'popup-map'
   },
   {
     icon: 'sort',
@@ -164,8 +167,8 @@ popularLinks:
 sales: [
 {
   sectionMode: '',
-  title: 'Акции в сети стоматологических клиник в Алуфьево',
-  aftHeadText: false,
+  title: 'Не нашли, что искали?',
+  aftHeadText: 'Воспользуйтесь нашими специальными предложениями',
   list: [
   {
     title: 'Имплантаты Израиль марки Alfa Bio - ',

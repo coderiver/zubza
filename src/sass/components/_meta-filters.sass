@@ -30,13 +30,22 @@
 		display: none
 		+md
 			display: flex
+			border-radius: 6px
+			margin-bottom: 20px
+			box-shadow: 0 4px 16px rgba(0,0,0,.05)
 		.meta-filter
 			flex-basis: 100 / 3 + %
 			min-height: 36px
 			padding: 12px 4px 10px
+			border-radius: 0
+			margin-right: 0
+			border: 0
+			border-right: 1px solid rgba($really-grey, 0.5)
+			margin-bottom: 0
 			span
 				color: $cyan
 				font-size: 14px
+				+PReg
 			&__icon
 				+r(352)
 					display: block
@@ -55,7 +64,7 @@
 	+md
 		display: inline-block
 		vertical-align: top
-		padding: 5px
+		padding: 3px
 		min-height: auto
 		border: 1px solid rgba(#bbb, 0.3)
 		border-radius: 10px
