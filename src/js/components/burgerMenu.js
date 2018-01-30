@@ -10,7 +10,7 @@ DOC.on('click', burger, (e) => {
   	that.toggleClass(ACTIVE);
   	submenu.toggleClass(ACTIVE);
   } else {
-    BODY.addClass(HIDDEN);
+    BODY.toggleClass(HIDDEN);
     that.toggleClass(ACTIVE);
   	submenu.toggleClass(ACTIVE);
   }
