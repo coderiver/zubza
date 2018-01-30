@@ -18,6 +18,7 @@ import './components/mob-filters.js';
 import './components/mob-append.js';
 
 sayHello();
+
 $(document).ready(function() {
   let windowW = $(document).width();
 
