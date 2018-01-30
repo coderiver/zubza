@@ -372,19 +372,30 @@
 		.clinic-box
 			&__title
 				margin-bottom: 0
+				+md
+					border-bottom: none
+					text-align: left
+					padding-bottom: 0
 				+r(720)
 					font-size: 20px
 			&__rate
 				padding-bottom: 20px
 				border-bottom: 1px solid $gray-border
 				margin-bottom: 15px
+				+md
+					flex-direction: row
+				.rate-wrapper
+					+md
+						border-bottom: none
+						padding-bottom: 0
+						order: 0
+					+r(720)
+						display: none
 				+r(720)
 					margin-bottom: 0
 					padding-bottom: 0
 					border-bottom: none
-				.rate-wrapper
-					+r(720)
-						display: none
+
 			&__content
 				width: 100%
 				border-top: none
