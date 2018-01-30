@@ -29,11 +29,13 @@
 			width: calc(100% + 80px)
 			margin-bottom: 25px
 		+sm
-			margin-left: -20px
-			width: calc(100% + 40px)
+			margin-left: -40px
+			width: calc(100% + 80px)
 		&-table
 			&__col_indent_md
-				width: 35%
+				+md
+					width: 35%
+					min-width: 35%
 			&__col_indent_sm
 				+md
 					width: 65%
