@@ -17,6 +17,11 @@
 		+md
 			margin-top: 0
 			padding-right: 0
+		.slick-list
+			+md
+
+				box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
+				margin-bottom: 30px
 	&__center
 		text-align: center
 		+md
@@ -51,7 +56,9 @@
 	margin-bottom: 30px
 	font-size: 0
 	+md
+		box-shadow: none
 		padding: 16px 15px 19px
+		margin-bottom: 0
 	&__descr, &__map, &__info
 		+md
 			display: block
@@ -138,12 +145,12 @@
 		text-align: center
 		margin-top: 29px
 	&__btn
+		+xs
+			width: 100%
+			max-width: 270px
 		&.button
 			font-size: 16px
 			padding: 11px 24px 11px
-			+xs
-				width: 100%
-				max-width: 270px
 	&__icon
 		top: 0
 		right: 0
