@@ -4,11 +4,13 @@
 	+PReg
 	&__item
 		display: inline-block
-		&:not(:first-child)
-			padding-left: 15px
 		&:not(:last-child)
 			padding-right: 20px
+			margin-right: 20px
 			position: relative
+			+sm
+				padding-right: 15px
+				margin-right: 10px
 			&:after
 				display: block
 				content: ''
