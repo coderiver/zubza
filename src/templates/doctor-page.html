@@ -144,6 +144,7 @@ doctor: {
 }
 
 reviewsTitle: 'Отзывы о враче'
+reviewsTitleMob: 'Отзывы о враче'
 
 sales: [
 {
@@ -1223,7 +1224,9 @@ popupForm: {
       </div>
 			<!-- end container -->
 			{% include './components/_callback.html' %}
-			{% include "components/_services.html" %}
+      <div class="container">
+			  {% include "components/_services.html" %}
+      </div>
 		</div>
 	</div>
 <!-- end doctor-page -->

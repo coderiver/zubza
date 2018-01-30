@@ -3,16 +3,21 @@
 	&__block
 		background-color: $white
 		padding-top: 100px
+		+md
+			padding-top: 50px
 	&__title
 		margin-bottom: 10px
 		+md
-			text-align: center 
+			text-align: center
 	&__textual
 		margin-bottom: 35px
 		+md
 			text-align: center
+			margin-bottom: 20px
 	&__clinic-boxes
 		padding: 100px 0
+		+md
+			padding: 50px 0
 	.clinic-boxes
 		padding-bottom: 50px
 	.filters
@@ -20,11 +25,12 @@
 	.costs
 		margin-bottom: 10px
 		+md
-			margin-left: -40px 
-			width: calc(100% + 80px) 
+			margin-left: -40px
+			width: calc(100% + 80px)
+			margin-bottom: 25px
 		&-table
 			&__col_indent_md
-				width: 35% 
+				width: 35%
 			&__col_indent_sm
 				+md
 					width: 65%
@@ -34,17 +40,22 @@
 			&__title
 				&_secondary
 						+md
-							display: none 
+							display: none
 				&_tablet
-					display: none 
+					display: none
 					+md
 						display: block
 
 	.section-sales
 		margin: 100px 0 100px
+		&__title
+			font-size: 25px
+			margin-bottom: 30px
+		+md
+			margin: 50px 0
 	.count-slider
 		margin-bottom: 0
 	.rate-stars
 		margin-left: 0
 	.cslide__recomend
-		margin-top: 10px 
+		margin-top: 10px
