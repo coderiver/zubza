@@ -19,6 +19,27 @@
 		margin-bottom: 30px
 	.costs
 		margin-bottom: 10px
+		+md
+			margin-left: -40px 
+			width: calc(100% + 80px) 
+		&-table
+			&__col_indent_md
+				width: 35% 
+			&__col_indent_sm
+				+md
+					width: 65%
+				.costs-table__item
+					+md
+						width: 50%
+			&__title
+				&_secondary
+						+md
+							display: none 
+				&_tablet
+					display: none 
+					+md
+						display: block
+
 	.section-sales
 		margin: 100px 0 100px
 	.count-slider
