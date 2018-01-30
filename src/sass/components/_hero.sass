@@ -12,8 +12,13 @@
 		margin-bottom: 21px
 		+md
 			font-size: 20px
+		+sm
+			margin-bottom: 11px 
 	&__form
 		margin-bottom: 107px
+		+sm
+			max-width: 300px
+			margin: 0 auto 47px  
 		.form
 			&__field
 				text-align: left
@@ -74,6 +79,7 @@
 				+sm
 					height: 58px
 					width: 58px
+					margin-bottom: 9px 
 				.icon
 					fill: $white
 					width: 70%
@@ -83,7 +89,13 @@
 				+md
 					font-size: 18px
 				+sm
-					margin-bottom: 3px
+					margin-bottom: 0
 			&__desc
 				font-size: 14px
 				line-height: 1.25
+	.custom-select__field
+		+sm
+			padding: 18px 28px 14px
+	.button_primary
+		+sm
+			padding: 12px 20px 

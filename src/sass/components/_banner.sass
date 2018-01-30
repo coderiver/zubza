@@ -9,7 +9,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bd8f7', endColorstr='#14c1e5', GradientType=0 )
 	padding: 140px 0 135px
 	+md
-		padding: 65px 0 75px
+		padding: 63px 0 75px
 	&__in
 		color: $white
 		max-width: 896px
@@ -23,6 +23,8 @@
 		+PSemi
 		+md
 			font-size: 25px
+		+sm
+			margin-bottom: 57px 
 	&__grid
 		display: flex
 		flex-direction: row
@@ -40,6 +42,10 @@
 			text-align: left
 			&:not(:last-child)
 				margin-bottom: 44px
+		+sm
+			padding: 0
+			&:not(:last-child)
+				margin-bottom: 36px
 	&__item-image
 		height: 145px
 		margin-bottom: 19px
@@ -59,6 +65,11 @@
 		+PExtra
 		+md
 			font-size: 25px
+		+sm
+			margin-bottom: 2px 
+	&__item-content
+		+sm
+			padding-top: 15px 
 	&__item-txt
 		font-size: 18px
 		+PSemi
