@@ -129,7 +129,7 @@
 						item: 'Детский стоматолог'
 					}]
 				}] %}
-				
+
 				<div class="mobi__wrapper">
 					{% for section in mobi %}
 					<div class="mobi__section">
@@ -142,7 +142,7 @@
 							</div>
 							{% else %}
 							<div class="mob-list__item">
-								<a href="#" class="mob-list__select">{{list.item}}</a>
+								<a href="#" class="mob-list__select js-popup-link" data-popup="cities">{{list.item}}</a>
 							</div>
 							{% endif %}
 							{% endfor %}
