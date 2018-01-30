@@ -7,10 +7,14 @@
 	$this: &
 	&__top
 		margin-bottom: 52px
+		+md
+			margin-bottom: 24px
 	&__title
 		font-size: 35px
 		text-align: center
 		+PSemi
+		+md
+			font-size: 25px
 	&__text
 		text-align: center
 	&__in
@@ -22,45 +26,46 @@
 		margin-bottom: 48px
 		+md
 			display: block
-			margin-bottom: 0  
+			margin-bottom: 0
 	&__item-title
 		font-size: 20px
-		position: relative 
+		position: relative
 		+PBold
 		+md
-			background-color: #edf9fb 
+			background-color: #edf9fb
 			border: 1px solid #b8ecf7
 			border-radius: 25px
 			color: $cyan
 			padding: 15px 40px 12px 20px
-			margin-bottom: 0px 
+			margin-bottom: 0px
+			font-size: 18px
 			+PReg
 		& > svg
 			display: none
 			position: absolute
 			top: 50%
 			right: 18px
-			// transform: translateY(-50%)  
+			// transform: translateY(-50%)
 			margin-top: -10px
 			transform-origin: 50% 50%
 			stroke: $cyan
-			width: 14px 
+			width: 14px
 			transform: rotateZ(-90deg)
 			+trans
 			+md
-				display: block  
+				display: block
 	&__item
-		margin-right: 20px 
+		margin-right: 20px
 		width: 333px
 		+md
 			margin: 0 auto
 			margin-bottom: 10px
 			max-width: 320px
-			width: 100%   
+			width: 100%
 		&:last-of-type
 			margin-right: 0
 			+md
-				margin-right: auto 
+				margin-right: auto
 		+md
 			&.is-open
 				margin-bottom: 25px
@@ -82,7 +87,7 @@
 	&__list-item
 		display: block
 		position: relative
-		margin-bottom: 7px 
+		margin-bottom: 7px
 		&:before
 			+pseudo
 			top: auto
@@ -96,7 +101,7 @@
 		&.is-hidden
 			display: none
 			+md
-				display: block  
+				display: block
 	&__name
 		display: inline-block
 		font-size: 17px
@@ -121,13 +126,13 @@
 	&__link
 		margin-top: 1px
 	.more-link
-		font-size: 17px 
+		font-size: 17px
 		&__icon
-			height: 21px 
+			height: 21px
 			transition: transform linear 0.3s
 			width: 21px
 		span
-			padding-left: 30px  
+			padding-left: 30px
 	&_mod
 		padding: 0
 		#{$this}__name
