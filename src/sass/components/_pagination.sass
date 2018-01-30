@@ -20,15 +20,10 @@
 		font-size: 16px
 		display: inline-block
 		min-height: 30px
-		margin-right: 20px
 		vertical-align: middle
 		min-width: 30px
-		&:last-of-type
-			margin-right: 0
-		+md
-			min-width: 25px
-			min-height: 25px
-			margin-right: 10px
+		&:not(:last-child)
+			margin-right: 20px
 	&__link
 		background-color: $almost-white 
 		border-radius: 4px
@@ -37,14 +32,48 @@
 		height: 100%
 		text-align: center
 		padding: 5px 0
-		width: 100% 
-		+md
-			font-size: 13px
-			padding: 2px 0
+		width: 100%
+		min-height: 30px
 		&:hover,
 		&.is-active
 			background-color: $cyan
 			color: $white
+		+md
+			+PBold
+			padding: 7px 0 3px
+	&__next, &__prev
+		position: relative
+		display: block
+		min-height: 30px
+		min-width: 30px
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			margin-top: -4px
+			height: 7px
+			width: 7px
+			border-left: 2px solid $cyan
+			border-bottom: 2px solid $cyan
+		
+	&__next
+		&:before
+			left: 0
+			transform: rotate(-135deg)
+	&__prev
+		margin-right: 19px
+		&:before
+			right: 0
+			transform: rotate(45deg)
+	&__more
+		+md
+			display: none
+	&__navigation
+		display: none
+		vertical-align: top
+		+md
+			display: inline-block
+			
 	span.pagination__link
 		background-color: transparent
 		&:hover
