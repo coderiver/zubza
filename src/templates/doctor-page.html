@@ -7,29 +7,32 @@ anchors: [
 {
 	anchorslist: [
 	{
-		text: 'О враче'
+		text: 'О враче',
+    scrollTo: 'about-doctor'
 	},
 	{
-		text: 'Где принимает'
+		text: 'Где принимает',
+    scrollTo: 'work-place'
 	},
 	{
-		text: 'Цены на услуги '
+		text: 'Цены на услуги ',
+    scrollTo: 'price'
 	},
 	{
-		text: 'Отзывы'
+		text: 'Отзывы',
+    scrollTo: 'reviews'
 	},
 	{
-		text: 'Акции'
+		text: 'Акции',
+    scrollTo: 'sales'
 	},
 	{
-		text: 'Врачи',
-		active: 'is-active'
+		text: 'Лицензии и сертификаты',
+    scrollTo: 'license'
 	},
 	{
-		text: 'Лицензии и сертификаты'
-	},
-	{
-		text: 'Другие врачи поблизости'
+		text: 'Другие врачи поблизости',
+    scrollTo: 'other-doctors'
 	}
 	]
 }
@@ -664,14 +667,20 @@ popupForm: {
 		{% include "components/_anchors.html" %}
 		<!-- begin container -->
 			<div class="container">
-				{% include "components/_doctor-single.html" %}
+        <div data-scroll="about-doctor">
+          {% include "components/_doctor-single.html" %}
+        </div>
+				
 			</div>
 		<!-- end container -->
-		{% include "components/_clinic-boxes.html" %}
-		<div class="doctor-page__block">
+    <div data-scroll="work-place">
+      {% include "components/_clinic-boxes.html" %}
+    </div>
+		
+		<div class="doctor-page__block" data-scroll="price">
 			<!-- begin container -->
 			<div class="container">
-				<h2 class="doctor-page__title">Цены на услуги</h2>
+				<h2 class="doctor-page__title" >Цены на услуги</h2>
 				<div class="doctor-page__textual">
 					<p>
 						Воспользуйтесь поиском или выберите специализацию
@@ -1208,14 +1217,24 @@ popupForm: {
 						Администрация отсавляет за собой право изменять цены. Вы можете уточнить стоимость по телефону.
 					</p>
 				</div>
+        <div data-scroll="reviews">
 				{% include './components/_reviews.html' %}
+          
+        </div>
 			</div>
 			<!-- end container -->
+      <div data-scroll="sales">
 			{% include "components/_sales-section.html" %}
+        
+      </div>
+
+    <div data-scroll="license">
 			{% include "components/_license.html" %}
+  
+    </div>
 			<!-- begin container -->
       <div class="container">
-				<div class="doctor-page__clinic-boxes">
+				<div class="doctor-page__clinic-boxes" data-scroll="other-doctors">
 					<h2 class="doctor-page__title">Врачи той же специальности поблизости</h2>
 					{% for doctor in doctors %}
 				    	{% include "components/_doctor-mod.html" %}
