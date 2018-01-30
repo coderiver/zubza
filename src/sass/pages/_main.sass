@@ -1,13 +1,91 @@
 .main
 	.hero
-		padding-top: 200px 
+		padding-top: 200px
+		+sm
+			padding-top: 109px 
 	.section-video
 		padding: 125px 10px 100px
+		+sm
+			padding: 47px 10px 42px
+		.video
+			&__title
+				+sm
+					margin-bottom: 0 
+			&__list
+				+sm
+				margin: 0 auto  
+				.list
+					+sm
+						margin-top: 14px
+						margin-bottom: 1px
+			&__player
+				max-width: 323px 
 	.faq-section
-		padding: 100px 10px 
+		padding: 100px 10px
+		+sm
+			padding: 66px 23px
 		&__title
 			text-align: center
+			+sm
+				margin-bottom: 21px 
 		&__inner
 			margin: 0 auto
+	.faq-item
+		&__content
+			+sm
+				padding: 0
+				margin-top: 15px 
+				text-indent: 13px
+				line-height: 1.7em  
+		&__head
+			+sm
+				margin-bottom: 8px
+		&--opened
+			+sm
+				margin-bottom: 29px  
 	.badge-slider
 		padding-top: 90px
+		+md
+			padding-top: 0 
+	.container
+		+sm
+			padding: 0 20px
+	.app
+		+sm
+			padding: 20px 0 40px
+		&__title
+			+sm
+				margin-bottom: 14px
+		&__in
+			+sm
+				h4
+					margin-bottom: 32px
+	.badge-slider
+		+sm
+			padding: 0 20px 
+		&__titlebox
+			+md
+				background-color: transparent
+				padding-top: 67px
+				padding-bottom: 0 
+				min-height: auto  
+				width: 100% 
+		&__title
+			+md
+				color: $black
+				max-width: 100%
+				margin-bottom: 0 
+				text-align: center   
+		+md
+			display: block 
+			&__left
+				display: block
+				width: 100%
+			.sale-block
+				margin: auto
+				width: 300px 
+				&__icon
+					display: block
+					right: 18px
+				&__title
+					max-width: 260px   
