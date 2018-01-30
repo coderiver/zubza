@@ -6,6 +6,7 @@ import gmap from './components/gmap.js';
 import servicesMobDrop from './components/services-mob-drop.js';
 import MobTagDrop from './components/mob-tag-drop.js';
 import anchorsMobDrop from './components/anchors-mob-drop.js';
+import clinicsSelectMob from './components/clinics-select-mob.js';
 import './components/select.js';
 import './components/gallery.js';
 import './components/tableDrop.js';
@@ -27,6 +28,6 @@ $(document).ready(function() {
   servicesMobDrop(windowW);
   MobTagDrop(windowW);
   anchorsMobDrop(windowW);
-
+  clinicsSelectMob(windowW);
 // ready
 });
