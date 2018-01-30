@@ -1,3 +1,5 @@
+import 'malihu-custom-scrollbar-plugin';
+import 'jquery-mousewheel';
 import {DOC, BODY} from '../_const.js';
 class Select {
   constructor(config) {
@@ -111,3 +113,7 @@ $.fn.customSelect = function() {
 };
 
 $('.js-select').customSelect();
+$('.custom-select__dropdown').mCustomScrollbar({
+  axis:'y',
+  moveDragger:true
+});
