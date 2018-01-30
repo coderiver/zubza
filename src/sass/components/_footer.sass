@@ -13,12 +13,11 @@
 			padding: 50px 0 49px
 	&__copyrights
 		background-color: $dirty-grey
-		padding: 23px 0 24px
 		padding: 23px 0 14px
 	&__nav
 		width: 910px
 		margin-left: 20px
-		+r(425)
+		+sm
 			margin-left: 0
 		.nav
 			display: flex
@@ -79,20 +78,28 @@
 		font-size: 15px
 		margin-bottom: 10px
 		margin-right: 20px
-		+sm
+		+md
 			display: none
 	&__links
 		display: flex
 		margin-bottom: 10px
-		+r(619)
+		+r(600)
 			justify-content: center
 			flex-wrap: wrap
 		li
 			padding-left: 20px
 			white-space: nowrap
-			+r(619)
+			+sm
 				margin-top: 10px
 				padding-left: 0
+			+r(600)
+				&:nth-child(1)
+					order: 1
+					margin-right: 20px
+				&:nth-child(2)
+					order: 3
+				&:nth-child(3)
+					order: 2
 				&:last-child
 					padding-left: 0
 			a
@@ -100,7 +107,7 @@
 				color: $cyan
 		li:not(:first-child)
 			padding-left: 20px
-			+r(619)
+			+r(600)
 				border-right: 0
 		li:not(:last-child)
 			border-right: 1px solid $grey
