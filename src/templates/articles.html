@@ -352,6 +352,7 @@ pagination: {
 			</div>
       {% include "components/_meta-filters.html" %}
       <div class="show-sm articles__search">
+        {{mixins.icon('search')}}
       <input type="text" class="textfield" placeholder="Поиск по статьям">
       </div>
       {% set articleContent = articleContentSingle %}
