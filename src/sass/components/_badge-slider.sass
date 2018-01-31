@@ -29,8 +29,10 @@
 		background-color: $cyan
 		border-top-right-radius: 6px
 		border-bottom-right-radius: 6px
-		padding: 46px 160px 40px
+		padding: 46px 20px 40px 160px
 		min-height: 215px
+		+r(1320)
+			padding-left: 40px
 	&__title
 		color: $white
 		+PSemi
@@ -75,11 +77,11 @@
 	svg
 		width: 1em
 		height: 1em
-		+vcenter
+		margin-top: -4.5px
 .btn-next
 	svg
-		margin-left: 1px
+		margin-left: -3px
 .btn-prev
 	margin-right: 10px
 	svg
-		margin-left: -1px
+		margin-left: -5px

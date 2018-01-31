@@ -17,7 +17,8 @@ import './components/burgerMenu.js';
 import './components/showMore.js';
 import './components/mob-filters.js';
 import './components/mob-append.js';
-
+import svg4everybody from 'svg4everybody';
+svg4everybody();
 sayHello();
 
 $(document).ready(function() {
