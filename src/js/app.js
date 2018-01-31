@@ -7,6 +7,7 @@ import servicesMobDrop from './components/services-mob-drop.js';
 import MobTagDrop from './components/mob-tag-drop.js';
 import anchorsMobDrop from './components/anchors-mob-drop.js';
 import clinicsSelectMob from './components/clinics-select-mob.js';
+import scrollTo from './components/scroll-to.js';
 import './components/select.js';
 import './components/gallery.js';
 import './components/tableDrop.js';
@@ -18,6 +19,7 @@ import './components/mob-filters.js';
 import './components/mob-append.js';
 
 sayHello();
+
 $(document).ready(function() {
   let windowW = $(document).width();
 
@@ -29,5 +31,6 @@ $(document).ready(function() {
   MobTagDrop(windowW);
   anchorsMobDrop(windowW);
   clinicsSelectMob(windowW);
+  scrollTo(windowW);
 // ready
 });

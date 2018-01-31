@@ -1,3 +1,6 @@
+import 'malihu-custom-scrollbar-plugin';
+import 'jquery-mousewheel';
+
 function MobTagDrop(windowW) {
 
   if(windowW > 1023) return;
@@ -5,6 +8,15 @@ function MobTagDrop(windowW) {
   $('.js-tag-mob').each((index, item) => {
 
   	$(item).on('click', (e) => {
+
+      let dropdown = $(item).find('ul');
+
+      console.log(dropdown);
+
+      $(dropdown).mCustomScrollbar({
+        axis:'y',
+        moveDragger:true
+      });
 
       let target = e.target || e.srcElement;
 
@@ -19,6 +31,18 @@ function MobTagDrop(windowW) {
   		// }
 
   	});
+
+    $('body').on('click', (e) => {
+
+      let target = e.target || e.srcElement;
+
+      if($(target).closest('.js-tag-mob').length === 0) {
+        $('.js-tag-mob').each((index, item) => {
+          $(item).removeClass('is-open');
+        });
+      }
+
+    });
 
   });
 

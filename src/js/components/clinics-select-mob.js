@@ -1,3 +1,5 @@
+import 'malihu-custom-scrollbar-plugin';
+
 const updTables = (tableIndex) => {
 
   $('.costs-table__col:not(:nth-child(1))').addClass('is-hidden');
