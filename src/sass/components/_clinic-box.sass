@@ -173,6 +173,7 @@
 			padding-left: 22px
 			&:before
 				top: 2px
+
 		.worktime-info
 			font-size: 14px
 			padding-left: 22px
@@ -310,6 +311,14 @@
 				text-decoration-style: dashed
 		.metro-info
 			font-size: 13px
+			&_mod
+				&:before
+					display: none
+					
+				.icon
+					fill: $pink
+				a
+					color: $pink
 		.worktime-info
 			font-size: 13px
 			margin-top: 5px
@@ -444,3 +453,16 @@
 		margin-bottom: 15px
 		+md
 			text-align: center
+
+
+.metro-info
+	// &:before
+	// 	display: none
+	
+	.icon
+		position: absolute
+		top: -3px
+		left: -3px
+		fill: $cyan
+		font-size: 21px
+

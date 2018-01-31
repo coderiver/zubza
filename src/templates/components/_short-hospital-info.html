@@ -24,7 +24,8 @@
         <i class="location-info__icon">{{ mixins.icon('location') }}</i>
         <a href="{{ test.locationUrl }}">{{ clinicBox.location | safe }}</a>
       </div>
-      <div class="metro-info">
+      <div class="metro-info {% if clinicBox.metroRed %}metro-info_mod{% endif %}">
+        {{mixins.icon('metro')}}
         {{ clinicBox.metro | safe }}
       </div>
       <ul class="clinic-box__price-list">
