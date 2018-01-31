@@ -13,7 +13,8 @@ export const {
   HIDDEN,
   NOSCROLL,
   ERROR,
-  HASTEXT
+  HASTEXT,
+  STIKY
 } = {
   DOC: $(document),
   WIN: $(window),
@@ -29,5 +30,6 @@ export const {
   HIDDEN: 'is-hidden',
   NOSCROLL: 'no-scroll',
   ERROR: 'has-error',
-  HASTEXT: 'has-text'
+  HASTEXT: 'has-text',
+  STIKY: 'is-stiky'
 };
