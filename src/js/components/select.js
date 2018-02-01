@@ -57,7 +57,7 @@ class Select {
   }
   // close dropdown
   _hide() {
-    BODY.click((e) => {
+    $('body, .js-popup-content').click((e) => {
       if (!$(e.target).closest(`.${Select.classes.wrapper}`).length) {
         $(`.${Select.classes.wrapper}`).removeClass(Select.classes.open);
       }

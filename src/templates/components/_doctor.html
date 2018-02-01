@@ -15,6 +15,9 @@
                 <img src="img/{{doctor.avatar}}" alt="{{ doctor.title }}">
               </div>
               <div class="doctor__title"><strong>{{ doctor.title | safe }}</strong></div>
+              {% if doctor.mobExperience %}
+              <div class="doctor__experience show-md"> Стаж 15 лет </div>
+              {% endif %}
               <div class="clinic-box__tagi">
                 <div class="tagi">
                   <ul>

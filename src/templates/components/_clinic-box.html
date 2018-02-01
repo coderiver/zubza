@@ -134,7 +134,31 @@
 
   <!-- begin clinic-box__right -->
   <div class="clinic-box__right js-right-move">
+    {% if clinicBox.doctorPageMobContent %}
+    <div class="clinic-box__mob-content">
+
+      {% if clinicBox.titlelink %}
+      <a href="{{ clinicBox.titlelink.url }}" class="clinic-box__titlelink">{{ clinicBox.titlelink.name | safe }}</a>
+      {% endif %}
+      {% if clinicBox.tablelist %}
+      <!-- begin clinic-box__tablelist -->
+      <div class="clinic-box__tablelist">
+        <div class="tablelist">
+          {% for row in clinicBox.tablelist %}
+          <div class="tablelist__row">
+            {% for i in row %}
+            <div class="tablelist__col">{{ i | safe }}</div>
+            {% endfor %}
+          </div>
+          {% endfor%}
+        </div>
+      </div>
+      <!-- end clinic-box__tablelist -->
+      {% endif %}
+    </div>
+    {% endif %}
     <!-- begin clinic-box__map -->
+
     <div class="clinic-box__map {{clinicBox.MapMode}}">
       <a class="map-link js-popup-link" href="#" data-popup="popup-map">
         <img src="img/clinic-map.jpg" alt="alt">
