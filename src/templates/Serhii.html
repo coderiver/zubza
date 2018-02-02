@@ -1,0 +1,31 @@
+---
+title: Serhii
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{# variable example #}
+<div class="container">
+  <h1>{{title}}</h1>
+  <a href="#">fsdfs</a>
+  <a href="#">fsdfs</a>
+</div>
+
+
+
+	{# partial example #}
+
+	{# mixin example #}
+	{{mixins.icon('facebook')}}
+
+
+	{# data usage example #}
+		{% import "data/data.html" as tests %}
+
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	{# end of example #}
+
+{% endblock %}

@@ -1,0 +1,36 @@
+.box-general
+	padding: 30px
+	background-color: $white
+	border-radius: 3px
+	box-shadow: 0 4px 16px rgba(0,0,0,.05)
+	margin-bottom: 20px
+	+clr
+	&__left, &__right
+		+md
+			width: 100%
+			float: none
+	&__left
+		width: percentage(720/1120)
+		padding-right: 30px
+		float: left
+		+md
+			padding-right: 0
+			border-right: 0
+	&__right
+		width: percentage(400/1120)
+		padding-left: 30px
+		float: right
+		border-right: 1px solid $gray-border
+		+md
+			padding-left: 0
+			padding-bottom: 5px
+
+	&__right-inner
+		// на случай если на моб элементы меняются местами http://joxi.ru/xAe66ndTYdaRPr , в 
+		// данном случае карта и инфо решаем   &__right-map &__right-info через order
+		display: flex
+		flex-wrap: wrap
+	&__right-map
+		flex-basis: 100%
+	&__right-info
+		flex-basis: 100%
