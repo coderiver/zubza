@@ -1,31 +1,47 @@
 ---
 title: Serhii
+
+
+clinicBlock: {
+rate: {
+stars: [
+{starMode: 'is-color'},
+{starMode: 'is-color'},
+{starMode: 'is-color'},
+{starMode: 'is-color'},
+{starMode: ''}
+],
+number: '4.6'
+},
+users: {
+bought: '70',
+glad: '65',
+},
+tagListTitle: 'Стоматология «Все Свои» ведет прием  по следующим специализациям',
+taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
+textlist: [
+'<strong>250 врачей</strong> в штате стоматологмм «Все Свои»',
+'Сеть стоматологий работает <strong>с 2000 года</strong>',
+'<strong>100 филиалов</strong> по Москве и МО',
+'<strong>95 положительных отзывов</strong> от пользоваетлей Zubza',
+'<strong>2 активные акции</strong>'
+],
+location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
+worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+leftButton: true
+}
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 
-	{# variable example #}
+{# variable example #}
 <div class="container">
-  <h1>{{title}}</h1>
-  <a href="#">fsdfs</a>
-  <a href="#">fsdfs</a>
+	{% include "blocks/_clinic-block.html" %}
 </div>
 
 
 
-	{# partial example #}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
 
 {% endblock %}
