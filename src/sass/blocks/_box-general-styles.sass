@@ -21,13 +21,13 @@
 		width: percentage(400/1120)
 		padding-left: 30px
 		float: right
-		border-right: 1px solid $gray-border
+		border-left: 1px solid $gray-border
 		+md
 			padding-left: 0
 			padding-bottom: 5px
 
 	&__right-inner
-		// на случай если на моб элементы меняются местами http://joxi.ru/xAe66ndTYdaRPr , в 
+		// на случай если на моб элементы меняются местами http://joxi.ru/xAe66ndTYdaRPr , в
 		// данном случае карта и инфо решаем   &__right-map &__right-info через order
 		display: flex
 		flex-wrap: wrap
@@ -35,3 +35,16 @@
 		flex-basis: 100%
 	&__right-info
 		flex-basis: 100%
+
+
+// general styles for block titles
+.box-title
+	+PSemi
+	&--md
+		font-size: 20px
+	&--sm
+		font-size: 18px
+	&--black
+		color: $black
+	&--cyan
+		color: $cyan
