@@ -1,0 +1,104 @@
+---
+title: Test Olya page
+
+
+affiliateBlocks: [
+  {
+    mod: 'affiliate-block--clinic',
+    title: {
+      text: 'Стоматология «Все Свои» на Кронштадской',
+      mod: 'box-title--lg box-title--black'
+    },
+    taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6'
+    },
+    map: {
+      image: 'img/clinic-map.jpg',
+      popup: 'popup-map'
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    }
+  },
+  {
+    mod: 'affiliate-block--doctor',
+    title: {
+      text: 'Стоматология «Все Свои» на Кронштадской',
+      mod: 'box-title--lg box-title--black'
+    },
+    tablelist: [
+      ['Консультация стоматолога', '<span class="text-cyan text-bold">Бесплатно</span>'],
+      ['Лечение кариеса', '<span class="text-cyan text-bold">от 500 руб.</span>']
+    ],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6'
+    },
+    map: {
+      image: 'img/clinic-map.jpg',
+      popup: 'popup-map'
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    }
+  }
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  {% for block in affiliateBlocks %}
+
+    {% include "blocks/_affiliate-block.html" %}
+
+  {% endfor %}
+
+{% endblock %}
