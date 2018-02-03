@@ -12,7 +12,7 @@ DOC.on('click', burger, (e) => {
     BODY.toggleClass(HIDDEN);
   } else {
     that.toggleClass(ACTIVE);
-  	submenu.toggleClass(ACTIVE);
+    submenu.toggleClass(ACTIVE);
   }
 
 });
@@ -21,6 +21,9 @@ BODY.click((e) => {
   if (!$(e.target).closest('.js-submenu').length && !$(e.target).closest('.js-burger').length ) {
     submenu.removeClass(ACTIVE);
     $(burger).removeClass(ACTIVE);
-    BODY.removeClass(HIDDEN);
+    if(WIN.width() < 1023) {
+      BODY.removeClass(HIDDEN);
+    };
+   
   }
 });
