@@ -7,58 +7,65 @@
     <!-- begin box-general__left -->
     <div class="box-general__left">
 
-      <!-- begin affiliate-block__rate -->
-      <div class="affiliate-block__rate">
+      <!-- begin affiliate-block__flex -->
+      <div class="affiliate-block__flex">
 
-        <!--begin count-users-->
-        <div class="count-users">
-          <div class="count-users__bought count-users__bought--cyan">
-            <div>
-              <span>{{ block.users.bought }}</span>
-              <i class="count-users__icon-user"></i>
+
+        <!-- begin affiliate-block__rate -->
+        <div class="affiliate-block__rate">
+
+          <!--begin count-users-->
+          <div class="count-users">
+            <div class="count-users__bought count-users__bought--cyan">
+              <div>
+                <span>{{ block.users.bought }}</span>
+                <i class="count-users__icon-user"></i>
+              </div>
+              <p>ЗАПИСАЛОСЬ</p>
             </div>
-            <p>ЗАПИСАЛОСЬ</p>
-          </div>
-          <span class="count-users__separator">/</span>
-          <div class="count-users__glad count-users__glad--green">
-            <div>
-              <span>{{ block.users.glad }}</span>
-              <i class="count-users__icon-heart"></i>
+            <span class="count-users__separator">/</span>
+            <div class="count-users__glad count-users__glad--green">
+              <div>
+                <span>{{ block.users.glad }}</span>
+                <i class="count-users__icon-heart"></i>
+              </div>
+              <p>ДОВОЛЬНЫ</p>
             </div>
-            <p>ДОВОЛЬНЫ</p>
           </div>
+          <!--end count-users-->
+
+          <!--begin rate-wrapper-->
+          <div class="rate-wrapper">
+            <div class="rate-stars rate-stars--green">
+              {% for star in block.rate.stars %}
+              <i class="rate-stars__item {{ star.starMode }}">
+                {{ mixins.icon('star') }}
+              </i>
+              {% endfor %}
+            </div>
+
+            <!--begin rate-number-->
+            <div class="rate-number rate-number--green">
+              рейтинг <span>{{ block.rate.number }}</span>
+            </div>
+            <!--end rate-number-->
+
+          </div>
+          <!--end rate-wrapper-->
+
         </div>
-        <!--end count-users-->
+        <!-- end affiliate-block__rate -->
 
-        <!--begin rate-wrapper-->
-        <div class="rate-wrapper">
-          <div class="rate-stars rate-stars--green">
-            {% for star in block.rate.stars %}
-            <i class="rate-stars__item {{ star.starMode }}">
-              {{ mixins.icon('star') }}
-            </i>
-            {% endfor %}
-          </div>
+        <!-- begin affiliate-block__title -->
+        <div class="affiliate-block__title">
 
-          <!--begin rate-number-->
-          <div class="rate-number rate-number--green">
-            рейтинг <span>{{ block.rate.number }}</span>
-          </div>
-          <!--end rate-number-->
+          <h4 class="box-title {{ block.title.mod }}">{{ block.title.text }}</h4>
 
         </div>
-        <!--end rate-wrapper-->
+        <!-- end affiliate-block__title -->
 
       </div>
-      <!-- end affiliate-block__rate -->
-
-      <!-- begin affiliate-block__title -->
-      <div class="affiliate-block__title">
-
-        <h3 class="box-title {{ block.title.mod }}">{{ block.title.text }}</h3>
-
-      </div>
-      <!-- end affiliate-block__title -->
+      <!-- end affiliate-block__flex -->
 
     </div>
     <!-- end box-general__left -->
@@ -67,23 +74,21 @@
     <!-- begin box-general__right -->
     <div class="box-general__right">
 
-      <!-- begin box-general__right-inner -->
-      <div class="box-general__right-inner">
+      <!-- begin affiliate-block__flex -->
+      <div class="affiliate-block__flex">
 
-        <!-- begin box-general__right-map -->
-        <div class="box-general__right-map">
+        <!-- begin affiliate-block__map -->
+        <div class="affiliate-block__map">
 
           <a href="#" class="map-link js-popup-link" data-popup="{{ block.map.popup }}">
             <img src="{{ block.map.image }}" alt="">
           </a>
 
         </div>
-        <!-- end box-general__right-map -->
+        <!-- end affiliate-block__map -->
 
-        <!-- begin box-general__right-info -->
-        <div class="box-general__right-info">
-
-          <div class="affiliate-block__info">
+        <!-- begin affiliate-block__info -->
+        <div class="affiliate-block__info">
 
             <div class="location-info">
               <i class="location-info__icon">{{ mixins.icon('location') }}</i>
@@ -99,13 +104,11 @@
               <p>{{ block.info.worktime | safe }}</p>
             </div>
 
-          </div>
-
         </div>
-        <!-- end box-general__right-info -->
+        <!-- end affiliate-block__info -->
 
       </div>
-      <!-- end box-general__right-inner -->
+      <!-- end affiliate-block__flex -->
 
     </div>
     <!-- end box-general__right -->
@@ -148,12 +151,28 @@
       <!-- begin affiliate-block__controls -->
       <div class="affiliate-block__controls">
 
-        <a href="#" class="btn btn--green">Записаться</a>
+        <!-- begin affiliate-block__btn -->
+        <div class="affiliate-block__btn">
 
-        <a href="#" class="more-link more-link--sm">
-          <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
-          <span>Подробнее о клинике</span>
-        </a>
+          <div class="worktime-info">
+            <p>{{ block.info.worktime | safe }}</p>
+          </div>
+
+          <a href="#" class="btn btn--green">Записаться</a>
+
+        </div>
+        <!-- end affiliate-block__btn -->
+
+        <!-- begin affiliate-block__more -->
+        <div class="affiliate-block__more">
+
+          <a href="#" class="more-link more-link--sm">
+            <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+            <span>Подробнее о клинике</span>
+          </a>
+
+        </div>
+        <!-- end affiliate-block__more -->
 
       </div>
       <!-- end affiliate-block__controls -->

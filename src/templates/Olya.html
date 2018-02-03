@@ -7,7 +7,7 @@ affiliateBlocks: [
     mod: 'affiliate-block--clinic',
     title: {
       text: 'Стоматология «Все Свои» на Кронштадской',
-      mod: 'box-title--lg box-title--black'
+      mod: 'box-title--md box-title--black'
     },
     taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
     users: {
@@ -48,7 +48,7 @@ affiliateBlocks: [
     mod: 'affiliate-block--doctor',
     title: {
       text: 'Стоматология «Все Свои» на Кронштадской',
-      mod: 'box-title--lg box-title--black'
+      mod: 'box-title--md box-title--black'
     },
     tablelist: [
       ['Консультация стоматолога', '<span class="text-cyan text-bold">Бесплатно</span>'],
@@ -95,10 +95,14 @@ affiliateBlocks: [
 
 {% block content %}
 
+  <div class="container">
+
   {% for block in affiliateBlocks %}
 
     {% include "blocks/_affiliate-block.html" %}
 
   {% endfor %}
+
+  </div>
 
 {% endblock %}
