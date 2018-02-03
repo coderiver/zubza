@@ -77,88 +77,130 @@ leftButton: true
 }
 
 
-clinicBoxBranches: [
-{
-  mod: 'clinic-box_branch',
-	rate: {
-	stars: [
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: ''}
-	],
-	number: '4.6'
-},
-users: {
-bought: '70',
-glad: '65',
-},
-title: 'Стоматология «Все Свои» на Кронштадской',
-taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
-location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
-metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
-worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
-leftButton: true,
-leftButtonMoreClinic: 'Подробнее о клинике',
-taglistMode: "clinic-box__tagi--mb",
-MapMode: 'clinic-box__map--h-150',
-leftButtonGreen: true
-},
-{
-  mod: 'clinic-box_branch',
-	rate: {
-	stars: [
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: ''}
-	],
-	number: '4.6'
-},
-users: {
-bought: '70',
-glad: '65',
-},
-title: 'Стоматология «Все Свои» на Ленинском проспекте',
-taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
-location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
-metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
-worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
-leftButton: true,
-leftButtonMoreClinic: 'Подробнее о клинике',
-taglistMode: "clinic-box__tagi--mb",
-MapMode: 'clinic-box__map--h-150',
-leftButtonGreen: true
-},
-{
-  mod: 'clinic-box_branch',
-	rate: {
-	stars: [
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: 'is-color'},
-	{starMode: ''}
-	],
-	number: '4.6'
-},
-users: {
-bought: '70',
-glad: '65',
-},
-title: 'Стоматология «Все Свои» на Тверской',
-taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
-location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
-metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
-worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
-leftButton: true,
-leftButtonMoreClinic: 'Подробнее о клинике',
-taglistMode: "clinic-box__tagi--mb",
-MapMode: 'clinic-box__map--h-150',
-leftButtonGreen: true
-}
+affiliateBlocks: [
+  {
+    mod: 'affiliate-block--clinic',
+    title: {
+      text: 'Стоматология «Все Свои» на Кронштадской',
+      mod: 'box-title--md box-title--black'
+    },
+    taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6'
+    },
+    map: {
+      image: 'img/clinic-map.jpg',
+      popup: 'popup-map'
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    }
+  },
+  {
+    mod: 'affiliate-block--clinic',
+    title: {
+      text: 'Стоматология «Все Свои» на Ленинском проспекте',
+      mod: 'box-title--md box-title--black'
+    },
+    taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6'
+    },
+    map: {
+      image: 'img/clinic-map.jpg',
+      popup: 'popup-map'
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    }
+  },
+  {
+    mod: 'affiliate-block--clinic',
+    title: {
+      text: 'Стоматология «Все Свои» на Тверской',
+      mod: 'box-title--md box-title--black'
+    },
+    taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6'
+    },
+    map: {
+      image: 'img/clinic-map.jpg',
+      popup: 'popup-map'
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    }
+  }
 ]
 
 
@@ -1030,10 +1072,14 @@ item: 'Протезирование'
 <div class="container ">
 	<!--begin clinic-page__p-50-->
 	<div class="clinic-page__p-50 clinic-page__branches" data-scroll="branches">
-			<h3 class="h3 clinic-page__mb-27">Адреса филиалов</h3>
-		{% for clinicBox in clinicBoxBranches %}
-		{% include "components/_clinic-box.html" %}
-		{% endfor %}
+		<h3 class="h3 clinic-page__mb-20">Адреса филиалов</h3>
+
+    {% for block in affiliateBlocks %}
+
+      {% include "blocks/_affiliate-block.html" %}
+
+    {% endfor %}
+
 		<div class="centered clinic-page__mt-30 clinic-page__hidden-mob">
 			<a href="#" class="button button_hero button_hero_sm">Показать все филиалы</a>
 		</div>
