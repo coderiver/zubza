@@ -2,7 +2,29 @@
 	&__title
 		margin-bottom: 19px
 		+md
+			text-align: center
 			display: none
+		&--mob
+			display: none
+			margin-bottom: 0
+			
+			background: $white
+			box-shadow: 2px 3.5px 16px rgba(0, 0, 0, 0.05)
+			padding-top: 14px
+			padding-left: 20px
+			padding-bottom: 14px
+			padding-right: 20px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				left: 20px
+				right: 20px
+				bottom: 0
+				height: 1px 
+				background: #e7eced
+			+md
+				display: block
 	&__title-sec
 		margin-bottom: 15px
 		+md
@@ -62,6 +84,12 @@
 			min-width: 175px
 		.more-link
 			margin-top: 10px
+	.clinic-block 
+		+md
+			border-radius: 0 0 3px 3px
+			padding-top: 10px
+			z-index: 1
+			position: relative
 	.white-block
 		background: $white
 	.costs
@@ -98,9 +126,9 @@
 	.license
 		+md
 			margin-top: 30px
-	.doctor__title
-		+md
-			margin-bottom: 4px
+	// .doctor__title
+	// 	+md
+	// 		margin-bottom: 4px
 	// .slick-list
 	// 	+md
 	// 		background-color: $white

@@ -44,7 +44,9 @@ anchors: [
 	]
 }
 ]
-clinicBox: {
+
+
+clinicBlock: {
 rate: {
 stars: [
 {starMode: 'is-color'},
@@ -59,7 +61,7 @@ users: {
 bought: '70',
 glad: '65',
 },
-title: 'Стоматология «Все Свои» ведет прием  по следующим специализациям',
+tagListTitle: 'Стоматология «Все Свои» ведет прием  по следующим специализациям',
 taglist: ['Детские стоматологии', 'Клиники ортодонтии', 'Протезирование', 'Хирургия', 'Ортопедия', 'Имплантация', 'Протезирование', 'Детские стоматологии'],
 textlist: [
 '<strong>250 врачей</strong> в штате стоматологмм «Все Свои»',
@@ -73,6 +75,8 @@ metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class
 worktime: 'Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
 leftButton: true
 }
+
+
 clinicBoxBranches: [
 {
   mod: 'clinic-box_branch',
@@ -722,7 +726,7 @@ popupForm: {
 <!--begin clinic-page-->
 <div class="clinic-page">
 	<!--begin container-->
-	<div class="container">
+	<div class="container clinic-page">
 		{% include "components/_breadcrumbs.html" %}
 		<h2 class="clinic-page__title">Стоматологическая клиника «Все Свои» на Арбатской</h2>
 	</div>
@@ -731,7 +735,8 @@ popupForm: {
 	<!--begin container-->
 	<div class="container">
 		<div class="clinic-page__mb-50" data-scroll="descr">
-			{% include "components/_clinic-box.html" %}
+				<h2 class="clinic-page__title clinic-page__title--mob">Стоматологическая клиника «Все Свои» на Арбатской</h2>
+			{% include "blocks/_clinic-block.html" %}
 		</div>
 	</div>
 	<!--end container-->
