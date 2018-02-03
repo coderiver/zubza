@@ -1,8 +1,6 @@
 ProjectTitle: zubza-final
 
 PageList:
-- file: Serhii.html
-  ready: 50
 - file: clinic-page.html
   ready: 50
 - file: main.html
