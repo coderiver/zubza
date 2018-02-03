@@ -108,7 +108,29 @@
 
     <!-- begin box-general__right -->
     <div class="box-general__right">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nemo deserunt numquam eveniet beatae cum, ab totam iure exercitationem in quibusdam facere id perspiciatis veritatis accusamus laudantium maxime, soluta corporis.
+      <!--begin count-users-->
+      <div class="count-users count-users--gray">
+        <div class="count-users__bought count-users__bought--cyan">
+          <div>
+            <span>{{ block.users.bought }}</span>
+            <i class="count-users__icon-user"></i>
+          </div>
+          <p>ЗАПИСАЛОСЬ</p>
+        </div>
+        <span class="count-users__separator">/</span>
+        <div class="count-users__glad count-users__glad--green">
+          <div>
+            <span>{{ block.users.glad }}</span>
+            <i class="count-users__icon-heart"></i>
+          </div>
+          <p>ДОВОЛЬНЫ</p>
+        </div>
+      </div>
+      <!--end count-users-->
+
+      {% for test in block.comments %}
+        {% include "components/_count-slider.html" %}
+      {% endfor %}
     </div>
     <!-- end box-general__right -->
 
