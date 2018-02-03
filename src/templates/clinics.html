@@ -472,58 +472,15 @@ searchBanner: {
   title: 'Вернутся к поиску клиники'
 }
 
-clinicBoxes: [
+dentBlocks: [
   {
-    titlelink: {
-      name: 'Стоматология «Имплантмастер»',
-      url: ''
+    title: 'Стоматология «Имплантмастер»',
+    gallery: ['img/clinic-gallery.jpg', 'img/clinic-gallery.jpg', 'img/clinic-gallery.jpg'],
+    users: {
+      bought: '70',
+      glad: '65'
     },
-    gallery: ['clinic-gallery.jpg', 'clinic-gallery.jpg', 'clinic-gallery.jpg'],
-    rateBlock: true,
-    rateStarsMode: 'rate-stars--green',
-    stars: [
-        {
-          starMode: 'is-color'
-        },
-        {
-          starMode: 'is-color'
-        },
-        {
-          starMode: 'is-color'
-        },
-        {
-          starMode: ''
-        },
-        {
-          starMode: ''
-        }
-    ],
-    rateNumberMode: 'rate-number--orange',
-    rateNumber: '3.7',
-    location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
-    metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
-    worktime: 'Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
-    priceList: [
-      {
-        category: 'Консультация стоматолога',
-        price: 'Бесплатно'
-      },{
-        category: 'Лечение кариеса',
-        price: 'от 500 руб.'
-      },{
-        category: 'Пульпит',
-        price: 'от 1000 руб.'
-      }
-    ],
-    rightButton: true,
-    sliderDataClinic: [
-    {
-      sliderParentMode: ' js-slider-count-parent',
-      sliderMode: 'js-slider-count',
-      headBlock: true,
-      headMode: '',
-      rateBlock: true,
-      rateStarsMode: 'rate-stars--green',
+    rate: {
       stars: [
         {
           starMode: 'is-color'
@@ -535,293 +492,247 @@ clinicBoxes: [
           starMode: 'is-color'
         },
         {
-          starMode: ''
+          starMode: 'is-color'
         },
         {
           starMode: ''
         }
       ],
-      rateNumberMode: 'rate-number--orange',
-      rateNumber: '3.7',
-      testSlides: [
+      number: '4.6',
+      numberMod: 'rate-number--green'
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Режим работы<br>Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    },
+    tablelist: [
+      ['<a href="">Консультация стоматолога</a>', '<span class="text-cyan text-bold">Бесплатно</span>'],
+      ['<a href="">Лечение кариеса</a>', '<span class="text-cyan text-bold">от 500 руб.</span>'],
+      ['<a href="">Пульпит</a>', '<span class="text-cyan text-bold">от 1000 руб.</span>']
+    ],
+    comments: [
+      {
+        sliderParentMode: ' js-slider-count-parent',
+        sliderMode: 'js-slider-count',
+        testSlides: [
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          },
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+        ],
+        info: 'Анна, 22.12.17',
+        infoMode: 'cslide__info--gray',
+        sliderCountBlock: true,
+        recomend: true,
+      }
+    ]
+  },
+  {
+    title: 'Стоматология «Имплантмастер»',
+    gallery: ['img/clinic-gallery.jpg', 'img/clinic-gallery.jpg', 'img/clinic-gallery.jpg'],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
         {
-          text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+          starMode: 'is-color'
         },
         {
-          text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-        }
-        ,
+          starMode: 'is-color'
+        },
         {
-          text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-        }
-        ,
+          starMode: 'is-color'
+        },
         {
-          text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
         }
       ],
-      slideMode: '',
-      countUsers: true,
-      countUsersMode: 'count-users--mb-16 count-users--gray',
-      countUsersBoughtMode: 'count-users__bought--cyan',
-      countUsersGladMode: 'count-users__glad--green',
-      slideTextMode: 'cslide__text--mb-none',
-      countUsersBought: '70',
-      countUsersGlad: '65',
-      userIconMode: '',
-      heartIconMode: '',
-      info: 'Анна, 22.12.17',
-      infoMode: 'cslide__info--gray',
-      readMore: true,
-      sliderCountBlock: true
-    }
-  ]
+      number: '4.6',
+      numberMod: 'rate-number--pink',
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Режим работы<br>Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    },
+    tablelist: [
+      ['<a href="">Консультация стоматолога</a>', '<span class="text-cyan text-bold">Бесплатно</span>'],
+      ['<a href="">Лечение кариеса</a>', '<span class="text-cyan text-bold">от 500 руб.</span>'],
+      ['<a href="">Пульпит</a>', '<span class="text-cyan text-bold">от 1000 руб.</span>']
+    ],
+    comments: [
+      {
+        sliderParentMode: ' js-slider-count-parent',
+        sliderMode: 'js-slider-count',
+        testSlides: [
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          },
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+        ],
+        info: 'Анна, 22.12.17',
+        infoMode: 'cslide__info--gray',
+        sliderCountBlock: true,
+        recomend: true,
+      }
+    ]
   },
   {
-  titlelink: {
-    name: 'Стоматология «Имплантмастер»',
-    url: ''
+    title: 'Стоматология «Имплантмастер»',
+    gallery: ['img/clinic-gallery.jpg', 'img/clinic-gallery.jpg', 'img/clinic-gallery.jpg'],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6',
+      numberMod: 'rate-number--orange',
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Режим работы<br>Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    },
+    tablelist: [
+      ['<a href="">Консультация стоматолога</a>', '<span class="text-cyan text-bold">Бесплатно</span>'],
+      ['<a href="">Лечение кариеса</a>', '<span class="text-cyan text-bold">от 500 руб.</span>'],
+      ['<a href="">Пульпит</a>', '<span class="text-cyan text-bold">от 1000 руб.</span>']
+    ],
+    comments: [
+      {
+        sliderParentMode: ' js-slider-count-parent',
+        sliderMode: 'js-slider-count',
+        testSlides: [
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          },
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+        ],
+        info: 'Анна, 22.12.17',
+        infoMode: 'cslide__info--gray',
+        sliderCountBlock: true,
+        recomend: true,
+      }
+    ]
   },
-  gallery: ['clinic-gallery.jpg', 'clinic-gallery.jpg', 'clinic-gallery.jpg'],
-  location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
-  metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
-  worktime: 'Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
-  priceList: [
-    {
-      category: 'Консультация стоматолога',
-      price: 'Бесплатно'
-    },{
-      category: 'Лечение кариеса',
-      price: 'от 500 руб.'
-    },{
-      category: 'Пульпит',
-      price: 'от 1000 руб.'
-    }
-  ],
-  rightButton: true,
-  sliderDataClinic: [
   {
-    sliderParentMode: ' js-slider-count-parent',
-    sliderMode: 'js-slider-count',
-    headBlock: true,
-    headMode: '',
-    rateBlock: true,
-    rateStarsMode: 'rate-stars--green',
-    stars: [
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: ''
-      },
-      {
-        starMode: ''
-      }
+    title: 'Стоматология «Имплантмастер»',
+    gallery: ['img/clinic-gallery.jpg', 'img/clinic-gallery.jpg', 'img/clinic-gallery.jpg'],
+    users: {
+      bought: '70',
+      glad: '65'
+    },
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6',
+      numberMod: 'rate-number--orange',
+    },
+    info: {
+      location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
+      worktime: 'Режим работы<br>Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
+      metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>'
+    },
+    tablelist: [
+      ['<a href="">Консультация стоматолога</a>', '<span class="text-cyan text-bold">Бесплатно</span>'],
+      ['<a href="">Лечение кариеса</a>', '<span class="text-cyan text-bold">от 500 руб.</span>'],
+      ['<a href="">Пульпит</a>', '<span class="text-cyan text-bold">от 1000 руб.</span>']
     ],
-    rateNumberMode: 'rate-number--orange',
-    rateNumber: '3.7',
-    testSlides: [
+    comments: [
       {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      },
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
+        sliderParentMode: ' js-slider-count-parent',
+        sliderMode: 'js-slider-count',
+        testSlides: [
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          },
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+          ,
+          {
+            text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического'
+          }
+        ],
+        info: 'Анна, 22.12.17',
+        infoMode: 'cslide__info--gray',
+        sliderCountBlock: true,
+        recomend: true,
       }
-      ,
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-      ,
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-    ],
-    slideMode: '',
-    countUsers: true,
-    countUsersMode: 'count-users--mb-16 count-users--gray',
-    countUsersBoughtMode: 'count-users__bought--cyan',
-    countUsersGladMode: 'count-users__glad--green',
-    slideTextMode: 'cslide__text--mb-none',
-    countUsersBought: '70',
-    countUsersGlad: '65',
-    userIconMode: '',
-    heartIconMode: '',
-    info: 'Анна, 22.12.17',
-    infoMode: 'cslide__info--gray',
-    readMore: true,
-    sliderCountBlock: true
+    ]
   }
-]
-},
-{
-  titlelink: {
-    name: 'Стоматология «Имплантмастер»',
-    url: ''
-  },
-  gallery: ['clinic-gallery.jpg', 'clinic-gallery.jpg', 'clinic-gallery.jpg'],
-  location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
-  metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
-  worktime: 'Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
-  priceList: [
-    {
-      category: 'Консультация стоматолога',
-      price: 'Бесплатно'
-    },{
-      category: 'Лечение кариеса',
-      price: 'от 500 руб.'
-    },{
-      category: 'Пульпит',
-      price: 'от 1000 руб.'
-    }
-  ],
-  rightButton: true,
-  sliderDataClinic: [
-  {
-    sliderParentMode: ' js-slider-count-parent',
-    sliderMode: 'js-slider-count',
-    headBlock: true,
-    headMode: '',
-    rateBlock: true,
-    rateStarsMode: 'rate-stars--green',
-    stars: [
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: ''
-      },
-      {
-        starMode: ''
-      }
-    ],
-    rateNumberMode: 'rate-number--orange',
-    rateNumber: '3.7',
-    testSlides: [
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      },
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-      ,
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-      ,
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-    ],
-    slideMode: '',
-    countUsers: true,
-    countUsersMode: 'count-users--mb-16 count-users--gray',
-    countUsersBoughtMode: 'count-users__bought--cyan',
-    countUsersGladMode: 'count-users__glad--green',
-    slideTextMode: 'cslide__text--mb-none',
-    countUsersBought: '70',
-    countUsersGlad: '65',
-    userIconMode: '',
-    heartIconMode: '',
-    info: 'Анна, 22.12.17',
-    infoMode: 'cslide__info--gray',
-    readMore: true,
-    sliderCountBlock: true
-  }
-]
-},
-{
-  titlelink: {
-    name: 'Стоматология «Имплантмастер»',
-    url: ''
-  },
-  gallery: ['clinic-gallery.jpg', 'clinic-gallery.jpg', 'clinic-gallery.jpg'],
-  location: 'г. Москва, ул. Волочаевская, д. 15, стр.1',
-  metro: '<a href="#">ЦАО</a>, <a href="#">Марксистская <span class="gray-color">(1 км)</span></a>, <a href="#">Римская <span class="gray-color">(3 км)</span></a>',
-  worktime: 'Режим работы <br> Пн-Вт 9:00 – 21:00, Сб-Вс выходной',
-  priceList: [
-    {
-      category: 'Консультация стоматолога',
-      price: 'Бесплатно'
-    },{
-      category: 'Лечение кариеса',
-      price: 'от 500 руб.'
-    },{
-      category: 'Пульпит',
-      price: 'от 1000 руб.'
-    }
-  ],
-  rightButton: true,
-  sliderDataClinic: [
-  {
-    sliderParentMode: ' js-slider-count-parent',
-    sliderMode: 'js-slider-count',
-    headBlock: true,
-    headMode: '',
-    rateBlock: true,
-    rateStarsMode: 'rate-stars--green',
-    stars: [
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: 'is-color'
-      },
-      {
-        starMode: ''
-      },
-      {
-        starMode: ''
-      }
-    ],
-    rateNumberMode: 'rate-number--orange',
-    rateNumber: '3.7',
-    testSlides: [
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      },
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-      ,
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-      ,
-      {
-        text: 'Исследование сделали хорошо и быстро. А вот заключение ждала у стойки регистрации долго. Не работал принтер, он то печатал то не печатал. В общем все измучились ожиданием. Больше сюда не приду, во-первых далеко от дома, во-вторых из-за технического сбоев я опоздала к своему лечащему врачу.'
-      }
-    ],
-    slideMode: '',
-    countUsers: true,
-    countUsersMode: 'count-users--mb-16 count-users--gray',
-    countUsersBoughtMode: 'count-users__bought--cyan',
-    countUsersGladMode: 'count-users__glad--green',
-    slideTextMode: 'cslide__text--mb-none',
-    countUsersBought: '70',
-    countUsersGlad: '65',
-    userIconMode: '',
-    heartIconMode: '',
-    info: 'Анна, 22.12.17',
-    infoMode: 'cslide__info--gray',
-    readMore: true,
-    sliderCountBlock: true
-  }
-]
-}
 ]
 
 linksList:
@@ -958,8 +869,10 @@ popupForm: {
         <!-- end filter-section__meta-filters -->
 
         <div class="filter-section__content">
-          {% for clinicBox in clinicBoxes %}
-          {% include "components/_short-hospital-info.html" %}
+          {% for block in dentBlocks %}
+
+            {% include "blocks/_dent-block.html" %}
+
           {% endfor %}
 
           <div class="filter-section__more">
