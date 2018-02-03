@@ -1,0 +1,143 @@
+<!--begin doctor-block box-general-->
+<div class="doctor-block box-general">
+	<!--begin  box-general__inner-->
+	<div class="box-general__inner">
+		<!--begin doctor-block__top-line-->
+		<div class="doctor-block__top-line">
+			<h4 class="doctor-block__title">{{doctorSingle.title}}</h4>
+			<div class="rate-wrapper ">
+				<div class="rate-stars rate-stars--green">
+					{% for star in doctorSingle.stars %}
+					<i class="rate-stars__item {{ star.starMode }}">
+						{{ mixins.icon('star') }}
+					</i>
+					{% endfor %}
+				</div>
+				<!--begin rate-number-->
+				<div class="rate-number rate-number--green">
+					рейтинг <span>{{ doctorSingle.number }}</span>
+				</div>
+				<!--end rate-number-->
+			</div>
+			<!--end rate-wrapper-->
+		</div>
+		<!--end doctor-block__top-line-->
+		<!--begin doctor-block__inner-->
+		<div class="doctor-block__inner">
+			<!--begin doctor-block__avatar-side-->
+			<div class="doctor-block__avatar-side">
+				<div class="doctor-block__avatar">
+					<img src="img/{{doctorSingle.avatar}}" alt="alt">
+				</div>
+				<a href="#" class="js-popup-link btn btn--green" data-popup="popup-appoint">Записаться</a>
+			</div>
+			<!--end doctor-block__avatar-side-->
+			<!--begin doctor-block__content-side-->
+			<div class="doctor-block__content-side">
+				<div class="doctor-block__top">
+					<div class="doctor-block__top-left">
+						<h4 class="doctor-block__title doctor-block__title-mob">{{doctorSingle.title}}</h4>
+						<div class="doctor-block__experience"> Стаж 15 лет </div>
+						<!-- begin doctor-block__tagi -->
+						<div class="doctor-block__tagi {{doctorSingle.taglistMode}}">
+							<div class="tagi ">
+								<ul>
+									{% for i in doctorSingle.taglist %}
+									<li><a href="#">{{ i | safe }}</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+						<!-- end doctor-block__tagi -->
+					</div>
+					<div class="doctor-block__top-right">
+						<!--begin count-users-->
+						<div class="count-users count-users--gray">
+							<div class="count-users__bought count-users__bought--cyan">
+								<div>
+									<span>{{ clinicBlock.users.bought }}</span>
+									<i class="count-users__icon-user"></i>
+								</div>
+								<p>ЗАПИСАЛОСЬ</p>
+							</div>
+							<span class="count-users__separator">/</span>
+							<div class="count-users__glad count-users__glad--green">
+								<div>
+									<span>{{ clinicBlock.users.glad }}</span>
+									<i class="count-users__icon-heart"></i>
+								</div>
+								<p>ДОВОЛЬНЫ</p>
+							</div>
+						</div>
+						<!--end count-users-->
+					</div>
+				</div>
+				<!--begin doctor-block__mob-rating-->
+				<div class="doctor-block__mob-rating">
+					<!--begin rate-wrapper-->
+					<div class="rate-wrapper ">
+						<div class="rate-stars rate-stars--green">
+							{% for star in doctorSingle.stars %}
+							<i class="rate-stars__item {{ star.starMode }}">
+								{{ mixins.icon('star') }}
+							</i>
+							{% endfor %}
+						</div>
+						<!--begin rate-number-->
+						<div class="rate-number rate-number--green">
+							рейтинг <span>{{ doctorSingle.number }}</span>
+						</div>
+						<!--end rate-number-->
+					</div>
+					<!--end rate-wrapper-->
+					<!--begin count-users-->
+					<div class="count-users count-users--gray">
+						<div class="count-users__bought count-users__bought--cyan">
+							<div>
+								<span>{{ clinicBlock.users.bought }}</span>
+								<i class="count-users__icon-user"></i>
+							</div>
+							<p>ЗАПИСАЛОСЬ</p>
+						</div>
+						<span class="count-users__separator">/</span>
+						<div class="count-users__glad count-users__glad--green">
+							<div>
+								<span>{{ clinicBlock.users.glad }}</span>
+								<i class="count-users__icon-heart"></i>
+							</div>
+							<p>ДОВОЛЬНЫ</p>
+						</div>
+					</div>
+					<!--end count-users-->
+				</div>
+				<!--end doctor-block__mob-rating-->
+				<!--begin doctor-block__main-content-->
+				<div class="doctor-block__main-content">
+
+					<div class="doctor-block__lists">
+						<h6>Образование</h6>
+						<ul class="doctor-block__list list ">
+							{%for test in doctorSingle.education%}
+							<li class="list__item">{{ test }}</li>
+							{%endfor%}
+						</ul>
+						<h6>Специализируется</h6>
+						<ul class="doctor-block__list list">
+							{%for test in doctorSingle.specialized%}
+							<li class="list__item">{{ test }}</li>
+							{%endfor%}
+						</ul>
+					</div>
+
+
+					<a href="#" class="js-popup-link btn btn--green " data-popup="popup-appoint">Записаться</a>
+				</div>
+				<!--end doctor-block__main-content-->
+			</div>
+			<!--end doctor-block__content-side-->
+		</div>
+		<!--end doctor-block__inner-->
+	</div>
+	<!--end  box-general__inner-->
+</div>
+<!--end doctor-block box-general-->
