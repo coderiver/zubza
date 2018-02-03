@@ -90,6 +90,37 @@ affiliateBlocks: [
   }
 ]
 
+
+doctorSliderBlocks: [
+  {
+    title: 'Ярцева<br>Ирина Михайловна',
+    image: 'img/ava.jpg',
+    experience: '10 лет',
+    education: 'Диплом по специальности «Лечебное дело», Российский национальный исследовательский медицинский университет имени Н. И. Пирогова (2006 г.)<br>Интернатура по специальности "Терапия", Российский национальный исследовательский медицинский университет...',
+    taglist: ['Хирург', 'Парадонтолог'],
+    rate: {
+      stars: [
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: 'is-color'
+        },
+        {
+          starMode: ''
+        }
+      ],
+      number: '4.6'
+    }
+  }
+]
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -100,6 +131,12 @@ affiliateBlocks: [
   {% for block in affiliateBlocks %}
 
     {% include "blocks/_affiliate-block.html" %}
+
+  {% endfor %}
+
+  {% for block in doctorSliderBlocks %}
+
+    {% include "blocks/_doctor-slider-block.html" %}
 
   {% endfor %}
 
