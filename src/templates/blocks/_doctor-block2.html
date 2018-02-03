@@ -1,0 +1,167 @@
+<!--begin doctor-block2 box-general-->
+<div class="doctor-block2 box-general">
+	<!--begin  box-general__inner-->
+	<div class="box-general__inner">
+		<!--begin box-general__left-->
+		<div class="box-general__left">
+			<!--begin doctor-block2__left-inner-->
+			<div class="doctor-block2__left-inner">
+				<!--begin doctor-block2__avatar-side-->
+				<div class="doctor-block2__avatar-side">
+					<img src="img/{{doctor.avatar}}" alt="alt">
+				</div>
+				<!--end doctor-block2__avatar-side-->
+				<!--begin doctor-block2__content-side-->
+				<div class="doctor-block2__content-side">
+					<div class="doctor-block2__top">
+						<h4 class="doctor-block2__title">{{doctor.title}}</h4>
+						<div class="doctor-block2__experience"> Стаж 15 лет </div>
+					</div>
+					<!-- begin doctor-block2__tagi -->
+					<div class="doctor-block2__tagi {{doctor.taglistMode}}">
+						<div class="tagi ">
+							<ul>
+								{% for i in doctor.taglist %}
+								<li><a href="#">{{ i | safe }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<!-- end doctor-block2__tagi -->
+					<!--begin doctor-block2__loc-->
+					<div class="doctor-block2__loc">
+						<div class="location-info">
+							<i class="location-info__icon">{{ mixins.icon('location') }}</i>
+							<a href="{{ test.locationUrl }}">{{ doctor.location | safe }}</a>
+						</div>
+						<div class="metro-info">
+							{{mixins.icon('metro')}}
+							{{ doctor.metro | safe }}
+						</div>
+					</div>
+					<!--end doctor-block2__loc-->
+
+					<!--begin doctor-block2__mob-rating-->
+					<div class="doctor-block2__mob-rating">
+						<!--begin rate-wrapper-->
+						<div class="rate-wrapper ">
+							<div class="rate-stars rate-stars--green">
+								{% for star in doctor.stars %}
+								<i class="rate-stars__item {{ star.starMode }}">
+									{{ mixins.icon('star') }}
+								</i>
+								{% endfor %}
+							</div>
+							<!--begin rate-number-->
+							<div class="rate-number rate-number--green">
+								рейтинг <span>{{ doctor.number }}</span>
+							</div>
+							<!--end rate-number-->
+						</div>
+						<!--end rate-wrapper-->
+					</div>
+					<!--end doctor-block2__mob-rating-->
+					
+
+					<!--begin doctor-block2__mob-loc-->
+					<div class="doctor-block2__mob-loc">
+						<div class="location-info">
+							<i class="location-info__icon">{{ mixins.icon('location') }}</i>
+							<a href="{{ test.locationUrl }}">{{ doctor.location | safe }}</a>
+						</div>
+						<div class="metro-info">
+							{{mixins.icon('metro')}}
+							{{ doctor.metro | safe }}
+						</div>
+					</div>
+					<!--end doctor-block2__mob-loc-->
+
+					<!-- begin doctor-block2__tablelist -->
+					<div class="doctor-block2__tablelist">
+						<div class="tablelist">
+							{% for row in doctor.tablelist %}
+							<div class="tablelist__row">
+								{% for i in row %}
+								<div class="tablelist__col">{{ i | safe }}</div>
+								{% endfor %}
+							</div>
+							{% endfor%}
+						</div>
+					</div>
+					<!-- end doctor-block2__tablelist -->
+					<!--begin doctor-block2__content-bottom-->
+					<div class="doctor-block2__content-bottom">
+						<a class="more-link  " href="#">
+							<i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+							<span>{{doctor.buttonMoreClinic}}</span>
+						</a>
+						<a href="#" class="sales-link">
+							<span>%</span> Акции
+						</a>
+					</div>
+					<!--end doctor-block2__content-bottom-->
+				</div>
+				<!--end doctor-block2__content-side-->
+			</div>
+			<!--end doctor-block2__left-inner-->
+			<!--begin doctor-block2__left-bottom-->
+			<div class="doctor-block2__left-bottom">
+				<div class="worktime-info">
+					<p>{{ doctor.worktime | safe }}</p>
+				</div>
+
+				<a href="#" class="js-popup-link btn btn--green" data-popup="popup-appoint">Записаться</a>
+			</div>
+			<!--end doctor-block2__left-bottom-->
+		</div>
+		<!--end box-general__left-->
+		<!--begin box-general__right-->
+		<div class="box-general__right ">
+			<!--begin box-general__right-inner-->
+			<div class="box-general__right-inner">
+				<!--begin rate-wrapper-->
+				<div class="rate-wrapper doctor-block2__rating">
+					<div class="rate-stars rate-stars--green">
+						{% for star in doctor.stars %}
+						<i class="rate-stars__item {{ star.starMode }}">
+							{{ mixins.icon('star') }}
+						</i>
+						{% endfor %}
+					</div>
+					<!--begin rate-number-->
+					<div class="rate-number rate-number--green">
+						рейтинг <span>{{ doctor.number }}</span>
+					</div>
+					<!--end rate-number-->
+				</div>
+				<!--end rate-wrapper-->
+				<!--begin count-users-->
+				<div class="count-users count-users--gray">
+					<div class="count-users__bought count-users__bought--cyan">
+						<div>
+							<span>{{ clinicBlock.users.bought }}</span>
+							<i class="count-users__icon-user"></i>
+						</div>
+						<p>ЗАПИСАЛОСЬ</p>
+					</div>
+					<span class="count-users__separator">/</span>
+					<div class="count-users__glad count-users__glad--green">
+						<div>
+							<span>{{ clinicBlock.users.glad }}</span>
+							<i class="count-users__icon-heart"></i>
+						</div>
+						<p>ДОВОЛЬНЫ</p>
+					</div>
+				</div>
+				<!--end count-users-->
+				{% for test in doctor.comments %}
+				{% include "components/_count-slider.html" %}
+				{% endfor %}
+			</div>
+			<!--end box-general__right-inner-->
+		</div>
+		<!--end box-general__right-->
+	</div>
+	<!--end  box-general__inner-->
+</div>
+<!--end doctor-block2 box-general-->

@@ -1,0 +1,120 @@
+<!--begin clinic-block box-general-->
+<div class="clinic-block box-general">
+	<!--begin  box-general__inner-->
+	<div class="box-general__inner">
+		<!--begin box-general__left-->
+		<div class="box-general__left">
+			<!--begin clinic-block__ratings-->
+			<div class="clinic-block__ratings">
+				<!--begin rate-wrapper-->
+				<div class="rate-wrapper">
+					<div class="rate-stars rate-stars--green">
+						{% for star in clinicBlock.rate.stars %}
+						<i class="rate-stars__item {{ star.starMode }}">
+							{{ mixins.icon('star') }}
+						</i>
+						{% endfor %}
+					</div>
+					<!--begin rate-number-->
+					<div class="rate-number rate-number--green">
+						рейтинг <span>{{ clinicBlock.rate.number }}</span>
+					</div>
+					<!--end rate-number-->
+				</div>
+				<!--end rate-wrapper-->
+				<!--begin count-users-->
+				<div class="count-users count-users--gray">
+					<div class="count-users__bought count-users__bought--cyan">
+						<div>
+							<span>{{ clinicBlock.users.bought }}</span>
+							<i class="count-users__icon-user"></i>
+						</div>
+						<p>ЗАПИСАЛОСЬ</p>
+					</div>
+					<span class="count-users__separator">/</span>
+					<div class="count-users__glad count-users__glad--green">
+						<div>
+							<span>{{ clinicBlock.users.glad }}</span>
+							<i class="count-users__icon-heart"></i>
+						</div>
+						<p>ДОВОЛЬНЫ</p>
+					</div>
+				</div>
+				<!--end count-users-->
+
+			</div>
+			<!--end clinic-block__ratings-->
+		</div>
+		<!--end box-general__left-->
+		<!--begin box-general__right-->
+		<div class="box-general__right">
+			<!--begin box-general__right-inner-->
+			<div class="box-general__right-inner">
+				<!--begin box-general__right-map-->
+				<div class="box-general__right-map">
+					<div class="clinic-block__map {{clinicBlock.MapMode}}">
+						<a class="map-link js-popup-link" href="#" data-popup="popup-map">
+							<img src="img/clinic-map.jpg" alt="alt">
+						</a>
+					</div>
+				</div>
+				<!--end box-general__right-map-->
+				<!--begin box-general__right-info-->
+				<div class="box-general__right-info">
+					<div class="location-info">
+						<i class="location-info__icon">{{ mixins.icon('location') }}</i>
+						<a href="{{ test.locationUrl }}">{{ clinicBlock.location | safe }}</a>
+					</div>
+					<div class="metro-info">
+						{{mixins.icon('metro')}}
+						{{ clinicBlock.metro | safe }}
+					</div>
+					<div class="worktime-info">
+						<p>{{ clinicBlock.worktime | safe }}</p>
+					</div>
+				</div>
+				<!--end box-general__right-info-->
+			</div>
+			<!--end box-general__right-inner-->
+		</div>
+		<!--end box-general__right-->
+		<!--begin box-general__left-->
+		<div class="box-general__left">
+			<!--begin clinic-block__content-->
+			<div class="clinic-block__content">
+				<h4 class="clinic-block__title">{{clinicBlock.tagListTitle}}</h4>
+				{% if clinicBlock.taglist %}
+				<!-- begin clinic-block__tagi -->
+				<div class="clinic-block__tagi {{clinicBlock.taglistMode}}">
+					<div class="tagi ">
+						<ul>
+							{% for i in clinicBlock.taglist %}
+							<li><a href="#">{{ i | safe }}</a></li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<!-- end clinic-block__tagi -->
+				{% endif %}
+				{% if clinicBlock.textlist %}
+				<!-- begin clinic-block__text-list -->
+				<div class="clinic-block__list">
+					<ul class="list">
+						{% for i in clinicBlock.textlist %}
+						<li class="list__item">{{ i | safe }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<!-- end clinic-block__text-list -->
+				{% endif %}
+				<a href="#" class="js-popup-link button button_cyan" data-popup="popup-appoint">Записаться</a>
+			</div>
+			<!--end clinic-block__content-->
+
+		</div>
+		<!--end box-general__left-->
+
+	</div>
+	<!--end  box-general__inner-->
+</div>
+<!--end clinic-block box-general-->
