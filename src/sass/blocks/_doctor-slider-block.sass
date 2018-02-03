@@ -47,8 +47,13 @@
 		+sm
 			display: none
 		.list
-			margin: 15px 0 0
+			margin: 5px 0 0
 			font-size: 14px
+			line-height: 1.5
+			li
+				&:before
+					line-height: 1
+					top: -4px
 	&__rate
 		position: absolute
 		top: 0
@@ -87,3 +92,4 @@
 		&__right
 			+md
 				display: none
+
