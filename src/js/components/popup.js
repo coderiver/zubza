@@ -3,7 +3,7 @@ function popup() {
   let bodyHiddenStatus = 0;
   $('.js-popup-link').on('click', function(e) {
     e.preventDefault();
-    
+    console.log(bodyHiddenStatus);
     let body = $('body');
     let $this = $(this),
       attr = $this.attr('data-popup'); 
@@ -24,7 +24,8 @@ function popup() {
 
   });
 
-  $('.js-popup-overlay, .js-close-popup').on('click', function() {
+  $('.js-popup-overlay, .js-close-popup').on('click', function(e) {
+    e.stopPropagation();
     $(this).parents('.js-popup').fadeOut(200);
 
     if(bodyHiddenStatus === 1) {
