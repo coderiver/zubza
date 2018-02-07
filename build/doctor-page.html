@@ -1170,7 +1170,76 @@
                       </div>
                     </div>
                   </div>
-                  <div class="reviews__btn"> <a href="#" class="button button_hero button_hero_sm">Показать все отзывы</a> </div>
+                  <div class="reviews__btn"> <a href="#" class="button button_hero button_hero_sm js-toggler-review-block">Оставть отзыв</a> <a href="#" class="button button_hero button_hero_sm">Показать все отзывы</a> </div>
+                  <!--begin drop-review-->
+                  <div class="dreview js-review-drop-block">
+                    <form action="">
+                      <div class="dreview__close js-close-review-block"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+                      <p class="dreview__title">Ваш отзыв об этом враче</p>
+                      <!--begin dreview__inner-->
+                      <div class="dreview__inner">
+                        <!--begin dreview__row-->
+                        <div class="dreview__row dreview__row--select">
+                          <div class="dreview__yes-no"> <span class="dreview__text dreview__yes-no-text">Рекомендуете врача?</span> <button class="btn-yes" type="button">Да</button> <button class="btn-no" type="button">Нет</button> </div>
+                          <div class="dreview__select-block">
+                            <div class="dreview__select-block-inner"> <span class="dreview__select-block-text dreview__text">Клиника</span> <select class="form__select js-select" data-field="Выберите клинику" data-icon="arrow-d2">
+									
+									<option value="Клиника1">Клиника1</option>
+									
+									<option value="Клиника2">Клиника2</option>
+									
+									<option value="Клиника3">Клиника3</option>
+									
+									<option value="Клиника1">Клиника1</option>
+									
+									<option value="Клиника2">Клиника2</option>
+									
+									<option value="Клиника3">Клиника3</option>
+									
+									<option value="Клиника1">Клиника1</option>
+									
+									<option value="Клиника2">Клиника2</option>
+									
+									<option value="Клиника3">Клиника3</option>
+									
+								</select> </div>
+                          </div>
+                          <div class="dreview__select-block">
+                            <div class="dreview__select-block-inner"> <span class="dreview__select-block-text dreview__text">Услуга</span> <select class="form__select js-select" data-field="Выберите услугу" data-icon="arrow-d2">
+									
+									<option value="услуга1">услуга1</option>
+									
+									<option value="услуга2">услуга2</option>
+									
+									<option value="услуга3">услуга3</option>
+									
+									<option value="услуга1">услуга1</option>
+									
+									<option value="услуга2">услуга2</option>
+									
+									<option value="услуга3">услуга3</option>
+									
+									<option value="услуга1">услуга1</option>
+									
+									<option value="услуга2">услуга2</option>
+									
+									<option value="услуга3">услуга3</option>
+									
+								</select> </div>
+                          </div>
+                        </div>
+                        <!--end dreview__row-->
+                        <!--begin dreview__row-->
+                        <div class="dreview__row dreview__row--textarea">
+                          <p class="dreview__text">Ваш отзыв о враче</p> <textarea placeholder="Расскажите подробно насколько комфортным был прием, внимательным ли был специалист и тд."></textarea> </div>
+                        <!--end dreview__row-->
+                        <!--begin dreview__row dreview__row--name-->
+                        <div class="dreview__row dreview__row--name"> <span class="dreview__text">Ваше имя</span> <input type="text" placeholder="Введите имя"> <button class="btn btn--green dreview__desktop-btn" type="submit">Отправить</button> </div>
+                        <!--end dreview__row dreview__row--name-->
+                      </div>
+                      <!--end dreview__inner--><button class="btn btn--green dreview__mob-btn" type="submit">Отправить</button> </form>
+                  </div>
+                  <!--end drop-review-->
                 </div>
               </div>
           </div>

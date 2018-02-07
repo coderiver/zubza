@@ -1,0 +1,61 @@
+		<!--begin drop-review-->
+		<div class="dreview js-review-drop-block">
+			<form action="">
+				<div class="dreview__close js-close-review-block">
+					{{mixins.icon('close')}}
+				</div>
+				<p class="dreview__title">{{dreview.title}}</p>
+				<!--begin dreview__inner-->
+				<div class="dreview__inner">
+					<!--begin dreview__row-->
+					<div class="dreview__row dreview__row--select">
+						<div class="dreview__yes-no">
+							<span class="dreview__text dreview__yes-no-text">{{dreview.yesNoText}}</span>
+							<button class="btn-yes" type="button">Да</button>
+							<button class="btn-no" type="button">Нет</button>					
+						</div>
+						<div class="dreview__select-block">
+							<div class="dreview__select-block-inner">
+								<span class="dreview__select-block-text dreview__text">{{dreview.select1.title}}</span>
+								<select class="form__select js-select" data-field="{{ dreview.select1.placeholder }}" data-icon="arrow-d2" >
+									{% for value in dreview.select1.values %}
+									<option value="{{ value }}">{{ value }}</option>
+									{% endfor %}
+								</select>
+							</div>
+
+						</div>
+						<div class="dreview__select-block">
+							<div class="dreview__select-block-inner">
+								<span class="dreview__select-block-text dreview__text">{{dreview.select2.title}}</span>
+								<select class="form__select js-select" data-field="{{ dreview.select2.placeholder }}" data-icon="arrow-d2" >
+									{% for value in dreview.select2.values %}
+									<option value="{{ value }}">{{ value }}</option>
+									{% endfor %}
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--end dreview__row-->
+					<!--begin dreview__row-->
+					<div class="dreview__row dreview__row--textarea">
+						<p class="dreview__text">{{dreview.textareaTitle}}</p>
+						<textarea placeholder="{{dreview.textareaPlaceholder}}"></textarea>
+					</div>
+					<!--end dreview__row-->
+					<!--begin dreview__row dreview__row--name-->
+					<div class="dreview__row dreview__row--name">
+						<span class="dreview__text">Ваше имя</span>
+						<input type="text" placeholder="Введите имя">
+						<button class="btn btn--green dreview__desktop-btn" type="submit">Отправить</button>
+					</div>
+					<!--end dreview__row dreview__row--name-->
+
+				</div>
+				<!--end dreview__inner-->
+
+				<button class="btn btn--green dreview__mob-btn" type="submit">Отправить</button>
+			</form>
+		</div>
+		<!--end drop-review-->
+		
