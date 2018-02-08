@@ -1,10 +1,9 @@
-.dreview
+.review-add
 	position: relative
 	background-color: $almost-white
 	border-radius: 5px
 	padding: 30px
 	margin-top: 30px
-	display: none
 	+md
 		padding: 30px 15px 15px
 		text-align: left
@@ -39,7 +38,7 @@
 		+md
 			padding-left: 15px
 			margin-bottom: 6px
-	span.dreview__text
+	span.review-add__text
 		display: inline-block
 		vertical-align: top
 		margin-right: 18px
@@ -95,6 +94,16 @@
 		+md
 			margin-bottom: 15px
 			text-align: center
+		input[type=radio]
+			display: none
+			+md
+				display: none
+			&:checked + label.btn-yes
+				background-color: #77d262
+				color: $white
+			&:checked + label.btn-no
+				background-color: #ff016e
+				color: $white
 	&__yes-no-text
 		+md
 			display: block

@@ -231,13 +231,25 @@
 	display: inline-block
 	vertical-align: top
 	font-size: 14px
+	text-align: center
 	+PBold
+	cursor: pointer
+	appearance: none
+	+trans
+	+nosel
 .btn-yes
 	background-color: #cbf2c0
 	border: 1px solid #77d262
 	margin-right: 10px
 	color: #77d262
+	
+	&.is-active
+		background-color: #77d262
+		color: $white
 .btn-no
 	background-color: #f9dce9
 	border: 1px solid #ff016e
 	color: #ff016e
+	&.is-active
+		background-color: #ff016e
+		color: $white

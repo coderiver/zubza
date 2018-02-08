@@ -1,8 +1,8 @@
 <div class="reviews">
-	<div class="reviews__title h3 hide-md">
+	<div class="reviews__title title-sm hide-md">
 		{{ reviewsTitle }}
 	</div>
-	<div class="reviews__title h3 show-md">
+	<div class="reviews__title title-sm show-md">
 		{{ reviewsTitleMob }}
 	</div>
 	<div class="reviews__list review">
@@ -65,8 +65,7 @@
 		{% endfor %}
 	</div>
 	<div class="reviews__btn">
-		<a href="#" class="button button_hero button_hero_sm js-toggler-review-block">Оставть отзыв</a>
 		<a href="#" class="button button_hero button_hero_sm">Показать все отзывы</a>
 	</div>
-	{% include "components/_review-drop.html" %}
+	{% include "components/_review-add.html" %}
 </div>

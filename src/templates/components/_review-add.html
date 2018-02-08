@@ -1,0 +1,65 @@
+		<!--begin review-add-->
+		<div class="review-add">
+			<form action="">
+	<!-- 			<div class="review-add__close js-close-review-block">
+					{{mixins.icon('close')}}
+				</div> -->
+				<p class="review-add__title">{{dreview.title}}</p>
+				<!--begin review-add__inner-->
+				<div class="review-add__inner">
+					<!--begin review-add__row-->
+					<div class="review-add__row review-add__row--select">
+						<div class="review-add__yes-no">
+							<span class="review-add__text review-add__yes-no-text">{{dreview.yesNoText}}</span>
+							<input type="radio" name="recomend" id="recomend-yes">
+							<label class="btn-yes"  for="recomend-yes">Да</label>
+							<input type="radio" name="recomend" id="recomend-no">
+							<label class="btn-no"  for="recomend-no">Нет</label>
+<!-- 							<button class="btn-yes is-active" type="button">Да</button>
+							<button class="btn-no" type="button">Нет</button>			 -->		
+						</div>
+						<div class="review-add__select-block">
+							<div class="review-add__select-block-inner">
+								<span class="review-add__select-block-text review-add__text">{{dreview.select1.title}}</span>
+								<select class="form__select js-select" data-field="{{ dreview.select1.placeholder }}" data-icon="arrow-d2" >
+									{% for value in dreview.select1.values %}
+									<option value="{{ value }}">{{ value }}</option>
+									{% endfor %}
+								</select>
+							</div>
+
+						</div>
+						<div class="review-add__select-block">
+							<div class="review-add__select-block-inner">
+								<span class="review-add__select-block-text review-add__text">{{dreview.select2.title}}</span>
+								<select class="form__select js-select" data-field="{{ dreview.select2.placeholder }}" data-icon="arrow-d2" >
+									{% for value in dreview.select2.values %}
+									<option value="{{ value }}">{{ value }}</option>
+									{% endfor %}
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--end review-add__row-->
+					<!--begin review-add__row-->
+					<div class="review-add__row review-add__row--textarea">
+						<p class="review-add__text">{{dreview.textareaTitle}}</p>
+						<textarea placeholder="{{dreview.textareaPlaceholder}}"></textarea>
+					</div>
+					<!--end review-add__row-->
+					<!--begin review-add__row review-add__row--name-->
+					<div class="review-add__row review-add__row--name">
+						<span class="review-add__text">Ваше имя</span>
+						<input type="text" placeholder="Введите имя">
+						<button class="btn btn--green review-add__desktop-btn" type="submit">Отправить</button>
+					</div>
+					<!--end review-add__row review-add__row--name-->
+
+				</div>
+				<!--end review-add__inner-->
+
+				<button class="btn btn--green review-add__mob-btn" type="submit">Отправить</button>
+			</form>
+		</div>
+		<!--end review-add-->
+		

@@ -325,7 +325,7 @@
         <div class="clinic-page__white-block">
           <!--begin container-->
           <div class="container">
-            <h3 class="clinic-page__title-sec" data-scroll="prices">Цены на услуги в стоматологической клинике «Все Свои» на Арбатской</h3>
+            <h2 class="title-sm clinic-page__title-sec" data-scroll="prices">Цены на услуги в стоматологической клинике «Все Свои» на Арбатской</h2>
             <p class="clinic-page__mb-35">Воспользуйтесь поиском или выберите специализацию </p>
             <div class="filters filters_tablet-mod">
               <div class="filters__field">
@@ -514,8 +514,8 @@
             </div>
             <div class="clinic-page__mb-95" data-scroll="reviews">
               <div class="reviews">
-                <div class="reviews__title h3 hide-md"> Отзывы о стоматологической клинике «Все Свои» на Арбатской </div>
-                <div class="reviews__title h3 show-md"> Отзывы о клинике </div>
+                <div class="reviews__title title-sm hide-md"> Отзывы о стоматологической клинике «Все Свои» на Арбатской </div>
+                <div class="reviews__title title-sm show-md"> Отзывы о клинике </div>
                 <div class="reviews__list review">
                   <div class="review__row">
                     <div class="review__state">
@@ -704,19 +704,26 @@
                     </div>
                   </div>
                 </div>
-                <div class="reviews__btn"> <a href="#" class="button button_hero button_hero_sm js-toggler-review-block">Оставть отзыв</a> <a href="#" class="button button_hero button_hero_sm">Показать все отзывы</a> </div>
-                <!--begin drop-review-->
-                <div class="dreview js-review-drop-block">
+                <div class="reviews__btn"> <a href="#" class="button button_hero button_hero_sm">Показать все отзывы</a> </div>
+                <!--begin review-add-->
+                <div class="review-add">
                   <form action="">
-                    <div class="dreview__close js-close-review-block"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
-                    <p class="dreview__title">Ваш отзыв о стоматологической клинике «Все Свои» на Арбатской</p>
-                    <!--begin dreview__inner-->
-                    <div class="dreview__inner">
-                      <!--begin dreview__row-->
-                      <div class="dreview__row dreview__row--select">
-                        <div class="dreview__yes-no"> <span class="dreview__text dreview__yes-no-text">Рекомендуете клинику?</span> <button class="btn-yes" type="button">Да</button> <button class="btn-no" type="button">Нет</button> </div>
-                        <div class="dreview__select-block">
-                          <div class="dreview__select-block-inner"> <span class="dreview__select-block-text dreview__text">Врач</span> <select class="form__select js-select" data-field="Выберите врача" data-icon="arrow-d2">
+                    <!-- 			<div class="review-add__close js-close-review-block">
+					
+<svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+
+				</div> -->
+                    <p class="review-add__title">Ваш отзыв о стоматологической клинике «Все Свои» на Арбатской</p>
+                    <!--begin review-add__inner-->
+                    <div class="review-add__inner">
+                      <!--begin review-add__row-->
+                      <div class="review-add__row review-add__row--select">
+                        <div class="review-add__yes-no"> <span class="review-add__text review-add__yes-no-text">Рекомендуете клинику?</span> <input type="radio" name="recomend" id="recomend-yes"> <label class="btn-yes" for="recomend-yes">Да</label> <input type="radio" name="recomend"
+                            id="recomend-no"> <label class="btn-no" for="recomend-no">Нет</label>
+                          <!-- 							<button class="btn-yes is-active" type="button">Да</button>
+							<button class="btn-no" type="button">Нет</button>			 --></div>
+                        <div class="review-add__select-block">
+                          <div class="review-add__select-block-inner"> <span class="review-add__select-block-text review-add__text">Врач</span> <select class="form__select js-select" data-field="Выберите врача" data-icon="arrow-d2">
 									
 									<option value="врач1">врач1</option>
 									
@@ -738,8 +745,8 @@
 									
 								</select> </div>
                         </div>
-                        <div class="dreview__select-block">
-                          <div class="dreview__select-block-inner"> <span class="dreview__select-block-text dreview__text">Услуга</span> <select class="form__select js-select" data-field="Выберите услугу" data-icon="arrow-d2">
+                        <div class="review-add__select-block">
+                          <div class="review-add__select-block-inner"> <span class="review-add__select-block-text review-add__text">Услуга</span> <select class="form__select js-select" data-field="Выберите услугу" data-icon="arrow-d2">
 									
 									<option value="услуга1">услуга1</option>
 									
@@ -762,22 +769,22 @@
 								</select> </div>
                         </div>
                       </div>
-                      <!--end dreview__row-->
-                      <!--begin dreview__row-->
-                      <div class="dreview__row dreview__row--textarea">
-                        <p class="dreview__text">Ваш отзыв о стоматологии</p> <textarea placeholder="Расскажите подробно насколько комфортным был прием, внимательным ли был специалист и тд."></textarea> </div>
-                      <!--end dreview__row-->
-                      <!--begin dreview__row dreview__row--name-->
-                      <div class="dreview__row dreview__row--name"> <span class="dreview__text">Ваше имя</span> <input type="text" placeholder="Введите имя"> <button class="btn btn--green dreview__desktop-btn" type="submit">Отправить</button> </div>
-                      <!--end dreview__row dreview__row--name-->
+                      <!--end review-add__row-->
+                      <!--begin review-add__row-->
+                      <div class="review-add__row review-add__row--textarea">
+                        <p class="review-add__text">Ваш отзыв о стоматологии</p> <textarea placeholder="Расскажите подробно насколько комфортным был прием, внимательным ли был специалист и тд."></textarea> </div>
+                      <!--end review-add__row-->
+                      <!--begin review-add__row review-add__row--name-->
+                      <div class="review-add__row review-add__row--name"> <span class="review-add__text">Ваше имя</span> <input type="text" placeholder="Введите имя"> <button class="btn btn--green review-add__desktop-btn" type="submit">Отправить</button> </div>
+                      <!--end review-add__row review-add__row--name-->
                     </div>
-                    <!--end dreview__inner--><button class="btn btn--green dreview__mob-btn" type="submit">Отправить</button> </form>
+                    <!--end review-add__inner--><button class="btn btn--green review-add__mob-btn" type="submit">Отправить</button> </form>
                 </div>
-                <!--end drop-review-->
+                <!--end review-add-->
               </div>
             </div>
             <div>
-              <h3 class="clinic-page__mb-20 clinic-page__center-mob" data-scroll="doctors">Врачи стоматологической клиники «Все Свои» на Арбатской</h3>
+              <h2 class="title-sm clinic-page__mb-20  clinic-page__center-mob" data-scroll="doctors">Врачи стоматологической клиники «Все Свои» на Арбатской</h2>
               <!-- begin box-general -->
               <div class="box-general doctor-slider-block">
                 <!-- begin box-general__inner -->
@@ -1358,7 +1365,7 @@
             <div class="license">
               <!--begin container-->
               <div class="container">
-                <h3 class="h3 license__title">Лицензии и сертификаты</h3>
+                <h2 class="title-sm license__title">Лицензии и сертификаты</h2>
                 <!--begin license__list-->
                 <div class="license__list js-license-mob-slider"> <a class="license__item" href="#">
 					<img src="img/license1.png" alt="alt">
@@ -1385,7 +1392,7 @@
             <div data-scroll="clinic-photo">
               <!-- begin clinic-gallery -->
               <div class="clinic-gallery js-gallery">
-                <h2 class="clinic-gallery__title">Фото клиники</h2>
+                <h2 class="title-sm clinic-gallery__title">Фото клиники</h2>
                 <div class="clinic-gallery__side clinic-gallery__side_sm">
                   <div class="clinic-gallery__slider js-gallery-slider">
                     <div class="clinic-gallery__slide">
@@ -1458,7 +1465,7 @@
             <section class="section section-sales  ">
               <!--begin container-->
               <div class="container">
-                <h3 class="h3 section-sales__title">Акции в сети стоматологических клиник «Все Свои»</h3>
+                <h2 class="title-sm section-sales__title">Акции в сети стоматологических клиник «Все Свои»</h2>
                 <!--begin section-sales__wrapper-->
                 <div class="section-sales__wrapper">
                   <div class="perc-icon section-sales__icon-mob"> <i></i> </div>
@@ -1594,7 +1601,7 @@
         <div class="container ">
           <!--begin clinic-page__p-50-->
           <div class="clinic-page__p-50 clinic-page__branches" data-scroll="branches">
-            <h3 class="h3 clinic-page__mb-20">Адреса филиалов</h3>
+            <h2 class="title-sm clinic-page__mb-20">Адреса филиалов</h2>
             <!-- begin box-general -->
             <div class="box-general affiliate-block affiliate-block--clinic">
               <!-- begin box-general__inner -->
@@ -1982,7 +1989,7 @@
             <section class="section section-double-slider">
               <!--begin container-->
               <div class="container">
-                <h3 class="section-double-slider__title"> Клиники рядом </h3>
+                <h2 class="title-sm section-double-slider__title"> Клиники рядом </h2>
                 <!--begin section-double-slider__inner-->
                 <div class="section-double-slider__inner">
                   <!--begin count-slider-->

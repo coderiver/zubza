@@ -1,6 +1,6 @@
 <div class="doctors-list {% if linksList.light %}doctors-list--light{% endif %}" style="background-image: url({{ linksList.background }});: ">
 	<div class="container">
-		<div class="doctors-list__title section-title">{{ linksList.title }}</div>
+		<h2 class="title-md doctors-list__title section-title">{{ linksList.title }}</h2>
 		<div class="doctors-list__body specialists">
 			{% for item in linksList.items %}
 			<div class="specialists__item">

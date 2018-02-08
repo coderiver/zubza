@@ -653,7 +653,7 @@ popupForm: {
     <!-- begin container -->
     <div class="container">
       <div class="doctor-page__work-place" data-scroll="work-place">
-        <h3 class="doctor-page__title">Принимает в центрах</h2>
+        <h2 class="title-sm doctor-page__title">Принимает в центрах</h2>
         {% for block in affiliateBlocks %}
 
           {% include "blocks/_affiliate-block.html" %}
@@ -667,7 +667,7 @@ popupForm: {
 		<div class="doctor-page__block" data-scroll="price">
 			<!-- begin container -->
 			<div class="container">
-				<h3 class="doctor-page__title" >Цены на услуги</h2>
+				<h2 class="title-sm doctor-page__title" >Цены на услуги</h2>
 				<div class="doctor-page__textual">
 					<p>
 						Воспользуйтесь поиском или выберите специализацию
@@ -1222,7 +1222,7 @@ popupForm: {
 			<!-- begin container -->
       <div class="container">
 				<div class="doctor-page__clinic-boxes" data-scroll="other-doctors">
-					<h2 class="doctor-page__title">Врачи той же специальности поблизости</h2>
+					<h2 class="title-md doctor-page__title">Врачи той же специальности поблизости</h2>
 				  {% for doctor in doctorBlock2 %}
           {% include "blocks/_doctor-block2.html" %}
           {% endfor %}
