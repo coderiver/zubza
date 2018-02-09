@@ -18,6 +18,7 @@ import './components/burgerMenu.js';
 import './components/showMore.js';
 import './components/mob-filters.js';
 import './components/mob-append.js';
+import './components/input-autocomplete.js';
 import svg4everybody from 'svg4everybody';
 svg4everybody();
 sayHello();

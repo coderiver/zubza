@@ -126,3 +126,41 @@
 			padding-top: 5px
 			padding-bottom: 0
 
+.input-autocomplete
+	position: relative 
+	width: 100%
+	&.is-active
+		input
+			border-radius: 20px 20px 0 0
+		.input-autocomplete
+			&__dropdown
+				display: block 
+	input
+		margin-right: 0
+		padding: 11px 20px 14px
+		width: 100%
+	&__dropdown
+		background-color: $white
+		border-radius: 0 0 20px 20px
+		box-shadow: 0 4px 10px rgba(67,158,167,.18)
+		display: none  
+		font-size: 13px
+		top: 100%
+		left: 0
+		padding: 0 20px 20px 
+		position: absolute
+		max-height: 130px
+		overflow: hidden 
+		width: 100%
+		&.is-empty
+			.input-autocomplete
+				&__search-empty
+					display: block
+	&__value
+		cursor: pointer
+		&:hover
+			color: $cyan
+		&.is-hidden
+			display: none
+	&__search-empty
+		display: none 

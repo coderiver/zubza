@@ -32,11 +32,26 @@
 						<div class="review-add__select-block">
 							<div class="review-add__select-block-inner">
 								<span class="review-add__select-block-text review-add__text">{{dreview.select2.title}}</span>
-								<select class="form__select js-select" data-field="{{ dreview.select2.placeholder }}" data-icon="arrow-d2" >
+								<div class="input-autocomplete js-input-autocomplete">
+									<input type="text" placeholder="{{ dreview.select2.placeholder }}" />
+									<div class="input-autocomplete__dropdown js-input-autocomplete-drop">
+										<ul>
+											{% for value in dreview.select2.values %}
+											<li class="input-autocomplete__value" data-value="{{ value }}">
+												{{ value }}
+											</li>
+											{% endfor %}
+										</ul>
+										<div class="input-autocomplete__search-empty">
+											По вашему запросу ничего не найдено
+										</div>
+									</div>
+								</div>
+								<!-- <select class="form__select js-select" data-field="{{ dreview.select2.placeholder }}" data-icon="arrow-d2" >
 									{% for value in dreview.select2.values %}
 									<option value="{{ value }}">{{ value }}</option>
 									{% endfor %}
-								</select>
+								</select> -->
 							</div>
 						</div>
 					</div>
