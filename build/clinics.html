@@ -362,8 +362,7 @@
               <!-- begin filter-section__mob-filters -->
               <div class="filter-section__mob-filters">
                 <!--begin meta-filters-->
-                <div class="meta-filters meta-filters_mob"> <a href="#" class="meta-filter js-popup-link" data-popup="popup-map">
-
+                <div class="meta-filters meta-filters_mob"> <a href="#" class="meta-filter js-popup-link js-popup-link" data-popup="popup-map">
     
     <i class="meta-filter__icon">
 <svg class="icon icon-location"><use xlink:href="img/sprite.svg#icon-location"></use></svg>
@@ -371,8 +370,7 @@
     
 
     <span>На карте</span>
-  </a> <a href="#" class="meta-filter js-show-meta-filters">
-
+  </a> <a href="#" class="meta-filter js-show-meta-filters ">
     
     <i class="meta-filter__icon">
 <svg class="icon icon-sort"><use xlink:href="img/sprite.svg#icon-sort"></use></svg>
@@ -380,8 +378,7 @@
     
 
     <span>Сортировать</span>
-  </a> <a href="#" class="meta-filter js-show-filters">
-
+  </a> <a href="#" class="meta-filter js-show-filters ">
     
     <i class="meta-filter__icon">
 <svg class="icon icon-filt"><use xlink:href="img/sprite.svg#icon-filt"></use></svg>
@@ -2416,6 +2413,32 @@
             <!-- end popup-cols__right -->
           </div>
           <!-- end popup-cols -->
+        </div>
+      </div>
+      <div class="popup popup--filters js-popup js-is-map-popup" data-popup="popup-filters">
+        <div class="popup__overlay js-popup-overlay"></div>
+        <div class="popup__content js-popup-content js-show-meta-filters">
+          <div class="popup__close js-close-popup"> <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg> </div>
+          <div class="popup__title"> Сортировать по: </div>
+          <div class="popup__select"> <select>
+				
+				<option value="По цене и рейтингу">По цене и рейтингу</option>
+				
+				<option value="По цене по возрастанию">По цене по возрастанию</option>
+				
+				<option value="По цене по убыванию">По цене по убыванию</option>
+				
+				<option value="По рейтингу по убыванию">По рейтингу по убыванию</option>
+				
+				<option value="По рейтингу по возрастанию">По рейтингу по возрастанию</option>
+				
+			</select>
+            <div class="popup__select-value  js-show-meta-item"> По цене и рейтингу </div>
+            <div class="popup__select-value  js-show-meta-item"> По цене по возрастанию </div>
+            <div class="popup__select-value  js-show-meta-item"> По цене по убыванию </div>
+            <div class="popup__select-value  js-show-meta-item"> По рейтингу по убыванию </div>
+            <div class="popup__select-value  js-show-meta-item"> По рейтингу по возрастанию </div>
+          </div>
         </div>
       </div>
     </div>

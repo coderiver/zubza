@@ -1,0 +1,30 @@
+<div class="popup popup--filters js-popup js-is-map-popup" data-popup="popup-filters">
+	<div class="popup__overlay js-popup-overlay"></div>
+	<div class="popup__content js-popup-content js-show-meta-filters">
+		<div class="popup__close js-close-popup">
+			{{mixins.icon('close')}}
+		</div>
+		<div class="popup__title">
+			Сортировать по:
+		</div>
+		<div class="popup__select">
+			{% set filterItems = [
+				'По цене и рейтингу',
+				'По цене по возрастанию',
+				'По цене по убыванию',
+				'По рейтингу по убыванию',
+				'По рейтингу по возрастанию'
+			]%}
+			<select>
+				{% for item in filterItems %}
+				<option value="{{item}}">{{item}}</option>
+				{% endfor %}
+			</select>
+			{% for item in filterItems %}
+			<div class="popup__select-value  js-show-meta-item">
+				{{item}}
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

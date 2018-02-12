@@ -145,10 +145,64 @@
 			opacity: 0.7
 			.icon
 				fill: $white
+	&--filters
+		select
+			display: none
+		.popup
+			&__close
+				height: 11px
+				top: 10px
+				right: 5px  
+				width: 11px
+				& > svg
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+			&__title
+				border-bottom: 2px solid $blue 
+				color: $blue 
+				font-size: 20px
+				padding: 30px  
+				text-align: left
+			&__content
+				padding: 0
+				overflow: hidden    
 	&_reminder
 		.popup__content
 			width: 450px
 			padding-bottom: 40px
+	&__select-value
+		border-bottom: 1px solid $really-grey
+		cursor: pointer
+		padding: 15px 20px
+		padding-right: 40px
+		position: relative  
+		text-align: left
+		&:last-of-type
+			border-bottom: none
+		&:before,
+		&:after
+			+pseudo
+			left: auto
+			right: 20px
+			top: 50%
+			transform: translateY(-50%) 
+			border-radius: 50%
+			border: 1px solid $really-grey
+			height: 16px 
+			width: 16px
+		&:after
+			height: 10px
+			background-color: $blue
+			right: 23px
+			width: 10px
+			opacity: 0
+		&:hover:after
+			opacity: 0.5
+		&.is-active
+			&:after
+				opacity: 1
+
 .baloon
 	width: 220px
 	border-radius: 5px
