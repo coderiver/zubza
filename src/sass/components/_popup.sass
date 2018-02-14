@@ -166,7 +166,38 @@
 				text-align: left
 			&__content
 				padding: 0
+				padding-bottom: 20px
 				overflow: hidden    
+	&--slider
+			.popup__content
+				width: 800px
+				padding: 0
+				min-height: 500px
+				font-size: 0
+			.popup__close
+				right: -30px
+				top: 0
+			.btn-prev, .btn-next
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+			.btn-prev
+				left: 20px
+			.btn-next
+				right: 20px
+			.slick-dots
+				position: absolute
+				left: 0
+				bottom: 10px
+				width: 100%
+				text-align: center
+				li 
+					button
+						width: 12px
+						height: 12px
+	&__slider-inner
+		border-radius: 5px
+		overflow: hidden
 	&_reminder
 		.popup__content
 			width: 450px
@@ -202,6 +233,9 @@
 		&.is-active
 			&:after
 				opacity: 1
+	&__btn-ok
+		margin-top: 20px
+		min-width: 140px
 
 .baloon
 	width: 220px
@@ -284,4 +318,5 @@
 		display: inline-block
 		vertical-align: top
 		padding: 0 10px
+
 

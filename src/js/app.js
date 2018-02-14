@@ -9,6 +9,7 @@ import anchorsMobDrop from './components/anchors-mob-drop.js';
 import './components/anchors.js';
 import clinicsSelectMob from './components/clinics-select-mob.js';
 import scrollTo from './components/scroll-to.js';
+import popupSlider from './components/popup-slider.js';
 import './components/select.js';
 import './components/gallery.js';
 import './components/tableDrop.js';
@@ -35,6 +36,7 @@ $(document).ready(function() {
   anchorsMobDrop(windowW);
   clinicsSelectMob(windowW);
   scrollTo(windowW);
+  popupSlider();
 
 // ready
 });

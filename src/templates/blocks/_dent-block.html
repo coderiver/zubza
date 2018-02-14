@@ -16,160 +16,163 @@
           <a href="" class="box-title box-title--sm box-title--cyan">{{ block.title }}</a>
 
           <!-- begin dent-block__gallery -->
-          <div class="dent-block__gallery">
+          <ul class="dent-block__gallery js-gallery-wrapper">
             {% for image in block.gallery %}
-            <li><a href="#"><img src="{{ image }}" alt=""></a></li>
-            {% endfor %}
-          </div>
-          <!-- end dent-block__gallery -->
-
-        </div>
-        <!-- end dent-block__topinfo -->
-
-
-        <!-- begin dent-block__tags -->
-        <div class="dent-block__tags">
-          <div class="tagi">
-            <ul>
-              {% for i in block.tags %}
-              <li><a href="#">{{ i | safe }}</a></li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-        <!-- end dent-block__tags -->
+            <li><a class="js-popup-link js-popup-gallery-link" data-slide-to-open="{{loop.index}}" data-popup="popup-slider" href="#">
+              <img src="{{ image }}" alt="" data-big-img="https://placebear.com/g/800/500">
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- end dent-block__gallery -->
 
       </div>
-      <!-- end dent-block__topbar -->
+      <!-- end dent-block__topinfo -->
+
+
+      <!-- begin dent-block__tags -->
+      <div class="dent-block__tags">
+        <div class="tagi">
+          <ul>
+            {% for i in block.tags %}
+            <li><a href="#">{{ i | safe }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <!-- end dent-block__tags -->
 
     </div>
-    <!-- end box-general__left -->
-
-    <!-- begin box-general__right -->
-    <div class="box-general__right">
-
-      <!-- begin dent-block__rate -->
-      <div class="dent-block__rate">
-
-        <!--begin rate-wrapper-->
-        <div class="rate-wrapper">
-          <div class="rate-stars rate-stars--green">
-            {% for star in block.rate.stars %}
-            <i class="rate-stars__item {{ star.starMode }}">
-              {{ mixins.icon('star') }}
-            </i>
-            {% endfor %}
-          </div>
-
-          <!--begin rate-number-->
-          <div class="rate-number {{ block.rate.numberMod }}">
-            рейтинг <span>{{ block.rate.number }}</span>
-          </div>
-          <!--end rate-number-->
-        </div>
-        <!--end rate-wrapper-->
-
-        <!--begin count-users-->
-        <div class="count-users count-users--gray">
-          <div class="count-users__bought count-users__bought--cyan">
-            <div>
-              <span>{{ block.users.bought }}</span>
-              <i class="count-users__icon-user"></i>
-            </div>
-            <p>ЗАПИСАЛОСЬ</p>
-          </div>
-          <span class="count-users__separator">/</span>
-          <div class="count-users__glad count-users__glad--green">
-            <div>
-              <span>{{ block.users.glad }}</span>
-              <i class="count-users__icon-heart"></i>
-            </div>
-            <p>ДОВОЛЬНЫ</p>
-          </div>
-        </div>
-        <!--end count-users-->
-
-      </div>
-      <!-- end dent-block__rate -->
-
-      <!-- begin dent-block__slider -->
-      <div class="dent-block__slider">
-        {% for test in block.comments %}
-          {% include "components/_count-slider.html" %}
-        {% endfor %}
-      </div>
-      <!-- end dent-block__slider -->
-
-    </div>
-    <!-- end box-general__right -->
-
-
-    <!-- begin box-general__left -->
-    <div class="box-general__left">
-
-      <!-- begin dent-block__info -->
-      <div class="dent-block__info">
-
-        <div class="location-info location-info--dashed">
-          <i class="location-info__icon">{{ mixins.icon('location') }}</i>
-          <a href="{{ test.locationUrl }}">{{ block.info.location | safe }}</a>
-        </div>
-
-        <div class="metro-info">
-          {{mixins.icon('metro')}}
-          {{ block.info.metro | safe }}
-        </div>
-
-      </div>
-      <!-- end dent-block__info -->
-
-      <!-- begin dent-block__tablelist -->
-      <div class="dent-block__tablelist">
-
-        <div class="tablelist">
-          {% for row in block.tablelist %}
-          <div class="tablelist__row">
-            {% for i in row %}
-            <div class="tablelist__col">{{ i | safe }}</div>
-            {% endfor %}
-          </div>
-          {% endfor%}
-        </div>
-
-      </div>
-      <!-- end dent-block__tablelist -->
-
-      <!-- begin dent-block__meta -->
-      <div class="dent-block__meta">
-        <a href="#" class="more-link more-link--sm">
-          <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
-          <span>Весь прайс-лист клиники</span>
-        </a>
-
-        <a href="#" class="sales-link">
-          <span>%</span>
-          Акции
-        </a>
-      </div>
-      <!-- end dent-block__meta -->
-
-      <!-- begin dent-block__controls -->
-      <div class="dent-block__controls">
-
-        <div class="worktime-info">
-          <p>{{ block.info.worktime | safe }}</p>
-        </div>
-
-        <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a>
-
-      </div>
-      <!-- end dent-block__controls -->
-
-    </div>
-    <!-- end box-general__left -->
+    <!-- end dent-block__topbar -->
 
   </div>
-  <!-- end box-general__inner -->
+  <!-- end box-general__left -->
+
+  <!-- begin box-general__right -->
+  <div class="box-general__right">
+
+    <!-- begin dent-block__rate -->
+    <div class="dent-block__rate">
+
+      <!--begin rate-wrapper-->
+      <div class="rate-wrapper">
+        <div class="rate-stars rate-stars--green">
+          {% for star in block.rate.stars %}
+          <i class="rate-stars__item {{ star.starMode }}">
+            {{ mixins.icon('star') }}
+          </i>
+          {% endfor %}
+        </div>
+
+        <!--begin rate-number-->
+        <div class="rate-number {{ block.rate.numberMod }}">
+          рейтинг <span>{{ block.rate.number }}</span>
+        </div>
+        <!--end rate-number-->
+      </div>
+      <!--end rate-wrapper-->
+
+      <!--begin count-users-->
+      <div class="count-users count-users--gray">
+        <div class="count-users__bought count-users__bought--cyan">
+          <div>
+            <span>{{ block.users.bought }}</span>
+            <i class="count-users__icon-user"></i>
+          </div>
+          <p>ЗАПИСАЛОСЬ</p>
+        </div>
+        <span class="count-users__separator">/</span>
+        <div class="count-users__glad count-users__glad--green">
+          <div>
+            <span>{{ block.users.glad }}</span>
+            <i class="count-users__icon-heart"></i>
+          </div>
+          <p>ДОВОЛЬНЫ</p>
+        </div>
+      </div>
+      <!--end count-users-->
+
+    </div>
+    <!-- end dent-block__rate -->
+
+    <!-- begin dent-block__slider -->
+    <div class="dent-block__slider">
+      {% for test in block.comments %}
+      {% include "components/_count-slider.html" %}
+      {% endfor %}
+    </div>
+    <!-- end dent-block__slider -->
+
+  </div>
+  <!-- end box-general__right -->
+
+
+  <!-- begin box-general__left -->
+  <div class="box-general__left">
+
+    <!-- begin dent-block__info -->
+    <div class="dent-block__info">
+
+      <div class="location-info location-info--dashed">
+        <i class="location-info__icon">{{ mixins.icon('location') }}</i>
+        <a href="{{ test.locationUrl }}">{{ block.info.location | safe }}</a>
+      </div>
+
+      <div class="metro-info">
+        {{mixins.icon('metro')}}
+        {{ block.info.metro | safe }}
+      </div>
+
+    </div>
+    <!-- end dent-block__info -->
+
+    <!-- begin dent-block__tablelist -->
+    <div class="dent-block__tablelist">
+
+      <div class="tablelist">
+        {% for row in block.tablelist %}
+        <div class="tablelist__row">
+          {% for i in row %}
+          <div class="tablelist__col">{{ i | safe }}</div>
+          {% endfor %}
+        </div>
+        {% endfor%}
+      </div>
+
+    </div>
+    <!-- end dent-block__tablelist -->
+
+    <!-- begin dent-block__meta -->
+    <div class="dent-block__meta">
+      <a href="#" class="more-link more-link--sm">
+        <i class="more-link__icon">{{ mixins.icon('arrow-sm') }}</i>
+        <span>Весь прайс-лист клиники</span>
+      </a>
+
+      <a href="#" class="sales-link">
+        <span>%</span>
+        Акции
+      </a>
+    </div>
+    <!-- end dent-block__meta -->
+
+    <!-- begin dent-block__controls -->
+    <div class="dent-block__controls">
+
+      <div class="worktime-info">
+        <p>{{ block.info.worktime | safe }}</p>
+      </div>
+
+      <a href="#" class="btn btn--green js-popup-link" data-popup="popup-appoint">Записаться</a>
+
+    </div>
+    <!-- end dent-block__controls -->
+
+  </div>
+  <!-- end box-general__left -->
+
+</div>
+<!-- end box-general__inner -->
 
 </div>
 <!-- end box-general -->
