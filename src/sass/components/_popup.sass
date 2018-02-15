@@ -8,14 +8,14 @@
 	z-index: 1002
 	overflow-y: auto
 	background: rgba(#000, 0.5)
-	//+m
-	//	overflow-y: scroll
+	+m
+		padding-bottom: 80px
 	&__overlay
 		height: 100%
 		position: absolute
 		width: 100%
-		//+m
-		//	display: none
+		+m
+			display: none
 	&__content
 		padding: 30px 20px 45px
 		border-radius: 5px
@@ -27,6 +27,20 @@
 		background-color: white
 		text-align: center
 		margin-bottom: 2vh
+
+		+md
+			position: static!important
+			margin-top: 30px
+			margin-left: auto
+			margin-right: auto
+			transform: translateX(0)
+			left: 0
+
+
+			// overflow-y: auto
+			// top: 30px
+			// margin-bottom: 20px
+			// top: 20px
 		+sm
 			width: 320px
 		//+m
@@ -103,7 +117,7 @@
 			height: 647px
 			border-radius: 5px
 			+r(1080)
-				height: 500px
+				height: 350px
 		.popup__close
 			right: -26px
 			top: 0
@@ -122,6 +136,7 @@
 			+sm
 				width: 320px
 				padding: 20px
+				margin-bottom: 44px
 		.logo
 			width: 169px
 			height: 57px
@@ -146,6 +161,7 @@
 			.icon
 				fill: $white
 	&--filters
+
 		select
 			display: none
 		.popup
@@ -167,7 +183,8 @@
 			&__content
 				padding: 0
 				padding-bottom: 20px
-				overflow: hidden    
+				// overflow: hidden   
+				// margin-bottom: 50px 
 	&--slider
 			.popup__content
 				width: 800px
@@ -234,8 +251,9 @@
 			right: 23px
 			width: 10px
 			opacity: 0
-		&:hover:after
-			opacity: 0.5
+		// &:hover:after
+		// 	+rmin(1023)
+		// 		opacity: 0.5
 		&.is-active
 			&:after
 				opacity: 1
